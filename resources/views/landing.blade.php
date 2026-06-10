@@ -255,7 +255,7 @@
                     </p>
                 </div>
 
-                <div class="flex justify-center gap-6 max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-center gap-6 max-w-7xl mx-auto">
                     @foreach([
                             ['text' => __('landing.values.items.quality'), 'icon' => @svg('iconsax-lin-medal', 'w-10 h-10'), "color" => "text-indigo-400"],
                             ['text' => __('landing.values.items.innovation'), 'icon' => @svg('iconoir-light-bulb', 'w-10 h-10'), "color" => "text-sky-400"],
@@ -500,7 +500,7 @@
                                 </p>
 
                                 <!-- Features list -->
-                                <div class="grid grid-cols-2 gap-y-4 gap-x-4 mb-8">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-4 mb-8">
                                     @foreach(__('landing.products.items.edubridge.features') as $feature)
                                         <div class="flex items-center gap-2">
                                             <span class="w-2 h-2 rounded-full bg-indigo-500/80 shadow-[0_0_8px_rgba(99,102,241,0.5)]"></span>
@@ -544,50 +544,50 @@
                 </div>
 
                 <!-- Slanted deck technology cards diminishing in size -->
-                <div class="flex flex-nowrap justify-center items-center -space-x-6 rtl:space-x-reverse py-16 px-4 max-w-full overflow-x-auto md:overflow-x-visible">
+                <div class="flex flex-col md:flex-row flex-nowrap justify-center items-center -space-y-6 md:-space-x-6 rtl:space-x-reverse py-16 px-4 max-w-full overflow-x-auto md:overflow-x-visible">
                     @php
                         $technologies = [
                             [
                                 'name' => 'MySql',
                                 'logo' => '<img width="100" height="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />',
                                 'logo_class' => "",
-                                'class' => 'scale-75 -rotate-6 z-0 translate-y-4 translate-x-4 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                                'class' => 'scale-75 md:-rotate-6 z-0 md:translate-y-4 md:translate-x-4 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'Flutter',
                                 'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />',
                                 'logo_class' => "",
-                                'class' => 'scale-85 -rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                                'class' => 'scale-85 md:-rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'React',
                                 'logo' => '<i class="devicon-react-original colored"></i>',
                                 'logo_class' => "text-7xl",
-                                'class' => 'scale-95 -rotate-2 z-20 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                                'class' => 'scale-95 md:-rotate-2 z-20 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'Laravel',
                                 'logo' => '<i class="devicon-laravel-original colored"></i>',
                                 'logo_class' => "text-7xl",
-                                'class' => 'scale-110 rotate-0 z-30 shadow-2xl shadow-cyan-500/20 md:hover:scale-120',
+                                'class' => 'scale-110 md:rotate-0 z-30 shadow-2xl shadow-cyan-500/20 md:hover:scale-120',
                             ],
                             [
                                 'name' => 'Next',
                                 'logo' => '<i class="devicon-nextjs-plain"></i>',
                                 'logo_class' => "text-7xl",
-                                'class' => 'scale-95 rotate-2 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                                'class' => 'scale-95 md:rotate-2 z-20 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'Typescript',
                                 'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />',
                                 'logo_class' => "",
-                                'class' => 'scale-85 rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                                'class' => 'scale-85 md:rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'Figma',
                                 'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />',
                                 'logo_class' => "",
-                                'class' => 'scale-75 rotate-6 translate-y-4 -translate-x-4 z-0 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0 md:hover:translate-y-0',
+                                'class' => 'scale-75 md:rotate-6 md:translate-y-4 md:-translate-x-4 z-0 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0 md:hover:translate-y-0',
                             ],
                         ];
                     @endphp
