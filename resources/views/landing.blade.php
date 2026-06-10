@@ -6,6 +6,9 @@
     <meta name="description" content="{{ __('landing.hero.subtitle') }}">
     <title>{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}</title>
 
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
+
     <!-- Google Fonts: Cairo (Arabic) & Plus Jakarta Sans (English) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +33,7 @@
     </div>
 
     <!-- Navigation Header -->
-    <header class="sticky top-0 z-40 w-full border-b border-slate-900 bg-[#070b13]/80 backdrop-blur-md transition-all duration-300">
+    <header class="sticky top-0 z-40 w-full border-b border-slate-900 bg-[#0f1231] backdrop-blur-md transition-all duration-300">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-20 items-center justify-between">
                 
@@ -176,15 +179,15 @@
                     <!-- Statistics grid matching second screenshot -->
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto border-t border-slate-900 pt-16">
                         @foreach([
-                            ['value' => '100+', 'label' => __('landing.hero.stats.projects')],
-                            ['value' => '50+', 'label' => __('landing.hero.stats.clients')],
-                            ['value' => '50+', 'label' => __('landing.hero.stats.team')],
-                            ['value' => '95%', 'label' => __('landing.hero.stats.satisfaction')],
-                        ] as $stat)
-                            <div class="flex flex-col items-center">
-                                <span class="text-3xl sm:text-4xl font-extrabold text-white">{{ $stat['value'] }}</span>
-                                <span class="text-xs sm:text-sm text-white/70 font-medium mt-2 text-center">{{ $stat['label'] }}</span>
-                            </div>
+                                ['value' => '100+', 'label' => __('landing.hero.stats.projects')],
+                                ['value' => '50+', 'label' => __('landing.hero.stats.clients')],
+                                ['value' => '50+', 'label' => __('landing.hero.stats.team')],
+                                ['value' => '95%', 'label' => __('landing.hero.stats.satisfaction')],
+                            ] as $stat)
+                                    <div class="flex flex-col items-center">
+                                        <span class="text-3xl sm:text-4xl font-extrabold text-white">{{ $stat['value'] }}</span>
+                                        <span class="text-xs sm:text-sm text-white/70 font-medium mt-2 text-center">{{ $stat['label'] }}</span>
+                                    </div>
                         @endforeach
                     </div>
 
@@ -193,49 +196,49 @@
         </section>
 
         <!-- About Us / Who We Are Section -->
-        <section id="about" class="py-20 border-t border-slate-900/60 bg-gradient-to-b from-[#070b13] via-slate-950/20 to-[#070b13] relative overflow-hidden">
+        <section id="about" class="py-20 bg-[#101133] relative overflow-hidden">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-indigo-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-indigo-400 border border-indigo-500/20 uppercase mb-4">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-400 border border-sky-500/20 uppercase mb-4">
                         {{ __('landing.about.badge') }}
                     </span>
-                    <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-100 tracking-tight mb-6">
+                    <h2 class="text-4xl font-extrabold sm:text-5xl text-slate-100 tracking-tight mb-6">
                         {{ __('landing.about.title') }}
                     </h2>
-                    <p class="text-slate-400 leading-relaxed sm:text-lg">
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
                         {{ __('landing.about.description') }}
                     </p>
                 </div>
 
-                <!-- Mission & Vision Glassmorphic Cards -->
-                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-24">
+                <!-- Mission & Vision Cards -->
+                <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto mb-24">
                     
                     <!-- Mission Card -->
-                    <div class="relative rounded-3xl bg-gradient-to-b from-slate-900/50 to-slate-950/60 border border-slate-800/80 p-8 hover:border-cyan-500/30 transition duration-300 flex flex-col justify-between group overflow-hidden shadow-2xl">
-                            <div>
-                                <img src="{{ asset('mission.png') }}" alt="" class="w-full h-full object-cover pointer-events-none" />
-                            </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-100 group-hover:text-cyan-400 transition mb-3">
+                    <div class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-cyan-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
+                        <div class="mb-8 overflow-hidden rounded-2xl">
+                            <img src="{{ asset('mission.png') }}" alt="Mission" class="w-full h-auto object-cover pointer-events-none" />
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h3 class="text-3xl font-extrabold text-slate-100 group-hover:text-cyan-400 transition mb-4">
                                 {{ __('landing.about.mission_title') }}
                             </h3>
-                            <p class="text-slate-400 text-sm leading-relaxed">
+                            <p class="text-slate-350 text-sm sm:text-base leading-relaxed max-w-md">
                                 {{ __('landing.about.mission_text') }}
                             </p>
                         </div>
                     </div>
 
                     <!-- Vision Card -->
-                    <div class="relative rounded-3xl bg-gradient-to-b from-slate-900/50 to-slate-950/60 border border-slate-800/80 p-8 hover:border-indigo-500/30 transition duration-300 flex flex-col justify-between group overflow-hidden shadow-2xl">
-                        <div>
-                            <img src="{{ asset('vision.png') }}" alt="" class="w-full h-full object-cover pointer-events-none" />
+                    <div class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-indigo-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
+                        <div class="mb-8 overflow-hidden rounded-2xl">
+                            <img src="{{ asset('vision.png') }}" alt="Vision" class="w-full h-auto object-cover pointer-events-none" />
                         </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-100 group-hover:text-indigo-400 transition mb-3">
+                        <div class="flex flex-col items-center">
+                            <h3 class="text-3xl font-extrabold text-slate-100 group-hover:text-indigo-400 transition mb-4">
                                 {{ __('landing.about.vision_title') }}
                             </h3>
-                            <p class="text-slate-400 text-sm leading-relaxed">
+                            <p class="text-slate-350 text-sm sm:text-base leading-relaxed max-w-md">
                                 {{ __('landing.about.vision_text') }}
                             </p>
                         </div>
@@ -252,39 +255,48 @@
                     </p>
                 </div>
 
-                <div class="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
-                    @foreach(__('landing.values.items') as $key => $value)
-                        <div class="flex flex-col items-center gap-4 bg-slate-900/40 border border-slate-800 p-6 rounded-2xl min-w-[180px] hover:border-cyan-500/40 transition duration-300">
-                            <div class="w-12 h-12 rounded-xl bg-slate-950 flex items-center justify-center border border-slate-800">
-                                <svg class="w-6 h-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <span class="text-sm font-bold text-slate-200 tracking-wide uppercase text-center">{{ $value }}</span>
-                        </div>
+                <div class="flex justify-center gap-6 max-w-7xl mx-auto">
+                    @foreach([
+                            ['text' => __('landing.values.items.quality'), 'icon' => @svg('iconsax-lin-medal', 'w-10 h-10'), "color" => "text-indigo-400"],
+                            ['text' => __('landing.values.items.innovation'), 'icon' => @svg('iconoir-light-bulb', 'w-10 h-10'), "color" => "text-sky-400"],
+                            ['text' => __('landing.values.items.customer_satisfaction'), 'icon' => @svg('bi-people', 'w-10 h-10'), "color" => "text-red-400"],
+                            ['text' => __('landing.values.items.teamwork'), 'icon' => @svg('lucide-handshake', 'w-10 h-10'), "color" => "text-orange-400"],
+                            ['text' => __('landing.values.items.transparency'), 'icon' => @svg('fluentui-shield-16-o', 'w-10 h-10'), "color" => "text-pink-400"]
+                        ] as $value)
+                                <div class="flex flex-col items-center gap-4 bg-slate-900/40 border border-slate-800 p-6 rounded-2xl min-w-60 hover:border-cyan-500/40 transition duration-300">
+                                    <div class="w-20 h-20 rounded-xl bg-slate-600/30 flex items-center justify-center border border-slate-800 p-4 {{$value['color']}}">
+                                        {{$value['icon']}}
+                                    </div>
+                                    <span class="text-base font-bold text-slate-200 tracking-wide uppercase text-center">{{ $value['text'] }}</span>
+                                </div>
                     @endforeach
                 </div>
             </div>
         </section>
 
         <!-- Our Services Section -->
-        <section id="services" class="py-20 bg-[#070b13] relative overflow-hidden">
+        <section id="services" class="py-24 bg-[#101133] relative overflow-hidden">
+            <!-- Glowing background gradient -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent -z-0 pointer-events-none"></div>
+            <div class="absolute top-[20%] left-[10%] w-[500px] h-[500px] rounded-full bg-blue-600/10 blur-[130px] pointer-events-none"></div>
+            <div class="absolute bottom-[20%] right-[10%] w-[600px] h-[600px] rounded-full bg-indigo-600/10 blur-[140px] pointer-events-none"></div>
+
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-cyan-400 border border-cyan-500/20 uppercase mb-4">
+                <div class="text-center max-w-4xl mx-auto mb-20">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-400 border border-sky-500/20 uppercase mb-4">
                         {{ __('landing.services.badge') }}
                     </span>
-                    <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-100 tracking-tight mb-6">
+                    <h2 class="text-4xl font-extrabold sm:text-5xl lg:text-6xl text-slate-100 tracking-tight mb-6">
                         {{ __('landing.services.title') }}
                     </h2>
-                    <p class="text-slate-400 leading-relaxed sm:text-lg">
+                    <p class="text-slate-400 leading-relaxed text-base sm:text-lg max-w-3xl mx-auto">
                         {{ __('landing.services.subtitle') }}
                     </p>
                 </div>
 
                 <!-- Services Grid (3 columns desktop, responsive) -->
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                     @php
                         $serviceIcons = [
                             'web' => '<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-.778.099-1.533.284-2.253m0 0A17.919 17.919 0 0 0 12 10.5a17.918 17.918 0 0 0 8.716-2.253"/></svg>',
@@ -298,26 +310,26 @@
 
                     @foreach(['web', 'mobile', 'ecommerce', 'education', 'erp_crm', 'ai'] as $service)
                         <!-- Service Card -->
-                        <div class="relative rounded-3xl bg-slate-900/40 backdrop-blur-md border border-slate-800/80 p-8 hover:border-indigo-500/35 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between shadow-lg">
+                        <div class="relative rounded-[32px] bg-slate-950/40 border border-slate-800/80 p-10 hover:border-blue-500/30 transition-all duration-300 group flex flex-col justify-between shadow-2xl">
                             <div>
                                 <!-- Icon Container -->
-                                <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-6 group-hover:bg-indigo-500 group-hover:text-white transition duration-300">
+                                <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-8 shadow-lg shadow-blue-600/20">
                                     {!! $serviceIcons[$service] !!}
                                 </div>
 
                                 <!-- Title -->
-                                <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition">
+                                <h3 class="text-2xl font-bold text-slate-100 mb-4 group-hover:text-cyan-400 transition">
                                     {{ __('landing.services.items.' . $service . '.title') }}
                                 </h3>
 
                                 <!-- Description -->
-                                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                <p class="text-slate-400 text-base leading-relaxed mb-8">
                                     {{ __('landing.services.items.' . $service . '.description') }}
                                 </p>
                             </div>
 
                             <!-- Bottom border/glow accent line -->
-                            <div class="w-10 h-1 bg-indigo-500/40 group-hover:w-full group-hover:bg-cyan-500/80 transition-all duration-500 rounded-full"></div>
+                            <div class="w-14 h-1.5 bg-blue-600/80 rounded-full"></div>
                         </div>
                     @endforeach
                 </div>
@@ -326,40 +338,120 @@
         </section>
 
         <!-- Why Choose Us Section -->
-        <section id="why-us" class="py-20 bg-[#05070c] relative overflow-hidden">
+        <section id="why-us" class="py-24 bg-[#111133] relative overflow-hidden">
+            <!-- Glowing background gradient -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-900/15 via-transparent to-transparent -z-0 pointer-events-none"></div>
+            <div class="absolute top-[20%] right-[10%] w-[500px] h-[500px] rounded-full bg-indigo-600/10 blur-[130px] pointer-events-none"></div>
+            <div class="absolute bottom-[20%] left-[10%] w-[600px] h-[600px] rounded-full bg-cyan-600/10 blur-[140px] pointer-events-none"></div>
+
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-indigo-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-indigo-400 border border-indigo-500/20 uppercase mb-4">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-indigo-400 border border-indigo-500/20 uppercase mb-4">
                         {{ __('landing.why_us.badge') }}
                     </span>
-                    <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-100 tracking-tight mb-6">
+                    <h2 class="text-4xl font-extrabold sm:text-5xl text-slate-100 tracking-tight mb-6">
                         {{ __('landing.why_us.title') }}
                     </h2>
-                    <p class="text-slate-400 leading-relaxed sm:text-lg">
+                    <p class="text-slate-400 leading-relaxed text-base sm:text-lg">
                         {{ __('landing.why_us.subtitle') }}
                     </p>
                 </div>
 
-                <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    @foreach(__('landing.why_us.items') as $key => $item)
-                        <div class="relative rounded-3xl bg-slate-900/30 border border-slate-800/80 p-8 hover:border-cyan-500/20 transition duration-300 group flex flex-col shadow-2xl">
-                            <h3 class="text-2xl font-bold text-slate-100 group-hover:text-cyan-400 transition mb-4">
-                                {{ $item['title'] }}
-                            </h3>
-                            <p class="text-slate-400 text-sm leading-relaxed mb-8">
-                                {{ $item['description'] }}
-                            </p>
-                            
+                @php
+                    $whyUsCards = [
+                        [
+                            'key' => 'expertise',
+                            'image' => 'specialized_expertise.png',
+                            'color' => 'text-cyan-400',
+                            'bg_bar' => 'bg-cyan-500',
+                            'border_hover' => 'hover:border-cyan-500/40',
+                            'bullet_border' => 'border-cyan-500/50',
+                            'bullet_bg' => 'bg-cyan-400',
+                        ],
+                        [
+                            'key' => 'solutions',
+                            'image' => 'integrated_solutions.png',
+                            'color' => 'text-rose-400',
+                            'bg_bar' => 'bg-rose-500',
+                            'border_hover' => 'hover:border-rose-500/40',
+                            'bullet_border' => 'border-rose-500/50',
+                            'bullet_bg' => 'bg-rose-400',
+                        ],
+                        [
+                            'key' => 'tech',
+                            'image' => 'advanced_technologies.png',
+                            'color' => 'text-indigo-400',
+                            'bg_bar' => 'bg-indigo-500',
+                            'border_hover' => 'hover:border-indigo-500/40',
+                            'bullet_border' => 'border-indigo-500/50',
+                            'bullet_bg' => 'bg-indigo-400',
+                        ],
+                        [
+                            'key' => 'pricing',
+                            'image' => 'competitve_pricing.png',
+                            'color' => 'text-purple-400',
+                            'bg_bar' => 'bg-purple-500',
+                            'border_hover' => 'hover:border-purple-500/40',
+                            'bullet_border' => 'border-purple-500/50',
+                            'bullet_bg' => 'bg-purple-400',
+                        ],
+                        [
+                            'key' => 'support',
+                            'image' => 'continuous_support.png',
+                            'color' => 'text-orange-400',
+                            'bg_bar' => 'bg-orange-500',
+                            'border_hover' => 'hover:border-orange-500/40',
+                            'bullet_border' => 'border-orange-500/50',
+                            'bullet_bg' => 'bg-orange-400',
+                        ],
+                        [
+                            'key' => 'partnership',
+                            'image' => 'true_partnership.png',
+                            'color' => 'text-fuchsia-400',
+                            'bg_bar' => 'bg-fuchsia-500',
+                            'border_hover' => 'hover:border-fuchsia-500/40',
+                            'bullet_border' => 'border-fuchsia-500/50',
+                            'bullet_bg' => 'bg-fuchsia-400',
+                        ],
+                    ];
+                @endphp
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    @foreach($whyUsCards as $card)
+                        @php
+                            $item = __('landing.why_us.items.' . $card['key']);
+                        @endphp
+                        <div class="relative rounded-[32px] bg-slate-950/40 border border-slate-800/80 p-8 sm:p-10 transition-all duration-300 group flex flex-col justify-between shadow-2xl {{ $card['border_hover'] }}">
+                            <div>
+                                <!-- Top Accent Bar -->
+                                <div class="w-14 h-1.5 {{ $card['bg_bar'] }} rounded-full mb-6"></div>
+
+                                <!-- Title -->
+                                <h3 class="text-2xl font-bold mb-4 tracking-tight {{ $card['color'] }}">
+                                    {{ $item['title'] }}
+                                </h3>
+
+                                <!-- Description -->
+                                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                                    {{ $item['description'] }}
+                                </p>
+
+                                <!-- Image Container -->
+                                <div class="flex justify-center my-8 h-40 relative">
+                                    <img src="{{ asset($card['image']) }}" alt="{{ $item['title'] }}" class="h-full object-contain pointer-events-none transition duration-500 group-hover:scale-105" />
+                                </div>
+                            </div>
+
+                            <!-- Features list -->
                             <div class="space-y-3 mt-auto">
                                 @foreach($item['features'] as $feature)
                                     <div class="flex items-center gap-3">
-                                        <div class="w-5 h-5 rounded-full bg-cyan-500/10 flex items-center justify-center shrink-0">
-                                            <svg class="w-3 h-3 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                                            </svg>
-                                        </div>
-                                        <span class="text-sm text-slate-300">{{ $feature }}</span>
+                                        <!-- Target circle bullet point -->
+                                        <span class="w-4 h-4 rounded-full border {{ $card['bullet_border'] }} flex items-center justify-center shrink-0">
+                                            <span class="w-1.5 h-1.5 rounded-full {{ $card['bullet_bg'] }}"></span>
+                                        </span>
+                                        <span class="text-sm sm:text-base text-slate-350">{{ $feature }}</span>
                                     </div>
                                 @endforeach
                             </div>
@@ -370,7 +462,7 @@
         </section>
 
         <!-- Our Products / Ready Systems Section -->
-        <section id="products" class="py-20 border-t border-slate-900/60 bg-gradient-to-b from-[#070b13] to-slate-950 relative">
+        <section id="products" class="] py-20 border-t border-slate-900/60 bg-radial bg-top from-[#32326e] to-[#101336] relative">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16">
@@ -433,7 +525,10 @@
         </section>
 
         <!-- Technologies We Use Section -->
-        <section class="py-20 bg-[#05070c] relative overflow-hidden">
+        <section class="py-24 bg-[#111133] relative overflow-hidden">
+            <!-- Glowing background elements inside the section -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-900/10 via-transparent to-transparent -z-0 pointer-events-none"></div>
+            
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16">
@@ -448,26 +543,77 @@
                     </p>
                 </div>
 
-                <!-- Slanted deck technology cards -->
-                <div class="flex flex-wrap justify-center items-center gap-4 md:gap-6 max-w-5xl mx-auto py-10 relative">
+                <!-- Slanted deck technology cards diminishing in size -->
+                <div class="flex flex-nowrap justify-center items-center -space-x-6 rtl:space-x-reverse py-16 px-4 max-w-full overflow-x-auto md:overflow-x-visible">
                     @php
                         $technologies = [
-                            ['name' => 'Nuxt', 'logo' => '<svg class="h-8 w-8 text-emerald-400" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 4.8L18.4 18H5.6L12 6.8z"/></svg>', 'rot' => '-rotate-6'],
-                            ['name' => 'Java', 'logo' => '<span class="text-xs font-extrabold text-red-500 tracking-wide font-sans">JAVA</span>', 'rot' => '-rotate-3'],
-                            ['name' => 'Obj-C', 'logo' => '<span class="text-[10px] font-black text-blue-500 tracking-wider font-sans">OBJ-C</span>', 'rot' => '-rotate-1'],
-                            ['name' => 'Flutter', 'logo' => '<svg class="h-8 w-8 text-cyan-400" viewBox="0 0 24 24" fill="currentColor"><path d="M14.3 2.3L5 11.6l3.5 3.5 9.3-9.3zM5 11.6l3.5 3.5 5.8-5.8L10.8 5.8z M8.5 15.1l5.8 5.8 3.5-3.5-9.3-9.3z"/></svg>', 'rot' => 'rotate-0 scale-110 z-10 border-indigo-500/50'],
-                            ['name' => 'Kotlin', 'logo' => '<span class="text-xs font-extrabold text-orange-400 tracking-wide font-sans">KOTLIN</span>', 'rot' => 'rotate-2'],
-                            ['name' => 'Swift', 'logo' => '<span class="text-xs font-extrabold text-amber-500 tracking-wide font-sans">SWIFT</span>', 'rot' => 'rotate-4'],
-                            ['name' => 'Laravel', 'logo' => '<svg class="h-8 w-8 text-red-600" viewBox="0 0 24 24" fill="currentColor"><path d="M5.4 3h13.2A2.4 2.4 0 0 1 21 5.4v13.2a2.4 2.4 0 0 1-2.4 2.4H5.4A2.4 2.4 0 0 1 3 18.6V5.4A2.4 2.4 0 0 1 5.4 3zm6.6 4.8l-3.6 3.6 1.8 1.8 1.8-1.8 1.8 1.8 1.8-1.8-3.6-3.6z"/></svg>', 'rot' => 'rotate-6'],
+                            [
+                                'name' => 'MySql',
+                                'logo' => '<img width="100" height="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />',
+                                'logo_class' => "",
+                                'class' => 'scale-75 -rotate-6 z-0 translate-y-4 translate-x-4 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                            ],
+                            [
+                                'name' => 'Flutter',
+                                'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />',
+                                'logo_class' => "",
+                                'class' => 'scale-85 -rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                            ],
+                            [
+                                'name' => 'React',
+                                'logo' => '<i class="devicon-react-original colored"></i>',
+                                'logo_class' => "text-7xl",
+                                'class' => 'scale-95 -rotate-2 z-20 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                            ],
+                            [
+                                'name' => 'Laravel',
+                                'logo' => '<i class="devicon-laravel-original colored"></i>',
+                                'logo_class' => "text-7xl",
+                                'class' => 'scale-110 rotate-0 z-30 shadow-2xl shadow-cyan-500/20 md:hover:scale-120',
+                            ],
+                            [
+                                'name' => 'Next',
+                                'logo' => '<i class="devicon-nextjs-plain"></i>',
+                                'logo_class' => "text-7xl",
+                                'class' => 'scale-95 rotate-2 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                            ],
+                            [
+                                'name' => 'Typescript',
+                                'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />',
+                                'logo_class' => "",
+                                'class' => 'scale-85 rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                            ],
+                            [
+                                'name' => 'Figma',
+                                'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />',
+                                'logo_class' => "",
+                                'class' => 'scale-75 rotate-6 translate-y-4 -translate-x-4 z-0 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0 md:hover:translate-y-0',
+                            ],
                         ];
                     @endphp
 
                     @foreach($technologies as $tech)
-                        <div class="w-28 h-36 md:w-32 md:h-40 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800/80 p-4 flex flex-col justify-between items-center text-center shadow-xl {{ $tech['rot'] }} hover:rotate-0 hover:scale-105 hover:border-cyan-500/40 hover:shadow-cyan-500/5 transition-all duration-300 group cursor-pointer">
-                            <div class="flex-grow flex items-center justify-center">
-                                {!! $tech['logo'] !!}
+                        <div class="w-28 h-36 md:w-48 md:h-56 flex-shrink-0 transition-all duration-500 ease-out {{ $tech['class'] }} group cursor-pointer relative">
+                            <!-- Card background with linear gradient -->
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#1c1d54] via-[#101132] to-[#06071f] border border-indigo-500/20 shadow-2xl transition-all duration-500 group-hover:border-cyan-400/40"></div>
+
+                            <!-- Outer card subtle gloss sheen reflection -->
+                            <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 opacity-30 group-hover:opacity-60 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
+
+                            <!-- Top glow -->
+                            <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(99,102,241,0.2),transparent_70%)] rounded-2xl pointer-events-none"></div>
+
+                            <!-- Dynamic glow on hover -->
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl bg-[radial-gradient(circle_at_50%_30%,rgba(6,182,212,0.15),transparent_60%)] pointer-events-none"></div>
+
+                            <!-- Inner content -->
+                            <div class="absolute inset-0 flex items-center justify-center p-4">
+                                <div class="relative w-full h-full flex items-center justify-center">
+                                    <div class="fallback-logo flex items-center justify-center transition-transform duration-500 group-hover:scale-110 {{ $tech['logo_class'] }}">
+                                        {!! $tech['logo'] !!}
+                                    </div>
+                                </div>
                             </div>
-                            <span class="text-xs font-semibold text-slate-400 group-hover:text-slate-200 transition font-sans">{{ $tech['name'] }}</span>
                         </div>
                     @endforeach
                 </div>
@@ -476,7 +622,7 @@
         </section>
 
         <!-- Our Portfolio Section -->
-        <section id="portfolio" class="py-20 bg-[#070b13] relative overflow-hidden">
+        <section id="portfolio" class="py-20 bg-[#111133] relative overflow-hidden">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16">
@@ -503,7 +649,7 @@
                                         <line x1="0" y1="0" x2="100" y2="100" stroke="currentColor"/>
                                         <line x1="100" y1="0" x2="0" y2="100" stroke="currentColor"/>
                                     </svg>
-                                    
+
                                     <div class="text-center z-10">
                                         <span class="text-[10px] text-slate-600 uppercase tracking-widest block mb-1 font-sans">Platform</span>
                                         <span class="text-xs font-extrabold text-indigo-400 font-sans">GOSOR PLATFORM</span>
@@ -543,59 +689,73 @@
             </div>
         </section>
 
-        <!-- Our Strategic Goals Section -->
-        <section id="goals" class="py-20 bg-[#05070c] relative">
+              <!-- Our Strategic Goals Section -->
+        <section id="goals" class="py-24 bg-[#111133] relative overflow-hidden">
+            <!-- Ambient glows for the section -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-indigo-600/5 blur-[120px] pointer-events-none"></div>
+
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-indigo-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-indigo-400 border border-indigo-500/20 uppercase mb-4 font-sans">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-[#132047]/45 border border-sky-500/30 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-400 uppercase mb-6 shadow-inner">
                         {{ __('landing.goals.badge') }}
                     </span>
-                    <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-100 tracking-tight mb-4">
+                    <h2 class="text-4xl font-extrabold sm:text-5xl text-slate-100 tracking-tight mb-6">
                         {{ __('landing.goals.title') }}
                     </h2>
-                    <p class="text-slate-400">
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
                         {{ __('landing.goals.subtitle') }}
                     </p>
                 </div>
 
                 <!-- Strategic Goals Grid -->
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                     @php
                         $goalMeta = [
                             'sustainability' => [
-                                'color' => 'from-orange-500/10 to-amber-500/5 text-orange-400 border-orange-500/20',
-                                'svg' => '<svg class="w-20 h-20 text-orange-500/15 group-hover:text-orange-500/25 transition duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.43l-1.003.828c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.954.26 1.43l-1.297 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.43l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 0 1 0-.255c.007-.378-.138-.75-.43-.991l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg>'
+                                'image' => 'sustainability.png',
+                                'gradient' => 'from-orange-500/[0.04] to-transparent',
+                                'glow' => 'bg-orange-500/10',
+                                'border' => 'border-orange-500/10 hover:border-orange-500/30 shadow-orange-500/5',
                             ],
                             'satisfaction' => [
-                                'color' => 'from-purple-500/10 to-indigo-500/5 text-purple-400 border-purple-500/20',
-                                'svg' => '<svg class="w-20 h-20 text-purple-500/15 group-hover:text-purple-500/25 transition duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm6.75 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Z"/></svg>'
+                                'image' => 'customer_satisfaction.png',
+                                'gradient' => 'from-purple-500/[0.04] to-transparent',
+                                'glow' => 'bg-purple-500/10',
+                                'border' => 'border-purple-500/10 hover:border-purple-500/30 shadow-purple-500/5',
                             ],
                             'innovation' => [
-                                'color' => 'from-pink-500/10 to-rose-500/5 text-pink-400 border-pink-500/20',
-                                'svg' => '<svg class="w-20 h-20 text-pink-500/15 group-hover:text-pink-500/25 transition duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 18a3.75 3.75 0 0 0 .495-7.467 5.99 5.99 0 0 0-1.925 3.546 5.974 5.974 0 0 1-2.133-1A3.75 3.75 0 0 0 12 18Z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.75 9.75c0 .071 0 .141.002.211a5.986 5.986 0 0 0 3.748-3.748 3.75 3.75 0 1 0-3.75 3.537Z"/></svg>'
+                                'image' => 'innovation.png',
+                                'gradient' => 'from-pink-500/[0.04] to-transparent',
+                                'glow' => 'bg-pink-500/10',
+                                'border' => 'border-pink-500/10 hover:border-pink-500/30 shadow-pink-500/5',
                             ],
                             'quality' => [
-                                'color' => 'from-cyan-500/10 to-blue-500/5 text-cyan-400 border-cyan-500/20',
-                                'svg' => '<svg class="w-20 h-20 text-cyan-500/15 group-hover:text-cyan-500/25 transition duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 18a3.75 3.75 0 0 0 .495-7.467 5.99 5.99 0 0 0-1.925 3.546 5.974 5.974 0 0 1-2.133-1A3.75 3.75 0 0 0 12 18Z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 3v1.5M12 18.75V21M5.25 12H3.75M20.25 12h-1.5M6.53 6.53l1.06 1.06M16.41 16.41l1.06 1.06M6.53 17.47l1.06-1.06M16.41 7.59l1.06-1.06"/></svg>'
+                                'image' => 'quality.png',
+                                'gradient' => 'from-cyan-500/[0.04] to-transparent',
+                                'glow' => 'bg-cyan-500/10',
+                                'border' => 'border-cyan-500/10 hover:border-cyan-500/30 shadow-cyan-500/5',
                             ]
                         ];
                     @endphp
 
                     @foreach(['sustainability', 'satisfaction', 'innovation', 'quality'] as $key)
-                        <div class="relative group rounded-3xl bg-gradient-to-b {{ $goalMeta[$key]['color'] }} border p-8 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-80 shadow-2xl overflow-hidden">
-                            <div>
-                                <h3 class="text-2xl font-bold text-slate-100 group-hover:text-cyan-300 transition mb-4">
+                        <div class="relative group rounded-[32px] bg-gradient-to-b {{ $goalMeta[$key]['gradient'] }} bg-[#080c1e]/40 border {{ $goalMeta[$key]['border'] }} px-6 py-10 hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between items-center text-center h-[480px] shadow-2xl overflow-hidden">
+                            <!-- Glowing orb on hover behind the image -->
+                            <div class="absolute -bottom-16 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full {{ $goalMeta[$key]['glow'] }} blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+                            <div class="flex flex-col items-center">
+                                <h3 class="text-2xl sm:text-3xl font-bold text-slate-100 tracking-tight mb-5 group-hover:text-white transition duration-300">
                                     {{ __('landing.goals.items.' . $key . '.title') }}
                                 </h3>
-                                <p class="text-slate-400 text-sm leading-relaxed">
+                                <p class="text-slate-400 text-sm sm:text-base leading-relaxed max-w-[280px] mx-auto">
                                     {{ __('landing.goals.items.' . $key . '.description') }}
                                 </p>
                             </div>
-                            
-                            <!-- Large background graphic -->
-                            <div class="absolute bottom-6 end-6 select-none pointer-events-none">
-                                {!! $goalMeta[$key]['svg'] !!}
+
+                            <!-- Image Container centered at the bottom -->
+                            <div class="w-full flex items-center justify-center h-40 mt-auto relative z-10 pb-2">
+                                <img src="{{ asset($goalMeta[$key]['image']) }}" alt="{{ __('landing.goals.items.' . $key . '.title') }}" class="h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-500" />
                             </div>
                         </div>
                     @endforeach
@@ -605,7 +765,7 @@
         </section>
 
         <!-- Testimonials / Success Stories Section -->
-        <section class="py-20 bg-[#070b13] relative overflow-hidden">
+        <section class="py-20 bg-[#111133] relative overflow-hidden">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16">
@@ -671,7 +831,7 @@
         </section>
 
         <!-- Let's Start a Conversation / Contact Section (Screenshot 2 layout) -->
-        <section id="contact" class="py-20 border-t border-slate-900/60 bg-gradient-to-b from-[#070b13] to-slate-950 relative overflow-hidden">
+        <section id="contact" class="py-20 bg-radial bg-top from-[#32326e] to-[#111133] relative overflow-hidden">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16">
@@ -819,7 +979,7 @@
     </main>
 
     <!-- Footer Section (Screenshot 1 Layout) -->
-    <footer class="border-t border-slate-900 bg-gradient-to-b from-slate-950 to-[#05070c] pt-20 pb-8 text-slate-400 relative overflow-hidden">
+    <footer class="bg-[#111133] pt-20 pb-8 text-slate-400 relative overflow-hidden">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             
             <!-- Grid Layout -->
@@ -827,23 +987,8 @@
                 
                 <!-- Column 1: Logo & description & Newsletter -->
                 <div class="lg:col-span-2 space-y-6">
-                    <div class="flex items-center">
-                        <svg class="h-8 w-auto text-cyan-400" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25 29C19.4772 29 15 24.5228 15 19C15 13.4772 19.4772 9 25 9C29.2 9 32.8 11.6 34.2 15.2L29.6 16.8C28.8 14.5 26.6 13.2 25 13.2C21.8 13.2 19.2 15.8 19.2 19C19.2 22.2 21.8 24.8 25 24.8C27.5 24.8 29.5 22.8 29.8 20.8H24.8V17H34V20.2C34 25 30 29 25 29Z" fill="currentColor"/>
-                            <circle cx="50" cy="19" r="7" stroke="currentColor" stroke-width="3" stroke-dasharray="28 8"/>
-                            <circle cx="50" cy="19" r="3" fill="currentColor"/>
-                            <path d="M72 11.5C69.5 10.5 66.5 11 65 12.5C63.5 14 64.5 16.5 66.5 17.5L69.5 19C72.5 20.5 73.5 23 72 25.5C70.5 28 66.5 28.5 64 27.5L65.2 23.5C67 24.2 68.8 24 69.5 23C70.2 22 69.8 20.8 68.2 20L65.2 18.5C62.2 17 61.2 14.5 62.7 12C64.2 9.5 68.2 9 70.8 10L72 11.5Z" fill="currentColor"/>
-                            <circle cx="89" cy="19" r="7" stroke="currentColor" stroke-width="3"/>
-                            <line x1="84" y1="19" x2="94" y2="19" stroke="currentColor" stroke-width="2"/>
-                            <path d="M103 10H112C116 10 118 12 118 15C118 17.5 116.5 19 114 19.5L118.5 28H113.5L109.5 20H106.8V28H103V10ZM106.8 16.5H111.5C112.8 16.5 113.8 16 113.8 14.8C113.8 13.5 112.8 13 111.5 13H106.8V16.5Z" fill="currentColor"/>
-                            <rect x="15" y="32" width="104" height="2" fill="url(#logo-gradient-footer)"/>
-                            <defs>
-                                <linearGradient id="logo-gradient-footer" x1="15" y1="32" x2="119" y2="32" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#22d3ee" stop-opacity="0.8"/>
-                                    <stop offset="1" stop-color="#4f46e5" stop-opacity="0"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                    <div class="flex items-center w-80 h-40">
+                        <img src="{{ asset('logo.png') }}" alt="logo" class="w-full h-full object-cover">
                     </div>
 
                     <p class="text-sm text-slate-400 max-w-sm leading-relaxed">

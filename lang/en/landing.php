@@ -64,6 +64,21 @@ return [
                 'description' => 'Modern technologies built for growth.',
                 'features' => ['Latest tech stack', 'High security', 'Scalable systems'],
             ],
+            'pricing' => [
+                'title' => 'Competitive Pricing',
+                'description' => 'Maximum value with exceptional quality.',
+                'features' => ['Cost-effective solutions', 'Transparent pricing', 'Strong ROI'],
+            ],
+            'support' => [
+                'title' => 'Continuous Support',
+                'description' => 'Dedicated support every step of the way.',
+                'features' => ['24/7 assistance', 'Quick response', 'Ongoing maintenance'],
+            ],
+            'partnership' => [
+                'title' => 'True Partnership',
+                'description' => 'Growing together through long-term collaboration.',
+                'features' => ['Trusted relationships', 'Shared success', 'Strategic guidance'],
+            ],
         ],
     ],
     'services' => [
