@@ -142,25 +142,25 @@
                 <div class="text-center max-w-4xl mx-auto">
                     
                     <!-- Decorative Badge -->
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-cyan-400 border border-cyan-500/20 uppercase mb-8">
+                    <span data-aos="fade-down" class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-cyan-400 border border-cyan-500/20 uppercase mb-8">
                         <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span>
                         {{ __('landing.hero.badge') }}
                     </span>
 
                     <!-- Large Title with custom gradients -->
-                    <h1 class="text-4xl font-extrabold sm:text-6xl lg:text-7xl leading-tight sm:leading-none tracking-tight mb-8">
+                    <h1 data-aos="zoom-out" data-aos-delay="200" class="text-4xl font-extrabold sm:text-6xl lg:text-7xl leading-tight sm:leading-none tracking-tight mb-8">
                         <span class="bg-gradient-to-r from-slate-100 via-cyan-100 to-indigo-200 bg-clip-text text-transparent">
                             {{ __('landing.hero.title') }}
                         </span>
                     </h1>
 
                     <!-- Paragraph Subtitle -->
-                    <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-10">
+                    <p data-aos="fade-up" data-aos-delay="400" class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-10">
                         {{ __('landing.hero.subtitle') }}
                     </p>
 
                     <!-- Call to Action Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20">
+                    <div data-aos="fade-up" data-aos-delay="600" class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20">
                         <!-- Primary CTA -->
                         <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-xl shadow-cyan-500/25 transition duration-300 hover:shadow-cyan-500/40 hover:scale-102">
                             <span>{{ __('landing.hero.cta_start') }}</span>
@@ -177,7 +177,7 @@
                     </div>
 
                     <!-- Statistics grid matching second screenshot -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto border-t border-slate-900 pt-16">
+                    <div data-aos="fade-up" data-aos-delay="800" class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto border-t border-slate-900 pt-16">
                         @foreach([
                                 ['value' => '100+', 'label' => __('landing.hero.stats.projects')],
                                 ['value' => '50+', 'label' => __('landing.hero.stats.clients')],
@@ -199,7 +199,7 @@
         <section id="about" class="py-20 bg-[#101133] relative overflow-hidden">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-400 border border-sky-500/20 uppercase mb-4">
                         {{ __('landing.about.badge') }}
                     </span>
@@ -215,7 +215,7 @@
                 <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto mb-24">
                     
                     <!-- Mission Card -->
-                    <div class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-cyan-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
+                    <div data-aos="fade-right" class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-cyan-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
                         <div class="mb-8 overflow-hidden rounded-2xl">
                             <img src="{{ asset('mission.png') }}" alt="Mission" class="w-full h-auto object-cover pointer-events-none" />
                         </div>
@@ -230,7 +230,7 @@
                     </div>
 
                     <!-- Vision Card -->
-                    <div class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-indigo-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
+                    <div data-aos="fade-left" class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-indigo-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
                         <div class="mb-8 overflow-hidden rounded-2xl">
                             <img src="{{ asset('vision.png') }}" alt="Vision" class="w-full h-auto object-cover pointer-events-none" />
                         </div>
@@ -246,7 +246,7 @@
                 </div>
 
                 <!-- Core Values Section -->
-                <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                     <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-100 tracking-tight mb-4">
                         {{ __('landing.values.title') }}
                     </h2>
@@ -262,8 +262,8 @@
                             ['text' => __('landing.values.items.customer_satisfaction'), 'icon' => @svg('bi-people', 'w-10 h-10'), "color" => "text-red-400"],
                             ['text' => __('landing.values.items.teamwork'), 'icon' => @svg('lucide-handshake', 'w-10 h-10'), "color" => "text-orange-400"],
                             ['text' => __('landing.values.items.transparency'), 'icon' => @svg('fluentui-shield-16-o', 'w-10 h-10'), "color" => "text-pink-400"]
-                        ] as $value)
-                                <div class="flex flex-col items-center gap-4 bg-slate-900/40 border border-slate-800 p-6 rounded-2xl min-w-60 hover:border-cyan-500/40 transition duration-300">
+                        ] as $index => $value)
+                                <div data-aos="zoom-in" data-aos-delay="{{ $index * 100 }}" class="flex flex-col items-center gap-4 bg-slate-900/40 border border-slate-800 p-6 rounded-2xl min-w-60 hover:border-cyan-500/40 transition duration-300">
                                     <div class="w-20 h-20 rounded-xl bg-slate-600/30 flex items-center justify-center border border-slate-800 p-4 {{$value['color']}}">
                                         {{$value['icon']}}
                                     </div>
@@ -283,7 +283,7 @@
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-4xl mx-auto mb-20">
+                <div class="text-center max-w-4xl mx-auto mb-20" data-aos="fade-up">
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-400 border border-sky-500/20 uppercase mb-4">
                         {{ __('landing.services.badge') }}
                     </span>
@@ -308,9 +308,9 @@
                         ];
                     @endphp
 
-                    @foreach(['web', 'mobile', 'ecommerce', 'education', 'erp_crm', 'ai'] as $service)
+                    @foreach(['web', 'mobile', 'ecommerce', 'education', 'erp_crm', 'ai'] as $index => $service)
                         <!-- Service Card -->
-                        <div class="relative rounded-[32px] bg-slate-950/40 border border-slate-800/80 p-10 hover:border-blue-500/30 transition-all duration-300 group flex flex-col justify-between shadow-2xl">
+                        <div data-aos="fade-up" data-aos-delay="{{ $index * 100 }}" class="relative rounded-[32px] bg-slate-950/40 border border-slate-800/80 p-10 hover:border-blue-500/30 transition-all duration-300 group flex flex-col justify-between shadow-2xl">
                             <div>
                                 <!-- Icon Container -->
                                 <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-8 shadow-lg shadow-blue-600/20">
@@ -346,7 +346,7 @@
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-20">
+                <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-indigo-400 border border-indigo-500/20 uppercase mb-4">
                         {{ __('landing.why_us.badge') }}
                     </span>
@@ -418,11 +418,11 @@
                 @endphp
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                    @foreach($whyUsCards as $card)
+                    @foreach($whyUsCards as $index => $card)
                         @php
                             $item = __('landing.why_us.items.' . $card['key']);
                         @endphp
-                        <div class="relative rounded-[32px] bg-slate-950/40 border border-slate-800/80 p-8 sm:p-10 transition-all duration-300 group flex flex-col justify-between shadow-2xl {{ $card['border_hover'] }}">
+                        <div data-aos="zoom-in-up" data-aos-delay="{{ ($index % 3) * 100 }}" class="relative rounded-[32px] bg-slate-950/40 border border-slate-800/80 p-8 sm:p-10 transition-all duration-300 group flex flex-col justify-between shadow-2xl {{ $card['border_hover'] }}">
                             <div>
                                 <!-- Top Accent Bar -->
                                 <div class="w-14 h-1.5 {{ $card['bg_bar'] }} rounded-full mb-6"></div>
@@ -465,7 +465,7 @@
         <section id="products" class="] py-20 border-t border-slate-900/60 bg-radial bg-top from-[#32326e] to-[#101336] relative">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-cyan-400 border border-cyan-500/20 uppercase mb-4">
                         {{ __('landing.products.badge') }}
                     </span>
@@ -480,7 +480,7 @@
                 <!-- Products Grid -->
                 <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                     @for($i = 0; $i < 4; $i++)
-                        <div class="relative rounded-3xl bg-slate-900/35 border border-slate-800/80 p-8 hover:border-indigo-500/25 transition duration-300 flex flex-col justify-between group overflow-hidden shadow-2xl">
+                        <div data-aos="{{ $i % 2 === 0 ? 'fade-right' : 'fade-left' }}" class="relative rounded-3xl bg-slate-900/35 border border-slate-800/80 p-8 hover:border-indigo-500/25 transition duration-300 flex flex-col justify-between group overflow-hidden shadow-2xl">
                             <div>
                                 <!-- Product Icon and Title Row -->
                                 <div class="flex items-center gap-4 mb-6">
@@ -531,7 +531,7 @@
             
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-indigo-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-indigo-400 border border-indigo-500/20 uppercase mb-4 font-sans">
                         {{ __('landing.tech.badge') }}
                     </span>
@@ -592,8 +592,8 @@
                         ];
                     @endphp
 
-                    @foreach($technologies as $tech)
-                        <div class="w-28 h-36 md:w-48 md:h-56 flex-shrink-0 transition-all duration-500 ease-out {{ $tech['class'] }} group cursor-pointer relative">
+                    @foreach($technologies as $index => $tech)
+                        <div data-aos="zoom-in" data-aos-delay="{{ $index * 100 }}" class="w-28 h-36 md:w-48 md:h-56 shrink-0 transition-all duration-500 ease-out {{ $tech['class'] }} group cursor-pointer relative">
                             <!-- Card background with linear gradient -->
                             <div class="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#1c1d54] via-[#101132] to-[#06071f] border border-indigo-500/20 shadow-2xl transition-all duration-500 group-hover:border-cyan-400/40"></div>
 
@@ -609,7 +609,7 @@
                             <!-- Inner content -->
                             <div class="absolute inset-0 flex items-center justify-center p-4">
                                 <div class="relative w-full h-full flex items-center justify-center">
-                                    <div class="fallback-logo flex items-center justify-center transition-transform duration-500 group-hover:scale-110 {{ $tech['logo_class'] }}">
+                                    <div class="flex items-center justify-center transition-all duration-500 group-hover:scale-110 {{ $tech['logo_class'] }}">
                                         {!! $tech['logo'] !!}
                                     </div>
                                 </div>
@@ -625,7 +625,7 @@
         <section id="portfolio" class="py-20 bg-[#111133] relative overflow-hidden">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-cyan-400 border border-cyan-500/20 uppercase mb-4">
                         {{ __('landing.portfolio.badge') }}
                     </span>
@@ -639,8 +639,8 @@
 
                 <!-- Portfolio project list -->
                 <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    @foreach(['project1', 'project2', 'project3'] as $projectKey)
-                        <div class="relative rounded-3xl bg-slate-900/30 border border-slate-800/80 p-6 hover:border-cyan-500/20 transition duration-300 group flex flex-col justify-between shadow-2xl">
+                    @foreach(['project1', 'project2', 'project3'] as $index => $projectKey)
+                        <div data-aos="fade-up" data-aos-delay="{{ $index * 150 }}" class="relative rounded-3xl bg-slate-900/30 border border-slate-800/80 p-6 hover:border-cyan-500/20 transition duration-300 group flex flex-col justify-between shadow-2xl">
                             <div>
                                 <!-- Image Placeholder Container -->
                                 <div class="w-full aspect-[4/3] rounded-2xl bg-slate-950/90 border border-slate-800 p-4 mb-6 relative overflow-hidden flex items-center justify-center">
@@ -696,7 +696,7 @@
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-20">
+                <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-[#132047]/45 border border-sky-500/30 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-400 uppercase mb-6 shadow-inner">
                         {{ __('landing.goals.badge') }}
                     </span>
@@ -739,8 +739,8 @@
                         ];
                     @endphp
 
-                    @foreach(['sustainability', 'satisfaction', 'innovation', 'quality'] as $key)
-                        <div class="relative group rounded-[32px] bg-gradient-to-b {{ $goalMeta[$key]['gradient'] }} bg-[#080c1e]/40 border {{ $goalMeta[$key]['border'] }} px-6 py-10 hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between items-center text-center h-[480px] shadow-2xl overflow-hidden">
+                    @foreach(['sustainability', 'satisfaction', 'innovation', 'quality'] as $index => $key)
+                        <div data-aos="flip-left" data-aos-delay="{{ $index * 150 }}" class="relative group rounded-[32px] bg-gradient-to-b {{ $goalMeta[$key]['gradient'] }} bg-[#080c1e]/40 border {{ $goalMeta[$key]['border'] }} px-6 py-10 hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between items-center text-center h-[480px] shadow-2xl overflow-hidden">
                             <!-- Glowing orb on hover behind the image -->
                             <div class="absolute -bottom-16 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full {{ $goalMeta[$key]['glow'] }} blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
@@ -768,7 +768,7 @@
         <section class="py-20 bg-[#111133] relative overflow-hidden">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-cyan-400 border border-cyan-500/20 uppercase mb-4">
                         {{ __('landing.testimonials.badge') }}
                     </span>
@@ -781,7 +781,7 @@
                 </div>
 
                 <!-- Testimonial Slider Panel -->
-                <div class="relative max-w-4xl mx-auto">
+                <div class="relative max-w-4xl mx-auto" data-aos="zoom-in">
                     <!-- Left Slide Arrow -->
                     <button type="button" class="absolute start-[-20px] md:start-[-60px] top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
                         <svg class="h-5 w-5 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
@@ -834,7 +834,7 @@
         <section id="contact" class="py-20 bg-radial bg-top from-[#32326e] to-[#111133] relative overflow-hidden">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-cyan-400 border border-cyan-500/20 uppercase mb-4 font-sans">
                         {{ __('landing.contact.badge') }}
                     </span>
@@ -850,7 +850,7 @@
                 <div class="grid lg:grid-cols-5 gap-12 max-w-6xl mx-auto items-start">
                     
                     <!-- Left Side Details: Location, Phone, Website, Follow Us Cards -->
-                    <div class="lg:col-span-2 space-y-6">
+                    <div class="lg:col-span-2 space-y-6" data-aos="fade-right">
                         <!-- Location Card -->
                         <div class="relative rounded-2xl bg-slate-900/40 border border-slate-800/80 p-5 flex items-center gap-4 hover:border-cyan-500/20 transition-all duration-300">
                             <div class="w-11 h-11 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
@@ -908,7 +908,7 @@
                     </div>
 
                     <!-- Right Side Input Form -->
-                    <div class="lg:col-span-3 rounded-3xl bg-slate-900/30 border border-slate-800/80 p-8 backdrop-blur-md shadow-2xl relative">
+                    <div class="lg:col-span-3 rounded-3xl bg-slate-900/30 border border-slate-800/80 p-8 backdrop-blur-md shadow-2xl relative" data-aos="fade-left">
                         <!-- Subtle border flare -->
                         <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
 
@@ -980,7 +980,7 @@
 
     <!-- Footer Section (Screenshot 1 Layout) -->
     <footer class="bg-[#111133] pt-20 pb-8 text-slate-400 relative overflow-hidden">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10" data-aos="fade-up">
             
             <!-- Grid Layout -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-slate-900">
