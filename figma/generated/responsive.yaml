@@ -1,0 +1,5552 @@
+screen:
+  name: Responsive
+  children:
+  - type: row
+    id: 50:749
+    x: -43083.0
+    y: 15493.0
+    padding: 16.0
+    spacing: 155.9779510498047
+    background: '#2E3192'
+    width: 375.0
+    height: 64.0
+    children:
+    - type: container
+      width: 101.0
+      height: 42.314212799072266
+      id: 50:750
+      x: -43067.0
+      y: 15503.8427734375
+    - type: icon
+      name: Button
+      id: 50:1136
+      url: assets/icons/button.svg
+      width: 40.0
+      height: 40.0
+  - type: container
+    width: 375.0
+    height: 792.0
+    id: 50:779
+    x: -43083.0
+    y: 15551.0
+  - type: column
+    id: 50:818
+    x: -43068.0
+    y: 15597.0
+    spacing: 32.0
+    background: '#000000'
+    width: 345.0
+    height: 667.0
+    children:
+    - type: column
+      id: 50:798
+      x: -43057.0
+      y: 15597.0
+      spacing: 35.0
+      background: '#000000'
+      width: 323.0
+      height: 453.0
+      children:
+      - type: column
+        id: 50:789
+        x: -43057.0
+        y: 15597.0
+        spacing: 16.0
+        background: '#000000'
+        width: 323.0
+        height: 306.0
+        children:
+        - type: column
+          id: 50:785
+          x: -43057.0
+          y: 15597.0
+          spacing: 8.0
+          background: '#000000'
+          width: 323.0
+          height: 160.0
+          children:
+          - type: text
+            value: "Building Smart Software \n Solutions for the Future"
+            id: 50:786
+            x: -43057.0
+            y: 15597.0
+            size: 35.0
+            fontWeight: 700
+            fontFamily: Montserrat
+            align: center
+        - type: text
+          value: We help businesses accelerate growth through custom software development,
+            AI-powered solutions, enterprise systems, and digital transformation services.
+          id: 50:787
+          x: -43057.0
+          y: 15773.0
+          size: 18.0
+          fontWeight: 400
+          fontFamily: Montserrat
+          color: '#BFC8E6'
+          align: center
+      - type: column
+        id: 50:790
+        x: -43057.0
+        y: 15938.0
+        spacing: 16.0
+        alignment: center
+        background: '#000000'
+        width: 323.0
+        height: 112.0
+        children:
+        - type: button
+          label: Start Your Project
+          id: 50:791
+          x: -43057.0
+          y: 15938.0
+          background: '#000000'
+          radius: 16.0
+          width: 323.0
+          height: 48.0
+        - type: button
+          label: Explore Solutions
+          id: 50:796
+          x: -43057.0
+          y: 16002.0
+          background: '#0B0D21'
+          radius: 16.0
+          width: 323.0
+          height: 48.0
+    - type: column
+      id: 50:799
+      x: -43068.0
+      y: 16082.0
+      spacing: 24.0
+      alignment: center
+      background: '#000000'
+      width: 345.0
+      height: 182.0
+      children:
+      - type: row
+        id: 50:812
+        x: -43068.0
+        y: 16082.0
+        spacing: 24.0
+        background: '#000000'
+        width: 345.0
+        height: 79.0
+        children:
+        - type: column
+          id: 50:800
+          x: -43068.0
+          y: 16082.0
+          spacing: 7.62939453125e-06
+          background: '#000000'
+          width: 172.5
+          height: 79.0
+          children:
+          - type: text
+            value: 100+
+            id: 50:801
+            x: -43022.75
+            y: 16082.0
+            size: 35.0
+            fontWeight: 700
+            fontFamily: Montserrat
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: Projects Completed
+            id: 50:802
+            x: -43060.75
+            y: 16122.0
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Poppins
+            color: '#D1D5DC'
+            align: center
+        - type: column
+          id: 50:803
+          x: -42895.5
+          y: 16082.0
+          spacing: 7.62939453125e-06
+          background: '#000000'
+          width: 172.5
+          height: 79.0
+          children:
+          - type: text
+            value: 50+
+            id: 50:804
+            x: -42835.75
+            y: 16082.0
+            size: 28.0
+            fontWeight: 700
+            fontFamily: Montserrat
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: Client
+            id: 50:805
+            x: -42832.75
+            y: 16118.0
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Poppins
+            color: '#D1D5DC'
+            align: center
+      - type: row
+        id: 50:813
+        x: -43068.0
+        y: 16185.0
+        spacing: 24.0
+        background: '#000000'
+        width: 345.0
+        height: 79.0
+        children:
+        - type: column
+          id: 50:806
+          x: -43068.0
+          y: 16185.0
+          spacing: 7.62939453125e-06
+          background: '#000000'
+          width: 172.5
+          height: 79.0
+          children:
+          - type: text
+            value: 50+
+            id: 50:807
+            x: -43014.75
+            y: 16185.0
+            size: 35.0
+            fontWeight: 700
+            fontFamily: Montserrat
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: Team Members
+            id: 50:808
+            x: -43044.75
+            y: 16225.0
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Poppins
+            color: '#D1D5DC'
+            align: center
+        - type: column
+          id: 50:809
+          x: -42895.5
+          y: 16185.0
+          spacing: 7.62939453125e-06
+          background: '#000000'
+          width: 172.5
+          height: 79.0
+          children:
+          - type: text
+            value: 95%
+            id: 50:810
+            x: -42838.75
+            y: 16185.0
+            size: 28.0
+            fontWeight: 700
+            fontFamily: Montserrat
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: Client Satisfaction
+            id: 50:811
+            x: -42881.75
+            y: 16221.0
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Poppins
+            color: '#D1D5DC'
+            align: center
+  - type: column
+    id: 50:967
+    x: -43076.4296875
+    y: 16342.0
+    spacing: 32.0
+    background: '#000000'
+    width: 375.0
+    height: 1827.722900390625
+    children:
+    - type: column
+      id: 50:881
+      x: -43076.4296875
+      y: 16342.0
+      spacing: 40.0
+      background: '#000000'
+      width: 375.0
+      height: 1208.03369140625
+      children:
+      - type: column
+        id: 50:833
+        x: -43076.4296875
+        y: 16342.0
+        spacing: 16.0
+        background: '#000000'
+        width: 375.0
+        height: 273.3445739746094
+        children:
+        - type: button
+          label: About Us
+          id: 50:834
+          x: -42938.6015625
+          y: 16342.0
+          background: '#000000'
+          radius: 22558400.0
+          width: 99.34458923339844
+          height: 37.34458541870117
+        - type: column
+          id: 50:830
+          x: -43060.4296875
+          y: 16395.34375
+          spacing: 16.0
+          background: '#000000'
+          width: 343.0
+          height: 220.0
+          children:
+          - type: text
+            value: Who We Are
+            id: 50:831
+            x: -43060.4296875
+            y: 16395.34375
+            size: 28.0
+            fontWeight: 700
+            fontFamily: Montserrat
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: Gosor Solutions is a leading software development and artificial
+              intelligence company dedicated to delivering innovative digital solutions
+              that empower businesses, educational institutions, and organizations
+              to grow faster, operate smarter, and achieve measurable success.
+            id: 50:832
+            x: -43060.4296875
+            y: 16447.34375
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Montserrat
+            color: '#BFC8E6'
+            align: center
+      - type: column
+        id: 50:880
+        x: -43060.4296875
+        y: 16655.34375
+        spacing: 24.0
+        background: '#000000'
+        width: 343.0
+        height: 894.6891479492188
+        children:
+        - type: column
+          id: 50:843
+          x: -43060.4296875
+          y: 16655.34375
+          padding: 24.0
+          background: '#000000'
+          radius: 24.0
+          width: 343.0
+          height: 423.3445739746094
+          children:
+          - type: column
+            id: 50:844
+            x: -43043.7578125
+            y: 16688.015625
+            spacing: 32.0
+            alignment: center
+            background: '#000000'
+            width: 309.6554260253906
+            height: 358.0
+            children:
+            - type: image
+              name: Image [home-feature_image]
+              id: 50:845
+              url: assets/images/image_home-feature_image.png
+              width: 309.6554260253906
+              height: 202.0
+              x: -43043.7578125
+              y: 16688.015625
+            - type: column
+              id: 50:846
+              x: -43044.4296875
+              y: 16922.015625
+              spacing: 16.0
+              alignment: center
+              background: '#000000'
+              width: 311.0
+              height: 124.0
+              children:
+              - type: text
+                value: Mission
+                id: 50:847
+                x: -42944.4296875
+                y: 16922.015625
+                size: 28.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Deliver high-quality software, AI solutions, and digital services
+                  that create real business value.
+                id: 50:848
+                x: -43044.4296875
+                y: 16974.015625
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#BFC8E6'
+                align: center
+        - type: column
+          id: 50:849
+          x: -43060.4296875
+          y: 17102.6875
+          padding: 24.0
+          background: '#000000'
+          radius: 24.0
+          width: 343.0
+          height: 447.3445739746094
+          children:
+          - type: column
+            id: 50:850
+            x: -43043.7578125
+            y: 17135.359375
+            spacing: 32.0
+            alignment: center
+            background: '#000000'
+            width: 309.6554260253906
+            height: 382.0
+            children:
+            - type: stack
+              id: 50:875
+              x: -43043.9296875
+              y: 17135.359375
+              background: '#000000'
+              width: 310.0
+              height: 202.0
+              children:
+              - type: stack
+                id: 50:879
+                x: -43043.4296875
+                y: 17135.6875
+                background: '#000000'
+                width: 310.0
+                height: 202.0
+                children:
+                - type: image
+                  name: Image [home-feature_image]
+                  id: 50:876
+                  url: assets/images/image_home-feature_image.png
+                  width: 310.0
+                  height: 202.0
+                  x: -43043.4296875
+                  y: 17135.6875
+            - type: column
+              id: 50:852
+              x: -43044.4296875
+              y: 17369.359375
+              spacing: 16.0
+              alignment: center
+              background: '#000000'
+              width: 311.0
+              height: 148.0
+              children:
+              - type: text
+                value: Vision
+                id: 50:853
+                x: -42933.9296875
+                y: 17369.359375
+                size: 28.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Become the leading software and AI solutions provider in the
+                  Arab region through innovation, quality, and long-term partnerships.
+                id: 50:854
+                x: -43044.4296875
+                y: 17421.359375
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#BFC8E6'
+                align: center
+    - type: column
+      id: 50:966
+      x: -43061.4296875
+      y: 17582.033203125
+      spacing: 40.0
+      background: '#000000'
+      width: 345.0
+      height: 587.689208984375
+      children:
+      - type: column
+        id: 50:885
+        x: -43061.4296875
+        y: 17582.033203125
+        spacing: 8.0
+        background: '#000000'
+        width: 345.0
+        height: 64.0
+        children:
+        - type: text
+          value: Core Values
+          id: 50:882
+          x: -43061.4296875
+          y: 17582.033203125
+          size: 28.0
+          fontWeight: 700
+          fontFamily: Montserrat
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: The principles that guide everything we do
+          id: 50:884
+          x: -43061.4296875
+          y: 17626.033203125
+          size: 14.0
+          fontWeight: 400
+          fontFamily: Montserrat
+          color: '#FFFFFF'
+          align: center
+      - type: column
+        id: 50:965
+        x: -43061.4296875
+        y: 17686.033203125
+        spacing: 24.0
+        background: '#000000'
+        width: 345.0
+        height: 483.6891784667969
+        children:
+        - type: row
+          id: 50:919
+          x: -43061.4296875
+          y: 17686.033203125
+          spacing: 19.0
+          background: '#000000'
+          width: 345.0
+          height: 145.34458923339844
+          children:
+          - type: column
+            id: 50:886
+            x: -43061.4296875
+            y: 17686.037109375
+            padding: 24.0
+            alignment: center
+            background: '#000000'
+            radius: 16.0
+            width: 162.0
+            height: 145.33843994140625
+            children:
+            - type: column
+              id: 50:887
+              x: -43042.4296875
+              y: 17710.70703125
+              spacing: 8.0
+              background: '#000000'
+              width: 124.0
+              height: 96.0
+              children:
+              - type: column
+                id: 50:888
+                x: -43042.4296875
+                y: 17710.70703125
+                background: '#000000'
+                width: 124.0
+                height: 64.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 50:889
+                  url: assets/icons/container.svg
+                  width: 64.0
+                  height: 64.0
+              - type: text
+                value: Innovation
+                id: 50:895
+                x: -43024.9296875
+                y: 17782.70703125
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: center
+          - type: column
+            id: 50:905
+            x: -42878.4296875
+            y: 17686.033203125
+            padding: 24.0
+            alignment: center
+            background: '#000000'
+            radius: 16.0
+            width: 162.0
+            height: 145.34458923339844
+            children:
+            - type: column
+              id: 50:906
+              x: -42859.4296875
+              y: 17710.705078125
+              spacing: 8.0
+              background: '#000000'
+              width: 124.0
+              height: 96.0
+              children:
+              - type: column
+                id: 50:907
+                x: -42859.4296875
+                y: 17710.705078125
+                background: '#000000'
+                width: 124.0
+                height: 64.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 50:914
+                  url: assets/icons/container.svg
+                  width: 64.0
+                  height: 64.0
+              - type: text
+                value: Quality
+                id: 50:913
+                x: -42826.9296875
+                y: 17782.705078125
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: center
+        - type: column
+          id: 50:944
+          x: -43061.4296875
+          y: 17855.376953125
+          padding: 24.0
+          alignment: center
+          background: '#000000'
+          radius: 16.0
+          width: 345.0
+          height: 145.0
+          children:
+          - type: column
+            id: 50:945
+            x: -42950.9296875
+            y: 17879.876953125
+            spacing: 8.0
+            background: '#000000'
+            width: 124.0
+            height: 96.0
+            children:
+            - type: column
+              id: 50:946
+              x: -42950.9296875
+              y: 17879.876953125
+              background: '#000000'
+              width: 124.0
+              height: 64.0
+              children:
+              - type: icon
+                name: Container
+                id: 50:947
+                url: assets/icons/container.svg
+                width: 64.0
+                height: 64.0
+            - type: text
+              value: Customer Satisfaction
+              id: 50:952
+              x: -42980.4296875
+              y: 17951.876953125
+              size: 16.0
+              fontWeight: 600
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: center
+        - type: row
+          id: 50:920
+          x: -43061.4296875
+          y: 18024.376953125
+          spacing: 19.0
+          background: '#000000'
+          width: 345.0
+          height: 145.34458923339844
+          children:
+          - type: column
+            id: 50:921
+            x: -43061.4296875
+            y: 18024.380859375
+            padding: 24.0
+            alignment: center
+            background: '#000000'
+            radius: 16.0
+            width: 162.0
+            height: 145.33843994140625
+            children:
+            - type: column
+              id: 50:922
+              x: -43042.4296875
+              y: 18049.05078125
+              spacing: 8.0
+              background: '#000000'
+              width: 124.0
+              height: 96.0
+              children:
+              - type: column
+                id: 50:923
+                x: -43042.4296875
+                y: 18049.05078125
+                background: '#000000'
+                width: 124.0
+                height: 64.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 50:953
+                  url: assets/icons/container.svg
+                  width: 64.0
+                  height: 64.0
+              - type: text
+                value: Teamwork
+                id: 50:929
+                x: -43023.9296875
+                y: 18121.05078125
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: center
+          - type: column
+            id: 50:930
+            x: -42878.4296875
+            y: 18024.376953125
+            padding: 24.0
+            alignment: center
+            background: '#000000'
+            radius: 16.0
+            width: 162.0
+            height: 145.34458923339844
+            children:
+            - type: column
+              id: 50:931
+              x: -42859.4296875
+              y: 18049.048828125
+              spacing: 8.0
+              background: '#000000'
+              width: 124.0
+              height: 96.0
+              children:
+              - type: column
+                id: 50:932
+                x: -42859.4296875
+                y: 18049.048828125
+                background: '#000000'
+                width: 124.0
+                height: 64.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 50:961
+                  url: assets/icons/container.svg
+                  width: 64.0
+                  height: 64.0
+              - type: text
+                value: Transparency
+                id: 50:937
+                x: -42852.9296875
+                y: 18121.048828125
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: center
+  - type: column
+    id: 50:1638
+    x: -43075.9296875
+    y: 18249.72265625
+    padding: 48.0
+    spacing: 8.0
+    alignment: center
+    background: '#000000'
+    width: 374.0
+    height: 2373.344482421875
+    children:
+    - type: column
+      id: 50:1639
+      x: -43076.4296875
+      y: 18329.72265625
+      spacing: 32.0
+      background: '#000000'
+      width: 375.0
+      height: 2213.344482421875
+      children:
+      - type: column
+        id: 50:1640
+        x: -43076.4296875
+        y: 18329.72265625
+        spacing: 16.0
+        background: '#000000'
+        width: 375.0
+        height: 249.34458923339844
+        children:
+        - type: button
+          label: Our Services
+          id: 50:1641
+          x: -42950.6015625
+          y: 18329.72265625
+          background: '#000000'
+          radius: 22558400.0
+          width: 123.34458923339844
+          height: 37.34458541870117
+        - type: column
+          id: 50:1643
+          x: -43060.4296875
+          y: 18383.06640625
+          spacing: 16.0
+          background: '#000000'
+          width: 343.0
+          height: 196.0
+          children:
+          - type: text
+            value: Comprehensive Solutions for Your Business
+            id: 50:1644
+            x: -43060.4296875
+            y: 18383.06640625
+            size: 28.0
+            fontWeight: 700
+            fontFamily: Montserrat
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: From concept to deployment, we deliver end-to-end technology solutions
+              tailored to your unique needs
+            id: 50:1645
+            x: -43060.4296875
+            y: 18507.06640625
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Montserrat
+            color: '#BFC8E6'
+            align: center
+      - type: column
+        id: 50:1646
+        x: -43060.4296875
+        y: 18611.06640625
+        spacing: 24.0
+        background: '#000000'
+        width: 343.0
+        height: 1932.0
+        children:
+        - type: column
+          id: 50:1647
+          x: -43060.4296875
+          y: 18611.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 302.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 50:1648
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 50:1653
+            x: -43036.4296875
+            y: 18731.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 122.0
+            children:
+            - type: text
+              value: Web Development
+              id: 50:1654
+              x: -43036.4296875
+              y: 18731.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: Building fast, secure, and scalable websites tailored to your
+                business goals.
+              id: 50:1655
+              x: -43036.4296875
+              y: 18781.06640625
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+          - type: icon
+            name: Container
+            id: 50:1656
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+        - type: column
+          id: 50:1657
+          x: -43060.4296875
+          y: 18937.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 302.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 50:1658
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 50:1663
+            x: -43036.4296875
+            y: 19057.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 122.0
+            children:
+            - type: text
+              value: Web Development
+              id: 50:1664
+              x: -43036.4296875
+              y: 19057.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: Building fast, secure, and scalable websites tailored to your
+                business goals.
+              id: 50:1665
+              x: -43036.4296875
+              y: 19107.06640625
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+          - type: icon
+            name: Container
+            id: 50:1666
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+        - type: column
+          id: 50:1667
+          x: -43060.4296875
+          y: 19263.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 302.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 50:1668
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 50:1673
+            x: -43036.4296875
+            y: 19383.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 122.0
+            children:
+            - type: text
+              value: Web Development
+              id: 50:1674
+              x: -43036.4296875
+              y: 19383.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: Building fast, secure, and scalable websites tailored to your
+                business goals.
+              id: 50:1675
+              x: -43036.4296875
+              y: 19433.06640625
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+          - type: icon
+            name: Container
+            id: 50:1676
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+        - type: column
+          id: 50:1677
+          x: -43060.4296875
+          y: 19589.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 302.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 50:1678
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 50:1683
+            x: -43036.4296875
+            y: 19709.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 122.0
+            children:
+            - type: text
+              value: Web Development
+              id: 50:1684
+              x: -43036.4296875
+              y: 19709.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: Building fast, secure, and scalable websites tailored to your
+                business goals.
+              id: 50:1685
+              x: -43036.4296875
+              y: 19759.06640625
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+          - type: icon
+            name: Container
+            id: 50:1686
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+        - type: column
+          id: 50:1687
+          x: -43060.4296875
+          y: 19915.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 302.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 50:1688
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 50:1693
+            x: -43036.4296875
+            y: 20035.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 122.0
+            children:
+            - type: text
+              value: Web Development
+              id: 50:1694
+              x: -43036.4296875
+              y: 20035.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: Building fast, secure, and scalable websites tailored to your
+                business goals.
+              id: 50:1695
+              x: -43036.4296875
+              y: 20085.06640625
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+          - type: icon
+            name: Container
+            id: 50:1696
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+        - type: column
+          id: 50:1697
+          x: -43060.4296875
+          y: 20241.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 302.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 50:1698
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 50:1703
+            x: -43036.4296875
+            y: 20361.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 122.0
+            children:
+            - type: text
+              value: Web Development
+              id: 50:1704
+              x: -43036.4296875
+              y: 20361.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: Building fast, secure, and scalable websites tailored to your
+                business goals.
+              id: 50:1705
+              x: -43036.4296875
+              y: 20411.06640625
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: left
+          - type: icon
+            name: Container
+            id: 50:1706
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+  - type: column
+    id: 50:1483
+    x: -43076.4296875
+    y: 20703.06640625
+    spacing: 32.0
+    background: '#000000'
+    width: 375.0
+    height: 4079.344482421875
+    children:
+    - type: column
+      id: 50:1142
+      x: -43076.4296875
+      y: 20703.06640625
+      spacing: 16.0
+      background: '#000000'
+      width: 375.0
+      height: 189.34458923339844
+      children:
+      - type: button
+        label: Why Choose Us
+        id: 50:1143
+        x: -42961.6015625
+        y: 20703.06640625
+        background: '#000000'
+        radius: 22558400.0
+        width: 145.34458923339844
+        height: 37.34458541870117
+      - type: column
+        id: 50:1145
+        x: -43060.4296875
+        y: 20756.41015625
+        spacing: 16.0
+        background: '#000000'
+        width: 343.0
+        height: 136.0
+        children:
+        - type: text
+          value: Your Trusted Technology Partner
+          id: 50:1146
+          x: -43060.4296875
+          y: 20756.41015625
+          size: 28.0
+          fontWeight: 700
+          fontFamily: Montserrat
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: We combine expertise, innovation, and dedication to deliver exceptional
+            results
+          id: 50:1147
+          x: -43060.4296875
+          y: 20844.41015625
+          size: 16.0
+          fontWeight: 400
+          fontFamily: Montserrat
+          color: '#BFC8E6'
+          align: center
+    - type: column
+      id: 50:1342
+      x: -43060.4296875
+      y: 20924.41015625
+      spacing: 32.0
+      background: '#000000'
+      width: 343.0
+      height: 3858.0
+      children:
+      - type: column
+        id: 50:1232
+        x: -43060.4296875
+        y: 20924.41015625
+        background: '#000000'
+        width: 343.0
+        height: 612.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 50:1233
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 612.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#52BBE7'
+          id: 50:1235
+          x: -42940.37890625
+          y: 20924.41015625
+        - type: column
+          id: 50:1236
+          x: -43065.4296875
+          y: 20924.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 353.0
+          height: 612.0
+          children:
+          - type: column
+            id: 50:1237
+            x: -43065.4296875
+            y: 20948.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 353.0
+            height: 349.0
+            children:
+            - type: column
+              id: 50:1238
+              x: -43065.4296875
+              y: 20948.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 98.0
+              children:
+              - type: text
+                value: Specialized Expertise
+                id: 50:1239
+                x: -43021.9296875
+                y: 20948.41015625
+                size: 24.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#52BBE7'
+                align: center
+              - type: text
+                value: A team of experts delivering tailored technology solutions.
+                id: 50:1240
+                x: -43065.4296875
+                y: 20994.41015625
+                size: 18.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 50:1241
+              x: -42988.859375
+              y: 21094.41015625
+              background: '#000000'
+              width: 199.85873413085938
+              height: 133.38185119628906
+              children:
+              - type: icon
+                name: Vector
+                id: 50:1242
+                url: assets/icons/vector_50_1242.svg
+                width: 64.99609375
+                height: 65.01126861572266
+              - type: stack
+                id: 50:1243
+                x: -42948.23828125
+                y: 21174.55078125
+                background: '#000000'
+                width: 118.86663818359375
+                height: 53.24235153198242
+                children:
+                - type: stack
+                  id: 50:1244
+                  x: -42948.23828125
+                  y: 21174.55078125
+                  background: '#000000'
+                  width: 118.86663818359375
+                  height: 53.24235153198242
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1245
+                    url: assets/icons/vector_50_1245.svg
+                    width: 118.86663818359375
+                    height: 53.24235153198242
+                - type: stack
+                  id: 50:1246
+                  x: -42948.0859375
+                  y: 21175.025390625
+                  background: '#000000'
+                  width: 118.70883178710938
+                  height: 52.767066955566406
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1247
+                    url: assets/icons/vector_50_1247.svg
+                    width: 118.70883178710938
+                    height: 52.767066955566406
+              - type: stack
+                id: 50:1248
+                x: -42962.21875
+                y: 21094.41015625
+                background: '#000000'
+                width: 56.71415328979492
+                height: 65.37847137451172
+                children:
+                - type: stack
+                  id: 50:1249
+                  x: -42962.21875
+                  y: 21094.41015625
+                  background: '#000000'
+                  width: 56.71415328979492
+                  height: 65.37847137451172
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1250
+                    url: assets/icons/vector_50_1250.svg
+                    width: 56.71415328979492
+                    height: 65.37847137451172
+                - type: stack
+                  id: 50:1251
+                  x: -42962.0078125
+                  y: 21094.474609375
+                  background: '#000000'
+                  width: 56.36666488647461
+                  height: 65.01126861572266
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1252
+                    url: assets/icons/vector_50_1252.svg
+                    width: 56.36666488647461
+                    height: 65.01126861572266
+              - type: stack
+                id: 50:1253
+                x: -42988.859375
+                y: 21158.236328125
+                background: '#000000'
+                width: 49.946571350097656
+                height: 52.829620361328125
+                children:
+                - type: stack
+                  id: 50:1254
+                  x: -42988.859375
+                  y: 21158.236328125
+                  background: '#000000'
+                  width: 49.946571350097656
+                  height: 52.829620361328125
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1255
+                    url: assets/icons/vector_50_1255.svg
+                    width: 49.946571350097656
+                    height: 52.829620361328125
+                - type: stack
+                  id: 50:1256
+                  x: -42988.859375
+                  y: 21158.509765625
+                  background: '#000000'
+                  width: 49.44279479980469
+                  height: 52.26682662963867
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1257
+                    url: assets/icons/vector_50_1257.svg
+                    width: 49.44279479980469
+                    height: 52.26682662963867
+              - type: stack
+                id: 50:1258
+                x: -42867.4375
+                y: 21094.41015625
+                background: '#000000'
+                width: 57.491058349609375
+                height: 65.37847137451172
+                children:
+                - type: stack
+                  id: 50:1259
+                  x: -42867.4375
+                  y: 21094.41015625
+                  background: '#000000'
+                  width: 57.491058349609375
+                  height: 65.37847137451172
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1260
+                    url: assets/icons/vector_50_1260.svg
+                    width: 57.491058349609375
+                    height: 65.37847137451172
+                - type: stack
+                  id: 50:1261
+                  x: -42867.05078125
+                  y: 21094.474609375
+                  background: '#000000'
+                  width: 56.36439514160156
+                  height: 65.01126861572266
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1262
+                    url: assets/icons/vector_50_1262.svg
+                    width: 56.36439514160156
+                    height: 65.01126861572266
+              - type: stack
+                id: 50:1263
+                x: -42838.45703125
+                y: 21158.236328125
+                background: '#000000'
+                width: 49.457969665527344
+                height: 52.829620361328125
+                children:
+                - type: stack
+                  id: 50:1264
+                  x: -42838.45703125
+                  y: 21158.236328125
+                  background: '#000000'
+                  width: 49.457969665527344
+                  height: 52.829620361328125
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1265
+                    url: assets/icons/vector_50_1265.svg
+                    width: 49.457969665527344
+                    height: 52.829620361328125
+                - type: stack
+                  id: 50:1266
+                  x: -42838.4375
+                  y: 21158.50390625
+                  background: '#000000'
+                  width: 49.44279479980469
+                  height: 52.27246856689453
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1267
+                    url: assets/icons/vector_50_1267.svg
+                    width: 49.44279479980469
+                    height: 52.27246856689453
+          - type: container
+            width: 353.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 50:1268
+            x: -43065.4296875
+            y: 21321.41015625
+          - type: column
+            id: 50:1269
+            x: -43065.4296875
+            y: 21346.41015625
+            spacing: 8.0
+            background: '#000000'
+            width: 353.0
+            height: 166.0
+            children:
+            - type: button
+              label: Skilled professionals
+              id: 50:1270
+              x: -43065.4296875
+              y: 21346.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 249.0
+              height: 50.0
+            - type: button
+              label: Industry expertise
+              id: 50:1275
+              x: -43065.4296875
+              y: 21404.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 229.0
+              height: 50.0
+            - type: button
+              label: Market understanding
+              id: 50:1280
+              x: -43065.4296875
+              y: 21462.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 269.0
+              height: 50.0
+      - type: column
+        id: 50:1148
+        x: -43060.4296875
+        y: 21568.41015625
+        background: '#000000'
+        width: 343.0
+        height: 617.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 50:1149
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 617.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#F26586'
+          id: 50:1151
+          x: -42940.37890625
+          y: 21568.41015625
+        - type: column
+          id: 50:1152
+          x: -43065.4296875
+          y: 21568.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 353.0
+          height: 617.0
+          children:
+          - type: column
+            id: 50:1153
+            x: -43065.4296875
+            y: 21592.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 353.0
+            height: 354.0
+            children:
+            - type: column
+              id: 50:1154
+              x: -43065.4296875
+              y: 21592.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 98.0
+              children:
+              - type: text
+                value: Integrated Solutions
+                id: 50:1155
+                x: -43016.4296875
+                y: 21592.41015625
+                size: 24.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#F26586'
+                align: center
+              - type: text
+                value: Complete digital services under one roof.
+                id: 50:1156
+                x: -43065.4296875
+                y: 21638.41015625
+                size: 18.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 50:1157
+              x: -42968.4296875
+              y: 21738.41015625
+              background: '#000000'
+              width: 158.99818420410156
+              height: 180.9568328857422
+              children:
+              - type: stack
+                id: 50:1158
+                x: -42968.4296875
+                y: 21738.41015625
+                background: '#000000'
+                width: 158.99818420410156
+                height: 180.9568328857422
+                children:
+                - type: icon
+                  name: Vector
+                  id: 50:1159
+                  url: assets/icons/vector_50_1159.svg
+                  width: 158.99818420410156
+                  height: 180.9568328857422
+              - type: stack
+                id: 50:1160
+                x: -42968.4140625
+                y: 21738.701171875
+                background: '#000000'
+                width: 159.01751708984375
+                height: 180.3939208984375
+                children:
+                - type: icon
+                  name: Vector
+                  id: 50:1161
+                  url: assets/icons/vector_50_1161.svg
+                  width: 159.01751708984375
+                  height: 180.3939208984375
+          - type: container
+            width: 353.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 50:1162
+            x: -43065.4296875
+            y: 21970.41015625
+          - type: column
+            id: 50:1163
+            x: -43065.4296875
+            y: 21995.41015625
+            spacing: 8.0
+            background: '#000000'
+            width: 353.0
+            height: 166.0
+            children:
+            - type: button
+              label: End-to-end solutions
+              id: 50:1164
+              x: -43065.4296875
+              y: 21995.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 256.0
+              height: 50.0
+            - type: button
+              label: Seamless integration
+              id: 50:1169
+              x: -43065.4296875
+              y: 22053.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 256.0
+              height: 50.0
+            - type: button
+              label: Unified experience
+              id: 50:1174
+              x: -43065.4296875
+              y: 22111.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 236.0
+              height: 50.0
+      - type: column
+        id: 50:1286
+        x: -43060.4296875
+        y: 22217.41015625
+        background: '#000000'
+        width: 343.0
+        height: 620.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 50:1287
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 620.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#8689D9'
+          id: 50:1289
+          x: -42940.37890625
+          y: 22217.41015625
+        - type: column
+          id: 50:1290
+          x: -43060.4296875
+          y: 22217.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 343.0
+          height: 620.0
+          children:
+          - type: column
+            id: 50:1291
+            x: -43060.4296875
+            y: 22241.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 343.0
+            height: 357.0
+            children:
+            - type: column
+              id: 50:1292
+              x: -43065.4296875
+              y: 22241.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 72.0
+              children:
+              - type: text
+                value: Advanced Technology
+                id: 50:1293
+                x: -43024.9296875
+                y: 22241.41015625
+                size: 24.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                color: '#8689D9'
+                align: center
+              - type: text
+                value: Modern technologies built for growth.
+                id: 50:1294
+                x: -43065.4296875
+                y: 22287.41015625
+                size: 18.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 50:1295
+              x: -42989.1015625
+              y: 22361.41015625
+              background: '#000000'
+              width: 200.3473358154297
+              height: 200.3492889404297
+              children:
+              - type: icon
+                name: Vector
+                id: 50:1296
+                url: assets/icons/vector_50_1296.svg
+                width: 105.9878158569336
+                height: 116.31455993652344
+              - type: icon
+                name: Vector
+                id: 50:1297
+                url: assets/icons/vector_50_1297.svg
+                width: 58.218849182128906
+                height: 44.5992431640625
+              - type: icon
+                name: Vector
+                id: 50:1298
+                url: assets/icons/vector_50_1298.svg
+                width: 33.21754837036133
+                height: 24.413156509399414
+              - type: icon
+                name: Vector
+                id: 50:1299
+                url: assets/icons/vector_50_1299.svg
+                width: 20.773042678833008
+                height: 20.775461196899414
+              - type: icon
+                name: Vector
+                id: 50:1300
+                url: assets/icons/vector_50_1300.svg
+                width: 4.579731464385986
+                height: 9.036273956298828
+              - type: icon
+                name: Vector
+                id: 50:1301
+                url: assets/icons/vector_50_1301.svg
+                width: 33.21754837036133
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 50:1302
+                url: assets/icons/vector_50_1302.svg
+                width: 36.03398513793945
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 50:1303
+                url: assets/icons/vector_50_1303.svg
+                width: 36.03398513793945
+                height: 4.577315807342529
+              - type: icon
+                name: Vector
+                id: 50:1304
+                url: assets/icons/vector_50_1304.svg
+                width: 20.53874397277832
+                height: 20.422801971435547
+              - type: icon
+                name: Vector
+                id: 50:1305
+                url: assets/icons/vector_50_1305.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1306
+                url: assets/icons/vector_50_1306.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1307
+                url: assets/icons/vector_50_1307.svg
+                width: 33.21754837036133
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 50:1308
+                url: assets/icons/vector_50_1308.svg
+                width: 36.03398513793945
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 50:1309
+                url: assets/icons/vector_50_1309.svg
+                width: 35.797264099121094
+                height: 4.577315807342529
+              - type: icon
+                name: Vector
+                id: 50:1310
+                url: assets/icons/vector_50_1310.svg
+                width: 20.53874397277832
+                height: 20.422801971435547
+              - type: icon
+                name: Vector
+                id: 50:1311
+                url: assets/icons/vector_50_1311.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1312
+                url: assets/icons/vector_50_1312.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1313
+                url: assets/icons/vector_50_1313.svg
+                width: 28.52187156677246
+                height: 34.86006546020508
+              - type: icon
+                name: Vector
+                id: 50:1314
+                url: assets/icons/vector_50_1314.svg
+                width: 28.52187156677246
+                height: 34.625762939453125
+              - type: icon
+                name: Vector
+                id: 50:1315
+                url: assets/icons/vector_50_1315.svg
+                width: 4.579731464385986
+                height: 30.632993698120117
+              - type: icon
+                name: Vector
+                id: 50:1316
+                url: assets/icons/vector_50_1316.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1317
+                url: assets/icons/vector_50_1317.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 50:1318
+                url: assets/icons/vector_50_1318.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 50:1319
+                url: assets/icons/vector_50_1319.svg
+                width: 28.52187156677246
+                height: 32.74652862548828
+              - type: icon
+                name: Vector
+                id: 50:1320
+                url: assets/icons/vector_50_1320.svg
+                width: 28.52187156677246
+                height: 32.63058853149414
+              - type: icon
+                name: Vector
+                id: 50:1321
+                url: assets/icons/vector_50_1321.svg
+                width: 4.579731464385986
+                height: 30.632993698120117
+              - type: icon
+                name: Vector
+                id: 50:1322
+                url: assets/icons/vector_50_1322.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1323
+                url: assets/icons/vector_50_1323.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 50:1324
+                url: assets/icons/vector_50_1324.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+          - type: container
+            width: 343.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 50:1325
+            x: -43060.4296875
+            y: 22622.41015625
+          - type: column
+            id: 50:1326
+            x: -43060.4296875
+            y: 22647.41015625
+            padding: 4.0
+            spacing: 8.0
+            background: '#000000'
+            width: 343.0
+            height: 166.0
+            children:
+            - type: button
+              label: Latest tech stack
+              id: 50:1327
+              x: -43056.4296875
+              y: 22647.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 243.0
+              height: 50.0
+            - type: button
+              label: High security
+              id: 50:1332
+              x: -43056.4296875
+              y: 22705.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 259.0
+              height: 50.0
+            - type: button
+              label: Scalable systems
+              id: 50:1337
+              x: -43056.4296875
+              y: 22763.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 335.0
+              height: 50.0
+      - type: column
+        id: 50:1343
+        x: -43060.4296875
+        y: 22869.41015625
+        background: '#000000'
+        width: 343.0
+        height: 612.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 50:1344
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 612.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#52BBE7'
+          id: 50:1346
+          x: -42940.37890625
+          y: 22869.41015625
+        - type: column
+          id: 50:1347
+          x: -43065.4296875
+          y: 22869.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 353.0
+          height: 612.0
+          children:
+          - type: column
+            id: 50:1348
+            x: -43065.4296875
+            y: 22893.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 353.0
+            height: 349.0
+            children:
+            - type: column
+              id: 50:1349
+              x: -43065.4296875
+              y: 22893.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 98.0
+              children:
+              - type: text
+                value: Specialized Expertise
+                id: 50:1350
+                x: -43021.9296875
+                y: 22893.41015625
+                size: 24.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#52BBE7'
+                align: center
+              - type: text
+                value: A team of experts delivering tailored technology solutions.
+                id: 50:1351
+                x: -43065.4296875
+                y: 22939.41015625
+                size: 18.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 50:1352
+              x: -43011.4296875
+              y: 23039.41015625
+              background: '#000000'
+              width: 245.00064086914062
+              height: 163.50868225097656
+              children:
+              - type: icon
+                name: Vector
+                id: 50:1353
+                url: assets/icons/vector_50_1353.svg
+                width: 79.67669677734375
+                height: 79.69530487060547
+              - type: stack
+                id: 50:1354
+                x: -42961.6328125
+                y: 23137.650390625
+                background: '#000000'
+                width: 145.71493530273438
+                height: 65.26815032958984
+                children:
+                - type: stack
+                  id: 50:1355
+                  x: -42961.6328125
+                  y: 23137.650390625
+                  background: '#000000'
+                  width: 145.71493530273438
+                  height: 65.26815032958984
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1356
+                    url: assets/icons/vector_50_1356.svg
+                    width: 145.71493530273438
+                    height: 65.26815032958984
+                - type: stack
+                  id: 50:1357
+                  x: -42961.44921875
+                  y: 23138.232421875
+                  background: '#000000'
+                  width: 145.521484375
+                  height: 64.68551635742188
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1358
+                    url: assets/icons/vector_50_1358.svg
+                    width: 145.521484375
+                    height: 64.68551635742188
+              - type: stack
+                id: 50:1359
+                x: -42978.7734375
+                y: 23039.41015625
+                background: '#000000'
+                width: 69.52412414550781
+                height: 80.14544677734375
+                children:
+                - type: stack
+                  id: 50:1360
+                  x: -42978.7734375
+                  y: 23039.41015625
+                  background: '#000000'
+                  width: 69.52412414550781
+                  height: 80.14544677734375
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1361
+                    url: assets/icons/vector_50_1361.svg
+                    width: 69.52412414550781
+                    height: 80.14544677734375
+                - type: stack
+                  id: 50:1362
+                  x: -42978.51171875
+                  y: 23039.48828125
+                  background: '#000000'
+                  width: 69.09815216064453
+                  height: 79.69530487060547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1363
+                    url: assets/icons/vector_50_1363.svg
+                    width: 69.09815216064453
+                    height: 79.69530487060547
+              - type: stack
+                id: 50:1364
+                x: -43011.4296875
+                y: 23117.650390625
+                background: '#000000'
+                width: 61.22795486450195
+                height: 64.76219940185547
+                children:
+                - type: stack
+                  id: 50:1365
+                  x: -43011.4296875
+                  y: 23117.650390625
+                  background: '#000000'
+                  width: 61.22795486450195
+                  height: 64.76219940185547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1366
+                    url: assets/icons/vector_50_1366.svg
+                    width: 61.22795486450195
+                    height: 64.76219940185547
+                - type: stack
+                  id: 50:1367
+                  x: -43011.4296875
+                  y: 23117.986328125
+                  background: '#000000'
+                  width: 60.61039352416992
+                  height: 64.0722885131836
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1368
+                    url: assets/icons/vector_50_1368.svg
+                    width: 60.61039352416992
+                    height: 64.0722885131836
+              - type: stack
+                id: 50:1369
+                x: -42862.58203125
+                y: 23039.41015625
+                background: '#000000'
+                width: 70.47650909423828
+                height: 80.14544677734375
+                children:
+                - type: stack
+                  id: 50:1370
+                  x: -42862.58203125
+                  y: 23039.41015625
+                  background: '#000000'
+                  width: 70.47650909423828
+                  height: 80.14544677734375
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1371
+                    url: assets/icons/vector_50_1371.svg
+                    width: 70.47650909423828
+                    height: 80.14544677734375
+                - type: stack
+                  id: 50:1372
+                  x: -42862.109375
+                  y: 23039.48828125
+                  background: '#000000'
+                  width: 69.09536743164062
+                  height: 79.69530487060547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1373
+                    url: assets/icons/vector_50_1373.svg
+                    width: 69.09536743164062
+                    height: 79.69530487060547
+              - type: stack
+                id: 50:1374
+                x: -42827.05859375
+                y: 23117.650390625
+                background: '#000000'
+                width: 60.62899398803711
+                height: 64.76219940185547
+                children:
+                - type: stack
+                  id: 50:1375
+                  x: -42827.05859375
+                  y: 23117.650390625
+                  background: '#000000'
+                  width: 60.62899398803711
+                  height: 64.76219940185547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1376
+                    url: assets/icons/vector_50_1376.svg
+                    width: 60.62899398803711
+                    height: 64.76219940185547
+                - type: stack
+                  id: 50:1377
+                  x: -42827.03125
+                  y: 23117.98046875
+                  background: '#000000'
+                  width: 60.61039352416992
+                  height: 64.0792007446289
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 50:1378
+                    url: assets/icons/vector_50_1378.svg
+                    width: 60.61039352416992
+                    height: 64.0792007446289
+          - type: container
+            width: 353.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 50:1379
+            x: -43065.4296875
+            y: 23266.41015625
+          - type: column
+            id: 50:1380
+            x: -43065.4296875
+            y: 23291.41015625
+            spacing: 8.0
+            background: '#000000'
+            width: 353.0
+            height: 166.0
+            children:
+            - type: button
+              label: Skilled professionals
+              id: 50:1381
+              x: -43065.4296875
+              y: 23291.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 249.0
+              height: 50.0
+            - type: button
+              label: Industry expertise
+              id: 50:1386
+              x: -43065.4296875
+              y: 23349.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 229.0
+              height: 50.0
+            - type: button
+              label: Market understanding
+              id: 50:1391
+              x: -43065.4296875
+              y: 23407.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 269.0
+              height: 50.0
+      - type: column
+        id: 50:1396
+        x: -43060.4296875
+        y: 23513.41015625
+        background: '#000000'
+        width: 343.0
+        height: 617.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 50:1397
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 617.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#F26586'
+          id: 50:1399
+          x: -42940.37890625
+          y: 23513.41015625
+        - type: column
+          id: 50:1400
+          x: -43065.4296875
+          y: 23513.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 353.0
+          height: 617.0
+          children:
+          - type: column
+            id: 50:1401
+            x: -43065.4296875
+            y: 23537.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 353.0
+            height: 354.0
+            children:
+            - type: column
+              id: 50:1402
+              x: -43065.4296875
+              y: 23537.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 98.0
+              children:
+              - type: text
+                value: Integrated Solutions
+                id: 50:1403
+                x: -43016.4296875
+                y: 23537.41015625
+                size: 24.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#F26586'
+                align: center
+              - type: text
+                value: Complete digital services under one roof.
+                id: 50:1404
+                x: -43065.4296875
+                y: 23583.41015625
+                size: 18.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 50:1405
+              x: -42968.4296875
+              y: 23683.41015625
+              background: '#000000'
+              width: 158.99818420410156
+              height: 180.9568328857422
+              children:
+              - type: stack
+                id: 50:1406
+                x: -42968.4296875
+                y: 23683.41015625
+                background: '#000000'
+                width: 158.99818420410156
+                height: 180.9568328857422
+                children:
+                - type: icon
+                  name: Vector
+                  id: 50:1407
+                  url: assets/icons/vector_50_1407.svg
+                  width: 158.99818420410156
+                  height: 180.9568328857422
+              - type: stack
+                id: 50:1408
+                x: -42968.4140625
+                y: 23683.701171875
+                background: '#000000'
+                width: 159.01751708984375
+                height: 180.3939208984375
+                children:
+                - type: icon
+                  name: Vector
+                  id: 50:1409
+                  url: assets/icons/vector_50_1409.svg
+                  width: 159.01751708984375
+                  height: 180.3939208984375
+          - type: container
+            width: 353.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 50:1410
+            x: -43065.4296875
+            y: 23915.41015625
+          - type: column
+            id: 50:1411
+            x: -43065.4296875
+            y: 23940.41015625
+            spacing: 8.0
+            background: '#000000'
+            width: 353.0
+            height: 166.0
+            children:
+            - type: button
+              label: End-to-end solutions
+              id: 50:1412
+              x: -43065.4296875
+              y: 23940.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 256.0
+              height: 50.0
+            - type: button
+              label: Seamless integration
+              id: 50:1417
+              x: -43065.4296875
+              y: 23998.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 256.0
+              height: 50.0
+            - type: button
+              label: Unified experience
+              id: 50:1422
+              x: -43065.4296875
+              y: 24056.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 236.0
+              height: 50.0
+      - type: column
+        id: 50:1427
+        x: -43060.4296875
+        y: 24162.41015625
+        background: '#000000'
+        width: 343.0
+        height: 620.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 50:1428
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 620.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#8689D9'
+          id: 50:1430
+          x: -42940.37890625
+          y: 24162.41015625
+        - type: column
+          id: 50:1431
+          x: -43060.4296875
+          y: 24162.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 343.0
+          height: 620.0
+          children:
+          - type: column
+            id: 50:1432
+            x: -43060.4296875
+            y: 24186.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 343.0
+            height: 357.0
+            children:
+            - type: column
+              id: 50:1433
+              x: -43065.4296875
+              y: 24186.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 72.0
+              children:
+              - type: text
+                value: Advanced Technology
+                id: 50:1434
+                x: -43024.9296875
+                y: 24186.41015625
+                size: 24.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                color: '#8689D9'
+                align: center
+              - type: text
+                value: Modern technologies built for growth.
+                id: 50:1435
+                x: -43065.4296875
+                y: 24232.41015625
+                size: 18.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 50:1436
+              x: -42989.1015625
+              y: 24306.41015625
+              background: '#000000'
+              width: 200.3473358154297
+              height: 200.3492889404297
+              children:
+              - type: icon
+                name: Vector
+                id: 50:1437
+                url: assets/icons/vector_50_1437.svg
+                width: 105.9878158569336
+                height: 116.31455993652344
+              - type: icon
+                name: Vector
+                id: 50:1438
+                url: assets/icons/vector_50_1438.svg
+                width: 58.218849182128906
+                height: 44.5992431640625
+              - type: icon
+                name: Vector
+                id: 50:1439
+                url: assets/icons/vector_50_1439.svg
+                width: 33.21754837036133
+                height: 24.413156509399414
+              - type: icon
+                name: Vector
+                id: 50:1440
+                url: assets/icons/vector_50_1440.svg
+                width: 20.773042678833008
+                height: 20.775461196899414
+              - type: icon
+                name: Vector
+                id: 50:1441
+                url: assets/icons/vector_50_1441.svg
+                width: 4.579731464385986
+                height: 9.036273956298828
+              - type: icon
+                name: Vector
+                id: 50:1442
+                url: assets/icons/vector_50_1442.svg
+                width: 33.21754837036133
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 50:1443
+                url: assets/icons/vector_50_1443.svg
+                width: 36.03398513793945
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 50:1444
+                url: assets/icons/vector_50_1444.svg
+                width: 36.03398513793945
+                height: 4.577315807342529
+              - type: icon
+                name: Vector
+                id: 50:1445
+                url: assets/icons/vector_50_1445.svg
+                width: 20.53874397277832
+                height: 20.422801971435547
+              - type: icon
+                name: Vector
+                id: 50:1446
+                url: assets/icons/vector_50_1446.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1447
+                url: assets/icons/vector_50_1447.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1448
+                url: assets/icons/vector_50_1448.svg
+                width: 33.21754837036133
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 50:1449
+                url: assets/icons/vector_50_1449.svg
+                width: 36.03398513793945
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 50:1450
+                url: assets/icons/vector_50_1450.svg
+                width: 35.797264099121094
+                height: 4.577315807342529
+              - type: icon
+                name: Vector
+                id: 50:1451
+                url: assets/icons/vector_50_1451.svg
+                width: 20.53874397277832
+                height: 20.422801971435547
+              - type: icon
+                name: Vector
+                id: 50:1452
+                url: assets/icons/vector_50_1452.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1453
+                url: assets/icons/vector_50_1453.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1454
+                url: assets/icons/vector_50_1454.svg
+                width: 28.52187156677246
+                height: 34.86006546020508
+              - type: icon
+                name: Vector
+                id: 50:1455
+                url: assets/icons/vector_50_1455.svg
+                width: 28.52187156677246
+                height: 34.625762939453125
+              - type: icon
+                name: Vector
+                id: 50:1456
+                url: assets/icons/vector_50_1456.svg
+                width: 4.579731464385986
+                height: 30.632993698120117
+              - type: icon
+                name: Vector
+                id: 50:1457
+                url: assets/icons/vector_50_1457.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1458
+                url: assets/icons/vector_50_1458.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 50:1459
+                url: assets/icons/vector_50_1459.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 50:1460
+                url: assets/icons/vector_50_1460.svg
+                width: 28.52187156677246
+                height: 32.74652862548828
+              - type: icon
+                name: Vector
+                id: 50:1461
+                url: assets/icons/vector_50_1461.svg
+                width: 28.52187156677246
+                height: 32.63058853149414
+              - type: icon
+                name: Vector
+                id: 50:1462
+                url: assets/icons/vector_50_1462.svg
+                width: 4.579731464385986
+                height: 30.632993698120117
+              - type: icon
+                name: Vector
+                id: 50:1463
+                url: assets/icons/vector_50_1463.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 50:1464
+                url: assets/icons/vector_50_1464.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 50:1465
+                url: assets/icons/vector_50_1465.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+          - type: container
+            width: 343.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 50:1466
+            x: -43060.4296875
+            y: 24567.41015625
+          - type: column
+            id: 50:1467
+            x: -43060.4296875
+            y: 24592.41015625
+            padding: 4.0
+            spacing: 8.0
+            background: '#000000'
+            width: 343.0
+            height: 166.0
+            children:
+            - type: button
+              label: Latest tech stack
+              id: 50:1468
+              x: -43056.4296875
+              y: 24592.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 243.0
+              height: 50.0
+            - type: button
+              label: High security
+              id: 50:1473
+              x: -43056.4296875
+              y: 24650.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 259.0
+              height: 50.0
+            - type: button
+              label: Scalable systems
+              id: 50:1478
+              x: -43056.4296875
+              y: 24708.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 335.0
+              height: 50.0
+  - type: column
+    id: 50:1708
+    x: -43076.4296875
+    y: 24862.412109375
+    padding: 20.0
+    spacing: 8.0
+    alignment: center
+    background: '#000000'
+    width: 375.0
+    height: 828.3446044921875
+    children:
+    - type: column
+      id: 50:1927
+      x: -43076.4296875
+      y: 24886.412109375
+      spacing: 32.0
+      background: '#000000'
+      width: 375.0
+      height: 780.3446044921875
+      children:
+      - type: column
+        id: 50:1928
+        x: -43076.4296875
+        y: 24886.412109375
+        spacing: 16.0
+        background: '#000000'
+        width: 375.0
+        height: 189.34458923339844
+        children:
+        - type: button
+          label: Featured Products
+          id: 50:1929
+          x: -42972.1015625
+          y: 24886.412109375
+          background: '#000000'
+          radius: 22558400.0
+          width: 166.34458923339844
+          height: 37.34458541870117
+        - type: column
+          id: 50:1931
+          x: -43060.4296875
+          y: 24939.755859375
+          spacing: 16.0
+          background: '#000000'
+          width: 343.0
+          height: 136.0
+          children:
+          - type: text
+            value: Powerful Platforms, Proven Results
+            id: 50:1932
+            x: -43060.4296875
+            y: 24939.755859375
+            size: 28.0
+            fontWeight: 700
+            fontFamily: Montserrat
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: Our flagship products are transforming businesses across multiple
+              industries
+            id: 50:1933
+            x: -43060.4296875
+            y: 25027.755859375
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Montserrat
+            color: '#BFC8E6'
+            align: center
+      - type: column
+        id: 50:1934
+        x: -43060.4296875
+        y: 25107.755859375
+        spacing: 24.0
+        background: '#000000'
+        width: 343.0
+        height: 559.0
+        children:
+        - type: column
+          id: 50:1935
+          x: -43060.4296875
+          y: 25107.755859375
+          padding: 24.0
+          spacing: 8.0
+          alignment: center
+          background: '#6B7280'
+          radius: 16.0
+          width: 343.0
+          height: 503.0
+          children:
+          - type: column
+            id: 50:1938
+            x: -43044.4296875
+            y: 25139.755859375
+            spacing: 24.0
+            background: '#000000'
+            width: 311.0
+            height: 375.0
+            children:
+            - type: column
+              id: 50:1939
+              x: -43044.4296875
+              y: 25139.755859375
+              spacing: 25.0
+              background: '#000000'
+              width: 311.0
+              height: 218.0
+              children:
+              - type: stack
+                id: 50:1940
+                x: -43044.4296875
+                y: 25139.755859375
+                background: '#383BB0'
+                radius: 16.0
+                width: 72.0
+                height: 72.0
+                children:
+                - type: icon
+                  name: Icon
+                  id: 50:1941
+                  url: assets/icons/icon.svg
+                  width: 32.0
+                  height: 32.0
+              - type: column
+                id: 50:1946
+                x: -43044.4296875
+                y: 25236.755859375
+                spacing: 13.0
+                background: '#000000'
+                width: 311.0
+                height: 121.0
+                children:
+                - type: text
+                  value: Edu-Bridge
+                  id: 50:1947
+                  x: -43044.4296875
+                  y: 25236.755859375
+                  size: 28.0
+                  fontWeight: 700
+                  fontFamily: Montserrat
+                  color: '#FFFFFF'
+                  align: left
+                - type: text
+                  value: Educational management platform serving more than 50,000
+                    students and over 200 educational centers.
+                  id: 50:1948
+                  x: -43044.4296875
+                  y: 25285.755859375
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Montserrat
+                  color: '#90A1B9'
+                  align: left
+            - type: column
+              id: 50:1949
+              x: -43044.4296875
+              y: 25381.755859375
+              spacing: 8.0
+              background: '#000000'
+              width: 311.0
+              height: 120.0
+              children:
+              - type: row
+                id: 50:1950
+                x: -43044.4296875
+                y: 25381.755859375
+                spacing: 8.0
+                background: '#000000'
+                width: 273.992431640625
+                height: 24.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 50:1951
+                  url: assets/icons/container.svg
+                  width: 23.99243927001953
+                  height: 23.99243927001953
+                - type: text
+                  value: Student Management System
+                  id: 50:1953
+                  x: -43012.4375
+                  y: 25381.755859375
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Montserrat
+                  color: '#BFC8E6'
+                  align: left
+              - type: row
+                id: 50:1954
+                x: -43044.4296875
+                y: 25413.755859375
+                spacing: 8.0
+                background: '#000000'
+                width: 273.992431640625
+                height: 24.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 50:1955
+                  url: assets/icons/container.svg
+                  width: 23.99243927001953
+                  height: 23.99243927001953
+                - type: text
+                  value: Student Management System
+                  id: 50:1957
+                  x: -43012.4375
+                  y: 25413.755859375
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Montserrat
+                  color: '#BFC8E6'
+                  align: left
+              - type: row
+                id: 50:1958
+                x: -43044.4296875
+                y: 25445.755859375
+                spacing: 8.0
+                background: '#000000'
+                width: 273.992431640625
+                height: 24.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 50:1959
+                  url: assets/icons/container.svg
+                  width: 23.99243927001953
+                  height: 23.99243927001953
+                - type: text
+                  value: Student Management System
+                  id: 50:1961
+                  x: -43012.4375
+                  y: 25445.755859375
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Montserrat
+                  color: '#BFC8E6'
+                  align: left
+              - type: row
+                id: 50:1962
+                x: -43044.4296875
+                y: 25477.755859375
+                spacing: 8.0
+                background: '#000000'
+                width: 273.992431640625
+                height: 24.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 50:1963
+                  url: assets/icons/container.svg
+                  width: 23.99243927001953
+                  height: 23.99243927001953
+                - type: text
+                  value: Student Management System
+                  id: 50:1965
+                  x: -43012.4375
+                  y: 25477.755859375
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Montserrat
+                  color: '#BFC8E6'
+                  align: left
+          - type: button
+            label: Request Demo
+            id: 50:1966
+            x: -43044.4296875
+            y: 25522.755859375
+            background: '#383BB0'
+            radius: 16.0
+            width: 311.0
+            height: 56.0
+        - type: row
+          id: 50:1971
+          x: -42932.4296875
+          y: 25634.755859375
+          spacing: 974.0
+          background: '#000000'
+          width: 87.0
+          height: 32.0
+          children:
+          - type: icon
+            name: Icon
+            id: 50:1972
+            url: assets/icons/icon.svg
+            width: 32.0
+            height: 32.0
+          - type: icon
+            name: Icon
+            id: 50:1974
+            url: assets/icons/icon.svg
+            width: 32.0
+            height: 32.0
+  - type: column
+    id: 50:2041
+    x: -43170.0
+    y: 25770.7578125
+    spacing: 40.0
+    background: '#000000'
+    width: 562.138671875
+    height: 365.34429931640625
+    children:
+    - type: column
+      id: 50:2011
+      x: -43170.0
+      y: 25770.7578125
+      spacing: 16.0
+      background: '#000000'
+      width: 562.138671875
+      height: 213.34458923339844
+      children:
+      - type: button
+        label: Technologies
+        id: 50:2012
+        x: -42952.6015625
+        y: 25770.7578125
+        background: '#000000'
+        radius: 22558400.0
+        width: 127.34458923339844
+        height: 37.34458541870117
+      - type: column
+        id: 50:2014
+        x: -43060.4296875
+        y: 25824.1015625
+        spacing: 16.0
+        background: '#000000'
+        width: 343.0
+        height: 160.0
+        children:
+        - type: text
+          value: Technologies We Use
+          id: 50:2015
+          x: -43037.4296875
+          y: 25824.1015625
+          size: 28.0
+          fontWeight: 700
+          fontFamily: Montserrat
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: Leveraging modern technologies and frameworks to build secure, scalable,
+            and high-performance digital solutions.
+          id: 50:2016
+          x: -43060.4296875
+          y: 25912.1015625
+          size: 16.0
+          fontWeight: 400
+          fontFamily: Montserrat
+          color: '#BFC8E6'
+          align: center
+    - type: stack
+      id: 50:2040
+      x: -43170.0
+      y: 26024.1015625
+      background: '#000000'
+      radius: 5.753630638122559
+      width: 562.138671875
+      height: 111.99971008300781
+      children:
+      - type: icon
+        name: Background
+        id: 50:2019
+        url: assets/icons/background.svg
+        width: 83.78767659053119
+        height: 83.78415321272769
+      - type: icon
+        name: Background
+        id: 50:2022
+        url: assets/icons/background.svg
+        width: 83.7876827381333
+        height: 83.78890989104548
+      - type: icon
+        name: Background
+        id: 50:2025
+        url: assets/icons/background.svg
+        width: 92.66845892152196
+        height: 92.6650336379571
+      - type: icon
+        name: Background
+        id: 50:2028
+        url: assets/icons/background.svg
+        width: 92.67398785299156
+        height: 92.67963045887882
+      - type: icon
+        name: Background
+        id: 50:2031
+        url: assets/icons/background.svg
+        width: 103.70903372442262
+        height: 103.71026492187593
+      - type: icon
+        name: Background
+        id: 50:2034
+        url: assets/icons/background.svg
+        width: 103.71909699609387
+        height: 103.72033542617646
+      - type: icon
+        name: Background
+        id: 50:2037
+        url: assets/icons/background.svg
+        width: 112.00316619873047
+        height: 111.99971008300781
+  - type: column
+    id: 51:2382
+    x: -43076.4296875
+    y: 26216.1015625
+    spacing: 32.0
+    background: '#000000'
+    width: 375.0
+    height: 2915.31787109375
+    children:
+    - type: column
+      id: 50:2230
+      x: -43076.4296875
+      y: 26216.1015625
+      spacing: 16.0
+      background: '#000000'
+      width: 375.0
+      height: 177.34458923339844
+      children:
+      - type: button
+        label: Portfolio
+        id: 50:2231
+        x: -42936.1015625
+        y: 26216.1015625
+        background: '#000000'
+        radius: 22558400.0
+        width: 94.34458923339844
+        height: 37.34458541870117
+      - type: column
+        id: 50:2233
+        x: -43060.4296875
+        y: 26269.4453125
+        spacing: 16.0
+        background: '#000000'
+        width: 343.0
+        height: 124.0
+        children:
+        - type: text
+          value: Our Portfolio
+          id: 50:2234
+          x: -43060.4296875
+          y: 26269.4453125
+          size: 28.0
+          fontWeight: 700
+          fontFamily: Montserrat
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: Explore a selection of projects that showcase our expertise in delivering
+            innovative digital solutions.
+          id: 50:2235
+          x: -43060.4296875
+          y: 26321.4453125
+          size: 16.0
+          fontWeight: 400
+          fontFamily: Montserrat
+          color: '#BFC8E6'
+          align: center
+    - type: column
+      id: 51:2381
+      x: -43060.4296875
+      y: 26425.4453125
+      spacing: 24.0
+      background: '#000000'
+      width: 343.0
+      height: 2705.973388671875
+      children:
+      - type: row
+        id: 50:2236
+        x: -43060.4296875
+        y: 26425.4453125
+        padding: 20.0
+        spacing: 8.0
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 521.9946899414062
+        children:
+        - type: column
+          id: 50:2237
+          x: -43044.4296875
+          y: 26449.4453125
+          spacing: 29.0
+          background: '#000000'
+          width: 306.0
+          height: 473.99468994140625
+          children:
+          - type: stack
+            id: 50:2238
+            x: -43044.4296875
+            y: 26449.4453125
+            background: '#000000'
+            radius: 12.842666625976562
+            width: 305.8160095214844
+            height: 301.0
+            children:
+            - type: image
+              name: ImageWithFallback
+              id: 50:2239
+              url: assets/images/imagewithfallback.png
+              width: 534.0120239257812
+              height: 300.62396240234375
+              x: -43044.4296875
+              y: 26449.4453125
+            - type: button
+              label: 300% Increased Sales
+              id: 50:2241
+              x: -43038.4296875
+              y: 26468.4453125
+              background: '#0F172B'
+              radius: 18132400.0
+              width: 173.37600708007812
+              height: 32.909332275390625
+            - type: column
+              id: 50:2246
+              x: -43044.4296875
+              y: 26794.982421875
+              padding: 19.259721120198567
+              background: '#000000'
+              width: 534.0120239257812
+              height: 68.48562622070312
+              children:
+              - type: row
+                id: 50:2247
+                x: -43025.171875
+                y: 26814.2421875
+                padding: 0.008493795059621334
+                spacing: 12.842605590820312
+                alignment: center
+                background: '#000000'
+                width: 495.4925537109375
+                height: 29.966175079345703
+                children:
+                - type: button
+                  label: 40% ↑ المبيعات
+                  id: 50:2248
+                  x: -42936.4375
+                  y: 26814.2421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 89.68733215332031
+                  height: 29.966175079345703
+                - type: button
+                  label: 99.9% وقت التشغيل
+                  id: 50:2250
+                  x: -42833.91015625
+                  y: 26814.2421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 108.21247863769531
+                  height: 29.966175079345703
+                - type: button
+                  label: 50 ألف+ مستخدم
+                  id: 50:2252
+                  x: -42712.85546875
+                  y: 26814.2421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 94.44950103759766
+                  height: 29.966175079345703
+          - type: column
+            id: 50:2254
+            x: -43044.4296875
+            y: 26779.4453125
+            spacing: 10.0
+            background: '#000000'
+            width: 306.0
+            height: 143.9946746826172
+            children:
+            - type: column
+              id: 50:2255
+              x: -43044.4296875
+              y: 26779.4453125
+              spacing: 8.0
+              background: '#000000'
+              width: 306.0
+              height: 110.0
+              children:
+              - type: text
+                value: E-Commerce Platforms
+                id: 50:2256
+                x: -43044.4296875
+                y: 26779.4453125
+                size: 24.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Lorem ipsum dolor sit amet consectetur. Sapien eu nulla egestas
+                  gravida eget erat fames hac.
+                id: 50:2257
+                x: -43044.4296875
+                y: 26817.4453125
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#90A1B9'
+                align: left
+            - type: row
+              id: 50:2258
+              x: -43044.4296875
+              y: 26899.4453125
+              padding: 6.0
+              spacing: 7.930096626281738
+              alignment: end
+              background: '#000000'
+              width: 177.9300537109375
+              height: 23.994674682617188
+              children:
+              - type: text
+                value: Show Case Study
+                id: 50:2259
+                x: -43038.4296875
+                y: 26899.443359375
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                align: center
+              - type: icon
+                name: Container
+                id: 50:2260
+                url: assets/icons/container.svg
+                width: 15.999957084655762
+                height: 15.999957084655762
+      - type: row
+        id: 50:2265
+        x: -43060.4296875
+        y: 26971.439453125
+        padding: 20.0
+        spacing: 8.0
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 521.9946899414062
+        children:
+        - type: column
+          id: 50:2266
+          x: -43044.4296875
+          y: 26995.439453125
+          spacing: 29.0
+          background: '#000000'
+          width: 306.0
+          height: 473.99468994140625
+          children:
+          - type: stack
+            id: 50:2267
+            x: -43044.4296875
+            y: 26995.439453125
+            background: '#000000'
+            radius: 12.842666625976562
+            width: 305.8160095214844
+            height: 301.0
+            children:
+            - type: image
+              name: ImageWithFallback
+              id: 50:2268
+              url: assets/images/imagewithfallback.png
+              width: 534.0120239257812
+              height: 300.62396240234375
+              x: -43044.4296875
+              y: 26995.439453125
+            - type: button
+              label: 300% Increased Sales
+              id: 50:2270
+              x: -43038.4296875
+              y: 27014.439453125
+              background: '#0F172B'
+              radius: 18132400.0
+              width: 173.37600708007812
+              height: 32.909332275390625
+            - type: column
+              id: 50:2275
+              x: -43044.4296875
+              y: 27340.9765625
+              padding: 19.259721120198567
+              background: '#000000'
+              width: 534.0120239257812
+              height: 68.48562622070312
+              children:
+              - type: row
+                id: 50:2276
+                x: -43025.171875
+                y: 27360.236328125
+                padding: 0.008493795059621334
+                spacing: 12.842605590820312
+                alignment: center
+                background: '#000000'
+                width: 495.4925537109375
+                height: 29.966175079345703
+                children:
+                - type: button
+                  label: 40% ↑ المبيعات
+                  id: 50:2277
+                  x: -42936.4375
+                  y: 27360.236328125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 89.68733215332031
+                  height: 29.966175079345703
+                - type: button
+                  label: 99.9% وقت التشغيل
+                  id: 50:2279
+                  x: -42833.91015625
+                  y: 27360.236328125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 108.21247863769531
+                  height: 29.966175079345703
+                - type: button
+                  label: 50 ألف+ مستخدم
+                  id: 50:2281
+                  x: -42712.85546875
+                  y: 27360.236328125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 94.44950103759766
+                  height: 29.966175079345703
+          - type: column
+            id: 50:2283
+            x: -43044.4296875
+            y: 27325.439453125
+            spacing: 10.0
+            background: '#000000'
+            width: 306.0
+            height: 143.9946746826172
+            children:
+            - type: column
+              id: 50:2284
+              x: -43044.4296875
+              y: 27325.439453125
+              spacing: 8.0
+              background: '#000000'
+              width: 306.0
+              height: 110.0
+              children:
+              - type: text
+                value: E-Commerce Platforms
+                id: 50:2285
+                x: -43044.4296875
+                y: 27325.439453125
+                size: 24.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Lorem ipsum dolor sit amet consectetur. Sapien eu nulla egestas
+                  gravida eget erat fames hac.
+                id: 50:2286
+                x: -43044.4296875
+                y: 27363.439453125
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#90A1B9'
+                align: left
+            - type: row
+              id: 50:2287
+              x: -43044.4296875
+              y: 27445.439453125
+              padding: 6.0
+              spacing: 7.930096626281738
+              alignment: end
+              background: '#000000'
+              width: 177.9300537109375
+              height: 23.994674682617188
+              children:
+              - type: text
+                value: Show Case Study
+                id: 50:2288
+                x: -43038.4296875
+                y: 27445.4375
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                align: center
+              - type: icon
+                name: Container
+                id: 50:2289
+                url: assets/icons/container.svg
+                width: 15.999957084655762
+                height: 15.999957084655762
+      - type: row
+        id: 50:2294
+        x: -43060.4296875
+        y: 27517.435546875
+        padding: 20.0
+        spacing: 8.0
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 521.9946899414062
+        children:
+        - type: column
+          id: 50:2295
+          x: -43044.4296875
+          y: 27541.435546875
+          spacing: 29.0
+          background: '#000000'
+          width: 306.0
+          height: 473.99468994140625
+          children:
+          - type: stack
+            id: 50:2296
+            x: -43044.4296875
+            y: 27541.435546875
+            background: '#000000'
+            radius: 12.842666625976562
+            width: 305.8160095214844
+            height: 301.0
+            children:
+            - type: image
+              name: ImageWithFallback
+              id: 50:2297
+              url: assets/images/imagewithfallback.png
+              width: 534.0120239257812
+              height: 300.62396240234375
+              x: -43044.4296875
+              y: 27541.435546875
+            - type: button
+              label: 300% Increased Sales
+              id: 50:2299
+              x: -43038.4296875
+              y: 27560.435546875
+              background: '#0F172B'
+              radius: 18132400.0
+              width: 173.37600708007812
+              height: 32.909332275390625
+            - type: column
+              id: 50:2304
+              x: -43044.4296875
+              y: 27886.97265625
+              padding: 19.259721120198567
+              background: '#000000'
+              width: 534.0120239257812
+              height: 68.48562622070312
+              children:
+              - type: row
+                id: 50:2305
+                x: -43025.171875
+                y: 27906.232421875
+                padding: 0.008493795059621334
+                spacing: 12.842605590820312
+                alignment: center
+                background: '#000000'
+                width: 495.4925537109375
+                height: 29.966175079345703
+                children:
+                - type: button
+                  label: 40% ↑ المبيعات
+                  id: 50:2306
+                  x: -42936.4375
+                  y: 27906.232421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 89.68733215332031
+                  height: 29.966175079345703
+                - type: button
+                  label: 99.9% وقت التشغيل
+                  id: 50:2308
+                  x: -42833.91015625
+                  y: 27906.232421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 108.21247863769531
+                  height: 29.966175079345703
+                - type: button
+                  label: 50 ألف+ مستخدم
+                  id: 50:2310
+                  x: -42712.85546875
+                  y: 27906.232421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 94.44950103759766
+                  height: 29.966175079345703
+          - type: column
+            id: 50:2312
+            x: -43044.4296875
+            y: 27871.435546875
+            spacing: 10.0
+            background: '#000000'
+            width: 306.0
+            height: 143.9946746826172
+            children:
+            - type: column
+              id: 50:2313
+              x: -43044.4296875
+              y: 27871.435546875
+              spacing: 8.0
+              background: '#000000'
+              width: 306.0
+              height: 110.0
+              children:
+              - type: text
+                value: E-Commerce Platforms
+                id: 50:2314
+                x: -43044.4296875
+                y: 27871.435546875
+                size: 24.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Lorem ipsum dolor sit amet consectetur. Sapien eu nulla egestas
+                  gravida eget erat fames hac.
+                id: 50:2315
+                x: -43044.4296875
+                y: 27909.435546875
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#90A1B9'
+                align: left
+            - type: row
+              id: 50:2316
+              x: -43044.4296875
+              y: 27991.435546875
+              padding: 6.0
+              spacing: 7.930096626281738
+              alignment: end
+              background: '#000000'
+              width: 177.9300537109375
+              height: 23.994674682617188
+              children:
+              - type: text
+                value: Show Case Study
+                id: 50:2317
+                x: -43038.4296875
+                y: 27991.43359375
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                align: center
+              - type: icon
+                name: Container
+                id: 50:2318
+                url: assets/icons/container.svg
+                width: 15.999957084655762
+                height: 15.999957084655762
+      - type: row
+        id: 50:2323
+        x: -43060.4296875
+        y: 28063.4296875
+        padding: 20.0
+        spacing: 8.0
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 521.9946899414062
+        children:
+        - type: column
+          id: 50:2324
+          x: -43044.4296875
+          y: 28087.4296875
+          spacing: 29.0
+          background: '#000000'
+          width: 306.0
+          height: 473.99468994140625
+          children:
+          - type: stack
+            id: 50:2325
+            x: -43044.4296875
+            y: 28087.4296875
+            background: '#000000'
+            radius: 12.842666625976562
+            width: 305.8160095214844
+            height: 301.0
+            children:
+            - type: image
+              name: ImageWithFallback
+              id: 50:2326
+              url: assets/images/imagewithfallback.png
+              width: 534.0120239257812
+              height: 300.62396240234375
+              x: -43044.4296875
+              y: 28087.4296875
+            - type: button
+              label: 300% Increased Sales
+              id: 50:2328
+              x: -43038.4296875
+              y: 28106.4296875
+              background: '#0F172B'
+              radius: 18132400.0
+              width: 173.37600708007812
+              height: 32.909332275390625
+            - type: column
+              id: 50:2333
+              x: -43044.4296875
+              y: 28432.966796875
+              padding: 19.259721120198567
+              background: '#000000'
+              width: 534.0120239257812
+              height: 68.48562622070312
+              children:
+              - type: row
+                id: 50:2334
+                x: -43025.171875
+                y: 28452.2265625
+                padding: 0.008493795059621334
+                spacing: 12.842605590820312
+                alignment: center
+                background: '#000000'
+                width: 495.4925537109375
+                height: 29.966175079345703
+                children:
+                - type: button
+                  label: 40% ↑ المبيعات
+                  id: 50:2335
+                  x: -42936.4375
+                  y: 28452.2265625
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 89.68733215332031
+                  height: 29.966175079345703
+                - type: button
+                  label: 99.9% وقت التشغيل
+                  id: 50:2337
+                  x: -42833.91015625
+                  y: 28452.2265625
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 108.21247863769531
+                  height: 29.966175079345703
+                - type: button
+                  label: 50 ألف+ مستخدم
+                  id: 50:2339
+                  x: -42712.85546875
+                  y: 28452.2265625
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 94.44950103759766
+                  height: 29.966175079345703
+          - type: column
+            id: 50:2341
+            x: -43044.4296875
+            y: 28417.4296875
+            spacing: 10.0
+            background: '#000000'
+            width: 306.0
+            height: 143.9946746826172
+            children:
+            - type: column
+              id: 50:2342
+              x: -43044.4296875
+              y: 28417.4296875
+              spacing: 8.0
+              background: '#000000'
+              width: 306.0
+              height: 110.0
+              children:
+              - type: text
+                value: E-Commerce Platforms
+                id: 50:2343
+                x: -43044.4296875
+                y: 28417.4296875
+                size: 24.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Lorem ipsum dolor sit amet consectetur. Sapien eu nulla egestas
+                  gravida eget erat fames hac.
+                id: 50:2344
+                x: -43044.4296875
+                y: 28455.4296875
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#90A1B9'
+                align: left
+            - type: row
+              id: 50:2345
+              x: -43044.4296875
+              y: 28537.4296875
+              padding: 6.0
+              spacing: 7.930096626281738
+              alignment: end
+              background: '#000000'
+              width: 177.9300537109375
+              height: 23.994674682617188
+              children:
+              - type: text
+                value: Show Case Study
+                id: 50:2346
+                x: -43038.4296875
+                y: 28537.427734375
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                align: center
+              - type: icon
+                name: Container
+                id: 50:2347
+                url: assets/icons/container.svg
+                width: 15.999957084655762
+                height: 15.999957084655762
+      - type: row
+        id: 50:2352
+        x: -43060.4296875
+        y: 28609.423828125
+        padding: 20.0
+        spacing: 8.0
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 521.9946899414062
+        children:
+        - type: column
+          id: 50:2353
+          x: -43044.4296875
+          y: 28633.423828125
+          spacing: 29.0
+          background: '#000000'
+          width: 306.0
+          height: 473.99468994140625
+          children:
+          - type: stack
+            id: 50:2354
+            x: -43044.4296875
+            y: 28633.423828125
+            background: '#000000'
+            radius: 12.842666625976562
+            width: 305.8160095214844
+            height: 301.0
+            children:
+            - type: image
+              name: ImageWithFallback
+              id: 50:2355
+              url: assets/images/imagewithfallback.png
+              width: 534.0120239257812
+              height: 300.62396240234375
+              x: -43044.4296875
+              y: 28633.423828125
+            - type: button
+              label: 300% Increased Sales
+              id: 50:2357
+              x: -43038.4296875
+              y: 28652.423828125
+              background: '#0F172B'
+              radius: 18132400.0
+              width: 173.37600708007812
+              height: 32.909332275390625
+            - type: column
+              id: 50:2362
+              x: -43044.4296875
+              y: 28978.9609375
+              padding: 19.259721120198567
+              background: '#000000'
+              width: 534.0120239257812
+              height: 68.48562622070312
+              children:
+              - type: row
+                id: 50:2363
+                x: -43025.171875
+                y: 28998.220703125
+                padding: 0.008493795059621334
+                spacing: 12.842605590820312
+                alignment: center
+                background: '#000000'
+                width: 495.4925537109375
+                height: 29.966175079345703
+                children:
+                - type: button
+                  label: 40% ↑ المبيعات
+                  id: 50:2364
+                  x: -42936.4375
+                  y: 28998.220703125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 89.68733215332031
+                  height: 29.966175079345703
+                - type: button
+                  label: 99.9% وقت التشغيل
+                  id: 50:2366
+                  x: -42833.91015625
+                  y: 28998.220703125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 108.21247863769531
+                  height: 29.966175079345703
+                - type: button
+                  label: 50 ألف+ مستخدم
+                  id: 50:2368
+                  x: -42712.85546875
+                  y: 28998.220703125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 94.44950103759766
+                  height: 29.966175079345703
+          - type: column
+            id: 50:2370
+            x: -43044.4296875
+            y: 28963.423828125
+            spacing: 10.0
+            background: '#000000'
+            width: 306.0
+            height: 143.9946746826172
+            children:
+            - type: column
+              id: 50:2371
+              x: -43044.4296875
+              y: 28963.423828125
+              spacing: 8.0
+              background: '#000000'
+              width: 306.0
+              height: 110.0
+              children:
+              - type: text
+                value: E-Commerce Platforms
+                id: 50:2372
+                x: -43044.4296875
+                y: 28963.423828125
+                size: 24.0
+                fontWeight: 700
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Lorem ipsum dolor sit amet consectetur. Sapien eu nulla egestas
+                  gravida eget erat fames hac.
+                id: 50:2373
+                x: -43044.4296875
+                y: 29001.423828125
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#90A1B9'
+                align: left
+            - type: row
+              id: 50:2374
+              x: -43044.4296875
+              y: 29083.423828125
+              padding: 6.0
+              spacing: 7.930096626281738
+              alignment: end
+              background: '#000000'
+              width: 177.9300537109375
+              height: 23.994674682617188
+              children:
+              - type: text
+                value: Show Case Study
+                id: 50:2375
+                x: -43038.4296875
+                y: 29083.421875
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                align: center
+              - type: icon
+                name: Container
+                id: 50:2376
+                url: assets/icons/container.svg
+                width: 15.999957084655762
+                height: 15.999957084655762
+  - type: column
+    id: 51:2537
+    x: -43076.4296875
+    y: 29211.419921875
+    spacing: 32.0
+    background: '#000000'
+    width: 375.0
+    height: 716.588134765625
+    children:
+    - type: column
+      id: 51:2446
+      x: -43076.4296875
+      y: 29211.419921875
+      spacing: 16.0
+      background: '#000000'
+      width: 375.0
+      height: 201.34458923339844
+      children:
+      - type: button
+        label: Portfolio
+        id: 51:2447
+        x: -42936.1015625
+        y: 29211.419921875
+        background: '#000000'
+        radius: 22558400.0
+        width: 94.34458923339844
+        height: 37.34458541870117
+      - type: column
+        id: 51:2449
+        x: -43060.4296875
+        y: 29264.763671875
+        spacing: 16.0
+        background: '#000000'
+        width: 343.0
+        height: 148.0
+        children:
+        - type: text
+          value: Our Strategic Goals
+          id: 51:2450
+          x: -43060.4296875
+          y: 29264.763671875
+          size: 28.0
+          fontWeight: 700
+          fontFamily: Montserrat
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: Driving innovation, excellence, and sustainable growth through technology
+            solutions that empower businesses to achieve long-term success.
+          id: 51:2451
+          x: -43060.4296875
+          y: 29316.763671875
+          size: 16.0
+          fontWeight: 400
+          fontFamily: Montserrat
+          color: '#BFC8E6'
+          align: center
+    - type: column
+      id: 51:2483
+      x: -43060.4296875
+      y: 29444.763671875
+      spacing: 24.0
+      background: '#000000'
+      width: 343.0
+      height: 483.2435302734375
+      children:
+      - type: row
+        id: 51:2526
+        x: -43060.4296875
+        y: 29444.763671875
+        padding: 24.0
+        spacing: 10.0
+        alignment: center
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 427.2435302734375
+        children:
+        - type: column
+          id: 51:2527
+          x: -43044.4296875
+          y: 29476.763671875
+          spacing: 47.0
+          background: '#000000'
+          width: 311.0
+          height: 363.2435302734375
+          children:
+          - type: column
+            id: 51:2528
+            x: -43044.4296875
+            y: 29476.763671875
+            spacing: 24.0
+            background: '#000000'
+            width: 311.0
+            height: 156.0
+            children:
+            - type: text
+              value: Sustainability
+              id: 51:2529
+              x: -43044.4296875
+              y: 29476.763671875
+              size: 28.0
+              fontWeight: 700
+              fontFamily: Montserrat
+              color: '#E8EAF0'
+              align: center
+            - type: text
+              value: Build a sustainable business model that ensures continuous growth
+                while maintaining service quality and operational excellence.
+              id: 51:2530
+              x: -43044.4296875
+              y: 29536.763671875
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Montserrat
+              color: '#94A3B8'
+              align: center
+          - type: stack
+            id: 51:2531
+            x: -42973.4296875
+            y: 29679.76429748535
+            background: '#000000'
+            width: 169.0
+            height: 160.24351501464844
+            children:
+            - type: stack
+              id: 51:2532
+              x: -42973.4296875
+              y: 29679.76429748535
+              background: '#000000'
+              width: 169.0
+              height: 160.24351501464844
+              children:
+              - type: icon
+                name: Vector
+                id: 51:2533
+                url: assets/icons/vector_51_2533.svg
+                width: 169.0
+                height: 160.24351501464844
+            - type: stack
+              id: 51:2534
+              x: -42973.4296875
+              y: 29679.76429748535
+              background: '#000000'
+              width: 169.0
+              height: 160.24351501464844
+              children:
+              - type: icon
+                name: Vector
+                id: 51:2535
+                url: assets/icons/vector_51_2535.svg
+                width: 169.0
+                height: 160.24351501464844
+      - type: row
+        id: 51:2520
+        x: -42932.4296875
+        y: 29896.0078125
+        spacing: 974.0
+        background: '#000000'
+        width: 87.0
+        height: 32.0
+        children:
+        - type: icon
+          name: Icon
+          id: 51:2521
+          url: assets/icons/icon.svg
+          width: 32.0
+          height: 32.0
+        - type: icon
+          name: Icon
+          id: 51:2523
+          url: assets/icons/icon.svg
+          width: 32.0
+          height: 32.0
+  - type: column
+    id: 52:2663
+    x: -43076.4296875
+    y: 30008.0078125
+    spacing: 32.0
+    background: '#000000'
+    width: 375.0
+    height: 758.3446044921875
+    children:
+    - type: column
+      id: 51:2538
+      x: -43076.4296875
+      y: 30008.0078125
+      spacing: 16.0
+      background: '#000000'
+      width: 375.0
+      height: 189.34458923339844
+      children:
+      - type: button
+        label: Success Stories
+        id: 51:2539
+        x: -42960.1015625
+        y: 30008.0078125
+        background: '#000000'
+        radius: 22558400.0
+        width: 142.34458923339844
+        height: 37.34458541870117
+      - type: column
+        id: 51:2541
+        x: -43060.4296875
+        y: 30061.3515625
+        spacing: 16.0
+        background: '#000000'
+        width: 343.0
+        height: 136.0
+        children:
+        - type: text
+          value: Real Impact, Real Results
+          id: 51:2542
+          x: -43060.4296875
+          y: 30061.3515625
+          size: 28.0
+          fontWeight: 700
+          fontFamily: Montserrat
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: Measurable success across diverse projects and industries
+          id: 51:2543
+          x: -43060.4296875
+          y: 30149.3515625
+          size: 16.0
+          fontWeight: 400
+          fontFamily: Montserrat
+          color: '#BFC8E6'
+          align: center
+    - type: column
+      id: 52:2619
+      x: -43060.4296875
+      y: 30229.3515625
+      spacing: 24.0
+      background: '#000000'
+      width: 343.0
+      height: 537.0
+      children:
+      - type: stack
+        id: 52:2635
+        x: -43060.4296875
+        y: 30229.3515625
+        background: '#000000'
+        radius: 20.0
+        width: 343.0
+        height: 481.0
+        children:
+        - type: button
+          label: '"Outstanding work on our mobile app! The team''s attention to detail
+            and innovative approach exceeded our expectations. Highly recommended."'
+          id: 52:2636
+          x: -43060.4296875
+          y: 30229.3515625
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 481.0
+      - type: row
+        id: 52:2630
+        x: -42932.4296875
+        y: 30734.3515625
+        spacing: 974.0
+        background: '#000000'
+        width: 87.0
+        height: 32.0
+        children:
+        - type: icon
+          name: Icon
+          id: 52:2631
+          url: assets/icons/icon.svg
+          width: 32.0
+          height: 32.0
+        - type: icon
+          name: Icon
+          id: 52:2633
+          url: assets/icons/icon.svg
+          width: 32.0
+          height: 32.0
+  - type: column
+    id: 52:2781
+    x: -43076.9296875
+    y: 30846.3515625
+    padding: 28.0
+    spacing: 8.0
+    alignment: center
+    background: '#000000'
+    width: 376.0
+    height: 1683.5023193359375
+    children:
+    - type: column
+      id: 52:2782
+      x: -43060.9296875
+      y: 30886.3515625
+      background: '#000000'
+      width: 344.0
+      height: 1603.5023193359375
+      children:
+      - type: column
+        id: 52:2783
+        x: -43060.9296875
+        y: 30886.3515625
+        background: '#000000'
+        width: 344.0
+        height: 1603.5023193359375
+        children:
+        - type: column
+          id: 52:2906
+          x: -43060.9296875
+          y: 30886.3515625
+          spacing: 16.0
+          background: '#000000'
+          width: 344.0
+          height: 189.34458923339844
+          children:
+          - type: button
+            label: Get In Touch
+            id: 52:2907
+            x: -42950.6015625
+            y: 30886.3515625
+            background: '#000000'
+            radius: 22558400.0
+            width: 123.34458923339844
+            height: 37.34458541870117
+          - type: column
+            id: 52:2909
+            x: -43060.4296875
+            y: 30939.6953125
+            spacing: 16.0
+            background: '#000000'
+            width: 343.0
+            height: 136.0
+            children:
+            - type: text
+              value: Let's Start a Conversation
+              id: 52:2910
+              x: -43060.4296875
+              y: 30939.6953125
+              size: 28.0
+              fontWeight: 700
+              fontFamily: Montserrat
+              color: '#FFFFFF'
+              align: center
+            - type: text
+              value: Reach out to us and let's discuss how we can help transform your
+                business
+              id: 52:2911
+              x: -43060.4296875
+              y: 31027.6953125
+              size: 16.0
+              fontWeight: 400
+              fontFamily: Montserrat
+              color: '#BFC8E6'
+              align: center
+        - type: column
+          id: 52:2794
+          x: -43060.9296875
+          y: 31075.6953125
+          padding: 32.0
+          background: '#000000'
+          width: 343.0
+          height: 1414.15771484375
+          children:
+          - type: column
+            id: 52:2899
+            x: -43060.9296875
+            y: 31107.6953125
+            spacing: 48.0
+            background: '#000000'
+            width: 343.0
+            height: 1382.15771484375
+            children:
+            - type: column
+              id: 52:2796
+              x: -43060.9296875
+              y: 31107.6953125
+              background: '#000000'
+              width: 344.0
+              height: 529.3472900390625
+              children:
+              - type: column
+                id: 52:2797
+                x: -43060.9296875
+                y: 31107.6953125
+                padding: 24.0
+                background: '#000000'
+                radius: 16.0
+                width: 344.0
+                height: 105.34458923339844
+                children:
+                - type: row
+                  id: 52:2798
+                  x: -43036.2578125
+                  y: 31132.3671875
+                  spacing: 16.0
+                  background: '#000000'
+                  width: 566.6690673828125
+                  height: 56.0
+                  children:
+                  - type: icon
+                    name: Container
+                    id: 52:2799
+                    url: assets/icons/container.svg
+                    width: 47.995384216308594
+                    height: 47.995384216308594
+                  - type: column
+                    id: 52:2803
+                    x: -42972.26171875
+                    y: 31132.3671875
+                    background: '#000000'
+                    width: 96.03278350830078
+                    height: 56.0
+                    children:
+                    - type: column
+                      id: 52:2804
+                      x: -42972.26171875
+                      y: 31132.3671875
+                      background: '#000000'
+                      width: 96.03278350830078
+                      height: 28.0
+                      children:
+                      - type: text
+                        value: Location
+                        id: 52:2805
+                        x: -42972.26171875
+                        y: 31132.3671875
+                        size: 18.0
+                        fontWeight: 600
+                        fontFamily: Montserrat
+                        color: '#FFFFFF'
+                        align: left
+                    - type: column
+                      id: 52:2806
+                      x: -42972.26171875
+                      y: 31160.3671875
+                      padding: 4.0
+                      background: '#000000'
+                      width: 96.03278350830078
+                      height: 28.0
+                      children:
+                      - type: text
+                        value: Cairo, Egypt
+                        id: 52:2807
+                        x: -42972.26171875
+                        y: 31164.3671875
+                        size: 16.0
+                        fontWeight: 400
+                        fontFamily: Montserrat
+                        color: '#BFC8E6'
+                        align: left
+              - type: column
+                id: 52:2808
+                x: -43060.9296875
+                y: 31213.0390625
+                padding: 24.0
+                background: '#000000'
+                width: 344.0
+                height: 129.32876586914062
+                children:
+                - type: column
+                  id: 52:2809
+                  x: -43060.9296875
+                  y: 31237.0390625
+                  padding: 24.0
+                  background: '#000000'
+                  radius: 16.0
+                  width: 344.0
+                  height: 105.32876586914062
+                  children:
+                  - type: row
+                    id: 52:2810
+                    x: -43036.2578125
+                    y: 31261.7109375
+                    spacing: 16.0
+                    background: '#000000'
+                    width: 566.6690673828125
+                    height: 55.98417663574219
+                    children:
+                    - type: icon
+                      name: Container
+                      id: 52:2811
+                      url: assets/icons/container.svg
+                      width: 47.995384216308594
+                      height: 47.995384216308594
+                    - type: column
+                      id: 52:2814
+                      x: -42972.26171875
+                      y: 31261.7109375
+                      background: '#000000'
+                      width: 101.75777435302734
+                      height: 55.98417663574219
+                      children:
+                      - type: column
+                        id: 52:2815
+                        x: -42972.26171875
+                        y: 31261.7109375
+                        padding: 4.0
+                        background: '#000000'
+                        width: 101.75777435302734
+                        height: 32.0
+                        children:
+                        - type: text
+                          value: Phone
+                          id: 52:2816
+                          x: -42972.26171875
+                          y: 31261.7109375
+                          size: 18.0
+                          fontWeight: 600
+                          fontFamily: Montserrat
+                          color: '#FFFFFF'
+                          align: left
+                      - type: stack
+                        id: 52:2817
+                        x: -42972.26171875
+                        y: 31293.7109375
+                        background: '#000000'
+                        width: 101.75777435302734
+                        height: 23.984174728393555
+                        children:
+                        - type: text
+                          value: 01550099355
+                          id: 52:2818
+                          x: -42972.26171875
+                          y: 31293.71875
+                          size: 16.0
+                          fontWeight: 400
+                          fontFamily: Montserrat
+                          color: '#BFC8E6'
+                          align: left
+              - type: column
+                id: 52:2819
+                x: -43060.9296875
+                y: 31342.369140625
+                padding: 24.0
+                background: '#000000'
+                width: 344.0
+                height: 129.32876586914062
+                children:
+                - type: column
+                  id: 52:2820
+                  x: -43060.9296875
+                  y: 31366.369140625
+                  padding: 24.0
+                  background: '#000000'
+                  radius: 16.0
+                  width: 344.0
+                  height: 105.32876586914062
+                  children:
+                  - type: row
+                    id: 52:2821
+                    x: -43036.2578125
+                    y: 31391.041015625
+                    spacing: 16.0
+                    background: '#000000'
+                    width: 566.6690673828125
+                    height: 55.98417663574219
+                    children:
+                    - type: icon
+                      name: Container
+                      id: 52:2822
+                      url: assets/icons/container.svg
+                      width: 47.995384216308594
+                      height: 47.995384216308594
+                    - type: column
+                      id: 52:2827
+                      x: -42972.26171875
+                      y: 31391.041015625
+                      background: '#000000'
+                      width: 156.5811309814453
+                      height: 55.98417663574219
+                      children:
+                      - type: column
+                        id: 52:2828
+                        x: -42972.26171875
+                        y: 31391.041015625
+                        padding: 4.0
+                        background: '#000000'
+                        width: 156.5811309814453
+                        height: 32.0
+                        children:
+                        - type: text
+                          value: Website
+                          id: 52:2829
+                          x: -42972.26171875
+                          y: 31391.041015625
+                          size: 18.0
+                          fontWeight: 600
+                          fontFamily: Montserrat
+                          color: '#FFFFFF'
+                          align: left
+                      - type: stack
+                        id: 52:2830
+                        x: -42972.26171875
+                        y: 31423.041015625
+                        background: '#000000'
+                        width: 156.5811309814453
+                        height: 23.984174728393555
+                        children:
+                        - type: text
+                          value: gosorsolutions.com
+                          id: 52:2831
+                          x: -42972.26171875
+                          y: 31423.048828125
+                          size: 16.0
+                          fontWeight: 400
+                          fontFamily: Montserrat
+                          color: '#BFC8E6'
+                          align: left
+              - type: column
+                id: 52:2832
+                x: -43060.9296875
+                y: 31471.697265625
+                padding: 24.0
+                background: '#000000'
+                width: 344.0
+                height: 165.34515380859375
+                children:
+                - type: column
+                  id: 52:2833
+                  x: -43060.9296875
+                  y: 31495.697265625
+                  padding: 24.0
+                  background: '#000000'
+                  radius: 16.0
+                  width: 344.0
+                  height: 141.34515380859375
+                  children:
+                  - type: stack
+                    id: 52:2834
+                    x: -43036.2578125
+                    y: 31520.369140625
+                    background: '#000000'
+                    width: 566.6690673828125
+                    height: 28.005186080932617
+                    children:
+                    - type: text
+                      value: Follow Us
+                      id: 52:2835
+                      x: -43036.2578125
+                      y: 31520.05859375
+                      size: 18.0
+                      fontWeight: 600
+                      fontFamily: Montserrat
+                      color: '#FFFFFF'
+                      align: left
+                  - type: row
+                    id: 52:2836
+                    x: -43036.2578125
+                    y: 31548.375
+                    padding: 16.0
+                    spacing: 16.0
+                    background: '#000000'
+                    width: 566.6690673828125
+                    height: 63.995384216308594
+                    children:
+                    - type: row
+                      id: 52:2837
+                      x: -43036.2578125
+                      y: 31564.375
+                      spacing: 16.0
+                      background: '#000000'
+                      width: 95.98655700683594
+                      height: 39.99327850341797
+                      children:
+                      - type: icon
+                        name: Link - Email
+                        id: 52:2838
+                        url: assets/icons/link_-_email.svg
+                        width: 39.99327850341797
+                        height: 39.99327850341797
+                      - type: icon
+                        name: Link - LinkedIn
+                        id: 52:2841
+                        url: assets/icons/link_-_linkedin.svg
+                        width: 39.99327850341797
+                        height: 39.99327850341797
+            - type: column
+              id: 52:2846
+              x: -43060.9296875
+              y: 31685.04296875
+              padding: 24.0
+              background: '#000000'
+              radius: 24.0
+              width: 344.0
+              height: 804.8104248046875
+              children:
+              - type: column
+                id: 52:2847
+                x: -43044.2578125
+                y: 31717.71484375
+                background: '#000000'
+                width: 307.0
+                height: 739.4658203125
+                children:
+                - type: column
+                  id: 52:2848
+                  x: -43044.2578125
+                  y: 31717.71484375
+                  background: '#000000'
+                  width: 305.0
+                  height: 77.32344055175781
+                  children:
+                  - type: column
+                    id: 52:2849
+                    x: -43044.2578125
+                    y: 31717.71484375
+                    padding: 8.0
+                    background: '#000000'
+                    width: 305.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: Name
+                      id: 52:2850
+                      x: -43044.2578125
+                      y: 31717.71484375
+                      size: 14.0
+                      fontWeight: 600
+                      fontFamily: Montserrat
+                      color: '#FFFFFF'
+                      align: left
+                  - type: stack
+                    id: 52:2851
+                    x: -43044.2578125
+                    y: 31745.71484375
+                    background: '#000000'
+                    width: 305.0
+                    height: 49.32344055175781
+                    children:
+                    - type: button
+                      label: Your name
+                      id: 52:2852
+                      x: -43043.9296875
+                      y: 31745.3515625
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 305.0
+                      height: 50.0
+                - type: column
+                  id: 52:2854
+                  x: -43044.2578125
+                  y: 31795.0390625
+                  padding: 24.0
+                  background: '#000000'
+                  width: 305.0
+                  height: 101.32344055175781
+                  children:
+                  - type: column
+                    id: 52:2855
+                    x: -43044.2578125
+                    y: 31819.0390625
+                    padding: 8.0
+                    background: '#000000'
+                    width: 305.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: Email
+                      id: 52:2856
+                      x: -43044.2578125
+                      y: 31819.0390625
+                      size: 14.0
+                      fontWeight: 600
+                      fontFamily: Montserrat
+                      color: '#FFFFFF'
+                      align: left
+                  - type: stack
+                    id: 52:2857
+                    x: -43044.2578125
+                    y: 31847.0390625
+                    background: '#000000'
+                    width: 305.0
+                    height: 49.32344055175781
+                    children:
+                    - type: button
+                      label: your@email.com
+                      id: 52:2858
+                      x: -43043.9296875
+                      y: 31847.3515625
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 305.0
+                      height: 49.0
+                - type: column
+                  id: 52:2860
+                  x: -43044.2578125
+                  y: 31896.361328125
+                  padding: 24.0
+                  background: '#000000'
+                  width: 307.0
+                  height: 101.32344055175781
+                  children:
+                  - type: column
+                    id: 52:2861
+                    x: -43044.2578125
+                    y: 31920.361328125
+                    padding: 8.0
+                    background: '#000000'
+                    width: 307.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: Phone
+                      id: 52:2862
+                      x: -43044.2578125
+                      y: 31920.361328125
+                      size: 14.0
+                      fontWeight: 600
+                      fontFamily: Montserrat
+                      color: '#FFFFFF'
+                      align: left
+                  - type: stack
+                    id: 52:2863
+                    x: -43044.2578125
+                    y: 31948.361328125
+                    background: '#000000'
+                    width: 307.0
+                    height: 49.32344055175781
+                    children:
+                    - type: button
+                      label: Your phone number
+                      id: 52:2864
+                      x: -43043.9296875
+                      y: 31948.3515625
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 307.0
+                      height: 49.0
+                - type: column
+                  id: 52:2866
+                  x: -43044.2578125
+                  y: 31997.685546875
+                  padding: 24.0
+                  background: '#000000'
+                  width: 307.0
+                  height: 101.32344055175781
+                  children:
+                  - type: column
+                    id: 52:2867
+                    x: -43044.2578125
+                    y: 32021.685546875
+                    padding: 8.0
+                    background: '#000000'
+                    width: 307.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: Company
+                      id: 52:2868
+                      x: -43044.2578125
+                      y: 32021.685546875
+                      size: 14.0
+                      fontWeight: 600
+                      fontFamily: Montserrat
+                      color: '#FFFFFF'
+                      align: left
+                  - type: stack
+                    id: 52:2869
+                    x: -43044.2578125
+                    y: 32049.685546875
+                    background: '#000000'
+                    width: 307.0
+                    height: 49.32344055175781
+                    children:
+                    - type: button
+                      label: Your company name
+                      id: 52:2870
+                      x: -43043.9296875
+                      y: 32049.3515625
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 308.0
+                      height: 50.0
+                - type: column
+                  id: 52:2872
+                  x: -43044.2578125
+                  y: 32099.0078125
+                  padding: 24.0
+                  background: '#000000'
+                  width: 550.6600952148438
+                  height: 98.17207336425781
+                  children:
+                  - type: column
+                    id: 52:2873
+                    x: -43044.2578125
+                    y: 32123.0078125
+                    padding: 8.0
+                    background: '#000000'
+                    width: 306.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: Project Type
+                      id: 52:2874
+                      x: -43044.2578125
+                      y: 32123.0078125
+                      size: 14.0
+                      fontWeight: 600
+                      fontFamily: Montserrat
+                      color: '#FFFFFF'
+                      align: left
+                  - type: column
+                    id: 52:2875
+                    x: -43044.2578125
+                    y: 32151.0078125
+                    padding: 6.5
+                    spacing: 8.0
+                    background: '#000000'
+                    width: 306.0
+                    height: 46.0
+                    children:
+                    - type: row
+                      id: 52:2876
+                      x: -43036.2578125
+                      y: 32156.0078125
+                      spacing: 383.0
+                      background: '#000000'
+                      width: 520.0
+                      height: 36.0
+                      children:
+                      - type: row
+                        id: 52:2877
+                        x: -43036.2578125
+                        y: 32156.0078125
+                        padding: 8.0
+                        spacing: 8.0
+                        alignment: center
+                        background: '#000000'
+                        width: 116.0
+                        height: 36.0
+                        children:
+                        - type: text
+                          value: Project Type
+                          id: 52:2878
+                          x: -43028.2578125
+                          y: 32164.0078125
+                          size: 16.0
+                          fontWeight: 400
+                          fontFamily: Montserrat
+                          color: '#8FA0D1'
+                          align: left
+                      - type: icon
+                        name: weui:arrow-filled
+                        id: 52:2879
+                        url: assets/icons/weuiarrow-filled.svg
+                        width: 20.606666564941406
+                        height: 8.13648796081543
+                    - type: stack
+                      id: 52:2881
+                      x: -43043.9296875
+                      y: 32151.3515625
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 306.0
+                      height: 46.0
+                      children:
+                      - type: icon
+                        name: Option
+                        id: 52:2882
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 52:2883
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 52:2884
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 52:2885
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 52:2886
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 52:2887
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 52:2888
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 52:2889
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                - type: column
+                  id: 52:2890
+                  x: -43044.2578125
+                  y: 32197.1796875
+                  padding: 24.0
+                  background: '#000000'
+                  width: 305.0
+                  height: 204.0
+                  children:
+                  - type: column
+                    id: 52:2891
+                    x: -43044.2578125
+                    y: 32221.1796875
+                    padding: 8.0
+                    background: '#000000'
+                    width: 311.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: Message
+                      id: 52:2892
+                      x: -43044.2578125
+                      y: 32221.1796875
+                      size: 14.0
+                      fontWeight: 600
+                      fontFamily: Montserrat
+                      color: '#FFFFFF'
+                      align: left
+                  - type: stack
+                    id: 52:2893
+                    x: -43044.2578125
+                    y: 32249.1796875
+                    background: '#000000'
+                    width: 305.0
+                    height: 128.0
+                    children:
+                    - type: button
+                      label: Tell us about your project...
+                      id: 52:2894
+                      x: -43043.9296875
+                      y: 32249.3515625
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 305.0
+                      height: 121.0
+                - type: button
+                  label: Send Message
+                  id: 52:2896
+                  x: -43044.2578125
+                  y: 32401.1796875
+                  background: '#000000'
+                  radius: 16.0
+                  width: 306.0
+                  height: 56.0
+  - type: stack
+    id: 53:3143
+    x: -43081.4296875
+    y: 32609.85546875
+    background: '#000000'
+    width: 373.0
+    height: 1301.0
+    children:
+    - type: container
+      width: 222.0
+      height: 1282.0
+      id: I53:3143;52:2990
+      x: -43081.4296875
+      y: 32609.85546875
+    - type: container
+      width: 152.0
+      height: 1282.0
+      id: I53:3143;52:2991
+      x: -42859.4296875
+      y: 32609.85546875
+    - type: container
+      width: 374.0
+      height: 1282.0
+      id: I53:3143;52:2992
+      x: -43081.4296875
+      y: 32609.85546875
+    - type: stack
+      id: I53:3143;52:2993
+      x: -43081.4296875
+      y: 32609.85546875
+      background: '#000000'
+      width: 445.0
+      height: 512.0
+      children:
+      - type: container
+        width: 222.5
+        height: 512.0
+        id: I53:3143;52:2994
+        x: -43081.4296875
+        y: 32609.85546875
+      - type: container
+        width: 222.5
+        height: 512.0
+        id: I53:3143;52:2995
+        x: -42858.9296875
+        y: 32609.85546875
+    - type: column
+      id: I53:3143;52:2996
+      x: -43081.4296875
+      y: 32609.85546875
+      padding: 32.0
+      spacing: 32.0
+      background: '#101133'
+      width: 374.0
+      height: 1281.6676025390625
+      children:
+      - type: column
+        id: I53:3143;52:2997
+        x: -43065.4296875
+        y: 32657.85546875
+        spacing: 40.0
+        background: '#000000'
+        width: 342.0
+        height: 1046.0
+        children:
+        - type: column
+          id: I53:3143;52:2998
+          x: -43065.4296875
+          y: 32657.85546875
+          spacing: 29.0
+          alignment: center
+          background: '#000000'
+          width: 342.0
+          height: 309.0
+          children:
+          - type: column
+            id: I53:3143;52:2999
+            x: -43057.92578125
+            y: 32664.35546875
+            spacing: 16.0
+            alignment: center
+            background: '#000000'
+            width: 326.9925537109375
+            height: 185.0
+            children:
+            - type: container
+              width: 184.0
+              height: 91.0
+              id: I53:3143;52:3000
+              x: -43057.92578125
+              y: 32664.35546875
+            - type: text
+              value: Building the future of technology with innovative software solutions
+                that drive business growth.
+              id: I53:3143;52:3001
+              x: -43057.92578125
+              y: 32771.35546875
+              size: 18.0
+              fontWeight: 400
+              fontFamily: Montserrat
+              color: '#D6D8DB'
+              align: left
+          - type: column
+            id: I53:3143;52:3002
+            x: -43065.4296875
+            y: 32878.35546875
+            spacing: 16.0
+            alignment: center
+            background: '#000000'
+            width: 342.0
+            height: 82.0
+            children:
+            - type: text
+              value: Subscribe to our newsletter
+              id: I53:3143;52:3003
+              x: -42989.9296875
+              y: 32876.85546875
+              size: 14.0
+              fontWeight: 400
+              fontFamily: Poppins
+              color: '#D6D8DB'
+              align: left
+            - type: row
+              id: I53:3143;52:3004
+              x: -43065.4296875
+              y: 32913.85546875
+              padding: 2.288818359375e-05
+              spacing: 7.9903106689453125
+              background: '#000000'
+              width: 342.0
+              height: 48.0
+              children:
+              - type: button
+                label: Enter your email
+                id: I53:3143;52:3005
+                x: -43065.4296875
+                y: 32913.85546875
+                background: '#0F172B'
+                radius: 8.0
+                width: 217.0
+                height: 48.0
+              - type: button
+                label: Subscribe
+                id: I53:3143;52:3007
+                x: -42840.4375
+                y: 32913.85546875
+                background: '#000000'
+                radius: 8.0
+                width: 107.0
+                height: 48.0
+        - type: column
+          id: I53:3143;52:3009
+          x: -43065.4296875
+          y: 33006.85546875
+          spacing: 24.0
+          alignment: center
+          background: '#000000'
+          width: 342.0
+          height: 697.0
+          children:
+          - type: column
+            id: I53:3143;52:3010
+            x: -43065.4296875
+            y: 32990.85546875
+            spacing: 16.0
+            alignment: center
+            background: '#000000'
+            width: 342.0
+            height: 250.0
+            children:
+            - type: stack
+              id: I53:3143;52:3011
+              x: -43065.4296875
+              y: 32992.36328125
+              background: '#000000'
+              width: 342.0
+              height: 27.00641632080078
+              children:
+              - type: text
+                value: Quick Links
+                id: I53:3143;52:3012
+                x: -43065.4296875
+                y: 32993.03515625
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+            - type: column
+              id: I53:3143;52:3013
+              x: -43065.4296875
+              y: 33035.3671875
+              spacing: 11.995820999145508
+              background: '#000000'
+              width: 342.0
+              height: 203.97909545898438
+              children:
+              - type: text
+                value: Home
+                id: I53:3143;52:3014
+                x: -43065.4296875
+                y: 33035.3671875
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: About Us
+                id: I53:3143;52:3015
+                x: -43065.4296875
+                y: 33071.36328125
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Services
+                id: I53:3143;52:3016
+                x: -43065.4296875
+                y: 33107.359375
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Products
+                id: I53:3143;52:3017
+                x: -43065.4296875
+                y: 33143.35546875
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Portfolio
+                id: I53:3143;52:3018
+                x: -43065.4296875
+                y: 33179.3515625
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Contact Us
+                id: I53:3143;52:3019
+                x: -43065.4296875
+                y: 33215.34765625
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+          - type: column
+            id: I53:3143;52:3020
+            x: -43065.4296875
+            y: 33264.85546875
+            spacing: 16.0
+            background: '#000000'
+            width: 342.0
+            height: 250.0
+            children:
+            - type: stack
+              id: I53:3143;52:3021
+              x: -43065.4296875
+              y: 33264.85546875
+              background: '#000000'
+              width: 342.0
+              height: 27.00641632080078
+              children:
+              - type: text
+                value: Quick Links
+                id: I53:3143;52:3022
+                x: -43065.4296875
+                y: 33265.52734375
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+            - type: column
+              id: I53:3143;52:3023
+              x: -43065.4296875
+              y: 33307.86328125
+              spacing: 11.995820999145508
+              background: '#000000'
+              width: 342.0
+              height: 203.97909545898438
+              children:
+              - type: text
+                value: Web Development
+                id: I53:3143;52:3024
+                x: -43065.4296875
+                y: 33307.86328125
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Mobile Apps
+                id: I53:3143;52:3025
+                x: -43065.4296875
+                y: 33343.859375
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: E-Commerce
+                id: I53:3143;52:3026
+                x: -43065.4296875
+                y: 33379.85546875
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: Educational Platforms
+                id: I53:3143;52:3027
+                x: -43065.4296875
+                y: 33415.8515625
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: ERP & CRM Systems
+                id: I53:3143;52:3028
+                x: -43065.4296875
+                y: 33451.84765625
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: AI Solutions
+                id: I53:3143;52:3029
+                x: -43065.4296875
+                y: 33487.84375
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+          - type: column
+            id: I53:3143;52:3030
+            x: -43065.4296875
+            y: 33538.85546875
+            spacing: 16.0
+            background: '#000000'
+            width: 342.0
+            height: 181.0
+            children:
+            - type: stack
+              id: I53:3143;52:3031
+              x: -43065.4296875
+              y: 33538.85546875
+              background: '#000000'
+              width: 342.0
+              height: 27.00641632080078
+              children:
+              - type: text
+                value: Contact Info
+                id: I53:3143;52:3032
+                x: -43065.4296875
+                y: 33539.52734375
+                size: 16.0
+                fontWeight: 600
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+            - type: column
+              id: I53:3143;52:3033
+              x: -43065.4296875
+              y: 33581.86328125
+              spacing: 11.995820999145508
+              background: '#000000'
+              width: 342.0
+              height: 95.99163818359375
+              children:
+              - type: row
+                id: I53:3143;52:3034
+                x: -43065.4296875
+                y: 33581.86328125
+                spacing: 12.0
+                background: '#000000'
+                width: 138.0
+                height: 24.0
+                children:
+                - type: icon
+                  name: Icon
+                  id: I53:3143;52:3035
+                  url: assets/icons/icon.svg
+                  width: 24.0
+                  height: 24.0
+                - type: text
+                  value: 01550099355
+                  id: I53:3143;52:3037
+                  x: -43029.4296875
+                  y: 33581.86328125
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Montserrat
+                  color: '#FFFFFF'
+                  align: left
+              - type: row
+                id: I53:3143;52:3038
+                x: -43065.4296875
+                y: 33617.859375
+                spacing: 12.0
+                background: '#000000'
+                width: 240.0
+                height: 24.0
+                children:
+                - type: icon
+                  name: Icon
+                  id: I53:3143;52:3039
+                  url: assets/icons/icon.svg
+                  width: 24.0
+                  height: 24.0
+                - type: text
+                  value: info@gosorsolutions.com
+                  id: I53:3143;52:3042
+                  x: -43029.4296875
+                  y: 33617.859375
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Montserrat
+                  color: '#FFFFFF'
+                  align: left
+              - type: row
+                id: I53:3143;52:3043
+                x: -43065.4296875
+                y: 33653.85546875
+                spacing: 12.0
+                background: '#000000'
+                width: 133.0
+                height: 24.0
+                children:
+                - type: icon
+                  name: Icon
+                  id: I53:3143;52:3044
+                  url: assets/icons/icon.svg
+                  width: 24.0
+                  height: 24.0
+                - type: text
+                  value: Cairo, Egypt
+                  id: I53:3143;52:3047
+                  x: -43029.4296875
+                  y: 33653.85546875
+                  size: 16.0
+                  fontWeight: 400
+                  fontFamily: Montserrat
+                  color: '#FFFFFF'
+                  align: left
+      - type: column
+        id: I53:3143;52:3049
+        x: -43065.4296875
+        y: 33768.5234375
+        padding: -9.1552734375e-05
+        spacing: 771.4822998046875
+        background: '#000000'
+        width: 342.0
+        height: 75.0
+        children:
+        - type: stack
+          id: I53:3143;52:3050
+          x: -43065.4296875
+          y: 33768.5234375
+          background: '#000000'
+          width: 236.5799560546875
+          height: 19.996639251708984
+          children:
+          - type: text
+            value: © 2026 Gosor Solutions. All Rights Reserved.
+            id: I53:3143;52:3051
+            x: -43065.4296875
+            y: 33768.859375
+            size: 14.0
+            fontWeight: 400
+            fontFamily: Montserrat
+            color: '#D6D8DB'
+            align: left
+        - type: row
+          id: I53:3143;52:3052
+          x: -43065.4296875
+          y: 33803.53125
+          spacing: 16.0
+          background: '#000000'
+          width: 207.94627380371094
+          height: 39.99327850341797
+          children:
+          - type: icon
+            name: Link - Email
+            id: I53:3143;52:3053
+            url: assets/icons/link_-_email.svg
+            width: 39.99327850341797
+            height: 39.99327850341797
+          - type: icon
+            name: Link - LinkedIn
+            id: I53:3143;52:3056
+            url: assets/icons/link_-_linkedin.svg
+            width: 39.99327850341797
+            height: 39.99327850341797
+          - type: icon
+            name: Link - Email
+            id: I53:3143;52:3061
+            url: assets/icons/link_-_email.svg
+            width: 39.99327850341797
+            height: 39.99327850341797

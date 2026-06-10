@@ -1,0 +1,5411 @@
+screen:
+  name: Responsive Arabic
+  children:
+  - type: row
+    id: 54:3221
+    x: -45346.0
+    y: 15493.0
+    padding: 16.0
+    spacing: 155.9779510498047
+    background: '#2E3192'
+    width: 375.0
+    height: 64.0
+    children:
+    - type: icon
+      name: Button
+      id: 54:3223
+      url: assets/icons/button.svg
+      width: 40.0
+      height: 40.0
+    - type: container
+      width: 101.0
+      height: 42.314212799072266
+      id: 54:3222
+      x: -45088.0
+      y: 15503.8427734375
+  - type: container
+    width: 375.0
+    height: 792.0
+    id: 54:3228
+    x: -45346.0
+    y: 15551.0
+  - type: column
+    id: 54:4182
+    x: -45331.0
+    y: 15597.0
+    spacing: 32.0
+    background: '#000000'
+    width: 345.0
+    height: 601.0
+    children:
+    - type: column
+      id: 54:4183
+      x: -45320.0
+      y: 15597.0
+      spacing: 35.0
+      background: '#000000'
+      width: 323.0
+      height: 387.0
+      children:
+      - type: column
+        id: 54:4184
+        x: -45320.0
+        y: 15597.0
+        spacing: 16.0
+        background: '#000000'
+        width: 323.0
+        height: 240.0
+        children:
+        - type: column
+          id: 54:4185
+          x: -45320.0
+          y: 15597.0
+          spacing: 8.0
+          background: '#000000'
+          width: 323.0
+          height: 120.0
+          children:
+          - type: text
+            value: "بناء حلول برمجية ذكية \n للمستقبل"
+            id: 54:4186
+            x: -45320.0
+            y: 15597.0
+            size: 35.0
+            fontWeight: 700
+            fontFamily: GE SS Two
+            align: center
+        - type: text
+          value: نحن نساعد الشركات على تسريع النمو من خلال تطوير البرامج المخصصة والحلول
+            المدعومة بالذكاء الاصطناعي وأنظمة المؤسسات وخدمات التحول الرقمي .
+          id: 54:4187
+          x: -45320.0
+          y: 15733.0
+          size: 18.0
+          fontWeight: 300
+          fontFamily: GE SS Two
+          color: '#BFC8E6'
+          align: center
+      - type: column
+        id: 54:4188
+        x: -45320.0
+        y: 15872.0
+        spacing: 16.0
+        alignment: center
+        background: '#000000'
+        width: 323.0
+        height: 112.0
+        children:
+        - type: button
+          label: ابدأ مشروعك
+          id: 54:4189
+          x: -45320.0
+          y: 15872.0
+          background: '#000000'
+          radius: 16.0
+          width: 323.0
+          height: 48.0
+        - type: button
+          label: استكشاف الحلول
+          id: 54:4194
+          x: -45320.0
+          y: 15936.0
+          background: '#0B0D21'
+          radius: 16.0
+          width: 323.0
+          height: 48.0
+    - type: column
+      id: 54:4196
+      x: -45331.0
+      y: 16016.0
+      spacing: 24.0
+      alignment: center
+      background: '#000000'
+      width: 345.0
+      height: 182.0
+      children:
+      - type: row
+        id: 54:4197
+        x: -45331.0
+        y: 16016.0
+        spacing: 24.0
+        background: '#000000'
+        width: 345.0
+        height: 79.0
+        children:
+        - type: column
+          id: 54:4198
+          x: -45331.0
+          y: 16016.0
+          spacing: 7.62939453125e-06
+          background: '#000000'
+          width: 172.5
+          height: 79.0
+          children:
+          - type: text
+            value: 100+
+            id: 54:4199
+            x: -45286.75
+            y: 16016.0
+            size: 36.0
+            fontWeight: 700
+            fontFamily: Poppins
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: المشاريع المنجزة
+            id: 54:4200
+            x: -45296.75
+            y: 16070.0
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Poppins
+            color: '#D1D5DC'
+            align: center
+        - type: column
+          id: 54:4201
+          x: -45158.5
+          y: 16016.0
+          spacing: 7.62939453125e-06
+          background: '#000000'
+          width: 172.5
+          height: 79.0
+          children:
+          - type: text
+            value: 50+
+            id: 54:4202
+            x: -45107.25
+            y: 16016.0
+            size: 36.0
+            fontWeight: 700
+            fontFamily: Poppins
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: عميل
+            id: 54:4203
+            x: -45089.75
+            y: 16070.0
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Poppins
+            color: '#D1D5DC'
+            align: center
+      - type: row
+        id: 54:4204
+        x: -45331.0
+        y: 16119.0
+        spacing: 24.0
+        background: '#000000'
+        width: 345.0
+        height: 79.0
+        children:
+        - type: column
+          id: 54:4205
+          x: -45331.0
+          y: 16119.0
+          spacing: 7.62939453125e-06
+          background: '#000000'
+          width: 172.5
+          height: 79.0
+          children:
+          - type: text
+            value: 50+
+            id: 54:4206
+            x: -45279.75
+            y: 16119.0
+            size: 36.0
+            fontWeight: 700
+            fontFamily: Poppins
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: أعضاء الفريق
+            id: 54:4207
+            x: -45286.25
+            y: 16173.0
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Poppins
+            color: '#D1D5DC'
+            align: center
+        - type: column
+          id: 54:4208
+          x: -45158.5
+          y: 16119.0
+          spacing: 7.62939453125e-06
+          background: '#000000'
+          width: 172.5
+          height: 79.0
+          children:
+          - type: text
+            value: 95%
+            id: 54:4209
+            x: -45110.75
+            y: 16119.0
+            size: 36.0
+            fontWeight: 700
+            fontFamily: Poppins
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: رضا العميل
+            id: 54:4210
+            x: -45108.75
+            y: 16173.0
+            size: 16.0
+            fontWeight: 400
+            fontFamily: Poppins
+            color: '#D1D5DC'
+            align: center
+  - type: column
+    id: 56:4227
+    x: -45339.4296875
+    y: 16367.0
+    spacing: 32.0
+    background: '#000000'
+    width: 375.0
+    height: 1783.722900390625
+    children:
+    - type: column
+      id: 56:4228
+      x: -45339.4296875
+      y: 16367.0
+      spacing: 40.0
+      background: '#000000'
+      width: 375.0
+      height: 1164.03369140625
+      children:
+      - type: column
+        id: 56:4229
+        x: -45339.4296875
+        y: 16367.0
+        spacing: 16.0
+        background: '#000000'
+        width: 375.0
+        height: 229.34458923339844
+        children:
+        - type: button
+          label: معلومات عنا
+          id: 56:4230
+          x: -45209.6015625
+          y: 16367.0
+          background: '#000000'
+          radius: 22558400.0
+          width: 115.34458923339844
+          height: 37.34458541870117
+        - type: column
+          id: 56:4232
+          x: -45323.4296875
+          y: 16420.34375
+          spacing: 16.0
+          background: '#000000'
+          width: 343.0
+          height: 176.0
+          children:
+          - type: text
+            value: من نحن
+            id: 56:4233
+            x: -45323.4296875
+            y: 16420.34375
+            size: 28.0
+            fontWeight: 700
+            fontFamily: GE SS Two
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: Gosor Solutions هي شركة رائدة في تطوير البرمجيات والذكاء الاصطناعي
+              مكرسة لتقديم حلول رقمية مبتكرة تمكن الشركات والمؤسسات التعليمية والمنظمات
+              من النمو بشكل أسرع والعمل بشكل أكثر ذكاءً وتحقيق نجاح قابل للقياس .
+            id: 56:4234
+            x: -45323.4296875
+            y: 16476.34375
+            size: 16.0
+            fontWeight: 300
+            fontFamily: GE SS Two
+            color: '#BFC8E6'
+            align: center
+      - type: column
+        id: 56:4235
+        x: -45323.4296875
+        y: 16636.34375
+        spacing: 24.0
+        background: '#000000'
+        width: 343.0
+        height: 894.6891479492188
+        children:
+        - type: column
+          id: 56:4236
+          x: -45323.4296875
+          y: 16636.34375
+          padding: 24.0
+          background: '#000000'
+          radius: 24.0
+          width: 343.0
+          height: 423.3445739746094
+          children:
+          - type: column
+            id: 56:4237
+            x: -45306.7578125
+            y: 16669.015625
+            spacing: 32.0
+            alignment: center
+            background: '#000000'
+            width: 309.6554260253906
+            height: 358.0
+            children:
+            - type: image
+              name: Image [home-feature_image]
+              id: 56:4238
+              url: assets/images/image_home-feature_image.png
+              width: 309.6554260253906
+              height: 202.0
+              x: -45306.7578125
+              y: 16669.015625
+            - type: column
+              id: 56:4239
+              x: -45307.4296875
+              y: 16903.015625
+              spacing: 16.0
+              alignment: center
+              background: '#000000'
+              width: 311.0
+              height: 124.0
+              children:
+              - type: text
+                value: رسالتنا
+                id: 56:4240
+                x: -45196.4296875
+                y: 16903.015625
+                size: 28.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: تقديم برامج عالية الجودة وحلول الذكاء الاصطناعي والخدمات الرقمية
+                  التي تخلق قيمة تجارية حقيقية.
+                id: 56:4241
+                x: -45307.4296875
+                y: 16955.015625
+                size: 16.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#BFC8E6'
+                align: center
+        - type: column
+          id: 56:4242
+          x: -45323.4296875
+          y: 17083.6875
+          padding: 24.0
+          background: '#000000'
+          radius: 24.0
+          width: 343.0
+          height: 447.3445739746094
+          children:
+          - type: column
+            id: 56:4243
+            x: -45306.7578125
+            y: 17116.359375
+            spacing: 32.0
+            alignment: center
+            background: '#000000'
+            width: 309.6554260253906
+            height: 382.0
+            children:
+            - type: stack
+              id: 56:4244
+              x: -45306.9296875
+              y: 17116.359375
+              background: '#000000'
+              width: 310.0
+              height: 202.0
+              children:
+              - type: stack
+                id: 56:4245
+                x: -45306.4296875
+                y: 17116.6875
+                background: '#000000'
+                width: 310.0
+                height: 202.0
+                children:
+                - type: image
+                  name: Image [home-feature_image]
+                  id: 56:4246
+                  url: assets/images/image_home-feature_image.png
+                  width: 310.0
+                  height: 202.0
+                  x: -45306.4296875
+                  y: 17116.6875
+            - type: column
+              id: 56:4248
+              x: -45307.4296875
+              y: 17350.359375
+              spacing: 16.0
+              alignment: center
+              background: '#000000'
+              width: 311.0
+              height: 148.0
+              children:
+              - type: text
+                value: رؤيتنا
+                id: 56:4249
+                x: -45185.9296875
+                y: 17350.359375
+                size: 28.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: left
+              - type: text
+                value: أن نصبح الشركة الرائدة في مجال توفير حلول البرمجيات والذكاء
+                  الاصطناعي في المنطقة العربية من خلال الابتكار والجودة والشراكات
+                  طويلة الأمد.
+                id: 56:4250
+                x: -45307.4296875
+                y: 17402.359375
+                size: 16.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#BFC8E6'
+                align: center
+    - type: column
+      id: 56:4251
+      x: -45324.4296875
+      y: 17563.033203125
+      spacing: 40.0
+      background: '#000000'
+      width: 345.0
+      height: 587.689208984375
+      children:
+      - type: column
+        id: 56:4252
+        x: -45324.4296875
+        y: 17563.033203125
+        spacing: 8.0
+        background: '#000000'
+        width: 345.0
+        height: 64.0
+        children:
+        - type: text
+          value: القيم الأساسية
+          id: 56:4253
+          x: -45324.4296875
+          y: 17563.033203125
+          size: 28.0
+          fontWeight: 700
+          fontFamily: GE SS Two
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: المبادئ التي توجه كل ما نقوم به
+          id: 56:4254
+          x: -45324.4296875
+          y: 17607.033203125
+          size: 14.0
+          fontWeight: 300
+          fontFamily: GE SS Two
+          color: '#FFFFFF'
+          align: center
+      - type: column
+        id: 56:4255
+        x: -45324.4296875
+        y: 17667.033203125
+        spacing: 24.0
+        background: '#000000'
+        width: 345.0
+        height: 483.6891784667969
+        children:
+        - type: row
+          id: 56:4256
+          x: -45324.4296875
+          y: 17667.033203125
+          spacing: 19.0
+          background: '#000000'
+          width: 345.0
+          height: 145.34458923339844
+          children:
+          - type: column
+            id: 56:4257
+            x: -45324.4296875
+            y: 17667.037109375
+            padding: 24.0
+            alignment: center
+            background: '#000000'
+            radius: 16.0
+            width: 162.0
+            height: 145.33843994140625
+            children:
+            - type: column
+              id: 56:4258
+              x: -45305.4296875
+              y: 17691.70703125
+              spacing: 8.0
+              background: '#000000'
+              width: 124.0
+              height: 96.0
+              children:
+              - type: column
+                id: 56:4259
+                x: -45305.4296875
+                y: 17691.70703125
+                background: '#000000'
+                width: 124.0
+                height: 64.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 56:4260
+                  url: assets/icons/container.svg
+                  width: 64.0
+                  height: 64.0
+              - type: text
+                value: الابتكار
+                id: 56:4265
+                x: -45268.9296875
+                y: 17763.70703125
+                size: 16.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: center
+          - type: column
+            id: 56:4266
+            x: -45141.4296875
+            y: 17667.033203125
+            padding: 24.0
+            alignment: center
+            background: '#000000'
+            radius: 16.0
+            width: 162.0
+            height: 145.34458923339844
+            children:
+            - type: column
+              id: 56:4267
+              x: -45122.4296875
+              y: 17691.705078125
+              spacing: 8.0
+              background: '#000000'
+              width: 124.0
+              height: 96.0
+              children:
+              - type: column
+                id: 56:4268
+                x: -45122.4296875
+                y: 17691.705078125
+                background: '#000000'
+                width: 124.0
+                height: 64.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 56:4269
+                  url: assets/icons/container.svg
+                  width: 64.0
+                  height: 64.0
+              - type: text
+                value: الجودة
+                id: 56:4273
+                x: -45085.9296875
+                y: 17763.705078125
+                size: 16.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: center
+        - type: column
+          id: 56:4274
+          x: -45324.4296875
+          y: 17836.376953125
+          padding: 24.0
+          alignment: center
+          background: '#000000'
+          radius: 16.0
+          width: 345.0
+          height: 145.0
+          children:
+          - type: column
+            id: 56:4275
+            x: -45213.9296875
+            y: 17860.876953125
+            spacing: 8.0
+            background: '#000000'
+            width: 124.0
+            height: 96.0
+            children:
+            - type: column
+              id: 56:4276
+              x: -45213.9296875
+              y: 17860.876953125
+              background: '#000000'
+              width: 124.0
+              height: 64.0
+              children:
+              - type: icon
+                name: Container
+                id: 56:4277
+                url: assets/icons/container.svg
+                width: 64.0
+                height: 64.0
+            - type: text
+              value: رضا العملاء
+              id: 56:4282
+              x: -45193.9296875
+              y: 17932.876953125
+              size: 16.0
+              fontWeight: 700
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: center
+        - type: row
+          id: 56:4283
+          x: -45324.4296875
+          y: 18005.376953125
+          spacing: 19.0
+          background: '#000000'
+          width: 345.0
+          height: 145.34458923339844
+          children:
+          - type: column
+            id: 56:4284
+            x: -45324.4296875
+            y: 18005.380859375
+            padding: 24.0
+            alignment: center
+            background: '#000000'
+            radius: 16.0
+            width: 162.0
+            height: 145.33843994140625
+            children:
+            - type: column
+              id: 56:4285
+              x: -45305.4296875
+              y: 18030.05078125
+              spacing: 8.0
+              background: '#000000'
+              width: 124.0
+              height: 96.0
+              children:
+              - type: column
+                id: 56:4286
+                x: -45305.4296875
+                y: 18030.05078125
+                background: '#000000'
+                width: 124.0
+                height: 64.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 56:4287
+                  url: assets/icons/container.svg
+                  width: 64.0
+                  height: 64.0
+              - type: text
+                value: العمل الجماعي
+                id: 56:4294
+                x: -45298.9296875
+                y: 18102.05078125
+                size: 16.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: center
+          - type: column
+            id: 56:4295
+            x: -45141.4296875
+            y: 18005.376953125
+            padding: 24.0
+            alignment: center
+            background: '#000000'
+            radius: 16.0
+            width: 162.0
+            height: 145.34458923339844
+            children:
+            - type: column
+              id: 56:4296
+              x: -45122.4296875
+              y: 18030.048828125
+              spacing: 8.0
+              background: '#000000'
+              width: 124.0
+              height: 96.0
+              children:
+              - type: column
+                id: 56:4297
+                x: -45122.4296875
+                y: 18030.048828125
+                background: '#000000'
+                width: 124.0
+                height: 64.0
+                children:
+                - type: icon
+                  name: Container
+                  id: 56:4298
+                  url: assets/icons/container.svg
+                  width: 64.0
+                  height: 64.0
+              - type: text
+                value: الشفافية
+                id: 56:4301
+                x: -45094.9296875
+                y: 18102.048828125
+                size: 16.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: center
+  - type: column
+    id: 58:4314
+    x: -45338.9296875
+    y: 18230.72265625
+    padding: 48.0
+    spacing: 8.0
+    alignment: center
+    background: '#000000'
+    width: 374.0
+    height: 2161.3447265625
+    children:
+    - type: column
+      id: 58:4315
+      x: -45339.4296875
+      y: 18310.72265625
+      spacing: 32.0
+      background: '#000000'
+      width: 375.0
+      height: 2001.3446044921875
+      children:
+      - type: column
+        id: 58:4316
+        x: -45339.4296875
+        y: 18310.72265625
+        spacing: 16.0
+        background: '#000000'
+        width: 375.0
+        height: 181.34458923339844
+        children:
+        - type: button
+          label: خدماتنا
+          id: 58:4317
+          x: -45192.6015625
+          y: 18310.72265625
+          background: '#000000'
+          radius: 22558400.0
+          width: 81.34458923339844
+          height: 37.34458541870117
+        - type: column
+          id: 58:4319
+          x: -45323.4296875
+          y: 18364.06640625
+          spacing: 16.0
+          background: '#000000'
+          width: 343.0
+          height: 128.0
+          children:
+          - type: text
+            value: حلول شاملة لعملك
+            id: 58:4320
+            x: -45323.4296875
+            y: 18364.06640625
+            size: 28.0
+            fontWeight: 700
+            fontFamily: GE SS Two
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: بدءًا من المفهوم وحتى النشر، نقدم حلولًا تكنولوجية شاملة مصممة
+              خصيصًا لتلبية احتياجاتك الفريدة
+            id: 58:4321
+            x: -45323.4296875
+            y: 18420.06640625
+            size: 16.0
+            fontWeight: 300
+            fontFamily: GE SS Two
+            color: '#BFC8E6'
+            align: center
+      - type: column
+        id: 58:4322
+        x: -45323.4296875
+        y: 18524.06640625
+        spacing: 24.0
+        background: '#000000'
+        width: 343.0
+        height: 1788.0
+        children:
+        - type: column
+          id: 58:4323
+          x: -45323.4296875
+          y: 18524.06640625
+          padding: 24.0
+          spacing: 32.0
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 278.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 58:4324
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 58:4329
+            x: -45299.4296875
+            y: 18644.06640625
+            spacing: 20.0
+            alignment: center
+            background: '#000000'
+            width: 295.0
+            height: 98.0
+            children:
+            - type: text
+              value: تطوير الويب
+              id: 58:4330
+              x: -45299.4296875
+              y: 18644.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+            - type: text
+              value: إنشاء مواقع ويب سريعة وآمنة وقابلة للتطوير ومصممة خصيصًا لتناسب
+                أهداف عملك.
+              id: 58:4331
+              x: -45299.4296875
+              y: 18694.06640625
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+          - type: icon
+            name: Container
+            id: 58:4332
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+        - type: column
+          id: 58:4333
+          x: -45323.4296875
+          y: 18826.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 278.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 58:4334
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 58:4339
+            x: -45299.4296875
+            y: 18946.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 98.0
+            children:
+            - type: text
+              value: تطوير الويب
+              id: 58:4340
+              x: -45299.4296875
+              y: 18946.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+            - type: text
+              value: إنشاء مواقع ويب سريعة وآمنة وقابلة للتطوير ومصممة خصيصًا لتناسب
+                أهداف عملك.
+              id: 58:4341
+              x: -45299.4296875
+              y: 18996.06640625
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+          - type: icon
+            name: Container
+            id: 58:4342
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+        - type: column
+          id: 58:4384
+          x: -45323.4296875
+          y: 19128.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 278.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 58:4385
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 58:4390
+            x: -45299.4296875
+            y: 19248.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 98.0
+            children:
+            - type: text
+              value: تطوير الويب
+              id: 58:4391
+              x: -45299.4296875
+              y: 19248.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+            - type: text
+              value: إنشاء مواقع ويب سريعة وآمنة وقابلة للتطوير ومصممة خصيصًا لتناسب
+                أهداف عملك.
+              id: 58:4392
+              x: -45299.4296875
+              y: 19298.06640625
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+          - type: icon
+            name: Container
+            id: 58:4393
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+        - type: column
+          id: 58:4395
+          x: -45323.4296875
+          y: 19430.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 278.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 58:4396
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 58:4401
+            x: -45299.4296875
+            y: 19550.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 98.0
+            children:
+            - type: text
+              value: تطوير الويب
+              id: 58:4402
+              x: -45299.4296875
+              y: 19550.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+            - type: text
+              value: إنشاء مواقع ويب سريعة وآمنة وقابلة للتطوير ومصممة خصيصًا لتناسب
+                أهداف عملك.
+              id: 58:4403
+              x: -45299.4296875
+              y: 19600.06640625
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+          - type: icon
+            name: Container
+            id: 58:4404
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+        - type: column
+          id: 58:4406
+          x: -45323.4296875
+          y: 19732.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 278.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 58:4407
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 58:4412
+            x: -45299.4296875
+            y: 19852.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 98.0
+            children:
+            - type: text
+              value: تطوير الويب
+              id: 58:4413
+              x: -45299.4296875
+              y: 19852.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+            - type: text
+              value: إنشاء مواقع ويب سريعة وآمنة وقابلة للتطوير ومصممة خصيصًا لتناسب
+                أهداف عملك.
+              id: 58:4414
+              x: -45299.4296875
+              y: 19902.06640625
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+          - type: icon
+            name: Container
+            id: 58:4415
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+        - type: column
+          id: 58:4417
+          x: -45323.4296875
+          y: 20034.06640625
+          padding: 24.0
+          spacing: 32.0
+          alignment: center
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 278.0
+          children:
+          - type: icon
+            name: Frame 43
+            id: 58:4418
+            url: assets/icons/frame_43.svg
+            width: 64.0
+            height: 64.0
+          - type: column
+            id: 58:4423
+            x: -45299.4296875
+            y: 20154.06640625
+            spacing: 20.0
+            background: '#000000'
+            width: 295.0
+            height: 98.0
+            children:
+            - type: text
+              value: تطوير الويب
+              id: 58:4424
+              x: -45299.4296875
+              y: 20154.06640625
+              size: 24.0
+              fontWeight: 700
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+            - type: text
+              value: إنشاء مواقع ويب سريعة وآمنة وقابلة للتطوير ومصممة خصيصًا لتناسب
+                أهداف عملك.
+              id: 58:4425
+              x: -45299.4296875
+              y: 20204.06640625
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: right
+          - type: icon
+            name: Container
+            id: 58:4426
+            url: assets/icons/container.svg
+            width: 60.0
+            height: 4.0
+  - type: column
+    id: 58:4436
+    x: -45339.4296875
+    y: 20472.06640625
+    spacing: 32.0
+    background: '#000000'
+    width: 375.0
+    height: 4087.344482421875
+    children:
+    - type: column
+      id: 58:4437
+      x: -45339.4296875
+      y: 20472.06640625
+      spacing: 16.0
+      background: '#000000'
+      width: 375.0
+      height: 197.34458923339844
+      children:
+      - type: button
+        label: لماذا تختارنا؟
+        id: 58:4438
+        x: -45208.1015625
+        y: 20472.06640625
+        background: '#000000'
+        radius: 22558400.0
+        width: 112.34458923339844
+        height: 37.34458541870117
+      - type: column
+        id: 58:4440
+        x: -45323.4296875
+        y: 20525.41015625
+        spacing: 16.0
+        background: '#000000'
+        width: 343.0
+        height: 144.0
+        children:
+        - type: text
+          value: شريكك التكنولوجي الموثوق به
+          id: 58:4441
+          x: -45323.4296875
+          y: 20525.41015625
+          size: 28.0
+          fontWeight: 700
+          fontFamily: GE SS Two
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: نحن نجمع بين الخبرة والابتكار والتفاني لتحقيق نتائج استثنائية
+          id: 58:4442
+          x: -45323.4296875
+          y: 20621.41015625
+          size: 16.0
+          fontWeight: 300
+          fontFamily: GE SS Two
+          color: '#BFC8E6'
+          align: center
+    - type: column
+      id: 58:4443
+      x: -45323.4296875
+      y: 20701.41015625
+      spacing: 32.0
+      background: '#000000'
+      width: 343.0
+      height: 3858.0
+      children:
+      - type: column
+        id: 58:4444
+        x: -45323.4296875
+        y: 20701.41015625
+        background: '#000000'
+        width: 343.0
+        height: 612.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 58:4445
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 612.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#52BBE7'
+          id: 58:4447
+          x: -45203.37890625
+          y: 20701.41015625
+        - type: column
+          id: 58:4448
+          x: -45328.4296875
+          y: 20701.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 353.0
+          height: 612.0
+          children:
+          - type: column
+            id: 58:4449
+            x: -45328.4296875
+            y: 20725.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 353.0
+            height: 349.0
+            children:
+            - type: column
+              id: 58:4450
+              x: -45328.4296875
+              y: 20725.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 72.0
+              children:
+              - type: text
+                value: الخبرة المتخصصة
+                id: 58:4451
+                x: -45248.4296875
+                y: 20725.41015625
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#52BBE7'
+                align: center
+              - type: text
+                value: فريق من الخبراء يقدمون حلولًا تقنية مخصصة .
+                id: 58:4452
+                x: -45328.4296875
+                y: 20771.41015625
+                size: 18.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 58:4453
+              x: -45274.4296875
+              y: 20845.41015625
+              background: '#000000'
+              width: 245.00064086914062
+              height: 163.50868225097656
+              children:
+              - type: icon
+                name: Vector
+                id: 58:4454
+                url: assets/icons/vector_58_4454.svg
+                width: 79.67669677734375
+                height: 79.69530487060547
+              - type: stack
+                id: 58:4455
+                x: -45224.6328125
+                y: 20943.650390625
+                background: '#000000'
+                width: 145.71493530273438
+                height: 65.26815032958984
+                children:
+                - type: stack
+                  id: 58:4456
+                  x: -45224.6328125
+                  y: 20943.650390625
+                  background: '#000000'
+                  width: 145.71493530273438
+                  height: 65.26815032958984
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4457
+                    url: assets/icons/vector_58_4457.svg
+                    width: 145.71493530273438
+                    height: 65.26815032958984
+                - type: stack
+                  id: 58:4458
+                  x: -45224.44921875
+                  y: 20944.232421875
+                  background: '#000000'
+                  width: 145.521484375
+                  height: 64.68551635742188
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4459
+                    url: assets/icons/vector_58_4459.svg
+                    width: 145.521484375
+                    height: 64.68551635742188
+              - type: stack
+                id: 58:4460
+                x: -45241.7734375
+                y: 20845.41015625
+                background: '#000000'
+                width: 69.52412414550781
+                height: 80.14544677734375
+                children:
+                - type: stack
+                  id: 58:4461
+                  x: -45241.7734375
+                  y: 20845.41015625
+                  background: '#000000'
+                  width: 69.52412414550781
+                  height: 80.14544677734375
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4462
+                    url: assets/icons/vector_58_4462.svg
+                    width: 69.52412414550781
+                    height: 80.14544677734375
+                - type: stack
+                  id: 58:4463
+                  x: -45241.5078125
+                  y: 20845.48828125
+                  background: '#000000'
+                  width: 69.09815216064453
+                  height: 79.69530487060547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4464
+                    url: assets/icons/vector_58_4464.svg
+                    width: 69.09815216064453
+                    height: 79.69530487060547
+              - type: stack
+                id: 58:4465
+                x: -45274.4296875
+                y: 20923.650390625
+                background: '#000000'
+                width: 61.22795486450195
+                height: 64.76219940185547
+                children:
+                - type: stack
+                  id: 58:4466
+                  x: -45274.4296875
+                  y: 20923.650390625
+                  background: '#000000'
+                  width: 61.22795486450195
+                  height: 64.76219940185547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4467
+                    url: assets/icons/vector_58_4467.svg
+                    width: 61.22795486450195
+                    height: 64.76219940185547
+                - type: stack
+                  id: 58:4468
+                  x: -45274.4296875
+                  y: 20923.986328125
+                  background: '#000000'
+                  width: 60.61039352416992
+                  height: 64.0722885131836
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4469
+                    url: assets/icons/vector_58_4469.svg
+                    width: 60.61039352416992
+                    height: 64.0722885131836
+              - type: stack
+                id: 58:4470
+                x: -45125.58203125
+                y: 20845.41015625
+                background: '#000000'
+                width: 70.47650909423828
+                height: 80.14544677734375
+                children:
+                - type: stack
+                  id: 58:4471
+                  x: -45125.58203125
+                  y: 20845.41015625
+                  background: '#000000'
+                  width: 70.47650909423828
+                  height: 80.14544677734375
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4472
+                    url: assets/icons/vector_58_4472.svg
+                    width: 70.47650909423828
+                    height: 80.14544677734375
+                - type: stack
+                  id: 58:4473
+                  x: -45125.11328125
+                  y: 20845.48828125
+                  background: '#000000'
+                  width: 69.09536743164062
+                  height: 79.69530487060547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4474
+                    url: assets/icons/vector_58_4474.svg
+                    width: 69.09536743164062
+                    height: 79.69530487060547
+              - type: stack
+                id: 58:4475
+                x: -45090.05859375
+                y: 20923.650390625
+                background: '#000000'
+                width: 60.62899398803711
+                height: 64.76219940185547
+                children:
+                - type: stack
+                  id: 58:4476
+                  x: -45090.05859375
+                  y: 20923.650390625
+                  background: '#000000'
+                  width: 60.62899398803711
+                  height: 64.76219940185547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4477
+                    url: assets/icons/vector_58_4477.svg
+                    width: 60.62899398803711
+                    height: 64.76219940185547
+                - type: stack
+                  id: 58:4478
+                  x: -45090.03125
+                  y: 20923.98046875
+                  background: '#000000'
+                  width: 60.61039352416992
+                  height: 64.0792007446289
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4479
+                    url: assets/icons/vector_58_4479.svg
+                    width: 60.61039352416992
+                    height: 64.0792007446289
+          - type: container
+            width: 353.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 58:4480
+            x: -45328.4296875
+            y: 21098.41015625
+          - type: column
+            id: 58:4481
+            x: -45328.4296875
+            y: 21123.41015625
+            spacing: 8.0
+            alignment: center
+            background: '#000000'
+            width: 353.0
+            height: 166.0
+            children:
+            - type: button
+              label: المهنيين المهرة
+              id: 58:4482
+              x: -45168.4296875
+              y: 21123.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 193.0
+              height: 50.0
+            - type: button
+              label: خبرة الصناعة
+              id: 58:4487
+              x: -45144.4296875
+              y: 21181.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 169.0
+              height: 50.0
+            - type: button
+              label: فهم السوق
+              id: 58:4492
+              x: -45137.4296875
+              y: 21239.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 162.0
+              height: 50.0
+      - type: column
+        id: 58:4497
+        x: -45323.4296875
+        y: 21345.41015625
+        background: '#000000'
+        width: 343.0
+        height: 617.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 58:4498
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 617.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#F26586'
+          id: 58:4500
+          x: -45203.37890625
+          y: 21345.41015625
+        - type: column
+          id: 58:4501
+          x: -45328.4296875
+          y: 21345.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 353.0
+          height: 617.0
+          children:
+          - type: column
+            id: 58:4502
+            x: -45328.4296875
+            y: 21369.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 353.0
+            height: 354.0
+            children:
+            - type: column
+              id: 58:4503
+              x: -45328.4296875
+              y: 21369.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 72.0
+              children:
+              - type: text
+                value: الحلول المتكاملة
+                id: 58:4504
+                x: -45245.4296875
+                y: 21369.41015625
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#F26586'
+                align: center
+              - type: text
+                value: خدمات رقمية كاملة تحت سقف واحد .
+                id: 58:4505
+                x: -45328.4296875
+                y: 21415.41015625
+                size: 18.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 58:4506
+              x: -45231.4296875
+              y: 21489.41015625
+              background: '#000000'
+              width: 158.99818420410156
+              height: 180.9568328857422
+              children:
+              - type: stack
+                id: 58:4507
+                x: -45231.4296875
+                y: 21489.41015625
+                background: '#000000'
+                width: 158.99818420410156
+                height: 180.9568328857422
+                children:
+                - type: icon
+                  name: Vector
+                  id: 58:4508
+                  url: assets/icons/vector_58_4508.svg
+                  width: 158.99818420410156
+                  height: 180.9568328857422
+              - type: stack
+                id: 58:4509
+                x: -45231.41796875
+                y: 21489.701171875
+                background: '#000000'
+                width: 159.01751708984375
+                height: 180.3939208984375
+                children:
+                - type: icon
+                  name: Vector
+                  id: 58:4510
+                  url: assets/icons/vector_58_4510.svg
+                  width: 159.01751708984375
+                  height: 180.3939208984375
+          - type: container
+            width: 353.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 58:4511
+            x: -45328.4296875
+            y: 21747.41015625
+          - type: column
+            id: 58:4512
+            x: -45328.4296875
+            y: 21772.41015625
+            spacing: 8.0
+            alignment: center
+            background: '#000000'
+            width: 353.0
+            height: 166.0
+            children:
+            - type: button
+              label: حلول نهائية
+              id: 58:4513
+              x: -45139.4296875
+              y: 21772.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 164.0
+              height: 50.0
+            - type: button
+              label: التكامل السلس
+              id: 58:4518
+              x: -45165.4296875
+              y: 21830.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 190.0
+              height: 50.0
+            - type: button
+              label: تجربة موحدة
+              id: 58:4523
+              x: -45145.4296875
+              y: 21888.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 170.0
+              height: 50.0
+      - type: column
+        id: 58:4528
+        x: -45323.4296875
+        y: 21994.41015625
+        background: '#000000'
+        width: 343.0
+        height: 620.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 58:4529
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 620.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#8689D9'
+          id: 58:4531
+          x: -45203.37890625
+          y: 21994.41015625
+        - type: column
+          id: 58:4532
+          x: -45323.4296875
+          y: 21994.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 343.0
+          height: 620.0
+          children:
+          - type: column
+            id: 58:4533
+            x: -45323.4296875
+            y: 22018.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 343.0
+            height: 357.0
+            children:
+            - type: column
+              id: 58:4534
+              x: -45328.4296875
+              y: 22018.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 72.0
+              children:
+              - type: text
+                value: التكنولوجيا المتقدمة
+                id: 58:4535
+                x: -45268.4296875
+                y: 22018.41015625
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#8689D9'
+                align: center
+              - type: text
+                value: التقنيات الحديثة المصممة لتحقيق النمو.
+                id: 58:4536
+                x: -45328.4296875
+                y: 22064.41015625
+                size: 18.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 58:4537
+              x: -45252.1015625
+              y: 22138.41015625
+              background: '#000000'
+              width: 200.3473358154297
+              height: 200.3492889404297
+              children:
+              - type: icon
+                name: Vector
+                id: 58:4538
+                url: assets/icons/vector_58_4538.svg
+                width: 105.9878158569336
+                height: 116.31455993652344
+              - type: icon
+                name: Vector
+                id: 58:4539
+                url: assets/icons/vector_58_4539.svg
+                width: 58.218849182128906
+                height: 44.5992431640625
+              - type: icon
+                name: Vector
+                id: 58:4540
+                url: assets/icons/vector_58_4540.svg
+                width: 33.21754837036133
+                height: 24.413156509399414
+              - type: icon
+                name: Vector
+                id: 58:4541
+                url: assets/icons/vector_58_4541.svg
+                width: 20.773042678833008
+                height: 20.775461196899414
+              - type: icon
+                name: Vector
+                id: 58:4542
+                url: assets/icons/vector_58_4542.svg
+                width: 4.579731464385986
+                height: 9.036273956298828
+              - type: icon
+                name: Vector
+                id: 58:4543
+                url: assets/icons/vector_58_4543.svg
+                width: 33.21754837036133
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 58:4544
+                url: assets/icons/vector_58_4544.svg
+                width: 36.03398513793945
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 58:4545
+                url: assets/icons/vector_58_4545.svg
+                width: 36.03398513793945
+                height: 4.577315807342529
+              - type: icon
+                name: Vector
+                id: 58:4546
+                url: assets/icons/vector_58_4546.svg
+                width: 20.53874397277832
+                height: 20.422801971435547
+              - type: icon
+                name: Vector
+                id: 58:4547
+                url: assets/icons/vector_58_4547.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4548
+                url: assets/icons/vector_58_4548.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4549
+                url: assets/icons/vector_58_4549.svg
+                width: 33.21754837036133
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 58:4550
+                url: assets/icons/vector_58_4550.svg
+                width: 36.03398513793945
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 58:4551
+                url: assets/icons/vector_58_4551.svg
+                width: 35.797264099121094
+                height: 4.577315807342529
+              - type: icon
+                name: Vector
+                id: 58:4552
+                url: assets/icons/vector_58_4552.svg
+                width: 20.53874397277832
+                height: 20.422801971435547
+              - type: icon
+                name: Vector
+                id: 58:4553
+                url: assets/icons/vector_58_4553.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4554
+                url: assets/icons/vector_58_4554.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4555
+                url: assets/icons/vector_58_4555.svg
+                width: 28.52187156677246
+                height: 34.86006546020508
+              - type: icon
+                name: Vector
+                id: 58:4556
+                url: assets/icons/vector_58_4556.svg
+                width: 28.52187156677246
+                height: 34.625762939453125
+              - type: icon
+                name: Vector
+                id: 58:4557
+                url: assets/icons/vector_58_4557.svg
+                width: 4.579731464385986
+                height: 30.632993698120117
+              - type: icon
+                name: Vector
+                id: 58:4558
+                url: assets/icons/vector_58_4558.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4559
+                url: assets/icons/vector_58_4559.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 58:4560
+                url: assets/icons/vector_58_4560.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 58:4561
+                url: assets/icons/vector_58_4561.svg
+                width: 28.52187156677246
+                height: 32.74652862548828
+              - type: icon
+                name: Vector
+                id: 58:4562
+                url: assets/icons/vector_58_4562.svg
+                width: 28.52187156677246
+                height: 32.63058853149414
+              - type: icon
+                name: Vector
+                id: 58:4563
+                url: assets/icons/vector_58_4563.svg
+                width: 4.579731464385986
+                height: 30.632993698120117
+              - type: icon
+                name: Vector
+                id: 58:4564
+                url: assets/icons/vector_58_4564.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4565
+                url: assets/icons/vector_58_4565.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 58:4566
+                url: assets/icons/vector_58_4566.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+          - type: container
+            width: 343.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 58:4567
+            x: -45323.4296875
+            y: 22399.41015625
+          - type: column
+            id: 58:4568
+            x: -45323.4296875
+            y: 22424.41015625
+            padding: 4.0
+            spacing: 8.0
+            background: '#000000'
+            width: 343.0
+            height: 166.0
+            children:
+            - type: button
+              label: أحدث مكدس التكنولوجيا
+              id: 58:4569
+              x: -45227.4296875
+              y: 22424.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 243.0
+              height: 50.0
+            - type: button
+              label: إجراءات أمنية مشددة
+              id: 58:4574
+              x: -45243.4296875
+              y: 22482.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 259.0
+              height: 50.0
+            - type: button
+              label: أنظمة قابلة للتطوير
+              id: 58:4579
+              x: -45319.4296875
+              y: 22540.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 335.0
+              height: 50.0
+      - type: column
+        id: 58:4725
+        x: -45323.4296875
+        y: 22646.41015625
+        background: '#000000'
+        width: 343.0
+        height: 612.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 58:4726
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 612.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#52BBE7'
+          id: 58:4728
+          x: -45203.37890625
+          y: 22646.41015625
+        - type: column
+          id: 58:4729
+          x: -45328.4296875
+          y: 22646.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 353.0
+          height: 612.0
+          children:
+          - type: column
+            id: 58:4730
+            x: -45328.4296875
+            y: 22670.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 353.0
+            height: 349.0
+            children:
+            - type: column
+              id: 58:4731
+              x: -45328.4296875
+              y: 22670.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 72.0
+              children:
+              - type: text
+                value: الخبرة المتخصصة
+                id: 58:4732
+                x: -45248.4296875
+                y: 22670.41015625
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#52BBE7'
+                align: center
+              - type: text
+                value: فريق من الخبراء يقدمون حلولًا تقنية مخصصة .
+                id: 58:4733
+                x: -45328.4296875
+                y: 22716.41015625
+                size: 18.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 58:4734
+              x: -45274.4296875
+              y: 22790.41015625
+              background: '#000000'
+              width: 245.00064086914062
+              height: 163.50868225097656
+              children:
+              - type: icon
+                name: Vector
+                id: 58:4735
+                url: assets/icons/vector_58_4735.svg
+                width: 79.67669677734375
+                height: 79.69530487060547
+              - type: stack
+                id: 58:4736
+                x: -45224.6328125
+                y: 22888.650390625
+                background: '#000000'
+                width: 145.71493530273438
+                height: 65.26815032958984
+                children:
+                - type: stack
+                  id: 58:4737
+                  x: -45224.6328125
+                  y: 22888.650390625
+                  background: '#000000'
+                  width: 145.71493530273438
+                  height: 65.26815032958984
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4738
+                    url: assets/icons/vector_58_4738.svg
+                    width: 145.71493530273438
+                    height: 65.26815032958984
+                - type: stack
+                  id: 58:4739
+                  x: -45224.44921875
+                  y: 22889.232421875
+                  background: '#000000'
+                  width: 145.521484375
+                  height: 64.68551635742188
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4740
+                    url: assets/icons/vector_58_4740.svg
+                    width: 145.521484375
+                    height: 64.68551635742188
+              - type: stack
+                id: 58:4741
+                x: -45241.7734375
+                y: 22790.41015625
+                background: '#000000'
+                width: 69.52412414550781
+                height: 80.14544677734375
+                children:
+                - type: stack
+                  id: 58:4742
+                  x: -45241.7734375
+                  y: 22790.41015625
+                  background: '#000000'
+                  width: 69.52412414550781
+                  height: 80.14544677734375
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4743
+                    url: assets/icons/vector_58_4743.svg
+                    width: 69.52412414550781
+                    height: 80.14544677734375
+                - type: stack
+                  id: 58:4744
+                  x: -45241.5078125
+                  y: 22790.48828125
+                  background: '#000000'
+                  width: 69.09815216064453
+                  height: 79.69530487060547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4745
+                    url: assets/icons/vector_58_4745.svg
+                    width: 69.09815216064453
+                    height: 79.69530487060547
+              - type: stack
+                id: 58:4746
+                x: -45274.4296875
+                y: 22868.650390625
+                background: '#000000'
+                width: 61.22795486450195
+                height: 64.76219940185547
+                children:
+                - type: stack
+                  id: 58:4747
+                  x: -45274.4296875
+                  y: 22868.650390625
+                  background: '#000000'
+                  width: 61.22795486450195
+                  height: 64.76219940185547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4748
+                    url: assets/icons/vector_58_4748.svg
+                    width: 61.22795486450195
+                    height: 64.76219940185547
+                - type: stack
+                  id: 58:4749
+                  x: -45274.4296875
+                  y: 22868.986328125
+                  background: '#000000'
+                  width: 60.61039352416992
+                  height: 64.0722885131836
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4750
+                    url: assets/icons/vector_58_4750.svg
+                    width: 60.61039352416992
+                    height: 64.0722885131836
+              - type: stack
+                id: 58:4751
+                x: -45125.58203125
+                y: 22790.41015625
+                background: '#000000'
+                width: 70.47650909423828
+                height: 80.14544677734375
+                children:
+                - type: stack
+                  id: 58:4752
+                  x: -45125.58203125
+                  y: 22790.41015625
+                  background: '#000000'
+                  width: 70.47650909423828
+                  height: 80.14544677734375
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4753
+                    url: assets/icons/vector_58_4753.svg
+                    width: 70.47650909423828
+                    height: 80.14544677734375
+                - type: stack
+                  id: 58:4754
+                  x: -45125.11328125
+                  y: 22790.48828125
+                  background: '#000000'
+                  width: 69.09536743164062
+                  height: 79.69530487060547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4755
+                    url: assets/icons/vector_58_4755.svg
+                    width: 69.09536743164062
+                    height: 79.69530487060547
+              - type: stack
+                id: 58:4756
+                x: -45090.05859375
+                y: 22868.650390625
+                background: '#000000'
+                width: 60.62899398803711
+                height: 64.76219940185547
+                children:
+                - type: stack
+                  id: 58:4757
+                  x: -45090.05859375
+                  y: 22868.650390625
+                  background: '#000000'
+                  width: 60.62899398803711
+                  height: 64.76219940185547
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4758
+                    url: assets/icons/vector_58_4758.svg
+                    width: 60.62899398803711
+                    height: 64.76219940185547
+                - type: stack
+                  id: 58:4759
+                  x: -45090.03125
+                  y: 22868.98046875
+                  background: '#000000'
+                  width: 60.61039352416992
+                  height: 64.0792007446289
+                  children:
+                  - type: icon
+                    name: Vector
+                    id: 58:4760
+                    url: assets/icons/vector_58_4760.svg
+                    width: 60.61039352416992
+                    height: 64.0792007446289
+          - type: container
+            width: 353.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 58:4761
+            x: -45328.4296875
+            y: 23043.41015625
+          - type: column
+            id: 58:4762
+            x: -45328.4296875
+            y: 23068.41015625
+            spacing: 8.0
+            alignment: center
+            background: '#000000'
+            width: 353.0
+            height: 166.0
+            children:
+            - type: button
+              label: المهنيين المهرة
+              id: 58:4763
+              x: -45168.4296875
+              y: 23068.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 193.0
+              height: 50.0
+            - type: button
+              label: خبرة الصناعة
+              id: 58:4768
+              x: -45144.4296875
+              y: 23126.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 169.0
+              height: 50.0
+            - type: button
+              label: فهم السوق
+              id: 58:4773
+              x: -45137.4296875
+              y: 23184.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 162.0
+              height: 50.0
+      - type: column
+        id: 58:4779
+        x: -45323.4296875
+        y: 23290.41015625
+        background: '#000000'
+        width: 343.0
+        height: 617.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 58:4780
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 617.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#F26586'
+          id: 58:4782
+          x: -45203.37890625
+          y: 23290.41015625
+        - type: column
+          id: 58:4783
+          x: -45328.4296875
+          y: 23290.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 353.0
+          height: 617.0
+          children:
+          - type: column
+            id: 58:4784
+            x: -45328.4296875
+            y: 23314.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 353.0
+            height: 354.0
+            children:
+            - type: column
+              id: 58:4785
+              x: -45328.4296875
+              y: 23314.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 72.0
+              children:
+              - type: text
+                value: الحلول المتكاملة
+                id: 58:4786
+                x: -45245.4296875
+                y: 23314.41015625
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#F26586'
+                align: center
+              - type: text
+                value: خدمات رقمية كاملة تحت سقف واحد .
+                id: 58:4787
+                x: -45328.4296875
+                y: 23360.41015625
+                size: 18.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 58:4788
+              x: -45231.4296875
+              y: 23434.41015625
+              background: '#000000'
+              width: 158.99818420410156
+              height: 180.9568328857422
+              children:
+              - type: stack
+                id: 58:4789
+                x: -45231.4296875
+                y: 23434.41015625
+                background: '#000000'
+                width: 158.99818420410156
+                height: 180.9568328857422
+                children:
+                - type: icon
+                  name: Vector
+                  id: 58:4790
+                  url: assets/icons/vector_58_4790.svg
+                  width: 158.99818420410156
+                  height: 180.9568328857422
+              - type: stack
+                id: 58:4791
+                x: -45231.41796875
+                y: 23434.701171875
+                background: '#000000'
+                width: 159.01751708984375
+                height: 180.3939208984375
+                children:
+                - type: icon
+                  name: Vector
+                  id: 58:4792
+                  url: assets/icons/vector_58_4792.svg
+                  width: 159.01751708984375
+                  height: 180.3939208984375
+          - type: container
+            width: 353.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 58:4793
+            x: -45328.4296875
+            y: 23692.41015625
+          - type: column
+            id: 58:4794
+            x: -45328.4296875
+            y: 23717.41015625
+            spacing: 8.0
+            alignment: center
+            background: '#000000'
+            width: 353.0
+            height: 166.0
+            children:
+            - type: button
+              label: حلول نهائية
+              id: 58:4795
+              x: -45139.4296875
+              y: 23717.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 164.0
+              height: 50.0
+            - type: button
+              label: التكامل السلس
+              id: 58:4800
+              x: -45165.4296875
+              y: 23775.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 190.0
+              height: 50.0
+            - type: button
+              label: تجربة موحدة
+              id: 58:4805
+              x: -45145.4296875
+              y: 23833.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 170.0
+              height: 50.0
+      - type: column
+        id: 58:4811
+        x: -45323.4296875
+        y: 23939.41015625
+        background: '#000000'
+        width: 343.0
+        height: 620.0
+        children:
+        - type: icon
+          name: Background+OverlayBlur
+          id: 58:4812
+          url: assets/icons/backgroundoverlayblur.svg
+          width: 343.0
+          height: 620.0
+        - type: container
+          width: 102.89266967773438
+          height: 5.0
+          background: '#8689D9'
+          id: 58:4814
+          x: -45203.37890625
+          y: 23939.41015625
+        - type: column
+          id: 58:4815
+          x: -45323.4296875
+          y: 23939.41015625
+          padding: 24.0
+          spacing: 24.0
+          background: '#000000'
+          width: 343.0
+          height: 620.0
+          children:
+          - type: column
+            id: 58:4816
+            x: -45323.4296875
+            y: 23963.41015625
+            spacing: 48.0
+            background: '#000000'
+            width: 343.0
+            height: 357.0
+            children:
+            - type: column
+              id: 58:4817
+              x: -45328.4296875
+              y: 23963.41015625
+              spacing: 16.0
+              background: '#000000'
+              width: 353.0
+              height: 72.0
+              children:
+              - type: text
+                value: التكنولوجيا المتقدمة
+                id: 58:4818
+                x: -45268.4296875
+                y: 23963.41015625
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#8689D9'
+                align: center
+              - type: text
+                value: التقنيات الحديثة المصممة لتحقيق النمو.
+                id: 58:4819
+                x: -45328.4296875
+                y: 24009.41015625
+                size: 18.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: center
+            - type: stack
+              id: 58:4820
+              x: -45252.1015625
+              y: 24083.41015625
+              background: '#000000'
+              width: 200.3473358154297
+              height: 200.3492889404297
+              children:
+              - type: icon
+                name: Vector
+                id: 58:4821
+                url: assets/icons/vector_58_4821.svg
+                width: 105.9878158569336
+                height: 116.31455993652344
+              - type: icon
+                name: Vector
+                id: 58:4822
+                url: assets/icons/vector_58_4822.svg
+                width: 58.218849182128906
+                height: 44.5992431640625
+              - type: icon
+                name: Vector
+                id: 58:4823
+                url: assets/icons/vector_58_4823.svg
+                width: 33.21754837036133
+                height: 24.413156509399414
+              - type: icon
+                name: Vector
+                id: 58:4824
+                url: assets/icons/vector_58_4824.svg
+                width: 20.773042678833008
+                height: 20.775461196899414
+              - type: icon
+                name: Vector
+                id: 58:4825
+                url: assets/icons/vector_58_4825.svg
+                width: 4.579731464385986
+                height: 9.036273956298828
+              - type: icon
+                name: Vector
+                id: 58:4826
+                url: assets/icons/vector_58_4826.svg
+                width: 33.21754837036133
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 58:4827
+                url: assets/icons/vector_58_4827.svg
+                width: 36.03398513793945
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 58:4828
+                url: assets/icons/vector_58_4828.svg
+                width: 36.03398513793945
+                height: 4.577315807342529
+              - type: icon
+                name: Vector
+                id: 58:4829
+                url: assets/icons/vector_58_4829.svg
+                width: 20.53874397277832
+                height: 20.422801971435547
+              - type: icon
+                name: Vector
+                id: 58:4830
+                url: assets/icons/vector_58_4830.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4831
+                url: assets/icons/vector_58_4831.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4832
+                url: assets/icons/vector_58_4832.svg
+                width: 33.21754837036133
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 58:4833
+                url: assets/icons/vector_58_4833.svg
+                width: 36.03398513793945
+                height: 28.40351104736328
+              - type: icon
+                name: Vector
+                id: 58:4834
+                url: assets/icons/vector_58_4834.svg
+                width: 35.797264099121094
+                height: 4.577315807342529
+              - type: icon
+                name: Vector
+                id: 58:4835
+                url: assets/icons/vector_58_4835.svg
+                width: 20.53874397277832
+                height: 20.422801971435547
+              - type: icon
+                name: Vector
+                id: 58:4836
+                url: assets/icons/vector_58_4836.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4837
+                url: assets/icons/vector_58_4837.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4838
+                url: assets/icons/vector_58_4838.svg
+                width: 28.52187156677246
+                height: 34.86006546020508
+              - type: icon
+                name: Vector
+                id: 58:4839
+                url: assets/icons/vector_58_4839.svg
+                width: 28.52187156677246
+                height: 34.625762939453125
+              - type: icon
+                name: Vector
+                id: 58:4840
+                url: assets/icons/vector_58_4840.svg
+                width: 4.579731464385986
+                height: 30.632993698120117
+              - type: icon
+                name: Vector
+                id: 58:4841
+                url: assets/icons/vector_58_4841.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4842
+                url: assets/icons/vector_58_4842.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 58:4843
+                url: assets/icons/vector_58_4843.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 58:4844
+                url: assets/icons/vector_58_4844.svg
+                width: 28.52187156677246
+                height: 32.74652862548828
+              - type: icon
+                name: Vector
+                id: 58:4845
+                url: assets/icons/vector_58_4845.svg
+                width: 28.52187156677246
+                height: 32.63058853149414
+              - type: icon
+                name: Vector
+                id: 58:4846
+                url: assets/icons/vector_58_4846.svg
+                width: 4.579731464385986
+                height: 30.632993698120117
+              - type: icon
+                name: Vector
+                id: 58:4847
+                url: assets/icons/vector_58_4847.svg
+                width: 20.54115867614746
+                height: 20.53874397277832
+              - type: icon
+                name: Vector
+                id: 58:4848
+                url: assets/icons/vector_58_4848.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+              - type: icon
+                name: Vector
+                id: 58:4849
+                url: assets/icons/vector_58_4849.svg
+                width: 20.53874397277832
+                height: 20.54115867614746
+          - type: container
+            width: 343.0
+            height: 1.0
+            background: '#FFFFFF'
+            id: 58:4850
+            x: -45323.4296875
+            y: 24344.41015625
+          - type: column
+            id: 58:4851
+            x: -45323.4296875
+            y: 24369.41015625
+            padding: 4.0
+            spacing: 8.0
+            background: '#000000'
+            width: 343.0
+            height: 166.0
+            children:
+            - type: button
+              label: أحدث مكدس التكنولوجيا
+              id: 58:4852
+              x: -45227.4296875
+              y: 24369.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 243.0
+              height: 50.0
+            - type: button
+              label: إجراءات أمنية مشددة
+              id: 58:4857
+              x: -45243.4296875
+              y: 24427.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 259.0
+              height: 50.0
+            - type: button
+              label: أنظمة قابلة للتطوير
+              id: 58:4862
+              x: -45319.4296875
+              y: 24485.41015625
+              background: '#000000'
+              radius: 8.0
+              width: 335.0
+              height: 50.0
+  - type: column
+    id: 58:4870
+    x: -45339.4296875
+    y: 24639.412109375
+    padding: 20.0
+    spacing: 8.0
+    alignment: center
+    background: '#000000'
+    width: 375.0
+    height: 796.3446044921875
+    children:
+    - type: column
+      id: 58:4871
+      x: -45339.4296875
+      y: 24663.412109375
+      spacing: 32.0
+      background: '#000000'
+      width: 375.0
+      height: 748.3446044921875
+      children:
+      - type: column
+        id: 58:4872
+        x: -45339.4296875
+        y: 24663.412109375
+        spacing: 16.0
+        background: '#000000'
+        width: 375.0
+        height: 157.34458923339844
+        children:
+        - type: button
+          label: المنتجات المميزة
+          id: 58:4873
+          x: -45220.6015625
+          y: 24663.412109375
+          background: '#000000'
+          radius: 22558400.0
+          width: 137.34458923339844
+          height: 37.34458541870117
+        - type: column
+          id: 58:4875
+          x: -45323.4296875
+          y: 24716.755859375
+          spacing: 16.0
+          background: '#000000'
+          width: 343.0
+          height: 104.0
+          children:
+          - type: text
+            value: منصات قوية ونتائج مثبتة
+            id: 58:4876
+            x: -45323.4296875
+            y: 24716.755859375
+            size: 2.0
+            fontWeight: 700
+            fontFamily: GE SS Two
+            color: '#FFFFFF'
+            align: center
+          - type: text
+            value: تعمل منتجاتنا الرائدة على تحويل الأعمال عبر العديد من الصناعات
+            id: 58:4877
+            x: -45323.4296875
+            y: 24772.755859375
+            size: 16.0
+            fontWeight: 300
+            fontFamily: GE SS Two
+            color: '#BFC8E6'
+            align: center
+      - type: column
+        id: 58:4878
+        x: -45323.4296875
+        y: 24852.755859375
+        spacing: 24.0
+        alignment: center
+        background: '#000000'
+        width: 343.0
+        height: 559.0
+        children:
+        - type: column
+          id: 58:4879
+          x: -45323.4296875
+          y: 24852.755859375
+          padding: 24.0
+          spacing: 8.0
+          alignment: center
+          background: '#6B7280'
+          radius: 16.0
+          width: 343.0
+          height: 503.0
+          children:
+          - type: column
+            id: 58:4882
+            x: -45307.4296875
+            y: 24884.755859375
+            spacing: 24.0
+            background: '#000000'
+            width: 311.0
+            height: 375.0
+            children:
+            - type: column
+              id: 58:4883
+              x: -45307.4296875
+              y: 24884.755859375
+              spacing: 25.0
+              alignment: center
+              background: '#000000'
+              width: 311.0
+              height: 194.0
+              children:
+              - type: stack
+                id: 58:4884
+                x: -45068.4296875
+                y: 24884.755859375
+                background: '#383BB0'
+                radius: 16.0
+                width: 72.0
+                height: 72.0
+                children:
+                - type: icon
+                  name: Icon
+                  id: 58:4885
+                  url: assets/icons/icon.svg
+                  width: 32.0
+                  height: 32.0
+              - type: column
+                id: 58:4890
+                x: -45307.4296875
+                y: 24981.755859375
+                spacing: 13.0
+                background: '#000000'
+                width: 311.0
+                height: 97.0
+                children:
+                - type: text
+                  value: Edu-Bridge
+                  id: 58:4891
+                  x: -45307.4296875
+                  y: 24981.755859375
+                  size: 28.0
+                  fontWeight: 700
+                  fontFamily: Montserrat
+                  color: '#FFFFFF'
+                  align: right
+                - type: text
+                  value: منصة الإدارة التعليمية تخدم أكثر من 50 ألف طالب وأكثر من
+                    200 مركز تعليمي .
+                  id: 58:4892
+                  x: -45307.4296875
+                  y: 25030.755859375
+                  size: 16.0
+                  fontWeight: 300
+                  fontFamily: GE SS Two
+                  color: '#90A1B9'
+                  align: right
+            - type: column
+              id: 58:4893
+              x: -45307.4296875
+              y: 25102.755859375
+              spacing: 8.0
+              alignment: center
+              background: '#000000'
+              width: 311.0
+              height: 120.0
+              children:
+              - type: row
+                id: 58:4894
+                x: -45144.421875
+                y: 25102.755859375
+                spacing: 8.0
+                background: '#000000'
+                width: 147.992431640625
+                height: 24.0
+                children:
+                - type: text
+                  value: نظام إدارة الطلاب
+                  id: 58:4897
+                  x: -45144.421875
+                  y: 25102.755859375
+                  size: 16.0
+                  fontWeight: 300
+                  fontFamily: GE SS Two
+                  color: '#BFC8E6'
+                  align: left
+                - type: icon
+                  name: Container
+                  id: 58:4895
+                  url: assets/icons/container.svg
+                  width: 23.99243927001953
+                  height: 23.99243927001953
+              - type: row
+                id: 59:4921
+                x: -45144.421875
+                y: 25134.755859375
+                spacing: 8.0
+                background: '#000000'
+                width: 147.992431640625
+                height: 24.0
+                children:
+                - type: text
+                  value: نظام إدارة الطلاب
+                  id: 59:4922
+                  x: -45144.421875
+                  y: 25134.755859375
+                  size: 16.0
+                  fontWeight: 300
+                  fontFamily: GE SS Two
+                  color: '#BFC8E6'
+                  align: left
+                - type: icon
+                  name: Container
+                  id: 59:4923
+                  url: assets/icons/container.svg
+                  width: 23.99243927001953
+                  height: 23.99243927001953
+              - type: row
+                id: 59:4926
+                x: -45144.421875
+                y: 25166.755859375
+                spacing: 8.0
+                background: '#000000'
+                width: 147.992431640625
+                height: 24.0
+                children:
+                - type: text
+                  value: نظام إدارة الطلاب
+                  id: 59:4927
+                  x: -45144.421875
+                  y: 25166.755859375
+                  size: 16.0
+                  fontWeight: 300
+                  fontFamily: GE SS Two
+                  color: '#BFC8E6'
+                  align: left
+                - type: icon
+                  name: Container
+                  id: 59:4928
+                  url: assets/icons/container.svg
+                  width: 23.99243927001953
+                  height: 23.99243927001953
+              - type: row
+                id: 59:4931
+                x: -45144.421875
+                y: 25198.755859375
+                spacing: 8.0
+                background: '#000000'
+                width: 147.992431640625
+                height: 24.0
+                children:
+                - type: text
+                  value: نظام إدارة الطلاب
+                  id: 59:4932
+                  x: -45144.421875
+                  y: 25198.755859375
+                  size: 16.0
+                  fontWeight: 300
+                  fontFamily: GE SS Two
+                  color: '#BFC8E6'
+                  align: left
+                - type: icon
+                  name: Container
+                  id: 59:4933
+                  url: assets/icons/container.svg
+                  width: 23.99243927001953
+                  height: 23.99243927001953
+          - type: button
+            label: طلب تجريبي
+            id: 58:4910
+            x: -45307.4296875
+            y: 25267.755859375
+            background: '#383BB0'
+            radius: 16.0
+            width: 311.0
+            height: 56.0
+        - type: row
+          id: 58:4915
+          x: -45195.4296875
+          y: 25379.755859375
+          spacing: 974.0
+          background: '#000000'
+          width: 87.0
+          height: 32.0
+          children:
+          - type: icon
+            name: Icon
+            id: 58:4916
+            url: assets/icons/icon.svg
+            width: 32.0
+            height: 32.0
+          - type: icon
+            name: Icon
+            id: 58:4918
+            url: assets/icons/icon.svg
+            width: 32.0
+            height: 32.0
+  - type: column
+    id: 54:3740
+    x: -45433.0
+    y: 25555.7578125
+    spacing: 40.0
+    background: '#000000'
+    width: 562.138671875
+    height: 349.34429931640625
+    children:
+    - type: column
+      id: 59:4936
+      x: -45433.0
+      y: 25555.7578125
+      spacing: 16.0
+      background: '#000000'
+      width: 562.138671875
+      height: 197.34458923339844
+      children:
+      - type: button
+        label: التقنيات
+        id: 59:4937
+        x: -45194.6015625
+        y: 25555.7578125
+        background: '#000000'
+        radius: 22558400.0
+        width: 85.34458923339844
+        height: 37.34458541870117
+      - type: column
+        id: 59:4939
+        x: -45323.4296875
+        y: 25609.1015625
+        spacing: 16.0
+        background: '#000000'
+        width: 343.0
+        height: 144.0
+        children:
+        - type: text
+          value: التقنيات التي نستخدمها
+          id: 59:4940
+          x: -45300.4296875
+          y: 25609.1015625
+          size: 28.0
+          fontWeight: 700
+          fontFamily: GE SS Two
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: الاستفادة من التقنيات والأطر الحديثة لبناء حلول رقمية آمنة وقابلة
+            للتطوير وعالية الأداء .
+          id: 59:4941
+          x: -45323.4296875
+          y: 25705.1015625
+          size: 16.0
+          fontWeight: 300
+          fontFamily: GE SS Two
+          color: '#BFC8E6'
+          align: center
+    - type: stack
+      id: 54:3747
+      x: -45433.0
+      y: 25793.1015625
+      background: '#000000'
+      radius: 5.753630638122559
+      width: 562.138671875
+      height: 111.99971008300781
+      children:
+      - type: icon
+        name: Background
+        id: 54:3748
+        url: assets/icons/background.svg
+        width: 83.78767659053119
+        height: 83.78415321272769
+      - type: icon
+        name: Background
+        id: 54:3751
+        url: assets/icons/background.svg
+        width: 83.7876827381333
+        height: 83.78890989104548
+      - type: icon
+        name: Background
+        id: 54:3754
+        url: assets/icons/background.svg
+        width: 92.66845892152196
+        height: 92.6650336379571
+      - type: icon
+        name: Background
+        id: 54:3757
+        url: assets/icons/background.svg
+        width: 92.67398785299156
+        height: 92.67963045887882
+      - type: icon
+        name: Background
+        id: 54:3760
+        url: assets/icons/background.svg
+        width: 103.70903372442262
+        height: 103.71026492187593
+      - type: icon
+        name: Background
+        id: 54:3763
+        url: assets/icons/background.svg
+        width: 103.71909699609387
+        height: 103.72033542617646
+      - type: icon
+        name: Background
+        id: 54:3766
+        url: assets/icons/background.svg
+        width: 112.00316619873047
+        height: 111.99971008300781
+  - type: column
+    id: 59:4945
+    x: -45339.4296875
+    y: 25985.1015625
+    spacing: 32.0
+    background: '#000000'
+    width: 375.0
+    height: 2895.31787109375
+    children:
+    - type: column
+      id: 59:4946
+      x: -45339.4296875
+      y: 25985.1015625
+      spacing: 16.0
+      background: '#000000'
+      width: 375.0
+      height: 157.34458923339844
+      children:
+      - type: button
+        label: مَلَفّ الاعمال
+        id: 59:4947
+        x: -45206.6015625
+        y: 25985.1015625
+        background: '#000000'
+        radius: 22558400.0
+        width: 109.34458923339844
+        height: 37.34458541870117
+      - type: column
+        id: 59:4949
+        x: -45323.4296875
+        y: 26038.4453125
+        spacing: 16.0
+        background: '#000000'
+        width: 343.0
+        height: 104.0
+        children:
+        - type: text
+          value: ملف اعمالنا
+          id: 59:4950
+          x: -45323.4296875
+          y: 26038.4453125
+          size: 28.0
+          fontWeight: 700
+          fontFamily: GE SS Two
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: استكشف مجموعة مختارة من المشاريع التي تعرض خبرتنا في تقديم الحلول
+            الرقمية المبتكرة.
+          id: 59:4951
+          x: -45323.4296875
+          y: 26094.4453125
+          size: 16.0
+          fontWeight: 300
+          fontFamily: GE SS Two
+          color: '#BFC8E6'
+          align: center
+    - type: column
+      id: 59:4952
+      x: -45323.4296875
+      y: 26174.4453125
+      spacing: 24.0
+      background: '#000000'
+      width: 343.0
+      height: 2705.973388671875
+      children:
+      - type: row
+        id: 59:4953
+        x: -45323.4296875
+        y: 26174.4453125
+        padding: 20.0
+        spacing: 8.0
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 521.9946899414062
+        children:
+        - type: column
+          id: 59:4954
+          x: -45307.4296875
+          y: 26198.4453125
+          spacing: 29.0
+          background: '#000000'
+          width: 306.0
+          height: 473.99468994140625
+          children:
+          - type: stack
+            id: 59:4955
+            x: -45307.4296875
+            y: 26198.4453125
+            background: '#000000'
+            radius: 12.842666625976562
+            width: 305.8160095214844
+            height: 301.0
+            children:
+            - type: image
+              name: ImageWithFallback
+              id: 59:4956
+              url: assets/images/imagewithfallback.png
+              width: 534.0120239257812
+              height: 300.62396240234375
+              x: -45307.4296875
+              y: 26198.4453125
+            - type: button
+              label: زيادة المبيعات بنسبة 300%
+              id: 59:4958
+              x: -45187.4296875
+              y: 26213.1015625
+              background: '#0F172B'
+              radius: 18132400.0
+              width: 182.0
+              height: 33.0
+            - type: column
+              id: 59:4963
+              x: -45307.4296875
+              y: 26543.982421875
+              padding: 19.259721120198567
+              background: '#000000'
+              width: 534.0120239257812
+              height: 68.48562622070312
+              children:
+              - type: row
+                id: 59:4964
+                x: -45288.171875
+                y: 26563.2421875
+                padding: 0.008493795059621334
+                spacing: 12.842605590820312
+                alignment: center
+                background: '#000000'
+                width: 495.4925537109375
+                height: 29.966175079345703
+                children:
+                - type: button
+                  label: 40% ↑ المبيعات
+                  id: 59:4965
+                  x: -45199.4375
+                  y: 26563.2421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 89.68733215332031
+                  height: 29.966175079345703
+                - type: button
+                  label: 99.9% وقت التشغيل
+                  id: 59:4967
+                  x: -45096.91015625
+                  y: 26563.2421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 108.21247863769531
+                  height: 29.966175079345703
+                - type: button
+                  label: 50 ألف+ مستخدم
+                  id: 59:4969
+                  x: -44975.85546875
+                  y: 26563.2421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 94.44950103759766
+                  height: 29.966175079345703
+          - type: column
+            id: 59:4971
+            x: -45307.4296875
+            y: 26528.4453125
+            spacing: 10.0
+            background: '#000000'
+            width: 306.0
+            height: 143.9946746826172
+            children:
+            - type: column
+              id: 59:4972
+              x: -45307.4296875
+              y: 26528.4453125
+              spacing: 8.0
+              background: '#000000'
+              width: 306.0
+              height: 110.0
+              children:
+              - type: text
+                value: منصات التجارة الإلكترونية
+                id: 59:4973
+                x: -45307.4296875
+                y: 26528.4453125
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: right
+              - type: text
+                value: لوريم إيبسوم دولور الجلوس أميت كونسيكتور. العاقل ليس لديه أي
+                  حمل، فهو يمتلك شهرة كبيرة
+                id: 59:4974
+                x: -45307.4296875
+                y: 26566.4453125
+                size: 16.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#90A1B9'
+                align: right
+            - type: row
+              id: 59:4975
+              x: -45169.359375
+              y: 26648.4453125
+              padding: 6.0
+              spacing: 7.930096626281738
+              alignment: end
+              background: '#000000'
+              width: 167.9300537109375
+              height: 23.994674682617188
+              children:
+              - type: icon
+                name: Container
+                id: 59:4977
+                url: assets/icons/container.svg
+                width: 15.999957084655762
+                height: 15.999957084655762
+              - type: text
+                value: عرض دراسة الحالة
+                id: 59:4976
+                x: -45139.4296875
+                y: 26648.443359375
+                size: 16.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                align: center
+      - type: row
+        id: 59:5099
+        x: -45323.4296875
+        y: 26720.439453125
+        padding: 20.0
+        spacing: 8.0
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 521.9946899414062
+        children:
+        - type: column
+          id: 59:5100
+          x: -45307.4296875
+          y: 26744.439453125
+          spacing: 29.0
+          background: '#000000'
+          width: 306.0
+          height: 473.99468994140625
+          children:
+          - type: stack
+            id: 59:5101
+            x: -45307.4296875
+            y: 26744.439453125
+            background: '#000000'
+            radius: 12.842666625976562
+            width: 305.8160095214844
+            height: 301.0
+            children:
+            - type: image
+              name: ImageWithFallback
+              id: 59:5102
+              url: assets/images/imagewithfallback.png
+              width: 534.0120239257812
+              height: 300.62396240234375
+              x: -45307.4296875
+              y: 26744.439453125
+            - type: button
+              label: زيادة المبيعات بنسبة 300%
+              id: 59:5104
+              x: -45187.4296875
+              y: 26759.095703125
+              background: '#0F172B'
+              radius: 18132400.0
+              width: 182.0
+              height: 33.0
+            - type: column
+              id: 59:5109
+              x: -45307.4296875
+              y: 27089.9765625
+              padding: 19.259721120198567
+              background: '#000000'
+              width: 534.0120239257812
+              height: 68.48562622070312
+              children:
+              - type: row
+                id: 59:5110
+                x: -45288.171875
+                y: 27109.236328125
+                padding: 0.008493795059621334
+                spacing: 12.842605590820312
+                alignment: center
+                background: '#000000'
+                width: 495.4925537109375
+                height: 29.966175079345703
+                children:
+                - type: button
+                  label: 40% ↑ المبيعات
+                  id: 59:5111
+                  x: -45199.4375
+                  y: 27109.236328125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 89.68733215332031
+                  height: 29.966175079345703
+                - type: button
+                  label: 99.9% وقت التشغيل
+                  id: 59:5113
+                  x: -45096.91015625
+                  y: 27109.236328125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 108.21247863769531
+                  height: 29.966175079345703
+                - type: button
+                  label: 50 ألف+ مستخدم
+                  id: 59:5115
+                  x: -44975.85546875
+                  y: 27109.236328125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 94.44950103759766
+                  height: 29.966175079345703
+          - type: column
+            id: 59:5117
+            x: -45307.4296875
+            y: 27074.439453125
+            spacing: 10.0
+            background: '#000000'
+            width: 306.0
+            height: 143.9946746826172
+            children:
+            - type: column
+              id: 59:5118
+              x: -45307.4296875
+              y: 27074.439453125
+              spacing: 8.0
+              background: '#000000'
+              width: 306.0
+              height: 110.0
+              children:
+              - type: text
+                value: منصات التجارة الإلكترونية
+                id: 59:5119
+                x: -45307.4296875
+                y: 27074.439453125
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: right
+              - type: text
+                value: لوريم إيبسوم دولور الجلوس أميت كونسيكتور. العاقل ليس لديه أي
+                  حمل، فهو يمتلك شهرة كبيرة
+                id: 59:5120
+                x: -45307.4296875
+                y: 27112.439453125
+                size: 16.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#90A1B9'
+                align: right
+            - type: row
+              id: 59:5121
+              x: -45169.359375
+              y: 27194.439453125
+              padding: 6.0
+              spacing: 7.930096626281738
+              alignment: end
+              background: '#000000'
+              width: 167.9300537109375
+              height: 23.994674682617188
+              children:
+              - type: icon
+                name: Container
+                id: 59:5122
+                url: assets/icons/container.svg
+                width: 15.999957084655762
+                height: 15.999957084655762
+              - type: text
+                value: عرض دراسة الحالة
+                id: 59:5127
+                x: -45139.4296875
+                y: 27194.4375
+                size: 16.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                align: center
+      - type: row
+        id: 59:5129
+        x: -45323.4296875
+        y: 27266.435546875
+        padding: 20.0
+        spacing: 8.0
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 521.9946899414062
+        children:
+        - type: column
+          id: 59:5130
+          x: -45307.4296875
+          y: 27290.435546875
+          spacing: 29.0
+          background: '#000000'
+          width: 306.0
+          height: 473.99468994140625
+          children:
+          - type: stack
+            id: 59:5131
+            x: -45307.4296875
+            y: 27290.435546875
+            background: '#000000'
+            radius: 12.842666625976562
+            width: 305.8160095214844
+            height: 301.0
+            children:
+            - type: image
+              name: ImageWithFallback
+              id: 59:5132
+              url: assets/images/imagewithfallback.png
+              width: 534.0120239257812
+              height: 300.62396240234375
+              x: -45307.4296875
+              y: 27290.435546875
+            - type: button
+              label: زيادة المبيعات بنسبة 300%
+              id: 59:5134
+              x: -45187.4296875
+              y: 27305.091796875
+              background: '#0F172B'
+              radius: 18132400.0
+              width: 182.0
+              height: 33.0
+            - type: column
+              id: 59:5139
+              x: -45307.4296875
+              y: 27635.97265625
+              padding: 19.259721120198567
+              background: '#000000'
+              width: 534.0120239257812
+              height: 68.48562622070312
+              children:
+              - type: row
+                id: 59:5140
+                x: -45288.171875
+                y: 27655.232421875
+                padding: 0.008493795059621334
+                spacing: 12.842605590820312
+                alignment: center
+                background: '#000000'
+                width: 495.4925537109375
+                height: 29.966175079345703
+                children:
+                - type: button
+                  label: 40% ↑ المبيعات
+                  id: 59:5141
+                  x: -45199.4375
+                  y: 27655.232421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 89.68733215332031
+                  height: 29.966175079345703
+                - type: button
+                  label: 99.9% وقت التشغيل
+                  id: 59:5143
+                  x: -45096.91015625
+                  y: 27655.232421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 108.21247863769531
+                  height: 29.966175079345703
+                - type: button
+                  label: 50 ألف+ مستخدم
+                  id: 59:5145
+                  x: -44975.85546875
+                  y: 27655.232421875
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 94.44950103759766
+                  height: 29.966175079345703
+          - type: column
+            id: 59:5147
+            x: -45307.4296875
+            y: 27620.435546875
+            spacing: 10.0
+            background: '#000000'
+            width: 306.0
+            height: 143.9946746826172
+            children:
+            - type: column
+              id: 59:5148
+              x: -45307.4296875
+              y: 27620.435546875
+              spacing: 8.0
+              background: '#000000'
+              width: 306.0
+              height: 110.0
+              children:
+              - type: text
+                value: منصات التجارة الإلكترونية
+                id: 59:5149
+                x: -45307.4296875
+                y: 27620.435546875
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: right
+              - type: text
+                value: لوريم إيبسوم دولور الجلوس أميت كونسيكتور. العاقل ليس لديه أي
+                  حمل، فهو يمتلك شهرة كبيرة
+                id: 59:5150
+                x: -45307.4296875
+                y: 27658.435546875
+                size: 16.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#90A1B9'
+                align: right
+            - type: row
+              id: 59:5151
+              x: -45169.359375
+              y: 27740.435546875
+              padding: 6.0
+              spacing: 7.930096626281738
+              alignment: end
+              background: '#000000'
+              width: 167.9300537109375
+              height: 23.994674682617188
+              children:
+              - type: icon
+                name: Container
+                id: 59:5152
+                url: assets/icons/container.svg
+                width: 15.999957084655762
+                height: 15.999957084655762
+              - type: text
+                value: عرض دراسة الحالة
+                id: 59:5157
+                x: -45139.4296875
+                y: 27740.43359375
+                size: 16.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                align: center
+      - type: row
+        id: 59:5159
+        x: -45323.4296875
+        y: 27812.4296875
+        padding: 20.0
+        spacing: 8.0
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 521.9946899414062
+        children:
+        - type: column
+          id: 59:5160
+          x: -45307.4296875
+          y: 27836.4296875
+          spacing: 29.0
+          background: '#000000'
+          width: 306.0
+          height: 473.99468994140625
+          children:
+          - type: stack
+            id: 59:5161
+            x: -45307.4296875
+            y: 27836.4296875
+            background: '#000000'
+            radius: 12.842666625976562
+            width: 305.8160095214844
+            height: 301.0
+            children:
+            - type: image
+              name: ImageWithFallback
+              id: 59:5162
+              url: assets/images/imagewithfallback.png
+              width: 534.0120239257812
+              height: 300.62396240234375
+              x: -45307.4296875
+              y: 27836.4296875
+            - type: button
+              label: زيادة المبيعات بنسبة 300%
+              id: 59:5164
+              x: -45187.4296875
+              y: 27851.0859375
+              background: '#0F172B'
+              radius: 18132400.0
+              width: 182.0
+              height: 33.0
+            - type: column
+              id: 59:5169
+              x: -45307.4296875
+              y: 28181.966796875
+              padding: 19.259721120198567
+              background: '#000000'
+              width: 534.0120239257812
+              height: 68.48562622070312
+              children:
+              - type: row
+                id: 59:5170
+                x: -45288.171875
+                y: 28201.2265625
+                padding: 0.008493795059621334
+                spacing: 12.842605590820312
+                alignment: center
+                background: '#000000'
+                width: 495.4925537109375
+                height: 29.966175079345703
+                children:
+                - type: button
+                  label: 40% ↑ المبيعات
+                  id: 59:5171
+                  x: -45199.4375
+                  y: 28201.2265625
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 89.68733215332031
+                  height: 29.966175079345703
+                - type: button
+                  label: 99.9% وقت التشغيل
+                  id: 59:5173
+                  x: -45096.91015625
+                  y: 28201.2265625
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 108.21247863769531
+                  height: 29.966175079345703
+                - type: button
+                  label: 50 ألف+ مستخدم
+                  id: 59:5175
+                  x: -44975.85546875
+                  y: 28201.2265625
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 94.44950103759766
+                  height: 29.966175079345703
+          - type: column
+            id: 59:5177
+            x: -45307.4296875
+            y: 28166.4296875
+            spacing: 10.0
+            background: '#000000'
+            width: 306.0
+            height: 143.9946746826172
+            children:
+            - type: column
+              id: 59:5178
+              x: -45307.4296875
+              y: 28166.4296875
+              spacing: 8.0
+              background: '#000000'
+              width: 306.0
+              height: 110.0
+              children:
+              - type: text
+                value: منصات التجارة الإلكترونية
+                id: 59:5179
+                x: -45307.4296875
+                y: 28166.4296875
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: right
+              - type: text
+                value: لوريم إيبسوم دولور الجلوس أميت كونسيكتور. العاقل ليس لديه أي
+                  حمل، فهو يمتلك شهرة كبيرة
+                id: 59:5180
+                x: -45307.4296875
+                y: 28204.4296875
+                size: 16.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#90A1B9'
+                align: right
+            - type: row
+              id: 59:5181
+              x: -45169.359375
+              y: 28286.4296875
+              padding: 6.0
+              spacing: 7.930096626281738
+              alignment: end
+              background: '#000000'
+              width: 167.9300537109375
+              height: 23.994674682617188
+              children:
+              - type: icon
+                name: Container
+                id: 59:5182
+                url: assets/icons/container.svg
+                width: 15.999957084655762
+                height: 15.999957084655762
+              - type: text
+                value: عرض دراسة الحالة
+                id: 59:5187
+                x: -45139.4296875
+                y: 28286.427734375
+                size: 16.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                align: center
+      - type: row
+        id: 59:5189
+        x: -45323.4296875
+        y: 28358.423828125
+        padding: 20.0
+        spacing: 8.0
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 521.9946899414062
+        children:
+        - type: column
+          id: 59:5190
+          x: -45307.4296875
+          y: 28382.423828125
+          spacing: 29.0
+          background: '#000000'
+          width: 306.0
+          height: 473.99468994140625
+          children:
+          - type: stack
+            id: 59:5191
+            x: -45307.4296875
+            y: 28382.423828125
+            background: '#000000'
+            radius: 12.842666625976562
+            width: 305.8160095214844
+            height: 301.0
+            children:
+            - type: image
+              name: ImageWithFallback
+              id: 59:5192
+              url: assets/images/imagewithfallback.png
+              width: 534.0120239257812
+              height: 300.62396240234375
+              x: -45307.4296875
+              y: 28382.423828125
+            - type: button
+              label: زيادة المبيعات بنسبة 300%
+              id: 59:5194
+              x: -45187.4296875
+              y: 28397.080078125
+              background: '#0F172B'
+              radius: 18132400.0
+              width: 182.0
+              height: 33.0
+            - type: column
+              id: 59:5199
+              x: -45307.4296875
+              y: 28727.9609375
+              padding: 19.259721120198567
+              background: '#000000'
+              width: 534.0120239257812
+              height: 68.48562622070312
+              children:
+              - type: row
+                id: 59:5200
+                x: -45288.171875
+                y: 28747.220703125
+                padding: 0.008493795059621334
+                spacing: 12.842605590820312
+                alignment: center
+                background: '#000000'
+                width: 495.4925537109375
+                height: 29.966175079345703
+                children:
+                - type: button
+                  label: 40% ↑ المبيعات
+                  id: 59:5201
+                  x: -45199.4375
+                  y: 28747.220703125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 89.68733215332031
+                  height: 29.966175079345703
+                - type: button
+                  label: 99.9% وقت التشغيل
+                  id: 59:5203
+                  x: -45096.91015625
+                  y: 28747.220703125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 108.21247863769531
+                  height: 29.966175079345703
+                - type: button
+                  label: 50 ألف+ مستخدم
+                  id: 59:5205
+                  x: -44975.85546875
+                  y: 28747.220703125
+                  background: '#1D293D'
+                  radius: 8.026666641235352
+                  width: 94.44950103759766
+                  height: 29.966175079345703
+          - type: column
+            id: 59:5207
+            x: -45307.4296875
+            y: 28712.423828125
+            spacing: 10.0
+            background: '#000000'
+            width: 306.0
+            height: 143.9946746826172
+            children:
+            - type: column
+              id: 59:5208
+              x: -45307.4296875
+              y: 28712.423828125
+              spacing: 8.0
+              background: '#000000'
+              width: 306.0
+              height: 110.0
+              children:
+              - type: text
+                value: منصات التجارة الإلكترونية
+                id: 59:5209
+                x: -45307.4296875
+                y: 28712.423828125
+                size: 24.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: right
+              - type: text
+                value: لوريم إيبسوم دولور الجلوس أميت كونسيكتور. العاقل ليس لديه أي
+                  حمل، فهو يمتلك شهرة كبيرة
+                id: 59:5210
+                x: -45307.4296875
+                y: 28750.423828125
+                size: 16.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#90A1B9'
+                align: right
+            - type: row
+              id: 59:5211
+              x: -45169.359375
+              y: 28832.423828125
+              padding: 6.0
+              spacing: 7.930096626281738
+              alignment: end
+              background: '#000000'
+              width: 167.9300537109375
+              height: 23.994674682617188
+              children:
+              - type: icon
+                name: Container
+                id: 59:5212
+                url: assets/icons/container.svg
+                width: 15.999957084655762
+                height: 15.999957084655762
+              - type: text
+                value: عرض دراسة الحالة
+                id: 59:5217
+                x: -45139.4296875
+                y: 28832.421875
+                size: 16.0
+                fontWeight: 700
+                fontFamily: GE SS Two
+                align: center
+  - type: column
+    id: 59:5221
+    x: -45339.4296875
+    y: 28960.419921875
+    spacing: 32.0
+    background: '#000000'
+    width: 375.0
+    height: 648.588134765625
+    children:
+    - type: column
+      id: 59:5222
+      x: -45339.4296875
+      y: 28960.419921875
+      spacing: 16.0
+      background: '#000000'
+      width: 375.0
+      height: 181.34458923339844
+      children:
+      - type: button
+        label: الاهداف
+        id: 59:5223
+        x: -45192.6015625
+        y: 28960.419921875
+        background: '#000000'
+        radius: 22558400.0
+        width: 81.34458923339844
+        height: 37.34458541870117
+      - type: column
+        id: 59:5225
+        x: -45323.4296875
+        y: 29013.763671875
+        spacing: 16.0
+        background: '#000000'
+        width: 343.0
+        height: 128.0
+        children:
+        - type: text
+          value: أهدافنا الإستراتيجية
+          id: 59:5226
+          x: -45323.4296875
+          y: 29013.763671875
+          size: 28.0
+          fontWeight: 700
+          fontFamily: GE SS Two
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: قيادة الابتكار والتميز والنمو المستدام من خلال الحلول التقنية التي
+            تمكن الشركات من تحقيق النجاح على المدى الطويل.
+          id: 59:5227
+          x: -45323.4296875
+          y: 29069.763671875
+          size: 16.0
+          fontWeight: 300
+          fontFamily: GE SS Two
+          color: '#BFC8E6'
+          align: center
+    - type: column
+      id: 59:5228
+      x: -45323.4296875
+      y: 29173.763671875
+      spacing: 24.0
+      background: '#000000'
+      width: 343.0
+      height: 435.2435302734375
+      children:
+      - type: row
+        id: 59:5229
+        x: -45323.4296875
+        y: 29173.763671875
+        padding: 24.0
+        spacing: 10.0
+        alignment: center
+        background: '#13182B'
+        radius: 24.0
+        width: 343.0
+        height: 379.2435302734375
+        children:
+        - type: column
+          id: 59:5230
+          x: -45307.4296875
+          y: 29205.763671875
+          spacing: 47.0
+          background: '#000000'
+          width: 311.0
+          height: 315.2435302734375
+          children:
+          - type: column
+            id: 59:5231
+            x: -45307.4296875
+            y: 29205.763671875
+            spacing: 24.0
+            background: '#000000'
+            width: 311.0
+            height: 108.0
+            children:
+            - type: text
+              value: الاستدامة
+              id: 59:5232
+              x: -45307.4296875
+              y: 29205.763671875
+              size: 28.0
+              fontWeight: 700
+              fontFamily: GE SS Two
+              color: '#E8EAF0'
+              align: center
+            - type: text
+              value: بناء نموذج عمل مستدام يضمن النمو المستمر مع الحفاظ على جودة الخدمة
+                والتميز التشغيلي.
+              id: 59:5233
+              x: -45307.4296875
+              y: 29265.763671875
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#94A3B8'
+              align: center
+          - type: stack
+            id: 59:5234
+            x: -45236.4296875
+            y: 29360.76429748535
+            background: '#000000'
+            width: 169.0
+            height: 160.24351501464844
+            children:
+            - type: stack
+              id: 59:5235
+              x: -45236.4296875
+              y: 29360.76429748535
+              background: '#000000'
+              width: 169.0
+              height: 160.24351501464844
+              children:
+              - type: icon
+                name: Vector
+                id: 59:5236
+                url: assets/icons/vector_59_5236.svg
+                width: 169.0
+                height: 160.24351501464844
+            - type: stack
+              id: 59:5237
+              x: -45236.4296875
+              y: 29360.76429748535
+              background: '#000000'
+              width: 169.0
+              height: 160.24351501464844
+              children:
+              - type: icon
+                name: Vector
+                id: 59:5238
+                url: assets/icons/vector_59_5238.svg
+                width: 169.0
+                height: 160.24351501464844
+      - type: row
+        id: 59:5239
+        x: -45195.4296875
+        y: 29577.0078125
+        spacing: 974.0
+        background: '#000000'
+        width: 87.0
+        height: 32.0
+        children:
+        - type: icon
+          name: Icon
+          id: 59:5240
+          url: assets/icons/icon.svg
+          width: 32.0
+          height: 32.0
+        - type: icon
+          name: Icon
+          id: 59:5242
+          url: assets/icons/icon.svg
+          width: 32.0
+          height: 32.0
+  - type: column
+    id: 54:3945
+    x: -45339.4296875
+    y: 29689.0078125
+    spacing: 32.0
+    background: '#000000'
+    width: 375.0
+    height: 646.3446044921875
+    children:
+    - type: column
+      id: 54:3946
+      x: -45339.4296875
+      y: 29689.0078125
+      spacing: 16.0
+      background: '#000000'
+      width: 375.0
+      height: 133.34458923339844
+      children:
+      - type: button
+        label: Portfolio
+        id: 54:3947
+        x: -45199.1015625
+        y: 29689.0078125
+        background: '#000000'
+        radius: 22558400.0
+        width: 94.34458923339844
+        height: 37.34458541870117
+      - type: column
+        id: 54:3949
+        x: -45323.4296875
+        y: 29742.3515625
+        spacing: 16.0
+        background: '#000000'
+        width: 343.0
+        height: 80.0
+        children:
+        - type: text
+          value: تأثير حقيقي، نتائج حقيقية
+          id: 54:3950
+          x: -45323.4296875
+          y: 29742.3515625
+          size: 28.0
+          fontWeight: 700
+          fontFamily: GE SS Two
+          color: '#FFFFFF'
+          align: center
+        - type: text
+          value: نجاح قابل للقياس عبر المشاريع والصناعات المتنوعة
+          id: 54:3951
+          x: -45323.4296875
+          y: 29798.3515625
+          size: 16.0
+          fontWeight: 300
+          fontFamily: GE SS Two
+          color: '#BFC8E6'
+          align: center
+    - type: column
+      id: 54:3952
+      x: -45323.4296875
+      y: 29854.3515625
+      spacing: 24.0
+      background: '#000000'
+      width: 343.0
+      height: 481.0
+      children:
+      - type: stack
+        id: 54:3953
+        x: -45323.4296875
+        y: 29854.3515625
+        background: '#000000'
+        radius: 20.0
+        width: 343.0
+        height: 425.0
+        children:
+        - type: button
+          label: '"عمل رائع على تطبيق الهاتف المحمول الخاص بنا! لقد تجاوز اهتمام الفريق
+            بالتفاصيل والنهج المبتكر توقعاتنا. موصى به للغاية'
+          id: 54:3954
+          x: -45323.4296875
+          y: 29854.3515625
+          background: '#6B7280'
+          radius: 20.0
+          width: 343.0
+          height: 425.0
+      - type: row
+        id: 54:3980
+        x: -45195.4296875
+        y: 30303.3515625
+        spacing: 974.0
+        background: '#000000'
+        width: 87.0
+        height: 32.0
+        children:
+        - type: icon
+          name: Icon
+          id: 54:3981
+          url: assets/icons/icon.svg
+          width: 32.0
+          height: 32.0
+        - type: icon
+          name: Icon
+          id: 54:3983
+          url: assets/icons/icon.svg
+          width: 32.0
+          height: 32.0
+  - type: column
+    id: 59:5246
+    x: -45339.9296875
+    y: 30455.3515625
+    padding: 28.0
+    spacing: 8.0
+    alignment: center
+    background: '#000000'
+    width: 376.0
+    height: 1651.361328125
+    children:
+    - type: column
+      id: 59:5247
+      x: -45323.9296875
+      y: 30495.3515625
+      background: '#000000'
+      width: 344.0
+      height: 1571.361328125
+      children:
+      - type: column
+        id: 59:5248
+        x: -45323.9296875
+        y: 30495.3515625
+        background: '#000000'
+        width: 344.0
+        height: 1571.361328125
+        children:
+        - type: column
+          id: 59:5249
+          x: -45323.9296875
+          y: 30495.3515625
+          spacing: 16.0
+          background: '#000000'
+          width: 344.0
+          height: 157.34458923339844
+          children:
+          - type: button
+            label: تواصل معنا
+            id: 59:5250
+            x: -45205.1015625
+            y: 30495.3515625
+            background: '#000000'
+            radius: 22558400.0
+            width: 106.34458923339844
+            height: 37.34458541870117
+          - type: column
+            id: 59:5252
+            x: -45323.4296875
+            y: 30548.6953125
+            spacing: 16.0
+            background: '#000000'
+            width: 343.0
+            height: 104.0
+            children:
+            - type: text
+              value: دعونا نبدأ المحادثة
+              id: 59:5253
+              x: -45323.4296875
+              y: 30548.6953125
+              size: 28.0
+              fontWeight: 700
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: center
+            - type: text
+              value: تواصل معنا ودعنا نناقش كيف يمكننا المساعدة في تحويل عملك
+              id: 59:5254
+              x: -45323.4296875
+              y: 30604.6953125
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#BFC8E6'
+              align: center
+        - type: column
+          id: 59:5255
+          x: -45323.9296875
+          y: 30652.6953125
+          padding: 32.0
+          background: '#000000'
+          width: 343.0
+          height: 1414.0167236328125
+          children:
+          - type: column
+            id: 59:5256
+            x: -45323.9296875
+            y: 30684.6953125
+            spacing: 48.0
+            background: '#000000'
+            width: 343.0
+            height: 1382.0167236328125
+            children:
+            - type: column
+              id: 59:5257
+              x: -45323.9296875
+              y: 30684.6953125
+              background: '#000000'
+              width: 344.0
+              height: 529.3783569335938
+              children:
+              - type: column
+                id: 59:5258
+                x: -45323.9296875
+                y: 30684.6953125
+                padding: 24.0
+                background: '#000000'
+                radius: 16.0
+                width: 344.0
+                height: 105.34458923339844
+                children:
+                - type: row
+                  id: 59:5259
+                  x: -45299.2578125
+                  y: 30709.3671875
+                  spacing: 16.0
+                  alignment: end
+                  background: '#000000'
+                  width: 294.6554260253906
+                  height: 56.0
+                  children:
+                  - type: column
+                    id: 59:5264
+                    x: -45164.62890625
+                    y: 30709.3671875
+                    background: '#000000'
+                    width: 96.03278350830078
+                    height: 56.0
+                    children:
+                    - type: column
+                      id: 59:5265
+                      x: -45164.62890625
+                      y: 30709.3671875
+                      background: '#000000'
+                      width: 96.03278350830078
+                      height: 28.0
+                      children:
+                      - type: text
+                        value: الموقع
+                        id: 59:5266
+                        x: -45126.59765625
+                        y: 30709.3671875
+                        size: 18.0
+                        fontWeight: 700
+                        fontFamily: GE SS Two
+                        color: '#FFFFFF'
+                        align: left
+                    - type: column
+                      id: 59:5267
+                      x: -45164.62890625
+                      y: 30737.3671875
+                      padding: 4.0
+                      background: '#000000'
+                      width: 96.03278350830078
+                      height: 28.0
+                      children:
+                      - type: text
+                        value: القاهرة، مصر
+                        id: 59:5268
+                        x: -45153.59765625
+                        y: 30741.3671875
+                        size: 16.0
+                        fontWeight: 300
+                        fontFamily: GE SS Two
+                        color: '#BFC8E6'
+                        align: left
+                  - type: icon
+                    name: Container
+                    id: 59:5260
+                    url: assets/icons/container.svg
+                    width: 47.995384216308594
+                    height: 47.995384216308594
+              - type: column
+                id: 59:5269
+                x: -45323.9296875
+                y: 30790.0390625
+                padding: 24.0
+                background: '#000000'
+                width: 344.0
+                height: 129.34458923339844
+                children:
+                - type: column
+                  id: 59:5270
+                  x: -45323.9296875
+                  y: 30814.0390625
+                  padding: 24.0
+                  background: '#000000'
+                  radius: 16.0
+                  width: 344.0
+                  height: 105.34458923339844
+                  children:
+                  - type: row
+                    id: 59:5271
+                    x: -45170.35546875
+                    y: 30838.7109375
+                    spacing: 16.0
+                    background: '#000000'
+                    width: 165.75315856933594
+                    height: 56.0
+                    children:
+                    - type: column
+                      id: 59:5275
+                      x: -45170.35546875
+                      y: 30838.7109375
+                      background: '#000000'
+                      width: 101.75777435302734
+                      height: 56.0
+                      children:
+                      - type: column
+                        id: 59:5276
+                        x: -45170.35546875
+                        y: 30838.7109375
+                        padding: 4.0
+                        background: '#000000'
+                        width: 101.75777435302734
+                        height: 32.0
+                        children:
+                        - type: text
+                          value: الهاتف
+                          id: 59:5277
+                          x: -45125.59765625
+                          y: 30838.7109375
+                          size: 18.0
+                          fontWeight: 700
+                          fontFamily: GE SS Two
+                          color: '#FFFFFF'
+                          align: left
+                      - type: text
+                        value: 01550099355
+                        id: 59:5279
+                        x: -45146.59765625
+                        y: 30870.7109375
+                        size: 16.0
+                        fontWeight: 300
+                        fontFamily: GE SS Two
+                        color: '#BFC8E6'
+                        align: left
+                    - type: icon
+                      name: Container
+                      id: 59:5272
+                      url: assets/icons/container.svg
+                      width: 47.995384216308594
+                      height: 47.995384216308594
+              - type: column
+                id: 59:5280
+                x: -45323.9296875
+                y: 30919.384765625
+                padding: 24.0
+                background: '#000000'
+                width: 344.0
+                height: 129.34458923339844
+                children:
+                - type: column
+                  id: 59:5281
+                  x: -45323.9296875
+                  y: 30943.384765625
+                  padding: 24.0
+                  background: '#000000'
+                  radius: 16.0
+                  width: 344.0
+                  height: 105.34458923339844
+                  children:
+                  - type: row
+                    id: 59:5282
+                    x: -45225.1796875
+                    y: 30968.056640625
+                    spacing: 16.0
+                    background: '#000000'
+                    width: 220.57650756835938
+                    height: 56.0
+                    children:
+                    - type: column
+                      id: 59:5288
+                      x: -45225.1796875
+                      y: 30968.056640625
+                      background: '#000000'
+                      width: 156.5811309814453
+                      height: 56.0
+                      children:
+                      - type: column
+                        id: 59:5289
+                        x: -45225.1796875
+                        y: 30968.056640625
+                        padding: 4.0
+                        background: '#000000'
+                        width: 156.5811309814453
+                        height: 32.0
+                        children:
+                        - type: text
+                          value: موقع إلكتروني
+                          id: 59:5290
+                          x: -45192.59765625
+                          y: 30968.056640625
+                          size: 18.0
+                          fontWeight: 700
+                          fontFamily: GE SS Two
+                          color: '#FFFFFF'
+                          align: left
+                      - type: text
+                        value: gosorsolutions.com
+                        id: 59:5292
+                        x: -45211.59765625
+                        y: 31000.056640625
+                        size: 16.0
+                        fontWeight: 300
+                        fontFamily: GE SS Two
+                        color: '#BFC8E6'
+                        align: left
+                    - type: icon
+                      name: Container
+                      id: 59:5283
+                      url: assets/icons/container.svg
+                      width: 47.995384216308594
+                      height: 47.995384216308594
+              - type: column
+                id: 59:5293
+                x: -45323.9296875
+                y: 31048.728515625
+                padding: 24.0
+                background: '#000000'
+                width: 344.0
+                height: 165.34458923339844
+                children:
+                - type: button
+                  label: تابعنا
+                  id: 59:5294
+                  x: -45323.9296875
+                  y: 31072.728515625
+                  background: '#000000'
+                  radius: 16.0
+                  width: 344.0
+                  height: 141.34458923339844
+            - type: column
+              id: 59:5307
+              x: -45323.9296875
+              y: 31262.07421875
+              padding: 24.0
+              background: '#000000'
+              radius: 24.0
+              width: 344.0
+              height: 804.6383666992188
+              children:
+              - type: column
+                id: 59:5308
+                x: -45307.2578125
+                y: 31294.74609375
+                background: '#000000'
+                width: 307.0
+                height: 739.2937622070312
+                children:
+                - type: column
+                  id: 59:5309
+                  x: -45307.2578125
+                  y: 31294.74609375
+                  background: '#000000'
+                  width: 305.0
+                  height: 77.32344055175781
+                  children:
+                  - type: column
+                    id: 59:5310
+                    x: -45307.2578125
+                    y: 31294.74609375
+                    padding: 8.0
+                    background: '#000000'
+                    width: 305.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: الاسم
+                      id: 59:5311
+                      x: -45041.2578125
+                      y: 31294.74609375
+                      size: 14.0
+                      fontWeight: 700
+                      fontFamily: GE SS Two
+                      color: '#FFFFFF'
+                      align: left
+                  - type: stack
+                    id: 59:5312
+                    x: -45307.2578125
+                    y: 31322.74609375
+                    background: '#000000'
+                    width: 305.0
+                    height: 49.32344055175781
+                    children:
+                    - type: button
+                      label: اسمك
+                      id: 59:5313
+                      x: -45306.9296875
+                      y: 31322.3828125
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 305.0
+                      height: 50.0
+                - type: column
+                  id: 59:5315
+                  x: -45307.2578125
+                  y: 31372.0703125
+                  padding: 24.0
+                  background: '#000000'
+                  width: 305.0
+                  height: 101.32344055175781
+                  children:
+                  - type: column
+                    id: 59:5316
+                    x: -45307.2578125
+                    y: 31396.0703125
+                    padding: 8.0
+                    background: '#000000'
+                    width: 305.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: البريد إلكتروني
+                      id: 59:5317
+                      x: -45096.2578125
+                      y: 31396.0703125
+                      size: 14.0
+                      fontWeight: 700
+                      fontFamily: GE SS Two
+                      color: '#FFFFFF'
+                      align: left
+                  - type: stack
+                    id: 59:5318
+                    x: -45307.2578125
+                    y: 31424.0703125
+                    background: '#000000'
+                    width: 305.0
+                    height: 49.32344055175781
+                    children:
+                    - type: button
+                      label: your@email.com
+                      id: 59:5319
+                      x: -45306.9296875
+                      y: 31424.3828125
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 305.0
+                      height: 49.0
+                - type: column
+                  id: 59:5321
+                  x: -45307.2578125
+                  y: 31473.392578125
+                  padding: 24.0
+                  background: '#000000'
+                  width: 307.0
+                  height: 101.32344055175781
+                  children:
+                  - type: column
+                    id: 59:5322
+                    x: -45307.2578125
+                    y: 31497.392578125
+                    padding: 8.0
+                    background: '#000000'
+                    width: 307.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: هاتف
+                      id: 59:5323
+                      x: -45036.2578125
+                      y: 31497.392578125
+                      size: 14.0
+                      fontWeight: 700
+                      fontFamily: GE SS Two
+                      color: '#FFFFFF'
+                      align: left
+                  - type: stack
+                    id: 59:5324
+                    x: -45307.2578125
+                    y: 31525.392578125
+                    background: '#000000'
+                    width: 307.0
+                    height: 49.32344055175781
+                    children:
+                    - type: button
+                      label: رقم هاتفك
+                      id: 59:5325
+                      x: -45306.9296875
+                      y: 31525.3828125
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 307.0
+                      height: 49.0
+                - type: column
+                  id: 59:5327
+                  x: -45307.2578125
+                  y: 31574.716796875
+                  padding: 24.0
+                  background: '#000000'
+                  width: 307.0
+                  height: 101.32344055175781
+                  children:
+                  - type: column
+                    id: 59:5328
+                    x: -45307.2578125
+                    y: 31598.716796875
+                    padding: 8.0
+                    background: '#000000'
+                    width: 307.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: الشركة
+                      id: 59:5329
+                      x: -45048.2578125
+                      y: 31598.716796875
+                      size: 14.0
+                      fontWeight: 700
+                      fontFamily: GE SS Two
+                      color: '#FFFFFF'
+                      align: left
+                  - type: stack
+                    id: 59:5330
+                    x: -45307.2578125
+                    y: 31626.716796875
+                    background: '#000000'
+                    width: 307.0
+                    height: 49.32344055175781
+                    children:
+                    - type: button
+                      label: اسم شركتك
+                      id: 59:5331
+                      x: -45306.9296875
+                      y: 31626.3828125
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 308.0
+                      height: 50.0
+                - type: column
+                  id: 59:5333
+                  x: -45307.2578125
+                  y: 31676.0390625
+                  padding: 24.0
+                  background: '#000000'
+                  width: 305.0
+                  height: 98.0
+                  children:
+                  - type: column
+                    id: 59:5334
+                    x: -45307.2578125
+                    y: 31700.0390625
+                    padding: 8.0
+                    background: '#000000'
+                    width: 306.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: نوع المشروع
+                      id: 59:5335
+                      x: -45080.2578125
+                      y: 31700.0390625
+                      size: 14.0
+                      fontWeight: 700
+                      fontFamily: GE SS Two
+                      color: '#FFFFFF'
+                      align: left
+                  - type: column
+                    id: 59:5336
+                    x: -45307.2578125
+                    y: 31728.0390625
+                    padding: 6.5
+                    spacing: 8.0
+                    background: '#000000'
+                    width: 306.0
+                    height: 46.0
+                    children:
+                    - type: row
+                      id: 59:5337
+                      x: -45299.2578125
+                      y: 31733.0390625
+                      spacing: 383.0
+                      background: '#000000'
+                      width: 290.0
+                      height: 36.0
+                      children:
+                      - type: icon
+                        name: weui:arrow-filled
+                        id: 59:5340
+                        url: assets/icons/weuiarrow-filled.svg
+                        width: 20.606666564941406
+                        height: 8.13648796081543
+                      - type: row
+                        id: 59:5338
+                        x: -45107.2578125
+                        y: 31733.0390625
+                        padding: 8.0
+                        spacing: 8.0
+                        alignment: center
+                        background: '#000000'
+                        width: 98.0
+                        height: 36.0
+                        children:
+                        - type: text
+                          value: نوع المشروع
+                          id: 59:5339
+                          x: -45099.2578125
+                          y: 31741.0390625
+                          size: 16.0
+                          fontWeight: 300
+                          fontFamily: GE SS Two
+                          color: '#8FA0D1'
+                          align: left
+                    - type: stack
+                      id: 59:5342
+                      x: -45306.9296875
+                      y: 31728.3828125
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 306.0
+                      height: 46.0
+                      children:
+                      - type: icon
+                        name: Option
+                        id: 59:5343
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 59:5344
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 59:5345
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 59:5346
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 59:5347
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 59:5348
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 59:5349
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                      - type: icon
+                        name: Option
+                        id: 59:5350
+                        url: assets/icons/option.svg
+                        width: 9.999999747378752e-05
+                        height: 9.999999747378752e-05
+                - type: column
+                  id: 59:5351
+                  x: -45307.2578125
+                  y: 31774.0390625
+                  padding: 24.0
+                  background: '#000000'
+                  width: 305.0
+                  height: 204.0
+                  children:
+                  - type: column
+                    id: 59:5352
+                    x: -45307.2578125
+                    y: 31798.0390625
+                    padding: 8.0
+                    background: '#000000'
+                    width: 305.0
+                    height: 28.0
+                    children:
+                    - type: text
+                      value: رسالة
+                      id: 59:5353
+                      x: -45039.2578125
+                      y: 31798.0390625
+                      size: 14.0
+                      fontWeight: 700
+                      fontFamily: GE SS Two
+                      color: '#FFFFFF'
+                      align: left
+                  - type: stack
+                    id: 59:5354
+                    x: -45307.2578125
+                    y: 31826.0390625
+                    background: '#000000'
+                    width: 305.0
+                    height: 128.0
+                    children:
+                    - type: button
+                      label: أخبرنا عن مشروعك...
+                      id: 59:5355
+                      x: -45306.9296875
+                      y: 31826.2109375
+                      background: '#FFFFFF'
+                      radius: 16.0
+                      width: 305.0
+                      height: 121.0
+                - type: button
+                  label: أرسل رسالة
+                  id: 59:5357
+                  x: -45307.2578125
+                  y: 31978.0390625
+                  background: '#000000'
+                  radius: 16.0
+                  width: 306.0
+                  height: 56.0
+  - type: column
+    id: 62:5658
+    x: -45345.0
+    y: 32187.0
+    padding: 32.0
+    spacing: 32.0
+    background: '#101133'
+    width: 374.0
+    height: 1281.6676025390625
+    children:
+    - type: column
+      id: I62:5658;59:5514
+      x: -45329.0
+      y: 32235.0
+      spacing: 40.0
+      background: '#000000'
+      width: 342.0
+      height: 1046.0
+      children:
+      - type: column
+        id: I62:5658;59:5515
+        x: -45329.0
+        y: 32235.0
+        spacing: 29.0
+        alignment: center
+        background: '#000000'
+        width: 342.0
+        height: 309.0
+        children:
+        - type: column
+          id: I62:5658;59:5516
+          x: -45321.49609375
+          y: 32254.5
+          spacing: 16.0
+          background: '#000000'
+          width: 326.9925537109375
+          height: 159.0
+          children:
+          - type: container
+            width: 184.0
+            height: 91.0
+            id: I62:5658;59:5517
+            x: -45178.50390625
+            y: 32254.5
+          - type: text
+            value: بناء مستقبل التكنولوجيا من خلال حلول برمجية مبتكرة تدفع نمو الأعمال.
+            id: I62:5658;59:5518
+            x: -45321.49609375
+            y: 32361.5
+            size: 18.0
+            fontWeight: 300
+            fontFamily: GE SS Two
+            color: '#D6D8DB'
+            align: right
+        - type: column
+          id: I62:5658;59:5519
+          x: -45329.0
+          y: 32442.5
+          spacing: 16.0
+          alignment: center
+          background: '#000000'
+          width: 342.0
+          height: 82.0
+          children:
+          - type: text
+            value: اشترك في النشرة الإخبارية لدينا
+            id: I62:5658;59:5520
+            x: -45162.0
+            y: 32443.0
+            size: 14.0
+            fontWeight: 300
+            fontFamily: GE SS Two
+            color: '#D6D8DB'
+            align: left
+          - type: row
+            id: I62:5658;59:5521
+            x: -45329.0
+            y: 32476.0
+            padding: 2.288818359375e-05
+            spacing: 7.9903106689453125
+            background: '#000000'
+            width: 342.0
+            height: 48.0
+            children:
+            - type: button
+              label: اشترك
+              id: I62:5658;59:5524
+              x: -45329.0
+              y: 32476.0
+              background: '#000000'
+              radius: 8.0
+              width: 72.0
+              height: 48.0
+            - type: button
+              label: أدخل بريدك الإلكتروني
+              id: I62:5658;59:5522
+              x: -45249.0078125
+              y: 32476.0
+              background: '#0F172B'
+              radius: 8.0
+              width: 261.0
+              height: 48.0
+      - type: column
+        id: I62:5658;59:5526
+        x: -45329.0
+        y: 32584.0
+        spacing: 24.0
+        alignment: center
+        background: '#000000'
+        width: 342.0
+        height: 697.0
+        children:
+        - type: column
+          id: I62:5658;59:5527
+          x: -45329.0
+          y: 32568.0
+          spacing: 16.0
+          background: '#000000'
+          width: 342.0
+          height: 250.0
+          children:
+          - type: text
+            value: روابط سريعة
+            id: I62:5658;59:5529
+            x: -45080.0
+            y: 32568.0
+            size: 16.0
+            fontWeight: 700
+            fontFamily: GE SS Two
+            color: '#FFFFFF'
+            align: left
+          - type: column
+            id: I62:5658;59:5530
+            x: -45329.0
+            y: 32608.0
+            spacing: 11.995820999145508
+            background: '#000000'
+            width: 342.0
+            height: 203.97909545898438
+            children:
+            - type: text
+              value: الصفحه الرئيسيه
+              id: I62:5658;59:5531
+              x: -45098.0
+              y: 32608.0
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: معلومات عنا
+              id: I62:5658;59:5532
+              x: -45072.0
+              y: 32643.99609375
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: خدمات
+              id: I62:5658;59:5533
+              x: -45036.0
+              y: 32679.9921875
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: منتجات
+              id: I62:5658;59:5534
+              x: -45038.0
+              y: 32715.98828125
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: مَلَفّ
+              id: I62:5658;59:5535
+              x: -45019.0
+              y: 32751.982421875
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: اتصل بنا
+              id: I62:5658;59:5536
+              x: -45039.0
+              y: 32787.98046875
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+        - type: column
+          id: I62:5658;59:5537
+          x: -45329.0
+          y: 32842.0
+          spacing: 16.0
+          background: '#000000'
+          width: 342.0
+          height: 250.0
+          children:
+          - type: text
+            value: خدماتنا
+            id: I62:5658;59:5539
+            x: -45044.0
+            y: 32842.0
+            size: 16.0
+            fontWeight: 700
+            fontFamily: GE SS Two
+            color: '#FFFFFF'
+            align: left
+          - type: column
+            id: I62:5658;59:5540
+            x: -45329.0
+            y: 32882.0
+            spacing: 11.995820999145508
+            background: '#000000'
+            width: 342.0
+            height: 203.97909545898438
+            children:
+            - type: text
+              value: تطوير الويب
+              id: I62:5658;59:5541
+              x: -45066.0
+              y: 32882.0
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: تطبيقات الجوال
+              id: I62:5658;59:5542
+              x: -45090.0
+              y: 32917.99609375
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: التجارة الإلكترونية
+              id: I62:5658;59:5543
+              x: -45100.0
+              y: 32953.9921875
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: المنصات التعليمية
+              id: I62:5658;59:5544
+              x: -45105.0
+              y: 32989.98828125
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: أنظمة تخطيط موارد المؤسسات
+              id: I62:5658;59:5545
+              x: -45196.0
+              y: 33025.984375
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+            - type: text
+              value: حلول الذكاء الاصطناعي
+              id: I62:5658;59:5546
+              x: -45143.0
+              y: 33061.98046875
+              size: 16.0
+              fontWeight: 300
+              fontFamily: GE SS Two
+              color: '#FFFFFF'
+              align: left
+        - type: column
+          id: I62:5658;59:5547
+          x: -45329.0
+          y: 33116.0
+          spacing: 16.0
+          background: '#000000'
+          width: 342.0
+          height: 181.0
+          children:
+          - type: text
+            value: معلومات الاتصال
+            id: I62:5658;59:5549
+            x: -45113.0
+            y: 33116.0
+            size: 16.0
+            fontWeight: 700
+            fontFamily: GE SS Two
+            color: '#FFFFFF'
+            align: left
+          - type: column
+            id: I62:5658;59:5550
+            x: -45329.0
+            y: 33156.0
+            spacing: 11.995820999145508
+            background: '#000000'
+            width: 342.0
+            height: 95.99163818359375
+            children:
+            - type: row
+              id: I62:5658;59:5551
+              x: -45125.0
+              y: 33156.0
+              spacing: 12.0
+              background: '#000000'
+              width: 138.0
+              height: 24.0
+              children:
+              - type: text
+                value: 01550099355
+                id: I62:5658;59:5554
+                x: -45125.0
+                y: 33156.0
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: icon
+                name: Icon
+                id: I62:5658;59:5552
+                url: assets/icons/icon.svg
+                width: 24.0
+                height: 24.0
+            - type: row
+              id: I62:5658;59:5555
+              x: -45227.0
+              y: 33191.99609375
+              spacing: 12.0
+              background: '#000000'
+              width: 240.0
+              height: 24.0
+              children:
+              - type: text
+                value: info@gosorsolutions.com
+                id: I62:5658;59:5559
+                x: -45227.0
+                y: 33191.99609375
+                size: 16.0
+                fontWeight: 400
+                fontFamily: Montserrat
+                color: '#FFFFFF'
+                align: left
+              - type: icon
+                name: Icon
+                id: I62:5658;59:5556
+                url: assets/icons/icon.svg
+                width: 24.0
+                height: 24.0
+            - type: row
+              id: I62:5658;59:5560
+              x: -45108.0
+              y: 33227.9921875
+              spacing: 12.0
+              background: '#000000'
+              width: 121.0
+              height: 24.0
+              children:
+              - type: text
+                value: القاهرة، مصر
+                id: I62:5658;59:5564
+                x: -45108.0
+                y: 33227.9921875
+                size: 16.0
+                fontWeight: 300
+                fontFamily: GE SS Two
+                color: '#FFFFFF'
+                align: left
+              - type: icon
+                name: Icon
+                id: I62:5658;59:5561
+                url: assets/icons/icon.svg
+                width: 24.0
+                height: 24.0
+    - type: column
+      id: I62:5658;59:5566
+      x: -45329.0
+      y: 33345.66796875
+      padding: -9.1552734375e-05
+      spacing: 771.4822998046875
+      background: '#000000'
+      width: 342.0
+      height: 75.0
+      children:
+      - type: text
+        value: © 2026 مؤسسة جذور للحلول. جميع الحقوق محفوظة.
+        id: I62:5658;59:5568
+        x: -45301.0
+        y: 33345.66796875
+        size: 14.0
+        fontWeight: 300
+        fontFamily: GE SS Two
+        color: '#D6D8DB'
+        align: left
+      - type: row
+        id: I62:5658;59:5569
+        x: -45194.9453125
+        y: 33380.67578125
+        spacing: 16.0
+        alignment: end
+        background: '#000000'
+        width: 207.94627380371094
+        height: 39.99327850341797
+        children:
+        - type: icon
+          name: Link - Email
+          id: I62:5658;59:5570
+          url: assets/icons/link_-_email.svg
+          width: 39.99327850341797
+          height: 39.99327850341797
+        - type: icon
+          name: Link - LinkedIn
+          id: I62:5658;59:5573
+          url: assets/icons/link_-_linkedin.svg
+          width: 39.99327850341797
+          height: 39.99327850341797
+        - type: icon
+          name: Link - Email
+          id: I62:5658;59:5578
+          url: assets/icons/link_-_email.svg
+          width: 39.99327850341797
+          height: 39.99327850341797
