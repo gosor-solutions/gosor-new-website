@@ -41,7 +41,7 @@
                 <div class="flex items-center">
                     <a href="#" class="flex items-center gap-2 group">
                         <!-- Stylized SVG GOSOR Logo -->
-                        <img src="{{ asset('logo.png') }}" alt="Logo" class="h-40 w-auto"/>
+                        <img src="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('logo.png') }}" alt="Logo" class="h-40 w-auto"/>
                     </a>
                 </div>
 
@@ -75,8 +75,8 @@
                         <!-- Dropdown Menu -->
                         <div id="lang-dropdown-menu" class="hidden absolute right-0 rtl:left-0 mt-2 w-32 origin-top-right rounded-xl bg-slate-900 border border-slate-800 shadow-2xl ring-1 ring-black/5 focus:outline-none">
                             <div class="py-1">
-                                <a href="?lang=en" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'en' ? 'text-cyan-400 bg-slate-850' : 'text-slate-300 hover:bg-slate-800/50 hover:text-white' }}">English</a>
-                                <a href="?lang=ar" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'ar' ? 'text-cyan-400 bg-slate-850' : 'text-slate-300 hover:bg-slate-800/50 hover:text-white' }}">العربية</a>
+                                <a href="{{ route('set-locale', 'en') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'en' ? 'text-cyan-400 bg-slate-850' : 'text-slate-300 hover:bg-slate-800/50 hover:text-white' }}">English</a>
+                                <a href="{{ route('set-locale', 'ar') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'ar' ? 'text-cyan-400 bg-slate-850' : 'text-slate-300 hover:bg-slate-800/50 hover:text-white' }}">العربية</a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                 <!-- Hamburger Mobile Menu Icon -->
                 <div class="flex md:hidden items-center gap-3">
                     <!-- Fast Switch Language Button (Mobile inline toggle) -->
-                    <a href="?lang={{ app()->getLocale() === 'en' ? 'ar' : 'en' }}" class="p-2 rounded-lg bg-slate-950/60 border border-slate-900/60 text-slate-300 hover:text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    <a href="{{ route('set-locale', app()->getLocale() === 'en' ? 'ar' : 'en') }}" class="p-2 rounded-lg bg-slate-950/60 border border-slate-900/60 text-slate-300 hover:text-cyan-400 text-xs font-semibold uppercase tracking-wider">
                         {{ app()->getLocale() === 'en' ? 'AR' : 'EN' }}
                     </a>
 
@@ -308,23 +308,23 @@
                         ];
                     @endphp
 
-                    @foreach(['web', 'mobile', 'ecommerce', 'education', 'erp_crm', 'ai'] as $index => $service)
+                    @foreach($services as $index => $service)
                         <!-- Service Card -->
                         <div data-aos="fade-up" data-aos-delay="{{ $index * 100 }}" class="relative rounded-[32px] bg-slate-950/40 border border-slate-800/80 p-10 hover:border-blue-500/30 transition-all duration-300 group flex flex-col justify-between shadow-2xl">
                             <div>
                                 <!-- Icon Container -->
                                 <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-8 shadow-lg shadow-blue-600/20">
-                                    {!! $serviceIcons[$service] !!}
+                                    {!! $serviceIcons[$service->icon] ?? $serviceIcons['web'] !!}
                                 </div>
 
                                 <!-- Title -->
                                 <h3 class="text-2xl font-bold text-slate-100 mb-4 group-hover:text-cyan-400 transition">
-                                    {{ __('landing.services.items.' . $service . '.title') }}
+                                    {{ $service->name }}
                                 </h3>
 
                                 <!-- Description -->
                                 <p class="text-slate-400 text-base leading-relaxed mb-8">
-                                    {{ __('landing.services.items.' . $service . '.description') }}
+                                    {{ $service->description }}
                                 </p>
                             </div>
 
@@ -479,8 +479,8 @@
 
                 <!-- Products Grid -->
                 <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                    @for($i = 0; $i < 4; $i++)
-                        <div data-aos="{{ $i % 2 === 0 ? 'fade-right' : 'fade-left' }}" class="relative rounded-3xl bg-slate-900/35 border border-slate-800/80 p-8 hover:border-indigo-500/25 transition duration-300 flex flex-col justify-between group overflow-hidden shadow-2xl">
+                    @foreach($platforms as $index => $platform)
+                        <div data-aos="{{ $index % 2 === 0 ? 'fade-right' : 'fade-left' }}" class="relative rounded-3xl bg-slate-900/35 border border-slate-800/80 p-8 hover:border-indigo-500/25 transition duration-300 flex flex-col justify-between group overflow-hidden shadow-2xl">
                             <div>
                                 <!-- Product Icon and Title Row -->
                                 <div class="flex items-center gap-4 mb-6">
@@ -490,35 +490,37 @@
                                         </svg>
                                     </div>
                                     <h3 class="text-2xl font-bold text-slate-100 group-hover:text-cyan-400 transition">
-                                        {{ __('landing.products.items.edubridge.title') }}
+                                        {{ $platform->name }}
                                     </h3>
                                 </div>
 
                                 <!-- Description -->
                                 <p class="text-slate-400 text-sm leading-relaxed mb-8">
-                                    {{ __('landing.products.items.edubridge.description') }}
+                                    {{ $platform->description }}
                                 </p>
 
                                 <!-- Features list -->
+                                @if($platform->features && is_array($platform->features))
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-4 mb-8">
-                                    @foreach(__('landing.products.items.edubridge.features') as $feature)
+                                    @foreach($platform->features as $featureItem)
                                         <div class="flex items-center gap-2">
                                             <span class="w-2 h-2 rounded-full bg-indigo-500/80 shadow-[0_0_8px_rgba(99,102,241,0.5)]"></span>
-                                            <span class="text-xs text-slate-300 font-medium">{{ $feature }}</span>
+                                            <span class="text-xs text-slate-300 font-medium">{{ $featureItem['feature'] ?? $featureItem }}</span>
                                         </div>
                                     @endforeach
                                 </div>
+                                @endif
                             </div>
 
                             <!-- Full width button -->
                             <a href="#contact" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600/90 hover:bg-indigo-600 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-indigo-600/10">
-                                <span>{{ __('landing.products.items.edubridge.cta') }}</span>
+                                <span>{{ __('landing.nav.get_started') }}</span>
                                 <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                 </svg>
                             </a>
                         </div>
-                    @endfor
+                    @endforeach
                 </div>
 
             </div>
@@ -639,45 +641,38 @@
 
                 <!-- Portfolio project list -->
                 <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    @foreach(['project1', 'project2', 'project3'] as $index => $projectKey)
+                    @foreach($portfolios as $index => $project)
                         <div data-aos="fade-up" data-aos-delay="{{ $index * 150 }}" class="relative rounded-3xl bg-slate-900/30 border border-slate-800/80 p-6 hover:border-cyan-500/20 transition duration-300 group flex flex-col justify-between shadow-2xl">
                             <div>
                                 <!-- Image Placeholder Container -->
                                 <div class="w-full aspect-[4/3] rounded-2xl bg-slate-950/90 border border-slate-800 p-4 mb-6 relative overflow-hidden flex items-center justify-center">
-                                    <svg class="absolute inset-0 w-full h-full text-indigo-500/5" fill="none" viewBox="0 0 100 100">
-                                        <grid width="10" height="10" patternUnits="userSpaceOnUse"/>
-                                        <line x1="0" y1="0" x2="100" y2="100" stroke="currentColor"/>
-                                        <line x1="100" y1="0" x2="0" y2="100" stroke="currentColor"/>
-                                    </svg>
+                                    <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
 
-                                    <div class="text-center z-10">
-                                        <span class="text-[10px] text-slate-600 uppercase tracking-widest block mb-1 font-sans">Platform</span>
-                                        <span class="text-xs font-extrabold text-indigo-400 font-sans">GOSOR PLATFORM</span>
-                                    </div>
-
+                                    @if($project->badge)
                                     <!-- Percentage metrics tag -->
-                                    <span class="absolute top-4 start-4 inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-emerald-500/10 text-[10px] font-bold text-emerald-400 border border-emerald-500/20 shadow-inner">
+                                    <span class="absolute top-4 start-4 inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-emerald-500/10 text-[10px] font-bold text-emerald-400 border border-emerald-500/20 shadow-inner z-20 backdrop-blur-sm">
                                         <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306 8.9-8.91M21 7.5H18M21 7.5V10.5" />
                                         </svg>
-                                        {{ __('landing.portfolio.items.' . $projectKey . '.tag') }}
+                                        {{ $project->badge }}
                                     </span>
+                                    @endif
                                 </div>
 
                                 <!-- Title -->
                                 <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition">
-                                    {{ __('landing.portfolio.items.' . $projectKey . '.title') }}
+                                    {{ $project->name }}
                                 </h3>
 
                                 <!-- Description -->
                                 <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                                    {{ __('landing.portfolio.items.' . $projectKey . '.description') }}
+                                    {{ $project->description }}
                                 </p>
                             </div>
 
                             <!-- Showcase Study link -->
-                            <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-400 group-hover:text-cyan-400 transition mt-auto">
-                                <span>{{ __('landing.portfolio.items.' . $projectKey . '.cta') }}</span>
+                            <a href="{{ $project->link ?? '#contact' }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-400 group-hover:text-cyan-400 transition mt-auto">
+                                <span>{{ __('landing.portfolio.items.project1.cta') }}</span>
                                 <svg class="h-4 w-4 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                                 </svg>
@@ -781,6 +776,7 @@
                 </div>
 
                 <!-- Testimonial Slider Panel -->
+                @if($reviews->count() > 0)
                 <div class="relative max-w-4xl mx-auto" data-aos="zoom-in">
                     <!-- Left Slide Arrow -->
                     <button type="button" class="absolute start-[-20px] md:start-[-60px] top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
@@ -809,13 +805,13 @@
 
                         <!-- Testimonial Quote -->
                         <p class="text-base sm:text-xl text-slate-200 leading-relaxed italic max-w-2xl mx-auto mb-8">
-                            "{{ __('landing.testimonials.items.test1.quote') }}"
+                            "{{ $reviews->first()->content }}"
                         </p>
 
                         <!-- Reviewer Name & Title -->
                         <div class="flex flex-col items-center">
-                            <span class="text-sm font-bold text-slate-100 uppercase tracking-wider">{{ __('landing.testimonials.items.test1.author') }}</span>
-                            <span class="text-xs text-indigo-400 font-semibold mt-1 font-sans">{{ __('landing.testimonials.items.test1.role') }}</span>
+                            <span class="text-sm font-bold text-slate-100 uppercase tracking-wider">{{ $reviews->first()->name }}</span>
+                            <span class="text-xs text-indigo-400 font-semibold mt-1 font-sans">{{ $reviews->first()->job_position }}</span>
                         </div>
                     </div>
 
@@ -826,6 +822,7 @@
                         </svg>
                     </button>
                 </div>
+                @endif
 
             </div>
         </section>
@@ -861,7 +858,7 @@
                             </div>
                             <div>
                                 <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.location_title') }}</span>
-                                <span class="text-sm font-semibold text-slate-200 mt-0.5 block">{{ __('landing.contact.details.location_val') }}</span>
+                                <span class="text-sm font-semibold text-slate-200 mt-0.5 block">{{ $settings['location'] ?? __('landing.contact.details.location_val') }}</span>
                             </div>
                         </div>
 
@@ -874,7 +871,7 @@
                             </div>
                             <div>
                                 <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.phone_title') }}</span>
-                                <span class="text-sm font-semibold text-slate-200 mt-0.5 block font-sans">{{ __('landing.contact.details.phone_val') }}</span>
+                                <span class="text-sm font-semibold text-slate-200 mt-0.5 block font-sans">{{ $settings['phone'] ?? __('landing.contact.details.phone_val') }}</span>
                             </div>
                         </div>
 
@@ -887,7 +884,7 @@
                             </div>
                             <div>
                                 <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.web_title') }}</span>
-                                <span class="text-sm font-semibold text-slate-200 mt-0.5 block font-sans">{{ __('landing.contact.details.web_val') }}</span>
+                                <span class="text-sm font-semibold text-slate-200 mt-0.5 block font-sans">{{ $settings['email'] ?? __('landing.contact.details.web_val') }}</span>
                             </div>
                         </div>
 
@@ -896,11 +893,11 @@
                             <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.follow') }}</span>
                             <div class="flex items-center gap-3 mt-1">
                                 <!-- Facebook Link -->
-                                <a href="#" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                                <a href="{{ $settings['facebook'] ?? '#' }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                                     <svg class="h-4.5 w-4.5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
                                 </a>
                                 <!-- LinkedIn Link -->
-                                <a href="#" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                                <a href="{{ $settings['linkedin'] ?? '#' }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                                     <svg class="h-4.5 w-4.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                                 </a>
                             </div>
@@ -912,17 +909,23 @@
                         <!-- Subtle border flare -->
                         <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
 
-                        <form onsubmit="event.preventDefault(); alert('Message sent successfully! / تم إرسال الرسالة بنجاح!');" class="space-y-5">
-                            
+                        @if(session('success'))
+                            <div class="mb-4 p-4 text-sm text-green-400 bg-green-500/10 border border-green-500/20 rounded-xl">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+
+                        <form action="{{ route('contact.store') }}" method="POST" class="space-y-5">
+                            @csrf
                             <!-- Name & Email Inputs Row -->
                             <div class="grid sm:grid-cols-2 gap-5">
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.name') }}</label>
-                                    <input type="text" placeholder="{{ __('landing.contact.form.name_placeholder') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150">
+                                    <input type="text" name="name" required placeholder="{{ __('landing.contact.form.name_placeholder') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.email') }}</label>
-                                    <input type="email" placeholder="{{ __('landing.contact.form.email_placeholder') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150 font-sans">
+                                    <input type="email" name="email" required placeholder="{{ __('landing.contact.form.email_placeholder') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150 font-sans">
                                 </div>
                             </div>
 
@@ -930,11 +933,11 @@
                             <div class="grid sm:grid-cols-2 gap-5">
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.phone') }}</label>
-                                    <input type="tel" placeholder="{{ __('landing.contact.form.phone_placeholder') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150 font-sans">
+                                    <input type="tel" name="phone" placeholder="{{ __('landing.contact.form.phone_placeholder') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150 font-sans">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.company') }}</label>
-                                    <input type="text" placeholder="{{ __('landing.contact.form.company_placeholder') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150">
+                                    <input type="text" name="company" placeholder="{{ __('landing.contact.form.company_placeholder') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150">
                                 </div>
                             </div>
 
@@ -942,7 +945,7 @@
                             <div>
                                 <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.project_type') }}</label>
                                 <div class="relative">
-                                    <select class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-300 outline-none transition duration-150 appearance-none">
+                                    <select name="project_type" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-300 outline-none transition duration-150 appearance-none">
                                         <option value="">{{ __('landing.contact.form.project_type') }}</option>
                                         <option value="web">Web Development</option>
                                         <option value="mobile">Mobile Application</option>
@@ -959,7 +962,7 @@
                             <!-- Message Textarea -->
                             <div>
                                 <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.message') }}</label>
-                                <textarea rows="4" placeholder="{{ __('landing.contact.form.message_placeholder') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150 resize-none"></textarea>
+                                <textarea name="message" required rows="4" placeholder="{{ __('landing.contact.form.message_placeholder') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150 resize-none"></textarea>
                             </div>
 
                             <!-- Form Submit Action -->

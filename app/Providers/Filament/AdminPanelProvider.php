@@ -54,6 +54,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+            ->plugin(\LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin::make()->defaultLocales(['en', 'ar']));
     }
 }
