@@ -7,7 +7,7 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\FileUpload;
 use Filament\Schemas\Schema;
-use Filament\Forms\Get;
+use Filament\Schemas\Components\Utilities\Get;
 
 class SettingForm
 {
@@ -30,17 +30,17 @@ class SettingForm
                     ->required()
                     ->live(),
                 
-                TextInput::make('value')
+                TextInput::make('text_value')
                     ->label('Value')
                     ->visible(fn (Get $get) => in_array($get('type'), ['text', 'url', 'email', 'tel']))
                     ->required(),
                 
-                Textarea::make('value')
+                Textarea::make('textarea_value')
                     ->label('Value')
                     ->visible(fn (Get $get) => $get('type') === 'textarea')
                     ->required(),
 
-                FileUpload::make('value')
+                FileUpload::make('image_value')
                     ->label('Value')
                     ->image()
                     ->directory('settings')

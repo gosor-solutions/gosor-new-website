@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Platforms\Schemas;
 
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
+use Filament\Infolists\Components\RepeatableEntry;
 use Filament\Schemas\Schema;
 
 class PlatformInfolist
@@ -16,8 +17,11 @@ class PlatformInfolist
                     ->columnSpanFull(),
                 TextEntry::make('description')
                     ->columnSpanFull(),
-                TextEntry::make('features')
-                    ->placeholder('-')
+                RepeatableEntry::make('features')
+                    ->schema([
+                        TextEntry::make('feature')
+                            ->hiddenLabel(),
+                    ])
                     ->columnSpanFull(),
                 IconEntry::make('is_active')
                     ->boolean(),

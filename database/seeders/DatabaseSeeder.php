@@ -22,5 +22,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
             'password' => '12345678'
         ]);
+
+        $this->call(LandingContentSeeder::class);
     }
 }

@@ -20,6 +20,14 @@ class LandingContentSeeder extends Seeder
         $en = require base_path('lang/en/landing.php');
         $ar = require base_path('lang/ar/landing.php');
 
+
+        Service::truncate();
+        Platform::truncate();
+        Portfolio::truncate();
+        Review::truncate();
+        Setting::truncate();
+
+
         // 1. Seed Services
         $servicesKeys = ['web', 'mobile', 'ecommerce', 'education', 'erp_crm', 'ai'];
         foreach ($servicesKeys as $index => $key) {
@@ -47,14 +55,14 @@ class LandingContentSeeder extends Seeder
                 'en' => $en['products']['items']['edubridge']['description'],
                 'ar' => $ar['products']['items']['edubridge']['description'],
             ],
-            'features' => collect($en['products']['items']['edubridge']['features'])->map(function($featureEn, $idx) use ($ar) {
-                return [
-                    'feature' => [
-                        'en' => $featureEn,
-                        'ar' => $ar['products']['items']['edubridge']['features'][$idx],
-                    ]
-                ];
-            })->toArray(),
+            'features' => [
+                'en' => collect($en['products']['items']['edubridge']['features'])->map(function($featureEn) {
+                    return ['feature' => $featureEn];
+                })->toArray(),
+                'ar' => collect($ar['products']['items']['edubridge']['features'])->map(function($featureAr) {
+                    return ['feature' => $featureAr];
+                })->toArray(),
+            ],
             'order' => 0,
             'is_active' => true,
         ]);
