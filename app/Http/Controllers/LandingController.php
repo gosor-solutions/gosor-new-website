@@ -21,9 +21,10 @@ class LandingController extends Controller
         $platforms = $this->landingService->getActivePlatforms();
         $portfolios = $this->landingService->getActivePortfolios();
         $reviews = $this->landingService->getActiveReviews();
+        $partners = $this->landingService->getActivePartners();
         $settings = $this->landingService->getSettings();
 
-        return view('landing', compact('services', 'platforms', 'portfolios', 'reviews', 'settings'));
+        return view('landing', compact('services', 'platforms', 'portfolios', 'reviews', 'partners', 'settings'));
     }
 
     // TODO: convert into a form request

@@ -135,6 +135,11 @@ return [
         'title' => 'Technologies We Use',
         'subtitle' => 'Leveraging modern technologies and frameworks to build secure, scalable, and high-performance digital solutions.',
     ],
+    'partners' => [
+        'badge' => 'Our Partners',
+        'title' => 'Trusted by Leading Companies',
+        'subtitle' => 'We are proud to collaborate with innovative businesses to deliver exceptional digital experiences.',
+    ],
     'portfolio' => [
         'badge' => 'Portfolio',
         'title' => 'Our Portfolio',

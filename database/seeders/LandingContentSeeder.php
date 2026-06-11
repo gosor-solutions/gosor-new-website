@@ -114,6 +114,7 @@ class LandingContentSeeder extends Seeder
             ['key' => 'email', 'value' => 'info@gosorsolutions.com', 'type' => 'email'],
             ['key' => 'facebook', 'value' => '#', 'type' => 'url'],
             ['key' => 'linkedin', 'value' => '#', 'type' => 'url'],
+            ['key' => 'whatsapp', 'value' => '+201035976592', 'type' => 'text'],
         ];
 
         foreach ($settings as $setting) {

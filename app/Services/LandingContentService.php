@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\Partner;
 use App\Models\Service;
 use App\Models\Platform;
 use App\Models\Portfolio;
@@ -11,6 +12,11 @@ use Illuminate\Support\Collection;
 
 class LandingContentService
 {
+    public function getActivePartners(): Collection
+    {
+        return Partner::where('is_active', true)->orderBy('order')->get();
+    }
+
     public function getActiveServices(): Collection
     {
         return Service::where('is_active', true)->orderBy('order')->get();

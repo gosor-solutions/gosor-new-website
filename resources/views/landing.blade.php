@@ -17,16 +17,16 @@
     <!-- Vite Styles & Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#070b13] text-slate-100 antialiased overflow-x-hidden selection:bg-cyan-500 selection:text-slate-900">
+<body class="bg-[#070b13] relative text-slate-100 antialiased overflow-x-hidden selection:bg-cyan-500 selection:text-slate-900">
 
     <!-- Global Background Elements -->
     <div class="fixed inset-0 -z-50 overflow-hidden pointer-events-none">
         <!-- Main background radial glow -->
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-indigo-950/30 via-[#070b13] to-[#070b13]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-950/30 via-[#070b13] to-[#070b13]"></div>
         
         <!-- Glowing Orbs -->
-        <div class="absolute top-[-10%] inset-s-[20%] w-125 h-125 rounded-full bg-cyan-600/10 blur-[120px] animate-pulse-glow"></div>
-        <div class="absolute bottom-[20%] inset-e-[-10%] w-150 h-150 rounded-full bg-indigo-600/10 blur-[130px] animate-pulse-glow" style="animation-delay: -3s;"></div>
+        <div class="absolute top-[-10%] inset-s-[20%] w-[500px] h-[500px] rounded-full bg-cyan-600/10 blur-[120px] animate-pulse-glow"></div>
+        <div class="absolute bottom-[20%] inset-e-[-10%] w-[600px] h-[600px] rounded-full bg-indigo-600/10 blur-[130px] animate-pulse-glow" style="animation-delay: -3s;"></div>
         
         <!-- Background Grid -->
         <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-15"></div>
@@ -41,7 +41,7 @@
                 <div class="flex items-center">
                     <a href="#" class="flex items-center gap-2 group">
                         <!-- Stylized SVG GOSOR Logo -->
-                        <img src="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('logo.png') }}" alt="Logo" class="h-40 w-auto"/>
+                        <img src="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}" alt="Logo" class="h-40 w-auto"/>
                     </a>
                 </div>
 
@@ -61,15 +61,9 @@
                     <!-- Language Selector Dropdown Toggle -->
                     <div class="relative inline-block text-left" id="lang-dropdown-wrapper">
                         <button type="button" id="lang-dropdown-btn" class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 transition duration-150 rounded-lg bg-slate-950/40 border border-slate-900">
-                            <!-- Globe Icon -->
-                            <svg class="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-.778.099-1.533.284-2.253m0 0A17.919 17.919 0 0 0 12 10.5a17.918 17.918 0 0 0 8.716-2.253" />
-                            </svg>
+                            <x-eva-globe-outline class="w-6 h-6"/>
                             <span>{{ app()->getLocale() === 'ar' ? 'العربية' : 'En' }}</span>
-                            <!-- Chevron -->
-                            <svg class="h-4 w-4 opacity-70" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                            </svg>
+                            <x-feathericon-chevron-down class="w-6 h-6"/>
                         </button>
                         
                         <!-- Dropdown Menu -->
@@ -82,7 +76,7 @@
                     </div>
 
                     <!-- Get Started Primary Action Button -->
-                    <a href="#contact" class="relative group overflow-hidden rounded-xl bg-linear-to-r from-cyan-500 to-indigo-600 p-px font-semibold text-white shadow-lg shadow-cyan-500/20 transition duration-300 hover:shadow-cyan-500/35 hover:scale-102">
+                    <a href="#contact" class="relative group overflow-hidden rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 p-px font-semibold text-white shadow-lg shadow-cyan-500/20 transition duration-300 hover:shadow-cyan-500/35 hover:scale-102">
                         <span class="block px-5 py-2.5 rounded-[11px] bg-slate-950/80 group-hover:bg-transparent transition duration-300 text-sm">
                             {{ __('landing.nav.get_started') }}
                         </span>
@@ -121,7 +115,7 @@
             <a href="#contact" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.contact') }}</a>
             
             <div class="pt-4 border-t border-slate-900 flex justify-center">
-                <a href="#contact" class="w-full text-center rounded-xl bg-linear-to-r from-cyan-500 to-indigo-600 px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-500/20">
+                <a href="#contact" class="w-full text-center rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-500/20">
                     {{ __('landing.nav.get_started') }}
                 </a>
             </div>
@@ -135,7 +129,7 @@
         <section id="home" class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
             <!-- Figma specified background image placeholder -->
             <div class="absolute inset-0 z-0">
-                <img src="{{ asset('hero.png') }}" alt="" class="w-full h-full opacity-50 object-cover pointer-events-none" />
+                <img src="{{ asset('images/gosor/hero.png') }}" alt="" class="w-full h-full opacity-50 object-cover pointer-events-none" />
             </div>
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -149,7 +143,7 @@
 
                     <!-- Large Title with custom gradients -->
                     <h1 data-aos="zoom-out" data-aos-delay="200" class="text-4xl font-extrabold sm:text-6xl lg:text-7xl leading-tight sm:leading-none tracking-tight mb-8">
-                        <span class="bg-linear-to-r from-slate-100 via-cyan-100 to-indigo-200 bg-clip-text text-transparent">
+                        <span class="bg-gradient-to-r from-slate-100 via-cyan-100 to-indigo-200 bg-clip-text text-transparent">
                             {{ __('landing.hero.title') }}
                         </span>
                     </h1>
@@ -162,7 +156,7 @@
                     <!-- Call to Action Buttons -->
                     <div data-aos="fade-up" data-aos-delay="600" class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20">
                         <!-- Primary CTA -->
-                        <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-xl shadow-cyan-500/25 transition duration-300 hover:shadow-cyan-500/40 hover:scale-102">
+                        <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-xl shadow-cyan-500/25 transition duration-300 hover:shadow-cyan-500/40 hover:scale-102">
                             <span>{{ __('landing.hero.cta_start') }}</span>
                             <!-- Dynamic Arrow based on direction -->
                             <svg class="h-5 w-5 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
@@ -217,7 +211,7 @@
                     <!-- Mission Card -->
                     <div data-aos="fade-right" class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-cyan-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
                         <div class="mb-8 overflow-hidden rounded-2xl">
-                            <img src="{{ asset('mission.png') }}" alt="Mission" class="w-full h-auto object-cover pointer-events-none" />
+                            <img src="{{ asset('images/gosor/about/mission.png') }}" alt="Mission" class="w-full h-auto object-cover pointer-events-none" />
                         </div>
                         <div class="flex flex-col items-center">
                             <h3 class="text-3xl font-extrabold text-slate-100 group-hover:text-cyan-400 transition mb-4">
@@ -232,7 +226,7 @@
                     <!-- Vision Card -->
                     <div data-aos="fade-left" class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-indigo-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
                         <div class="mb-8 overflow-hidden rounded-2xl">
-                            <img src="{{ asset('vision.png') }}" alt="Vision" class="w-full h-auto object-cover pointer-events-none" />
+                            <img src="{{ asset('images/gosor/about/vision.png') }}" alt="Vision" class="w-full h-auto object-cover pointer-events-none" />
                         </div>
                         <div class="flex flex-col items-center">
                             <h3 class="text-3xl font-extrabold text-slate-100 group-hover:text-indigo-400 transition mb-4">
@@ -277,9 +271,9 @@
         <!-- Our Services Section -->
         <section id="services" class="py-24 bg-[#101133] relative overflow-hidden">
             <!-- Glowing background gradient -->
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent z-0 pointer-events-none"></div>
-            <div class="absolute top-[20%] left-[10%] w-125 h-125 rounded-full bg-blue-600/10 blur-[130px] pointer-events-none"></div>
-            <div class="absolute bottom-[20%] right-[10%] w-150 h-150 rounded-full bg-indigo-600/10 blur-[140px] pointer-events-none"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent z-0 pointer-events-none"></div>
+            <div class="absolute top-[20%] left-[10%] w-[500px] h-[500px] rounded-full bg-blue-600/10 blur-[130px] pointer-events-none"></div>
+            <div class="absolute bottom-[20%] right-[10%] w-[600px] h-[600px] rounded-full bg-indigo-600/10 blur-[140px] pointer-events-none"></div>
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
@@ -340,9 +334,9 @@
         <!-- Why Choose Us Section -->
         <section id="why-us" class="py-24 bg-[#111133] relative overflow-hidden">
             <!-- Glowing background gradient -->
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-indigo-900/15 via-transparent to-transparent z-0 pointer-events-none"></div>
-            <div class="absolute top-[20%] right-[10%] w-125 h-125 rounded-full bg-indigo-600/10 blur-[130px] pointer-events-none"></div>
-            <div class="absolute bottom-[20%] left-[10%] w-150 h-150 rounded-full bg-cyan-600/10 blur-[140px] pointer-events-none"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-900/15 via-transparent to-transparent z-0 pointer-events-none"></div>
+            <div class="absolute top-[20%] right-[10%] w-[500px] h-[500px] rounded-full bg-indigo-600/10 blur-[130px] pointer-events-none"></div>
+            <div class="absolute bottom-[20%] left-[10%] w-[600px] h-[600px] rounded-full bg-cyan-600/10 blur-[140px] pointer-events-none"></div>
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
@@ -439,7 +433,7 @@
 
                                 <!-- Image Container -->
                                 <div class="flex justify-center my-8 h-40 relative">
-                                    <img src="{{ asset($card['image']) }}" alt="{{ $item['title'] }}" class="h-full object-contain pointer-events-none transition duration-500 group-hover:scale-105" />
+                                    <img src="{{ asset('images/gosor/why_us/'.$card['image']) }}" alt="{{ $item['title'] }}" class="h-full object-contain pointer-events-none transition duration-500 group-hover:scale-105" />
                                 </div>
                             </div>
 
@@ -529,7 +523,7 @@
         <!-- Technologies We Use Section -->
         <section class="py-24 bg-[#111133] relative overflow-hidden">
             <!-- Glowing background elements inside the section -->
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-indigo-900/10 via-transparent to-transparent z-0 pointer-events-none"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-900/10 via-transparent to-transparent z-0 pointer-events-none"></div>
             
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
@@ -597,10 +591,10 @@
                     @foreach($technologies as $index => $tech)
                         <div data-aos="zoom-in" data-aos-delay="{{ $index * 100 }}" class="w-28 h-36 md:w-48 md:h-56 shrink-0 transition-all duration-500 ease-out {{ $tech['class'] }} group cursor-pointer relative">
                             <!-- Card background with linear gradient -->
-                            <div class="absolute inset-0 rounded-2xl bg-linear-to-b from-[#1c1d54] via-[#101132] to-[#06071f] border border-indigo-500/20 shadow-2xl transition-all duration-500 group-hover:border-cyan-400/40"></div>
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#1c1d54] via-[#101132] to-[#06071f] border border-indigo-500/20 shadow-2xl transition-all duration-500 group-hover:border-cyan-400/40"></div>
 
                             <!-- Outer card subtle gloss sheen reflection -->
-                            <div class="absolute inset-0 bg-linear-to-tr from-transparent via-white/5 to-white/10 opacity-30 group-hover:opacity-60 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
+                            <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 opacity-30 group-hover:opacity-60 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
 
                             <!-- Top glow -->
                             <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(99,102,241,0.2),transparent_70%)] rounded-2xl pointer-events-none"></div>
@@ -610,9 +604,12 @@
 
                             <!-- Inner content -->
                             <div class="absolute inset-0 flex items-center justify-center p-4">
-                                <div class="relative w-full h-full flex items-center justify-center">
+                                <div class="relative flex flex-col w-full h-full items-center justify-center gap-6">
                                     <div class="flex items-center justify-center transition-all duration-500 group-hover:scale-110 {{ $tech['logo_class'] }}">
                                         {!! $tech['logo'] !!}
+                                    </div>
+                                    <div>
+                                        {{ $tech['name'] }}
                                     </div>
                                 </div>
                             </div>
@@ -622,6 +619,40 @@
 
             </div>
         </section>
+
+        @if(!empty($partners) && count($partners) > 0)
+        <!-- Our Partners Section (Infinite Scroll) -->
+        <section class="py-20 bg-[#101133] border-t border-slate-900/60 overflow-hidden">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-12">
+                <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-cyan-400 border border-cyan-500/20 uppercase mb-4">
+                        {{ __('landing.partners.badge') }}
+                    </span>
+                    <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-100 tracking-tight mb-4">
+                        {{ __('landing.partners.title') }}
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        {{ __('landing.partners.subtitle') }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative flex items-center group">
+                <!-- Left/Right Fading Overlays -->
+                <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#101133] to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#101133] to-transparent z-10 pointer-events-none"></div>
+
+                <div class="animate-scroll py-4">
+                    <!-- Duplicate partners for seamless scroll -->
+                    @foreach($partners->concat($partners) as $partner)
+                        <div class="mx-8 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 w-40 h-20 shrink-0">
+                            <img src="{{ asset('storage/' . $partner->logo) }}" alt="{{ $partner->name }}" class="max-w-full max-h-full object-contain pointer-events-none" />
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+        @endif
 
         <!-- Our Portfolio Section -->
         <section id="portfolio" class="py-20 bg-[#111133] relative overflow-hidden">
@@ -687,7 +718,7 @@
               <!-- Our Strategic Goals Section -->
         <section id="goals" class="py-24 bg-[#111133] relative overflow-hidden">
             <!-- Ambient glows for the section -->
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 rounded-full bg-indigo-600/5 blur-[120px] pointer-events-none"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-indigo-600/5 blur-[120px] pointer-events-none"></div>
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
@@ -735,7 +766,7 @@
                     @endphp
 
                     @foreach(['sustainability', 'satisfaction', 'innovation', 'quality'] as $index => $key)
-                        <div data-aos="flip-left" data-aos-delay="{{ $index * 150 }}" class="relative group rounded-4xl bg-linear-to-b {{ $goalMeta[$key]['gradient'] }} bg-[#080c1e]/40 border {{ $goalMeta[$key]['border'] }} px-6 py-10 hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between items-center text-center h-120 shadow-2xl overflow-hidden">
+                        <div data-aos="flip-left" data-aos-delay="{{ $index * 150 }}" class="relative group rounded-4xl bg-gradient-to-b {{ $goalMeta[$key]['gradient'] }} bg-[#080c1e]/40 border {{ $goalMeta[$key]['border'] }} px-6 py-10 hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between items-center text-center h-120 shadow-2xl overflow-hidden">
                             <!-- Glowing orb on hover behind the image -->
                             <div class="absolute -bottom-16 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full {{ $goalMeta[$key]['glow'] }} blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
@@ -750,7 +781,7 @@
 
                             <!-- Image Container centered at the bottom -->
                             <div class="w-full flex items-center justify-center h-40 mt-auto relative z-10 pb-2">
-                                <img src="{{ asset($goalMeta[$key]['image']) }}" alt="{{ __('landing.goals.items.' . $key . '.title') }}" class="h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-500" />
+                                <img src="{{ asset('images/gosor/goals/'.$goalMeta[$key]['image']) }}" alt="{{ __('landing.goals.items.' . $key . '.title') }}" class="h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-500" />
                             </div>
                         </div>
                     @endforeach
@@ -780,26 +811,20 @@
                 <div class="relative max-w-4xl mx-auto" data-aos="zoom-in">
                     <!-- Left Slide Arrow -->
                     <button type="button" class="absolute -inset-s-5 md:-inset-s-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
-                        <svg class="h-5 w-5 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                        </svg>
+                        <x-feathericon-chevron-left class="w-6 h-6"/>
                     </button>
 
                     <!-- Quote Card container -->
                     <div class="rounded-3xl bg-slate-900/40 border border-slate-800/80 p-8 sm:p-12 backdrop-blur-md shadow-2xl relative text-center">
                         <!-- Upper Quote mark in indigo glowing box -->
                         <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/25 flex items-center justify-center mx-auto mb-6 shadow-lg shadow-indigo-500/5">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                            </svg>
+                            <x-bxs-quote-left class="w-6 h-6"/>
                         </div>
 
                         <!-- 5 Star rating -->
                         <div class="flex justify-center items-center gap-1 mb-6 text-amber-400">
                             @for($s = 0; $s < 5; $s++)
-                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
+                                <x-fas-star class="w-6 h-6"/>
                             @endfor
                         </div>
 
@@ -817,9 +842,7 @@
 
                     <!-- Right Slide Arrow -->
                     <button type="button" class="absolute inset-e-5 md:-inset-e-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
-                        <svg class="h-5 w-5 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5 15.75 12l-7.5 7.5" />
-                        </svg>
+                        <x-feathericon-chevron-right class="w-6 h-6"/>
                     </button>
                 </div>
                 @endif
@@ -851,10 +874,7 @@
                         <!-- Location Card -->
                         <div class="relative rounded-2xl bg-slate-900/40 border border-slate-800/80 p-5 flex items-center gap-4 hover:border-cyan-500/20 transition-all duration-300">
                             <div class="w-11 h-11 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
-                                <svg class="w-5.5 h-5.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                </svg>
+                                <x-akar-location class="w-6 h-6"/>
                             </div>
                             <div>
                                 <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.location_title') }}</span>
@@ -865,9 +885,7 @@
                         <!-- Phone Card -->
                         <div class="relative rounded-2xl bg-slate-900/40 border border-slate-800/80 p-5 flex items-center gap-4 hover:border-cyan-500/20 transition-all duration-300">
                             <div class="w-11 h-11 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
-                                <svg class="w-5.5 h-5.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a20.373 20.373 0 0 1-9.351-9.351c-.155-.44.011-.928.387-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-                                </svg>
+                                <x-heroicon-o-phone class="w-6 h-6"/>
                             </div>
                             <div>
                                 <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.phone_title') }}</span>
@@ -875,12 +893,10 @@
                             </div>
                         </div>
 
-                        <!-- Website Card -->
+                        <!-- Email Card -->
                         <div class="relative rounded-2xl bg-slate-900/40 border border-slate-800/80 p-5 flex items-center gap-4 hover:border-cyan-500/20 transition-all duration-300">
                             <div class="w-11 h-11 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center shrink-0">
-                                <svg class="w-5.5 h-5.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5" />
-                                </svg>
+                                <x-eva-email-outline class="w-6 h-6"/>
                             </div>
                             <div>
                                 <span class="block text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.web_title') }}</span>
@@ -892,14 +908,16 @@
                         <div class="relative rounded-2xl bg-slate-900/40 border border-slate-800/80 p-5 flex flex-col gap-3 hover:border-cyan-500/20 transition-all duration-300">
                             <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.follow') }}</span>
                             <div class="flex items-center gap-3 mt-1">
-                                <!-- Facebook Link -->
-                                <a href="{{ $settings['facebook'] ?? '#' }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
-                                    <svg class="h-4.5 w-4.5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                                @if(isset($settings['facebook']) && $settings['facebook'])
+                                <a href="{{ $settings['facebook'] }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                                    <x-fab-facebook class="w-6 h-6"/>
                                 </a>
-                                <!-- LinkedIn Link -->
-                                <a href="{{ $settings['linkedin'] ?? '#' }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
-                                    <svg class="h-4.5 w-4.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                @endif
+                                @if(isset($settings['linkedin']) && $settings['linkedin'])
+                                <a href="{{ $settings['linkedin'] }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                                    <x-fab-linkedin class="w-6 h-6"/>
                                 </a>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -907,7 +925,7 @@
                     <!-- Right Side Input Form -->
                     <div class="lg:col-span-3 rounded-3xl bg-slate-900/30 border border-slate-800/80 p-8 backdrop-blur-md shadow-2xl relative" data-aos="fade-left">
                         <!-- Subtle border flare -->
-                        <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-cyan-500/20 to-transparent"></div>
+                        <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
 
                         @if(session('success'))
                             <div class="mb-4 p-4 text-sm text-green-400 bg-green-500/10 border border-green-500/20 rounded-xl">
@@ -957,7 +975,7 @@
 
                             <!-- Form Submit Action -->
                             <div>
-                                <button type="submit" class="w-full rounded-xl bg-linear-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-lg shadow-cyan-500/20 hover:scale-101 hover:shadow-cyan-500/35 transition duration-150 text-center">
+                                <button type="submit" class="w-full rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-lg shadow-cyan-500/20 hover:scale-101 hover:shadow-cyan-500/35 transition duration-150 text-center">
                                     {{ __('landing.contact.form.send') }}
                                 </button>
                             </div>
@@ -981,7 +999,7 @@
                 <!-- Column 1: Logo & description & Newsletter -->
                 <div class="lg:col-span-2 space-y-6">
                     <div class="flex items-center w-80 h-40">
-                        <img src="{{ asset('logo.png') }}" alt="logo" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/gosor/logo/logo.png') }}" alt="logo" class="w-full h-full object-cover">
                     </div>
 
                     <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
@@ -1031,31 +1049,24 @@
                     <h4 class="text-sm font-bold text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.contact_title') }}</h4>
                     <ul class="space-y-4 text-sm">
                         <li class="flex items-center gap-3">
-                            <!-- Phone icon -->
-                            <svg class="h-4.5 w-4.5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a20.373 20.373 0 0 1-9.351-9.351c-.155-.44.011-.928.387-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-                            </svg>
+                            <x-heroicon-o-phone class="w-6 h-6"/>
                             <span class="font-sans">01550099355</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <!-- Email icon -->
-                            <svg class="h-4.5 w-4.5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                            </svg>
+                            <x-eva-email-outline class="w-6 h-6"/>
                             <span class="font-sans">info@gosorsolutions.com</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <!-- Pin icon -->
-                            <svg class="h-4.5 w-4.5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                            </svg>
+                            <x-akar-location class="w-6 h-6"/>
                             <span>Cairo, Egypt</span>
                         </li>
                     </ul>
                 </div>
 
             </div>
+
+
+
 
             <!-- Bottom Row: Copyright + socials -->
             <div class="flex flex-col sm:flex-row justify-between items-center gap-6 pt-8 text-xs sm:text-sm">
@@ -1064,24 +1075,38 @@
                 <!-- Social media circular buttons -->
                 <div class="flex items-center gap-3">
                     <!-- Facebook -->
-                    <a href="#" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
-                        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                    @if(isset($settings['facebook']) && $settings['facebook'])
+                    <a href="{{ $settings['facebook'] }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                        <x-fab-facebook class="w-6 h-6"/>
                     </a>
+                    @endif
                     <!-- LinkedIn -->
-                    <a href="#" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
-                        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    @if(isset($settings['linkedin']) && $settings['linkedin'])
+                    <a href="{{ $settings['linkedin'] }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                        <x-fab-linkedin class="w-6 h-6"/>
                     </a>
-                    <!-- Email -->
-                    <a href="mailto:info@gosorsolutions.com" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
-                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                        </svg>
+                    @endif
+                    @if(isset($settings['email']) && $settings['email'])
+                    <a href="mailto:{{ $settings['email']  }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                         <x-eva-email-outline class="w-6 h-6"/>
                     </a>
+                    @endif
                 </div>
             </div>
             
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    @if(isset($settings['whatsapp']) && $settings['whatsapp'])
+    <a href="https://wa.me/{{ preg_replace('/\D/', '', $settings['whatsapp']) }}" target="_blank" 
+       class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full text-white shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2"
+       style="background-color: #25D366; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);">
+        <x-fab-whatsapp class="w-10 h-10"/>
+    </a>
+    @endif
+
+
 
     <!-- Interactive Scripts (Locale menu & Mobile menu togglers) -->
     <script>
