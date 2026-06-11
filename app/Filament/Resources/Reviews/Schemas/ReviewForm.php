@@ -13,11 +13,24 @@ class ReviewForm
     {
         return $schema
             ->components([
-                TextInput::make('name')
+                TextInput::make('name.en')
+                    ->label('Name (English)')
                     ->required(),
-                TextInput::make('job_position')
+                TextInput::make('name.ar')
+                    ->label('Name (Arabic)')
                     ->required(),
-                Textarea::make('content')
+                TextInput::make('job_position.en')
+                    ->label('Job Position (English)')
+                    ->required(),
+                TextInput::make('job_position.ar')
+                    ->label('Job Position (Arabic)')
+                    ->required(),
+                Textarea::make('content.en')
+                    ->label('Content (English)')
+                    ->required()
+                    ->columnSpanFull(),
+                Textarea::make('content.ar')
+                    ->label('Content (Arabic)')
                     ->required()
                     ->columnSpanFull(),
                 Toggle::make('is_active')

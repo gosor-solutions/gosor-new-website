@@ -12,15 +12,12 @@ use App\Filament\Resources\Portfolios\Tables\PortfoliosTable;
 use App\Models\Portfolio;
 use BackedEnum;
 use Filament\Resources\Resource;
-use LaraZeus\SpatieTranslatable\Resources\Concerns\Translatable;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
 class PortfolioResource extends Resource
 {
-    use Translatable;
-
     protected static ?string $model = Portfolio::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;

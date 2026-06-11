@@ -12,15 +12,12 @@ use App\Filament\Resources\Platforms\Tables\PlatformsTable;
 use App\Models\Platform;
 use BackedEnum;
 use Filament\Resources\Resource;
-use LaraZeus\SpatieTranslatable\Resources\Concerns\Translatable;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 
 class PlatformResource extends Resource
 {
-    use Translatable;
-
     protected static ?string $model = Platform::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;

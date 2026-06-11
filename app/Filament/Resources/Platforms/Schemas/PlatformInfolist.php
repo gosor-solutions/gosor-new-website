@@ -13,11 +13,31 @@ class PlatformInfolist
     {
         return $schema
             ->components([
-                TextEntry::make('name')
+                TextEntry::make('name.en')
+                    ->state(fn($record) => $record->getTranslation('name', 'en', false))
+                    ->label('Name (EN)')
                     ->columnSpanFull(),
-                TextEntry::make('description')
+                TextEntry::make('name.ar')
+                    ->state(fn($record) => $record->getTranslation('name', 'ar', false))
+                    ->label('Name (AR)')
                     ->columnSpanFull(),
-                RepeatableEntry::make('features')
+                TextEntry::make('description.en')
+                    ->state(fn($record) => $record->getTranslation('description', 'en', false))
+                    ->label('Description (EN)')
+                    ->columnSpanFull(),
+                TextEntry::make('description.ar')
+                    ->state(fn($record) => $record->getTranslation('description', 'ar', false))
+                    ->label('Description (AR)')
+                    ->columnSpanFull(),
+                RepeatableEntry::make('features.en')
+                    ->label('Features (EN)')
+                    ->schema([
+                        TextEntry::make('feature')
+                            ->hiddenLabel(),
+                    ])
+                    ->columnSpanFull(),
+                RepeatableEntry::make('features.ar')
+                    ->label('Features (AR)')
                     ->schema([
                         TextEntry::make('feature')
                             ->hiddenLabel(),

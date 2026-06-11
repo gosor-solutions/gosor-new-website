@@ -18,12 +18,24 @@ class PortfolioForm
                     ->image()
                     ->directory('portfolio')
                     ->required(),
-                TextInput::make('name')
+                TextInput::make('name.en')
+                    ->label('Name (English)')
                     ->required(),
-                TextInput::make('badge')
-                    ->label('Badge Text (e.g. Platform, Web)')
+                TextInput::make('name.ar')
+                    ->label('Name (Arabic)')
+                    ->required(),
+                TextInput::make('badge.en')
+                    ->label('Badge (English)')
                     ->placeholder('Platform'),
-                Textarea::make('description')
+                TextInput::make('badge.ar')
+                    ->label('Badge (Arabic)')
+                    ->placeholder('منصة'),
+                Textarea::make('description.en')
+                    ->label('Description (English)')
+                    ->required()
+                    ->columnSpanFull(),
+                Textarea::make('description.ar')
+                    ->label('Description (Arabic)')
                     ->required()
                     ->columnSpanFull(),
                 TextInput::make('link')

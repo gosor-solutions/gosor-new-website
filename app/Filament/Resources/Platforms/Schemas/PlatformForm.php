@@ -14,12 +14,31 @@ class PlatformForm
     {
         return $schema
             ->components([
-                TextInput::make('name')
+                TextInput::make('name.en')
+                    ->label('Name (English)')
                     ->required(),
-                Textarea::make('description')
+                TextInput::make('name.ar')
+                    ->label('Name (Arabic)')
+                    ->required(),
+                Textarea::make('description.en')
+                    ->label('Description (English)')
                     ->required()
                     ->columnSpanFull(),
-                Repeater::make('features')
+                Textarea::make('description.ar')
+                    ->label('Description (Arabic)')
+                    ->required()
+                    ->columnSpanFull(),
+                Repeater::make('features.en')
+                    ->label('Features (English)')
+                    ->schema([
+                        TextInput::make('feature')
+                            ->required()
+                            ->label('Bullet Point'),
+                    ])
+                    ->maxItems(4)
+                    ->columnSpanFull(),
+                Repeater::make('features.ar')
+                    ->label('Features (Arabic)')
                     ->schema([
                         TextInput::make('feature')
                             ->required()

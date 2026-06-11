@@ -14,15 +14,32 @@ class PortfolioInfolist
         return $schema
             ->components([
                 ImageEntry::make('image'),
-                TextEntry::make('name')
+                TextEntry::make('name.en')
+                    ->state(fn($record) => $record->getTranslation('name', 'en', false))
+                    ->label('Name (EN)')
                     ->columnSpanFull(),
-                TextEntry::make('description')
+                TextEntry::make('name.ar')
+                    ->state(fn($record) => $record->getTranslation('name', 'ar', false))
+                    ->label('Name (AR)')
+                    ->columnSpanFull(),
+                TextEntry::make('description.en')
+                    ->state(fn($record) => $record->getTranslation('description', 'en', false))
+                    ->label('Description (EN)')
+                    ->columnSpanFull(),
+                TextEntry::make('description.ar')
+                    ->state(fn($record) => $record->getTranslation('description', 'ar', false))
+                    ->label('Description (AR)')
                     ->columnSpanFull(),
                 TextEntry::make('link')
                     ->placeholder('-'),
-                TextEntry::make('badge')
-                    ->placeholder('-')
-                    ->columnSpanFull(),
+                TextEntry::make('badge.en')
+                    ->state(fn($record) => $record->getTranslation('badge', 'en', false))
+                    ->label('Badge (EN)')
+                    ->placeholder('-'),
+                TextEntry::make('badge.ar')
+                    ->state(fn($record) => $record->getTranslation('badge', 'ar', false))
+                    ->label('Badge (AR)')
+                    ->placeholder('-'),
                 IconEntry::make('is_active')
                     ->boolean(),
                 TextEntry::make('order')

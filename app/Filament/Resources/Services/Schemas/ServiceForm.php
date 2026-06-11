@@ -13,10 +13,18 @@ class ServiceForm
     {
         return $schema
             ->components([
-                Textarea::make('name')
+                Textarea::make('name.en')
+                    ->label('Name (English)')
+                    ->required(),
+                Textarea::make('name.ar')
+                    ->label('Name (Arabic)')
+                    ->required(),
+                Textarea::make('description.en')
+                    ->label('Description (English)')
                     ->required()
                     ->columnSpanFull(),
-                Textarea::make('description')
+                Textarea::make('description.ar')
+                    ->label('Description (Arabic)')
                     ->required()
                     ->columnSpanFull(),
                 Toggle::make('is_active')

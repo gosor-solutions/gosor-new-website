@@ -16,13 +16,31 @@ class ReviewsTable
     {
         return $table
             ->columns([
-                TextColumn::make("name")
+                TextColumn::make('name.en')
+                    ->state(fn($record) => $record->getTranslation('name', 'en', false))
+                    ->label('Name (EN)')
                     ->searchable(),
-                TextColumn::make("job_position")
+                TextColumn::make('name.ar')
+                    ->state(fn($record) => $record->getTranslation('name', 'ar', false))
+                    ->label('Name (AR)')
                     ->searchable(),
-                TextColumn::make("content")
+                TextColumn::make('job_position.en')
+                    ->state(fn($record) => $record->getTranslation('job_position', 'en', false))
+                    ->label('Job Position (EN)')
+                    ->searchable(),
+                TextColumn::make('job_position.ar')
+                    ->state(fn($record) => $record->getTranslation('job_position', 'ar', false))
+                    ->label('Job Position (AR)')
+                    ->searchable(),
+                TextColumn::make('content.en')
+                    ->state(fn($record) => $record->getTranslation('content', 'en', false))
+                    ->label('Content (EN)')
+                    ->limit(50),
+                TextColumn::make('content.ar')
+                    ->state(fn($record) => $record->getTranslation('content', 'ar', false))
+                    ->label('Content (AR)')
                     ->limit(50)
-                    ->tooltip("Full content"),
+                    ->tooltip('Full content'),
                 IconColumn::make('is_active')
                     ->boolean(),
                 TextColumn::make('created_at')

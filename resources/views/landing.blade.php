@@ -22,14 +22,14 @@
     <!-- Global Background Elements -->
     <div class="fixed inset-0 -z-50 overflow-hidden pointer-events-none">
         <!-- Main background radial glow -->
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-950/30 via-[#070b13] to-[#070b13]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-indigo-950/30 via-[#070b13] to-[#070b13]"></div>
         
         <!-- Glowing Orbs -->
-        <div class="absolute top-[-10%] start-[20%] w-[500px] h-[500px] rounded-full bg-cyan-600/10 blur-[120px] animate-pulse-glow"></div>
-        <div class="absolute bottom-[20%] end-[-10%] w-[600px] h-[600px] rounded-full bg-indigo-600/10 blur-[130px] animate-pulse-glow" style="animation-delay: -3s;"></div>
+        <div class="absolute top-[-10%] inset-s-[20%] w-125 h-125 rounded-full bg-cyan-600/10 blur-[120px] animate-pulse-glow"></div>
+        <div class="absolute bottom-[20%] inset-e-[-10%] w-150 h-150 rounded-full bg-indigo-600/10 blur-[130px] animate-pulse-glow" style="animation-delay: -3s;"></div>
         
         <!-- Background Grid -->
-        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-15"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-15"></div>
     </div>
 
     <!-- Navigation Header -->
@@ -82,7 +82,7 @@
                     </div>
 
                     <!-- Get Started Primary Action Button -->
-                    <a href="#contact" class="relative group overflow-hidden rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 p-px font-semibold text-white shadow-lg shadow-cyan-500/20 transition duration-300 hover:shadow-cyan-500/35 hover:scale-102">
+                    <a href="#contact" class="relative group overflow-hidden rounded-xl bg-linear-to-r from-cyan-500 to-indigo-600 p-px font-semibold text-white shadow-lg shadow-cyan-500/20 transition duration-300 hover:shadow-cyan-500/35 hover:scale-102">
                         <span class="block px-5 py-2.5 rounded-[11px] bg-slate-950/80 group-hover:bg-transparent transition duration-300 text-sm">
                             {{ __('landing.nav.get_started') }}
                         </span>
@@ -121,7 +121,7 @@
             <a href="#contact" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.contact') }}</a>
             
             <div class="pt-4 border-t border-slate-900 flex justify-center">
-                <a href="#contact" class="w-full text-center rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-500/20">
+                <a href="#contact" class="w-full text-center rounded-xl bg-linear-to-r from-cyan-500 to-indigo-600 px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-500/20">
                     {{ __('landing.nav.get_started') }}
                 </a>
             </div>
@@ -149,7 +149,7 @@
 
                     <!-- Large Title with custom gradients -->
                     <h1 data-aos="zoom-out" data-aos-delay="200" class="text-4xl font-extrabold sm:text-6xl lg:text-7xl leading-tight sm:leading-none tracking-tight mb-8">
-                        <span class="bg-gradient-to-r from-slate-100 via-cyan-100 to-indigo-200 bg-clip-text text-transparent">
+                        <span class="bg-linear-to-r from-slate-100 via-cyan-100 to-indigo-200 bg-clip-text text-transparent">
                             {{ __('landing.hero.title') }}
                         </span>
                     </h1>
@@ -162,7 +162,7 @@
                     <!-- Call to Action Buttons -->
                     <div data-aos="fade-up" data-aos-delay="600" class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20">
                         <!-- Primary CTA -->
-                        <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-xl shadow-cyan-500/25 transition duration-300 hover:shadow-cyan-500/40 hover:scale-102">
+                        <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-xl shadow-cyan-500/25 transition duration-300 hover:shadow-cyan-500/40 hover:scale-102">
                             <span>{{ __('landing.hero.cta_start') }}</span>
                             <!-- Dynamic Arrow based on direction -->
                             <svg class="h-5 w-5 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
@@ -277,9 +277,9 @@
         <!-- Our Services Section -->
         <section id="services" class="py-24 bg-[#101133] relative overflow-hidden">
             <!-- Glowing background gradient -->
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent -z-0 pointer-events-none"></div>
-            <div class="absolute top-[20%] left-[10%] w-[500px] h-[500px] rounded-full bg-blue-600/10 blur-[130px] pointer-events-none"></div>
-            <div class="absolute bottom-[20%] right-[10%] w-[600px] h-[600px] rounded-full bg-indigo-600/10 blur-[140px] pointer-events-none"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent z-0 pointer-events-none"></div>
+            <div class="absolute top-[20%] left-[10%] w-125 h-125 rounded-full bg-blue-600/10 blur-[130px] pointer-events-none"></div>
+            <div class="absolute bottom-[20%] right-[10%] w-150 h-150 rounded-full bg-indigo-600/10 blur-[140px] pointer-events-none"></div>
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
@@ -310,7 +310,7 @@
 
                     @foreach($services as $index => $service)
                         <!-- Service Card -->
-                        <div data-aos="fade-up" data-aos-delay="{{ $index * 100 }}" class="relative rounded-[32px] bg-slate-950/40 border border-slate-800/80 p-10 hover:border-blue-500/30 transition-all duration-300 group flex flex-col justify-between shadow-2xl">
+                        <div data-aos="fade-up" data-aos-delay="{{ $index * 100 }}" class="relative rounded-4xl bg-slate-950/40 border border-slate-800/80 p-10 hover:border-blue-500/30 transition-all duration-300 group flex flex-col justify-between shadow-2xl">
                             <div>
                                 <!-- Icon Container -->
                                 <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-8 shadow-lg shadow-blue-600/20">
@@ -340,9 +340,9 @@
         <!-- Why Choose Us Section -->
         <section id="why-us" class="py-24 bg-[#111133] relative overflow-hidden">
             <!-- Glowing background gradient -->
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-900/15 via-transparent to-transparent -z-0 pointer-events-none"></div>
-            <div class="absolute top-[20%] right-[10%] w-[500px] h-[500px] rounded-full bg-indigo-600/10 blur-[130px] pointer-events-none"></div>
-            <div class="absolute bottom-[20%] left-[10%] w-[600px] h-[600px] rounded-full bg-cyan-600/10 blur-[140px] pointer-events-none"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-indigo-900/15 via-transparent to-transparent z-0 pointer-events-none"></div>
+            <div class="absolute top-[20%] right-[10%] w-125 h-125 rounded-full bg-indigo-600/10 blur-[130px] pointer-events-none"></div>
+            <div class="absolute bottom-[20%] left-[10%] w-150 h-150 rounded-full bg-cyan-600/10 blur-[140px] pointer-events-none"></div>
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
@@ -422,7 +422,7 @@
                         @php
                             $item = __('landing.why_us.items.' . $card['key']);
                         @endphp
-                        <div data-aos="zoom-in-up" data-aos-delay="{{ ($index % 3) * 100 }}" class="relative rounded-[32px] bg-slate-950/40 border border-slate-800/80 p-8 sm:p-10 transition-all duration-300 group flex flex-col justify-between shadow-2xl {{ $card['border_hover'] }}">
+                        <div data-aos="zoom-in-up" data-aos-delay="{{ ($index % 3) * 100 }}" class="relative rounded-4xl bg-slate-950/40 border border-slate-800/80 p-8 sm:p-10 transition-all duration-300 group flex flex-col justify-between shadow-2xl {{ $card['border_hover'] }}">
                             <div>
                                 <!-- Top Accent Bar -->
                                 <div class="w-14 h-1.5 {{ $card['bg_bar'] }} rounded-full mb-6"></div>
@@ -529,7 +529,7 @@
         <!-- Technologies We Use Section -->
         <section class="py-24 bg-[#111133] relative overflow-hidden">
             <!-- Glowing background elements inside the section -->
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-900/10 via-transparent to-transparent -z-0 pointer-events-none"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-indigo-900/10 via-transparent to-transparent z-0 pointer-events-none"></div>
             
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
@@ -597,10 +597,10 @@
                     @foreach($technologies as $index => $tech)
                         <div data-aos="zoom-in" data-aos-delay="{{ $index * 100 }}" class="w-28 h-36 md:w-48 md:h-56 shrink-0 transition-all duration-500 ease-out {{ $tech['class'] }} group cursor-pointer relative">
                             <!-- Card background with linear gradient -->
-                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#1c1d54] via-[#101132] to-[#06071f] border border-indigo-500/20 shadow-2xl transition-all duration-500 group-hover:border-cyan-400/40"></div>
+                            <div class="absolute inset-0 rounded-2xl bg-linear-to-b from-[#1c1d54] via-[#101132] to-[#06071f] border border-indigo-500/20 shadow-2xl transition-all duration-500 group-hover:border-cyan-400/40"></div>
 
                             <!-- Outer card subtle gloss sheen reflection -->
-                            <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 opacity-30 group-hover:opacity-60 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
+                            <div class="absolute inset-0 bg-linear-to-tr from-transparent via-white/5 to-white/10 opacity-30 group-hover:opacity-60 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
 
                             <!-- Top glow -->
                             <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(99,102,241,0.2),transparent_70%)] rounded-2xl pointer-events-none"></div>
@@ -645,12 +645,12 @@
                         <div data-aos="fade-up" data-aos-delay="{{ $index * 150 }}" class="relative rounded-3xl bg-slate-900/30 border border-slate-800/80 p-6 hover:border-cyan-500/20 transition duration-300 group flex flex-col justify-between shadow-2xl">
                             <div>
                                 <!-- Image Placeholder Container -->
-                                <div class="w-full aspect-[4/3] rounded-2xl bg-slate-950/90 border border-slate-800 p-4 mb-6 relative overflow-hidden flex items-center justify-center">
+                                <div class="w-full aspect-4/3 rounded-2xl bg-slate-950/90 border border-slate-800 p-4 mb-6 relative overflow-hidden flex items-center justify-center">
                                     <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
 
                                     @if($project->badge)
                                     <!-- Percentage metrics tag -->
-                                    <span class="absolute top-4 start-4 inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-emerald-500/10 text-[10px] font-bold text-emerald-400 border border-emerald-500/20 shadow-inner z-20 backdrop-blur-sm">
+                                    <span class="absolute top-4 inset-s-4 inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-emerald-500/10 text-[10px] font-bold text-emerald-400 border border-emerald-500/20 shadow-inner z-20 backdrop-blur-sm">
                                         <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306 8.9-8.91M21 7.5H18M21 7.5V10.5" />
                                         </svg>
@@ -687,7 +687,7 @@
               <!-- Our Strategic Goals Section -->
         <section id="goals" class="py-24 bg-[#111133] relative overflow-hidden">
             <!-- Ambient glows for the section -->
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-indigo-600/5 blur-[120px] pointer-events-none"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 rounded-full bg-indigo-600/5 blur-[120px] pointer-events-none"></div>
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
@@ -735,7 +735,7 @@
                     @endphp
 
                     @foreach(['sustainability', 'satisfaction', 'innovation', 'quality'] as $index => $key)
-                        <div data-aos="flip-left" data-aos-delay="{{ $index * 150 }}" class="relative group rounded-[32px] bg-gradient-to-b {{ $goalMeta[$key]['gradient'] }} bg-[#080c1e]/40 border {{ $goalMeta[$key]['border'] }} px-6 py-10 hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between items-center text-center h-[480px] shadow-2xl overflow-hidden">
+                        <div data-aos="flip-left" data-aos-delay="{{ $index * 150 }}" class="relative group rounded-4xl bg-linear-to-b {{ $goalMeta[$key]['gradient'] }} bg-[#080c1e]/40 border {{ $goalMeta[$key]['border'] }} px-6 py-10 hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between items-center text-center h-120 shadow-2xl overflow-hidden">
                             <!-- Glowing orb on hover behind the image -->
                             <div class="absolute -bottom-16 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full {{ $goalMeta[$key]['glow'] }} blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
@@ -743,7 +743,7 @@
                                 <h3 class="text-2xl sm:text-3xl font-bold text-slate-100 tracking-tight mb-5 group-hover:text-white transition duration-300">
                                     {{ __('landing.goals.items.' . $key . '.title') }}
                                 </h3>
-                                <p class="text-slate-400 text-sm sm:text-base leading-relaxed max-w-[280px] mx-auto">
+                                <p class="text-slate-400 text-sm sm:text-base leading-relaxed max-w-70 mx-auto">
                                     {{ __('landing.goals.items.' . $key . '.description') }}
                                 </p>
                             </div>
@@ -779,7 +779,7 @@
                 @if($reviews->count() > 0)
                 <div class="relative max-w-4xl mx-auto" data-aos="zoom-in">
                     <!-- Left Slide Arrow -->
-                    <button type="button" class="absolute start-[-20px] md:start-[-60px] top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
+                    <button type="button" class="absolute -inset-s-5 md:-inset-s-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
                         <svg class="h-5 w-5 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
@@ -816,7 +816,7 @@
                     </div>
 
                     <!-- Right Slide Arrow -->
-                    <button type="button" class="absolute end-[-20px] md:end-[-60px] top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
+                    <button type="button" class="absolute inset-e-5 md:-inset-e-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
                         <svg class="h-5 w-5 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5 15.75 12l-7.5 7.5" />
                         </svg>
@@ -907,7 +907,7 @@
                     <!-- Right Side Input Form -->
                     <div class="lg:col-span-3 rounded-3xl bg-slate-900/30 border border-slate-800/80 p-8 backdrop-blur-md shadow-2xl relative" data-aos="fade-left">
                         <!-- Subtle border flare -->
-                        <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
+                        <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-cyan-500/20 to-transparent"></div>
 
                         @if(session('success'))
                             <div class="mb-4 p-4 text-sm text-green-400 bg-green-500/10 border border-green-500/20 rounded-xl">
@@ -945,17 +945,7 @@
                             <div>
                                 <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.project_type') }}</label>
                                 <div class="relative">
-                                    <select name="project_type" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-300 outline-none transition duration-150 appearance-none">
-                                        <option value="">{{ __('landing.contact.form.project_type') }}</option>
-                                        <option value="web">Web Development</option>
-                                        <option value="mobile">Mobile Application</option>
-                                        <option value="ecommerce">E-Commerce Platform</option>
-                                        <option value="custom">Custom System</option>
-                                    </select>
-                                    <!-- Select arrow icon -->
-                                    <div class="pointer-events-none absolute inset-y-0 end-0 flex items-center px-4 text-slate-400">
-                                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                                    </div>
+                                    <input type="text" name="project_type" placeholder="{{ __('landing.contact.form.project_type') }}" class="w-full rounded-xl bg-slate-950/80 border border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-100 placeholder-slate-600 outline-none transition duration-150">
                                 </div>
                             </div>
 
@@ -967,7 +957,7 @@
 
                             <!-- Form Submit Action -->
                             <div>
-                                <button type="submit" class="w-full rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-lg shadow-cyan-500/20 hover:scale-101 hover:shadow-cyan-500/35 transition duration-150 text-center">
+                                <button type="submit" class="w-full rounded-xl bg-linear-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-lg shadow-cyan-500/20 hover:scale-101 hover:shadow-cyan-500/35 transition duration-150 text-center">
                                     {{ __('landing.contact.form.send') }}
                                 </button>
                             </div>

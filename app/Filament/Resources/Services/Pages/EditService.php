@@ -4,21 +4,24 @@ namespace App\Filament\Resources\Services\Pages;
 
 use App\Filament\Resources\Services\ServiceResource;
 use Filament\Actions\DeleteAction;
-use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
 use Filament\Resources\Pages\EditRecord;
-use LaraZeus\SpatieTranslatable\Resources\Pages\EditRecord\Concerns\Translatable;
 
 class EditService extends EditRecord
 {
-    use Translatable;
-
     protected static string $resource = ServiceResource::class;
 
     protected function getHeaderActions(): array
     {
         return [
-            LocaleSwitcher::make(),
             DeleteAction::make(),
         ];
+    }
+
+    protected function mutateFormDataBeforeFill(array $data): array
+    {
+        foreach ($this->record->getTranslatableAttributes() as $attribute) {
+            $data[$attribute] = $this->record->getTranslations($attribute);
+        }
+        return $data;
     }
 }
