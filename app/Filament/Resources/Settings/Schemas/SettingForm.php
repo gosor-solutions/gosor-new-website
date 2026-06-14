@@ -43,6 +43,7 @@ class SettingForm
                 FileUpload::make('image_value')
                     ->label('Value')
                     ->image()
+                    ->disk('public')
                     ->directory('settings')
                     ->visible(fn (Get $get) => $get('type') === 'image')
                     ->required(),

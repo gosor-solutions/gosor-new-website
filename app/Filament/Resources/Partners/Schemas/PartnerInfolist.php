@@ -13,7 +13,7 @@ class PartnerInfolist
     {
         return $schema
             ->components([
-                ImageEntry::make('logo'),
+                ImageEntry::make('logo')->disk('public'),
                 TextEntry::make('name.en')
                     ->state(fn($record) => $record->getTranslation('name', 'en', false))
                     ->label('Name (EN)')

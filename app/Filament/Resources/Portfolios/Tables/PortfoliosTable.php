@@ -17,7 +17,7 @@ class PortfoliosTable
     {
         return $table
             ->columns([
-                ImageColumn::make('image'),
+                ImageColumn::make('image')->disk('public'),
                 TextColumn::make('name.en')
                     ->state(fn($record) => $record->getTranslation('name', 'en', false))
                     ->label('Name (EN)')

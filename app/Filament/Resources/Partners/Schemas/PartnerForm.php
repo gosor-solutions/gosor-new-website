@@ -21,6 +21,7 @@ class PartnerForm
                     ->required(),
                 FileUpload::make('logo')
                     ->image()
+                    ->disk('public')
                     ->directory('partners')
                     ->required(),
                 Toggle::make('is_active')

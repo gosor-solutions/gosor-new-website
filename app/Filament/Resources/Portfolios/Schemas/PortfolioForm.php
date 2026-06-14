@@ -16,6 +16,7 @@ class PortfolioForm
             ->components([
                 FileUpload::make('image')
                     ->image()
+                    ->disk('public')
                     ->directory('portfolio')
                     ->required(),
                 TextInput::make('name.en')

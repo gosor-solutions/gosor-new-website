@@ -13,7 +13,7 @@ class PortfolioInfolist
     {
         return $schema
             ->components([
-                ImageEntry::make('image'),
+                ImageEntry::make('image')->disk('public'),
                 TextEntry::make('name.en')
                     ->state(fn($record) => $record->getTranslation('name', 'en', false))
                     ->label('Name (EN)')

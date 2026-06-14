@@ -17,7 +17,7 @@ class PartnersTable
     {
         return $table
             ->columns([
-                ImageColumn::make('logo'),
+                ImageColumn::make('logo')->disk('public'),
                 TextColumn::make('name.en')
                     ->state(fn($record) => $record->getTranslation('name', 'en', false))
                     ->label('Name (EN)')
