@@ -637,15 +637,15 @@
                 </div>
             </div>
 
-            <div class="relative flex items-center group">
+            <div class="relative flex items-center group max-h-40">
                 <!-- Left/Right Fading Overlays -->
                 <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#101133] to-transparent z-10 pointer-events-none"></div>
                 <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#101133] to-transparent z-10 pointer-events-none"></div>
 
                 <div class="animate-scroll py-4">
                     <!-- Duplicate partners for seamless scroll -->
-                    @foreach($partners->concat($partners) as $partner)
-                        <div class="mx-8 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 w-40 h-20 shrink-0">
+                    @foreach([...$partners, ...$partners, ...$partners, ...$partners] as $partner)
+                        <div class="mx-8 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 w-52 h-auto shrink-0">
                             <img src="{{ asset('storage/' . $partner->logo) }}" alt="{{ $partner->name }}" class="max-w-full max-h-full object-contain pointer-events-none" />
                         </div>
                     @endforeach
@@ -677,7 +677,7 @@
                             <div>
                                 <!-- Image Placeholder Container -->
                                 <div class="w-full aspect-4/3 rounded-2xl bg-slate-950/90 border border-slate-800 p-4 mb-6 relative overflow-hidden flex items-center justify-center">
-                                    <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                                    <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="absolute inset-0 w-full h-full object-contain object-center opacity-80 group-hover:opacity-100 transition-opacity" />
 
                                     @if($project->badge)
                                     <!-- Percentage metrics tag -->
@@ -808,40 +808,48 @@
 
                 <!-- Testimonial Slider Panel -->
                 @if($reviews->count() > 0)
-                <div class="relative max-w-4xl mx-auto" data-aos="zoom-in">
+                <div class="relative max-w-4xl mx-auto embla" id="review-carousel" data-aos="zoom-in">
                     <!-- Left Slide Arrow -->
-                    <button type="button" class="absolute -inset-s-5 md:-inset-s-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
+                    <button type="button" class="embla__prev absolute -inset-s-5 md:-inset-s-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
                         <x-feathericon-chevron-left class="w-6 h-6"/>
                     </button>
 
-                    <!-- Quote Card container -->
-                    <div class="rounded-3xl bg-slate-900/40 border border-slate-800/80 p-8 sm:p-12 backdrop-blur-md shadow-2xl relative text-center">
-                        <!-- Upper Quote mark in indigo glowing box -->
-                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/25 flex items-center justify-center mx-auto mb-6 shadow-lg shadow-indigo-500/5">
-                            <x-bxs-quote-left class="w-6 h-6"/>
-                        </div>
+                    <!-- Quote Card container (Embla Viewport) -->
+                    <div class="embla__viewport overflow-hidden">
+                        <div class="embla__container flex">
+                            @foreach($reviews as $review)
+                            <div class="embla__slide flex-[0_0_100%] min-w-0 px-4">
+                                <div class="rounded-3xl bg-slate-900/40 border border-slate-800/80 p-8 sm:p-12 backdrop-blur-md shadow-2xl relative text-center h-full">
+                                    <!-- Upper Quote mark in indigo glowing box -->
+                                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/25 flex items-center justify-center mx-auto mb-6 shadow-lg shadow-indigo-500/5">
+                                        <x-bxs-quote-left class="w-6 h-6"/>
+                                    </div>
 
-                        <!-- 5 Star rating -->
-                        <div class="flex justify-center items-center gap-1 mb-6 text-amber-400">
-                            @for($s = 0; $s < 5; $s++)
-                                <x-fas-star class="w-6 h-6"/>
-                            @endfor
-                        </div>
+                                    <!-- 5 Star rating -->
+                                    <div class="flex justify-center items-center gap-1 mb-6 text-amber-400">
+                                        @for($s = 0; $s < 5; $s++)
+                                            <x-fas-star class="w-6 h-6"/>
+                                        @endfor
+                                    </div>
 
-                        <!-- Testimonial Quote -->
-                        <p class="text-base sm:text-xl text-slate-200 leading-relaxed italic max-w-2xl mx-auto mb-8">
-                            "{{ $reviews->first()->content }}"
-                        </p>
+                                    <!-- Testimonial Quote -->
+                                    <p class="text-base sm:text-xl text-slate-200 leading-relaxed italic max-w-2xl mx-auto mb-8">
+                                        "{{ $review->content }}"
+                                    </p>
 
-                        <!-- Reviewer Name & Title -->
-                        <div class="flex flex-col items-center">
-                            <span class="text-sm font-bold text-slate-100 uppercase tracking-wider">{{ $reviews->first()->name }}</span>
-                            <span class="text-xs text-indigo-400 font-semibold mt-1 font-sans">{{ $reviews->first()->job_position }}</span>
+                                    <!-- Reviewer Name & Title -->
+                                    <div class="flex flex-col items-center">
+                                        <span class="text-sm font-bold text-slate-100 uppercase tracking-wider">{{ $review->name }}</span>
+                                        <span class="text-xs text-indigo-400 font-semibold mt-1 font-sans">{{ $review->job_position }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
                         </div>
                     </div>
 
                     <!-- Right Slide Arrow -->
-                    <button type="button" class="absolute inset-e-5 md:-inset-e-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
+                    <button type="button" class="embla__next absolute inset-e-5 md:-inset-e-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
                         <x-feathericon-chevron-right class="w-6 h-6"/>
                     </button>
                 </div>
