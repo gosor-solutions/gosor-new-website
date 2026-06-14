@@ -78,7 +78,7 @@
                     <!-- Get Started Primary Action Button -->
                     <a href="#contact" class="relative group overflow-hidden rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 p-px font-semibold text-white shadow-lg shadow-cyan-500/20 transition duration-300 hover:shadow-cyan-500/35 hover:scale-102">
                         <span class="block px-5 py-2.5 rounded-[11px] bg-slate-950/80 group-hover:bg-transparent transition duration-300 text-sm">
-                            {{ __('landing.nav.get_started') }}
+                            {{ __('landing.nav.get_started')  }} asdasdf
                         </span>
                     </a>
                 </div>
@@ -90,14 +90,13 @@
                         {{ app()->getLocale() === 'en' ? 'AR' : 'EN' }}
                     </a>
 
-                    <button type="button" id="mobile-menu-btn" class="p-2 rounded-lg bg-slate-950/60 border border-slate-900/60 text-slate-400 hover:text-white hover:bg-slate-900 transition duration-150">
+                    <button type="button" id="mobile-menu-btn" class="relative w-10 h-10 flex items-center justify-center rounded-lg bg-slate-950/60 border border-slate-900/60 text-slate-400 hover:text-white hover:bg-slate-900 transition duration-150">
                         <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" id="menu-icon-hamburger" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        <svg class="hidden h-6 w-6" id="menu-icon-close" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                        </svg>
+                        <div class="relative w-6 h-5">
+                            <span class="burger-span top-0"></span>
+                            <span class="burger-span top-2"></span>
+                            <span class="burger-span top-4"></span>
+                        </div>
                     </button>
                 </div>
 
@@ -105,19 +104,21 @@
         </div>
 
         <!-- Mobile Navigation Menu (Drawer style) -->
-        <div class="hidden md:hidden border-t border-slate-900/80 bg-[#070b13]/95 backdrop-blur-lg px-4 py-4 space-y-2" id="mobile-menu-panel">
-            <a href="#home" class="block rounded-lg px-3 py-2 text-base font-medium text-cyan-400 bg-slate-900/40">{{ __('landing.nav.home') }}</a>
-            <a href="#about" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.about') }}</a>
-            <a href="#services" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.services') }}</a>
-            <a href="#products" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.products') }}</a>
-            <a href="#portfolio" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.portfolio') }}</a>
-            <a href="#goals" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.goals') }}</a>
-            <a href="#contact" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.contact') }}</a>
-            
-            <div class="pt-4 border-t border-slate-900 flex justify-center">
-                <a href="#contact" class="w-full text-center rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-500/20">
-                    {{ __('landing.nav.get_started') }}
-                </a>
+        <div class="md:hidden border-t border-slate-900/80 bg-[#070b13]/95 backdrop-blur-lg px-4 overflow-hidden" id="mobile-menu-panel" style="max-height: 0; opacity: 0; transition: all 0.3s ease-in-out;">
+            <div class="py-4 space-y-2">
+                <a href="#home" class="block rounded-lg px-3 py-2 text-base font-medium text-cyan-400 bg-slate-900/40">{{ __('landing.nav.home') }}</a>
+                <a href="#about" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.about') }}</a>
+                <a href="#services" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.services') }}</a>
+                <a href="#products" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.products') }}</a>
+                <a href="#portfolio" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.portfolio') }}</a>
+                <a href="#goals" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.goals') }}</a>
+                <a href="#contact" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/30">{{ __('landing.nav.contact') }}</a>
+                
+                <div class="pt-4 border-t border-slate-900 flex justify-center">
+                    <a href="#contact" class="w-full text-center rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-500/20">
+                        {{ __('landing.nav.get_started') }}
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -179,7 +180,14 @@
                                 ['value' => '95%', 'label' => __('landing.hero.stats.satisfaction')],
                             ] as $stat)
                                     <div class="flex flex-col items-center">
-                                        <span class="text-3xl sm:text-4xl font-extrabold text-white">{{ $stat['value'] }}</span>
+                                        @php
+                                            preg_match('/(\d+)(.*)/', $stat['value'], $matches);
+                                            $number = $matches[1] ?? 0;
+                                            $suffix = $matches[2] ?? '';
+                                        @endphp
+                                        <span class="text-3xl sm:text-4xl font-extrabold text-white count-up" 
+                                              data-target="{{ $number }}" 
+                                              data-suffix="{{ $suffix }}">0{{ $suffix }}</span>
                                         <span class="text-xs sm:text-sm text-white/70 font-medium mt-2 text-center">{{ $stat['label'] }}</span>
                                     </div>
                         @endforeach
@@ -540,56 +548,56 @@
                 </div>
 
                 <!-- Slanted deck technology cards diminishing in size -->
-                <div class="flex flex-col md:flex-row flex-nowrap justify-center items-center -space-y-6 md:-space-x-6 rtl:space-x-reverse py-16 px-4 max-w-full overflow-x-auto md:overflow-x-visible">
+                <div class="grid grid-cols-2 md:flex md:flex-row md:flex-nowrap justify-center items-center gap-6 md:gap-0 md:-space-x-6 rtl:md:space-x-reverse py-16 px-4 max-w-full md:overflow-x-visible">
                     @php
                         $technologies = [
                             [
                                 'name' => 'MySql',
                                 'logo' => '<img width="100" height="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />',
                                 'logo_class' => "",
-                                'class' => 'scale-75 md:-rotate-6 z-0 md:translate-y-4 md:translate-x-4 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                                'class' => 'md:scale-75 md:-rotate-6 z-0 md:translate-y-4 md:translate-x-4 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'Flutter',
                                 'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />',
                                 'logo_class' => "",
-                                'class' => 'scale-85 md:-rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                                'class' => 'md:scale-85 md:-rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'React',
                                 'logo' => '<i class="devicon-react-original colored"></i>',
                                 'logo_class' => "text-7xl",
-                                'class' => 'scale-95 md:-rotate-2 z-20 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                                'class' => 'md:scale-95 md:-rotate-2 z-20 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'Laravel',
                                 'logo' => '<i class="devicon-laravel-original colored"></i>',
                                 'logo_class' => "text-7xl",
-                                'class' => 'scale-110 md:rotate-0 z-30 shadow-2xl shadow-cyan-500/20 md:hover:scale-120',
+                                'class' => 'scale-105 md:scale-110 md:rotate-0 z-30 shadow-2xl shadow-cyan-500/20 md:hover:scale-120',
                             ],
                             [
                                 'name' => 'Next',
                                 'logo' => '<i class="devicon-nextjs-plain"></i>',
                                 'logo_class' => "text-7xl",
-                                'class' => 'scale-95 md:rotate-2 z-20 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                                'class' => 'md:scale-95 md:rotate-2 z-20 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'Typescript',
                                 'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />',
                                 'logo_class' => "",
-                                'class' => 'scale-85 md:rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
+                                'class' => 'md:scale-85 md:rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'Figma',
                                 'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />',
                                 'logo_class' => "",
-                                'class' => 'scale-75 md:rotate-6 md:translate-y-4 md:-translate-x-4 z-0 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0 md:hover:translate-y-0',
+                                'class' => 'md:scale-75 md:rotate-6 md:translate-y-4 md:-translate-x-4 z-0 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0 md:hover:translate-y-0',
                             ],
                         ];
                     @endphp
 
                     @foreach($technologies as $index => $tech)
-                        <div data-aos="zoom-in" data-aos-delay="{{ $index * 100 }}" class="w-28 h-36 md:w-48 md:h-56 shrink-0 transition-all duration-500 ease-out {{ $tech['class'] }} group cursor-pointer relative">
+                        <div data-aos="zoom-in" data-aos-delay="{{ $index * 100 }}" class="w-full h-40 md:w-48 md:h-56 justify-self-center shrink-0 transition-all duration-500 ease-out {{ $tech['class'] }} group cursor-pointer relative {{ $index === count($technologies) - 1 && count($technologies) % 2 !== 0 ? 'col-span-2' : 'max-w-[140px]' }}">
                             <!-- Card background with linear gradient -->
                             <div class="absolute inset-0 rounded-2xl bg-gradient-to-b from-[#1c1d54] via-[#101132] to-[#06071f] border border-indigo-500/20 shadow-2xl transition-all duration-500 group-hover:border-cyan-400/40"></div>
 
@@ -604,11 +612,11 @@
 
                             <!-- Inner content -->
                             <div class="absolute inset-0 flex items-center justify-center p-4">
-                                <div class="relative flex flex-col w-full h-full items-center justify-center gap-6">
+                                <div class="relative flex flex-col w-full h-full items-center justify-center gap-4 md:gap-6">
                                     <div class="flex items-center justify-center transition-all duration-500 group-hover:scale-110 {{ $tech['logo_class'] }}">
                                         {!! $tech['logo'] !!}
                                     </div>
-                                    <div>
+                                    <div class="text-sm md:text-base font-semibold">
                                         {{ $tech['name'] }}
                                     </div>
                                 </div>
@@ -1137,19 +1145,30 @@
             // Mobile menu drawer toggle
             const mobileBtn = document.getElementById('mobile-menu-btn');
             const mobilePanel = document.getElementById('mobile-menu-panel');
-            const iconHamburger = document.getElementById('menu-icon-hamburger');
-            const iconClose = document.getElementById('menu-icon-close');
 
             if (mobileBtn && mobilePanel) {
                 mobileBtn.addEventListener('click', function() {
-                    const isHidden = mobilePanel.classList.toggle('hidden');
-                    if (isHidden) {
-                        iconHamburger.classList.remove('hidden');
-                        iconClose.classList.add('hidden');
+                    const isOpen = mobileBtn.classList.toggle('open');
+                    
+                    if (isOpen) {
+                        mobilePanel.style.maxHeight = mobilePanel.scrollHeight + 'px';
+                        mobilePanel.style.opacity = '1';
+                        mobilePanel.style.marginTop = '0';
                     } else {
-                        iconHamburger.classList.add('hidden');
-                        iconClose.classList.remove('hidden');
+                        mobilePanel.style.maxHeight = '0';
+                        mobilePanel.style.opacity = '0';
+                        mobilePanel.style.marginTop = '0';
                     }
+                });
+
+                // Close menu when clicking on a link
+                const mobileLinks = mobilePanel.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileBtn.classList.remove('open');
+                        mobilePanel.style.maxHeight = '0';
+                        mobilePanel.style.opacity = '0';
+                    });
                 });
             }
 

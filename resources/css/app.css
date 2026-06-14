@@ -61,3 +61,20 @@
     animation-play-state: paused;
 }
 
+/* Burger Menu Animation */
+.burger-span {
+    @apply block absolute h-0.5 w-6 bg-current rounded-full transition-all duration-300 ease-in-out;
+}
+
+#mobile-menu-btn.open .burger-span:nth-child(1) {
+    @apply top-2 rotate-45;
+}
+
+#mobile-menu-btn.open .burger-span:nth-child(2) {
+    @apply opacity-0 -translate-x-2;
+}
+
+#mobile-menu-btn.open .burger-span:nth-child(3) {
+    @apply top-2 -rotate-45;
+}
+
