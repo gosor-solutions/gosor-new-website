@@ -3,8 +3,65 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ __('landing.hero.subtitle') }}">
+    
+    <!-- Primary Meta Tags -->
     <title>{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}</title>
+    <meta name="title" content="{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}">
+    <meta name="description" content="{{ __('landing.hero.subtitle') }}">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <!-- Multi-language support (Hreflang) -->
+    <link rel="alternate" hreflang="en" href="{{ url('/?lang=en') }}">
+    <link rel="alternate" hreflang="ar" href="{{ url('/?lang=ar') }}">
+    <link rel="alternate" hreflang="x-default" href="{{ url('/') }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}">
+    <meta property="og:description" content="{{ __('landing.hero.subtitle') }}">
+    <meta property="og:image" content="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}">
+    <meta property="twitter:description" content="{{ __('landing.hero.subtitle') }}">
+    <meta property="twitter:image" content="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#070b13">
+
+    <!-- Structured Data: Organization -->
+@php
+    $sameAs = array_values(array_filter([
+        $settings['facebook'] ?? null,
+        $settings['linkedin'] ?? null,
+    ]));
+
+    $schema = [
+        '@context'     => 'https://schema.org',
+        '@type'        => 'Organization',
+        'name'         => 'Gosor Solutions',
+        'url'          => url('/'),
+        'logo'         => asset('images/gosor/logo/logo.png'),
+        'contactPoint' => [
+            '@type'             => 'ContactPoint',
+            'telephone'         => '01550099355',
+            'contactType'       => 'customer service',
+            'areaServed'        => 'EG',
+            'availableLanguage' => ['Arabic', 'English'],
+        ],
+    ];
+
+    if (!empty($sameAs)) {
+        $schema['sameAs'] = $sameAs;
+    }
+@endphp
+
+<script type="application/ld+json">
+    {!! json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
+</script>
 
 
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
@@ -41,7 +98,7 @@
                 <div class="flex items-center">
                     <a href="#" class="flex items-center gap-2 group">
                         <!-- Stylized SVG GOSOR Logo -->
-                        <img src="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}" alt="Logo" class="h-40 w-auto"/>
+                        <img src="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}" alt="Gosor Solutions Logo" class="h-40 w-auto"/>
                     </a>
                 </div>
 
@@ -69,8 +126,8 @@
                         <!-- Dropdown Menu -->
                         <div id="lang-dropdown-menu" class="hidden absolute right-0 rtl:left-0 mt-2 w-32 origin-top-right rounded-xl bg-slate-900 border border-slate-800 shadow-2xl ring-1 ring-black/5 focus:outline-none">
                             <div class="py-1">
-                                <a href="{{ route('set-locale', 'en') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'en' ? 'text-cyan-400 bg-slate-850' : 'text-slate-300 hover:bg-slate-800/50 hover:text-white' }}">English</a>
-                                <a href="{{ route('set-locale', 'ar') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'ar' ? 'text-cyan-400 bg-slate-850' : 'text-slate-300 hover:bg-slate-800/50 hover:text-white' }}">العربية</a>
+                                <a href="{{ url('/?lang=en') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'en' ? 'text-cyan-400 bg-slate-850' : 'text-slate-300 hover:bg-slate-800/50 hover:text-white' }}">English</a>
+                                <a href="{{ url('/?lang=ar') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'ar' ? 'text-cyan-400 bg-slate-850' : 'text-slate-300 hover:bg-slate-800/50 hover:text-white' }}">العربية</a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +135,7 @@
                     <!-- Get Started Primary Action Button -->
                     <a href="#contact" class="relative group overflow-hidden rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 p-px font-semibold text-white shadow-lg shadow-cyan-500/20 transition duration-300 hover:shadow-cyan-500/35 hover:scale-102">
                         <span class="block px-5 py-2.5 rounded-[11px] bg-slate-950/80 group-hover:bg-transparent transition duration-300 text-sm">
-                            {{ __('landing.nav.get_started')  }} asdasdf
+                            {{ __('landing.nav.get_started')  }}
                         </span>
                     </a>
                 </div>
@@ -86,7 +143,7 @@
                 <!-- Hamburger Mobile Menu Icon -->
                 <div class="flex md:hidden items-center gap-3">
                     <!-- Fast Switch Language Button (Mobile inline toggle) -->
-                    <a href="{{ route('set-locale', app()->getLocale() === 'en' ? 'ar' : 'en') }}" class="p-2 rounded-lg bg-slate-950/60 border border-slate-900/60 text-slate-300 hover:text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    <a href="{{ url('/?lang=' . (app()->getLocale() === 'en' ? 'ar' : 'en')) }}" class="p-2 rounded-lg bg-slate-950/60 border border-slate-900/60 text-slate-300 hover:text-cyan-400 text-xs font-semibold uppercase tracking-wider">
                         {{ app()->getLocale() === 'en' ? 'AR' : 'EN' }}
                     </a>
 
@@ -130,7 +187,7 @@
         <section id="home" class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
             <!-- Figma specified background image placeholder -->
             <div class="absolute inset-0 z-0">
-                <img src="{{ asset('images/gosor/hero.png') }}" alt="" class="w-full h-full opacity-50 object-cover pointer-events-none" />
+                <img src="{{ asset('images/gosor/hero.png') }}" alt="Gosor Solutions - Innovating Digital Horizons" class="w-full h-full opacity-50 object-cover pointer-events-none" />
             </div>
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -219,7 +276,7 @@
                     <!-- Mission Card -->
                     <div data-aos="fade-right" class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-cyan-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
                         <div class="mb-8 overflow-hidden rounded-2xl">
-                            <img src="{{ asset('images/gosor/about/mission.png') }}" alt="Mission" class="w-full h-auto object-cover pointer-events-none" />
+                            <img src="{{ asset('images/gosor/about/mission.png') }}" alt="{{ __('landing.about.mission_title') }}" class="w-full h-auto object-cover pointer-events-none" />
                         </div>
                         <div class="flex flex-col items-center">
                             <h3 class="text-3xl font-extrabold text-slate-100 group-hover:text-cyan-400 transition mb-4">
@@ -234,7 +291,7 @@
                     <!-- Vision Card -->
                     <div data-aos="fade-left" class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-indigo-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
                         <div class="mb-8 overflow-hidden rounded-2xl">
-                            <img src="{{ asset('images/gosor/about/vision.png') }}" alt="Vision" class="w-full h-auto object-cover pointer-events-none" />
+                            <img src="{{ asset('images/gosor/about/vision.png') }}" alt="{{ __('landing.about.vision_title') }}" class="w-full h-auto object-cover pointer-events-none" />
                         </div>
                         <div class="flex flex-col items-center">
                             <h3 class="text-3xl font-extrabold text-slate-100 group-hover:text-indigo-400 transition mb-4">
@@ -464,7 +521,7 @@
         </section>
 
         <!-- Our Products / Ready Systems Section -->
-        <section id="products" class="] py-20 border-t border-slate-900/60 bg-radial bg-top from-[#32326e] to-[#101336] relative">
+        <section id="products" class="py-20 border-t border-slate-900/60 bg-radial bg-top from-[#32326e] to-[#101336] relative">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
@@ -553,13 +610,13 @@
                         $technologies = [
                             [
                                 'name' => 'MySql',
-                                'logo' => '<img width="100" height="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />',
+                                'logo' => '<img alt="mysql" width="100" height="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />',
                                 'logo_class' => "",
                                 'class' => 'md:scale-75 md:-rotate-6 z-0 md:translate-y-4 md:translate-x-4 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'Flutter',
-                                'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />',
+                                'logo' => '<img alt="flutter" width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />',
                                 'logo_class' => "",
                                 'class' => 'md:scale-85 md:-rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
@@ -583,13 +640,13 @@
                             ],
                             [
                                 'name' => 'Typescript',
-                                'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />',
+                                'logo' => '<img alt="typescript" width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />',
                                 'logo_class' => "",
                                 'class' => 'md:scale-85 md:rotate-4 z-10 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0',
                             ],
                             [
                                 'name' => 'Figma',
-                                'logo' => '<img width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />',
+                                'logo' => '<img alt="figma" width="70" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />',
                                 'logo_class' => "",
                                 'class' => 'md:scale-75 md:rotate-6 md:translate-y-4 md:-translate-x-4 z-0 md:hover:z-40 md:hover:scale-105 md:hover:rotate-0 md:hover:translate-y-0',
                             ],
@@ -818,7 +875,7 @@
                 @if($reviews->count() > 0)
                 <div class="relative max-w-4xl mx-auto embla" id="review-carousel" data-aos="zoom-in">
                     <!-- Left Slide Arrow -->
-                    <button type="button" class="embla__prev absolute -inset-s-5 md:-inset-s-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
+                    <button name="prev" type="button" class="embla__prev absolute -inset-s-5 md:-inset-s-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
                         <x-feathericon-chevron-left class="w-6 h-6"/>
                     </button>
 
@@ -857,7 +914,7 @@
                     </div>
 
                     <!-- Right Slide Arrow -->
-                    <button type="button" class="embla__next absolute inset-e-5 md:-inset-e-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
+                    <button name="next" type="button" class="embla__next absolute inset-e-5 md:-inset-e-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
                         <x-feathericon-chevron-right class="w-6 h-6"/>
                     </button>
                 </div>
@@ -925,12 +982,12 @@
                             <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.follow') }}</span>
                             <div class="flex items-center gap-3 mt-1">
                                 @if(isset($settings['facebook']) && $settings['facebook'])
-                                <a href="{{ $settings['facebook'] }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                                <a name="facebook" href="{{ $settings['facebook'] }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                                     <x-fab-facebook class="w-6 h-6"/>
                                 </a>
                                 @endif
                                 @if(isset($settings['linkedin']) && $settings['linkedin'])
-                                <a href="{{ $settings['linkedin'] }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                                <a name="linkedin" href="{{ $settings['linkedin'] }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                                     <x-fab-linkedin class="w-6 h-6"/>
                                 </a>
                                 @endif
@@ -1015,7 +1072,7 @@
                 <!-- Column 1: Logo & description & Newsletter -->
                 <div class="lg:col-span-2 space-y-6">
                     <div class="flex items-center w-80 h-40">
-                        <img src="{{ asset('images/gosor/logo/logo.png') }}" alt="logo" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/gosor/logo/logo.png') }}" alt="Gosor Solutions Logo Footer" class="w-full h-full object-cover">
                     </div>
 
                     <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
@@ -1092,18 +1149,18 @@
                 <div class="flex items-center gap-3">
                     <!-- Facebook -->
                     @if(isset($settings['facebook']) && $settings['facebook'])
-                    <a href="{{ $settings['facebook'] }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                    <a name="facebook" href="{{ $settings['facebook'] }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                         <x-fab-facebook class="w-6 h-6"/>
                     </a>
                     @endif
                     <!-- LinkedIn -->
                     @if(isset($settings['linkedin']) && $settings['linkedin'])
-                    <a href="{{ $settings['linkedin'] }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                    <a name="linkedin" href="{{ $settings['linkedin'] }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                         <x-fab-linkedin class="w-6 h-6"/>
                     </a>
                     @endif
                     @if(isset($settings['email']) && $settings['email'])
-                    <a href="mailto:{{ $settings['email']  }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                    <a name="email" href="mailto:{{ $settings['email']  }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                          <x-eva-email-outline class="w-6 h-6"/>
                     </a>
                     @endif
@@ -1115,7 +1172,7 @@
 
     <!-- Floating WhatsApp Button -->
     @if(isset($settings['whatsapp']) && $settings['whatsapp'])
-    <a href="https://wa.me/{{ preg_replace('/\D/', '', $settings['whatsapp']) }}" target="_blank" 
+    <a name="whatsapp" href="https://wa.me/{{ preg_replace('/\D/', '', $settings['whatsapp']) }}" target="_blank" 
        class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full text-white shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2"
        style="background-color: #25D366; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);">
         <x-fab-whatsapp class="w-10 h-10"/>
