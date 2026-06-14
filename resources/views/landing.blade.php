@@ -878,7 +878,7 @@
                 @if($reviews->count() > 0)
                 <div class="relative max-w-4xl mx-auto embla" id="review-carousel" data-aos="zoom-in">
                     <!-- Left Slide Arrow -->
-                    <button name="prev" type="button" class="embla__prev absolute -inset-s-5 md:-inset-s-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
+                    <button aria-label="prev" type="button" class="embla__prev absolute -inset-s-5 md:-inset-s-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
                         <x-feathericon-chevron-left class="w-6 h-6"/>
                     </button>
 
@@ -917,7 +917,7 @@
                     </div>
 
                     <!-- Right Slide Arrow -->
-                    <button name="next" type="button" class="embla__next absolute inset-e-5 md:-inset-e-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
+                    <button aria-label="next" type="button" class="embla__next absolute inset-e-5 md:-inset-e-15 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-950 transition duration-150 flex items-center justify-center shadow-lg z-20">
                         <x-feathericon-chevron-right class="w-6 h-6"/>
                     </button>
                 </div>
@@ -985,12 +985,12 @@
                             <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.follow') }}</span>
                             <div class="flex items-center gap-3 mt-1">
                                 @if(isset($settings['facebook']) && $settings['facebook'])
-                                <a name="facebook" href="{{ $settings['facebook'] }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                                <a aria-label="facebook" href="{{ $settings['facebook'] }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                                     <x-fab-facebook class="w-6 h-6"/>
                                 </a>
                                 @endif
                                 @if(isset($settings['linkedin']) && $settings['linkedin'])
-                                <a name="linkedin" href="{{ $settings['linkedin'] }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                                <a aria-label="linkedin" href="{{ $settings['linkedin'] }}" class="w-10 h-10 rounded-full bg-slate-950 border border-slate-850 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                                     <x-fab-linkedin class="w-6 h-6"/>
                                 </a>
                                 @endif
@@ -1096,7 +1096,7 @@
 
                 <!-- Column 2: Quick Links (Nav links) -->
                 <div>
-                    <h4 class="text-sm font-bold text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.links_title1') }}</h4>
+                    <h3 class="text-sm font-bold text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.links_title1') }}</h3>
                     <ul class="space-y-4 text-sm">
                         <li><a href="#home" class="hover:text-cyan-400 transition">{{ __('landing.nav.home') }}</a></li>
                         <li><a href="#about" class="hover:text-cyan-400 transition">{{ __('landing.nav.about') }}</a></li>
@@ -1109,7 +1109,7 @@
 
                 <!-- Column 3: Quick Links (Services links) -->
                 <div>
-                    <h4 class="text-sm font-bold text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.links_title2') }}</h4>
+                    <h3 class="text-sm font-bold text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.links_title2') }}</h3>
                     <ul class="space-y-4 text-sm">
                         <li><a href="#services" class="hover:text-cyan-400 transition">{{ __('landing.services.items.web.title') }}</a></li>
                         <li><a href="#services" class="hover:text-cyan-400 transition">{{ __('landing.services.items.mobile.title') }}</a></li>
@@ -1122,7 +1122,7 @@
 
                 <!-- Column 4: Contact Info -->
                 <div>
-                    <h4 class="text-sm font-bold text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.contact_title') }}</h4>
+                    <h3 class="text-sm font-bold text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.contact_title') }}</h3>
                     <ul class="space-y-4 text-sm">
                         <li class="flex items-center gap-3">
                             <x-heroicon-o-phone class="w-6 h-6"/>
@@ -1152,18 +1152,18 @@
                 <div class="flex items-center gap-3">
                     <!-- Facebook -->
                     @if(isset($settings['facebook']) && $settings['facebook'])
-                    <a name="facebook" href="{{ $settings['facebook'] }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                    <a aria-label="facebook" href="{{ $settings['facebook'] }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                         <x-fab-facebook class="w-6 h-6"/>
                     </a>
                     @endif
                     <!-- LinkedIn -->
                     @if(isset($settings['linkedin']) && $settings['linkedin'])
-                    <a name="linkedin" href="{{ $settings['linkedin'] }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                    <a aria-label="linkedin" href="{{ $settings['linkedin'] }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                         <x-fab-linkedin class="w-6 h-6"/>
                     </a>
                     @endif
                     @if(isset($settings['email']) && $settings['email'])
-                    <a name="email" href="mailto:{{ $settings['email']  }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
+                    <a aria-label="email" href="mailto:{{ $settings['email']  }}" class="w-9 h-9 rounded-full bg-slate-950 border border-slate-900 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center justify-center transition duration-150">
                          <x-eva-email-outline class="w-6 h-6"/>
                     </a>
                     @endif
@@ -1175,7 +1175,7 @@
 
     <!-- Floating WhatsApp Button -->
     @if(isset($settings['whatsapp']) && $settings['whatsapp'])
-    <a name="whatsapp" href="https://wa.me/{{ preg_replace('/\D/', '', $settings['whatsapp']) }}" target="_blank" 
+    <a aria-label="whatsapp" href="https://wa.me/{{ preg_replace('/\D/', '', $settings['whatsapp']) }}" target="_blank" 
        class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full text-white shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2"
        style="background-color: #25D366; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);">
         <x-fab-whatsapp class="w-10 h-10"/>
@@ -1246,7 +1246,7 @@
                     submitBtn.innerHTML = `
                         <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h3zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
                         {{ __('landing.contact.form.sending') ?? 'Sending...' }}
                     `;
