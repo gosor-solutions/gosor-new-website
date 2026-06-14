@@ -66,9 +66,12 @@
 
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
 
-    <!-- Google Fonts: Cairo (Arabic) & Plus Jakarta Sans (English) -->
+    <!-- Performance: Preconnect to external origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Google Fonts: Cairo (Arabic) & Plus Jakarta Sans (English) -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Vite Styles & Scripts -->
@@ -276,7 +279,7 @@
                     <!-- Mission Card -->
                     <div data-aos="fade-right" class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-cyan-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
                         <div class="mb-8 overflow-hidden rounded-2xl">
-                            <img src="{{ asset('images/gosor/about/mission.png') }}" alt="{{ __('landing.about.mission_title') }}" class="w-full h-auto object-cover pointer-events-none" />
+                            <img src="{{ asset('images/gosor/about/mission.png') }}" alt="{{ __('landing.about.mission_title') }}" class="w-full h-auto object-cover pointer-events-none" loading="lazy" />
                         </div>
                         <div class="flex flex-col items-center">
                             <h3 class="text-3xl font-extrabold text-slate-100 group-hover:text-cyan-400 transition mb-4">
@@ -291,7 +294,7 @@
                     <!-- Vision Card -->
                     <div data-aos="fade-left" class="relative rounded-3xl bg-slate-950/30 border border-slate-800/80 p-8 hover:border-indigo-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-2xl text-center">
                         <div class="mb-8 overflow-hidden rounded-2xl">
-                            <img src="{{ asset('images/gosor/about/vision.png') }}" alt="{{ __('landing.about.vision_title') }}" class="w-full h-auto object-cover pointer-events-none" />
+                            <img src="{{ asset('images/gosor/about/vision.png') }}" alt="{{ __('landing.about.vision_title') }}" class="w-full h-auto object-cover pointer-events-none" loading="lazy" />
                         </div>
                         <div class="flex flex-col items-center">
                             <h3 class="text-3xl font-extrabold text-slate-100 group-hover:text-indigo-400 transition mb-4">
@@ -498,7 +501,7 @@
 
                                 <!-- Image Container -->
                                 <div class="flex justify-center my-8 h-40 relative">
-                                    <img src="{{ asset('images/gosor/why_us/'.$card['image']) }}" alt="{{ $item['title'] }}" class="h-full object-contain pointer-events-none transition duration-500 group-hover:scale-105" />
+                                    <img src="{{ asset('images/gosor/why_us/'.$card['image']) }}" alt="{{ $item['title'] }}" class="h-full object-contain pointer-events-none transition duration-500 group-hover:scale-105" loading="lazy" />
                                 </div>
                             </div>
 
@@ -711,7 +714,7 @@
                     <!-- Duplicate partners for seamless scroll -->
                     @foreach([...$partners, ...$partners, ...$partners, ...$partners] as $partner)
                         <div class="mx-8 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 w-52 h-auto shrink-0">
-                            <img src="{{ asset('storage/' . $partner->logo) }}" alt="{{ $partner->name }}" class="max-w-full max-h-full object-contain pointer-events-none" />
+                            <img src="{{ asset('storage/' . $partner->logo) }}" alt="{{ $partner->name }}" class="max-w-full max-h-full object-contain pointer-events-none" loading="lazy" />
                         </div>
                     @endforeach
                 </div>
@@ -742,7 +745,7 @@
                             <div>
                                 <!-- Image Placeholder Container -->
                                 <div class="w-full aspect-4/3 rounded-2xl bg-slate-950/90 border border-slate-800 p-4 mb-6 relative overflow-hidden flex items-center justify-center">
-                                    <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="absolute inset-0 w-full h-full object-contain object-center opacity-80 group-hover:opacity-100 transition-opacity" />
+                                    <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="absolute inset-0 w-full h-full object-contain object-center opacity-80 group-hover:opacity-100 transition-opacity" loading="lazy" />
 
                                     @if($project->badge)
                                     <!-- Percentage metrics tag -->
@@ -846,7 +849,7 @@
 
                             <!-- Image Container centered at the bottom -->
                             <div class="w-full flex items-center justify-center h-40 mt-auto relative z-10 pb-2">
-                                <img src="{{ asset('images/gosor/goals/'.$goalMeta[$key]['image']) }}" alt="{{ __('landing.goals.items.' . $key . '.title') }}" class="h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-500" />
+                                <img src="{{ asset('images/gosor/goals/'.$goalMeta[$key]['image']) }}" alt="{{ __('landing.goals.items.' . $key . '.title') }}" class="h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                             </div>
                         </div>
                     @endforeach

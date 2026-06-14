@@ -23,6 +23,7 @@
         "mallardduck/blade-lucide-icons": "^1.26",
         "owenvoke/blade-fontawesome": "^2.9",
         "saade/blade-iconsax": "^1.2",
+        "spatie/laravel-image-optimizer": "^1.8",
         "spatie/laravel-sitemap": "^8.0",
         "spatie/laravel-translatable": "^6.11"
     },
