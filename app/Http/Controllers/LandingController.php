@@ -41,6 +41,14 @@ class LandingController extends Controller
 
         ContactMessage::create($validated);
 
+        if ($request->expectsJson()) {
+            return response()->json([
+                'success' => true,
+                'message' => __('Message sent successfully!'),
+                'redirect' => route('success'),
+            ]);
+        }
+
         return back()->with('success', __('Message sent successfully!'));
     }
 }

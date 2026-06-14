@@ -227,6 +227,7 @@ return [
             'message' => 'Message',
             'message_placeholder' => 'Tell us about your project...',
             'send' => 'Send Message',
+            'sending' => 'Sending...',
         ],
     ],
     'footer' => [
@@ -238,5 +239,12 @@ return [
         'links_title2' => 'Quick Links',
         'contact_title' => 'Contact Info',
         'rights' => 'Gosor Solutions. All Rights Reserved.',
+    ],
+    'success' => [
+        'title' => 'Message Sent!',
+        'message' => 'Thank you for reaching out. We have received your message and will get back to you shortly.',
+        'redirect_text' => 'Redirecting to home in',
+        'seconds' => 'seconds...',
+        'back_home' => 'Go Back Home',
     ]
 ];

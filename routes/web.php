@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\App;
 
 Route::get('/', [LandingController::class, 'index'])->name('landing');
 Route::post('/contact', [LandingController::class, 'storeContact'])->name('contact.store');
+Route::view('/success', 'success')->name('success');
 
 Route::get('/set-locale/{locale}', function ($locale) {
     if (in_array($locale, ['en', 'ar'])) {

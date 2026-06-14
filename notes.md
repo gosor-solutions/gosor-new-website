@@ -1,0 +1,6 @@
+- push latest changes (image folders, partners, new icons)
+- check SEO scores and add meta and OG tags
+- check mobile responsiveness
+    - fix the reviews arrows on mobile
+    - fix the technology section on mobile
+- make the form an api call that navigates to a success page
