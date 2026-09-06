@@ -1,56 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}" dir="{{ app()->getLocale() === 'ar' ? 'rtl' : 'ltr' }}" class="scroll-smooth">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Instant Theme Detection to prevent FOUC -->
-    <script>
-        (function() {
-            try {
-                const storedTheme = localStorage.getItem('theme');
-                if (storedTheme === 'light') {
-                    document.documentElement.classList.remove('dark');
-                    document.documentElement.classList.add('light');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    document.documentElement.classList.remove('light');
-                }
-            } catch (e) {
-                document.documentElement.classList.add('dark');
-            }
-        })();
-    </script>
-    
-    <!-- Primary Meta Tags -->
-    <title>{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}</title>
-    <meta name="title" content="{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}">
-    <meta name="description" content="{{ __('landing.hero.subtitle') }}">
-    <link rel="canonical" href="{{ url()->current() }}">
+@extends('layouts.web.master')
 
-    <!-- Multi-language support (Hreflang) -->
-    <link rel="alternate" hreflang="en" href="{{ url('/?lang=en') }}">
-    <link rel="alternate" hreflang="ar" href="{{ url('/?lang=ar') }}">
-    <link rel="alternate" hreflang="x-default" href="{{ url('/') }}">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}">
-    <meta property="og:description" content="{{ __('landing.hero.subtitle') }}">
-    <meta property="og:image" content="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="{{ url()->current() }}">
-    <meta property="twitter:title" content="{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}">
-    <meta property="twitter:description" content="{{ __('landing.hero.subtitle') }}">
-    <meta property="twitter:image" content="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}">
-
-    <!-- Theme Color -->
-    <meta name="theme-color" id="meta-theme-color" content="#070b13">
-
-    <!-- Structured Data: Organization -->
 @php
     $sameAs = array_values(array_filter([
         $settings['facebook'] ?? null,
@@ -77,39 +26,29 @@
     }
 @endphp
 
-<script type="application/ld+json">
-    {!! json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
-</script>
+@section('title', __('landing.hero.badge') . ' - ' . __('landing.hero.title'))
 
+@push('meta')
+    <meta name="description" content="{{ __('landing.hero.subtitle') }}">
+    <link rel="alternate" hreflang="en" href="{{ url('/?lang=en') }}">
+    <link rel="alternate" hreflang="ar" href="{{ url('/?lang=ar') }}">
+    <link rel="alternate" hreflang="x-default" href="{{ url('/') }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}">
+    <meta property="og:description" content="{{ __('landing.hero.subtitle') }}">
+    <meta property="og:image" content="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="{{ __('landing.hero.badge') }} - {{ __('landing.hero.title') }}">
+    <meta property="twitter:description" content="{{ __('landing.hero.subtitle') }}">
+    <meta property="twitter:image" content="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}">
+    <script type="application/ld+json">
+        {!! json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
+    </script>
+@endpush
 
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
-
-    <!-- Performance: Preconnect to external origins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    
-    <!-- Google Fonts: Cairo (Arabic) & Plus Jakarta Sans (English) -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Vite Styles & Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="bg-slate-50 dark:bg-[#070b13] relative text-slate-800 dark:text-slate-100 antialiased overflow-x-hidden selection:bg-cyan-500 selection:text-slate-900 transition-colors duration-200">
-
-    <!-- Global Background Elements -->
-    <div class="fixed inset-0 -z-50 overflow-hidden pointer-events-none">
-        <!-- Main background radial glow -->
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-100/50 via-slate-50 to-slate-50 dark:from-indigo-950/30 dark:via-[#070b13] dark:to-[#070b13]"></div>
-        
-        <!-- Glowing Orbs -->
-        <div class="absolute top-[-10%] inset-s-[20%] w-[500px] h-[500px] rounded-full bg-cyan-400/10 dark:bg-cyan-600/10 blur-[120px] animate-pulse-glow"></div>
-        <div class="absolute bottom-[20%] inset-e-[-10%] w-[600px] h-[600px] rounded-full bg-indigo-400/10 dark:bg-indigo-600/10 blur-[130px] animate-pulse-glow" style="animation-delay: -3s;"></div>
-        
-        <!-- Background Grid -->
-        <div class="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e1_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e1_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-25 dark:opacity-15"></div>
-    </div>
-
+@section('content')
     <!-- Navigation Header -->
     <header class="sticky top-0 z-40 w-full border-b border-slate-200/80 dark:border-slate-900 bg-white/80 dark:bg-[#0f1231] backdrop-blur-md transition-all duration-300">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -152,7 +91,7 @@
                     <div class="relative inline-block text-left" id="lang-dropdown-wrapper">
                         <button type="button" id="lang-dropdown-btn" class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150 rounded-lg bg-slate-100 dark:bg-slate-950/40 border border-slate-200 dark:border-slate-900 shadow-sm dark:shadow-none">
                             <x-eva-globe-outline class="w-5 h-5"/>
-                            <span>{{ app()->getLocale() === 'ar' ? 'العربية' : 'En' }}</span>
+                            <span>{{ app()->getLocale() === 'ar' ? 'Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©' : 'En' }}</span>
                             <x-feathericon-chevron-down class="w-4 h-4"/>
                         </button>
                         
@@ -160,7 +99,7 @@
                         <div id="lang-dropdown-menu" class="hidden absolute right-0 rtl:left-0 mt-2 w-32 origin-top-right rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl ring-1 ring-black/5 focus:outline-none z-50">
                             <div class="py-1">
                                 <a href="{{ url('/?lang=en') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'en' ? 'text-cyan-600 dark:text-cyan-400 bg-slate-100 dark:bg-slate-850 font-semibold' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white' }}">English</a>
-                                <a href="{{ url('/?lang=ar') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'ar' ? 'text-cyan-600 dark:text-cyan-400 bg-slate-100 dark:bg-slate-850 font-semibold' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white' }}">العربية</a>
+                                <a href="{{ url('/?lang=ar') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'ar' ? 'text-cyan-600 dark:text-cyan-400 bg-slate-100 dark:bg-slate-850 font-semibold' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white' }}">Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©</a>
                             </div>
                         </div>
                     </div>
@@ -570,13 +509,22 @@
                 <!-- Products Grid -->
                 <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                     @foreach($platforms as $index => $platform)
-                        <div data-aos="{{ $index % 2 === 0 ? 'fade-right' : 'fade-left' }}" class="relative rounded-3xl bg-white dark:bg-slate-900/35 border border-slate-200/80 dark:border-slate-800/80 p-8 hover:border-indigo-500/40 dark:hover:border-indigo-500/25 transition duration-300 flex flex-col justify-between group overflow-hidden shadow-xl shadow-slate-200/60 dark:shadow-2xl dark:shadow-black/60">
+                        <div data-aos="{{ $index % 2 === 0 ? 'fade-right' : 'fade-left' }}" data-project-title="{{ $platform->name }}" class="relative rounded-3xl bg-white dark:bg-slate-900/35 border border-slate-200/80 dark:border-slate-800/80 p-8 hover:border-indigo-500/40 dark:hover:border-indigo-500/25 transition duration-300 flex flex-col justify-between group overflow-hidden shadow-xl shadow-slate-200/60 dark:shadow-2xl dark:shadow-black/60 cursor-pointer">
                             <div>
                                 <!-- Product Icon and Title Row -->
+                                @php
+                                    $platformIcons = [
+                                        // Edu-Bridge: graduation cap
+                                        0 => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482.065C3.807 5.886 7.741 3.75 12 3.75c4.26 0 8.193 2.137 10.522 5.397M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />',
+                                        // HR Management: users/people
+                                        1 => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />',
+                                    ];
+                                    $iconPath = $platformIcons[$index] ?? $platformIcons[0];
+                                @endphp
                                 <div class="flex items-center gap-4 mb-6">
                                     <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition duration-300">
                                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347" />
+                                            {!! $iconPath !!}
                                         </svg>
                                     </div>
                                     <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-cyan-400 transition">
@@ -603,7 +551,7 @@
                             </div>
 
                             <!-- Full width button -->
-                            <a href="#contact" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600/90 hover:bg-indigo-600 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-indigo-600/10">
+                            <a href="#contact" data-project-title="{{ $platform->name }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600/90 hover:bg-indigo-600 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-indigo-600/10">
                                 <span>{{ __('landing.nav.get_started') }}</span>
                                 <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -648,101 +596,45 @@
                 ];
             @endphp
 
-            <!-- Infinite Scroll Strip -->
-            <div class="relative mt-4 py-6" data-aos="fade-up" data-aos-delay="150">
-                <!-- Edge fade masks (always LTR visual direction) -->
-                <div class="pointer-events-none absolute inset-y-0 left-0 w-28 z-10"
-                     style="background: linear-gradient(to right, var(--tech-bg, #f8fafc), transparent)"></div>
-                <div class="pointer-events-none absolute inset-y-0 right-0 w-28 z-10"
-                     style="background: linear-gradient(to left, var(--tech-bg, #f8fafc), transparent)"></div>
-
-                <div id="techScrollOuter" class="overflow-hidden" style="direction: ltr;">
-                    <div id="techScrollTrack" class="flex gap-5" style="width: max-content; will-change: transform;">
-                        @foreach([1, 2] as $pass)
-                            @foreach($technologies as $tech)
-                                <div class="tech-card-item group shrink-0 w-36 h-44 relative cursor-pointer"
-                                     style="--glow: {{ $tech['glow'] }}">
-                                    <!-- Card -->
-                                    <div class="absolute inset-0 rounded-2xl
-                                                bg-white dark:bg-gradient-to-b dark:from-[#1c1d54] dark:via-[#101132] dark:to-[#06071f]
-                                                border border-slate-200/80 dark:border-indigo-500/20
-                                                shadow-md dark:shadow-xl dark:shadow-black/50
-                                                transition-all duration-300
-                                                group-hover:shadow-[0_0_24px_var(--glow)] group-hover:border-[color:var(--glow)]">
-                                    </div>
-                                    <!-- Top inner glow (dark) -->
-                                    <div class="absolute inset-0 rounded-2xl pointer-events-none hidden dark:block
-                                                bg-[radial-gradient(ellipse_at_top,rgba(99,102,241,0.18),transparent_60%)]"></div>
-                                    <!-- Hover color bloom -->
-                                    <div class="absolute inset-0 rounded-2xl pointer-events-none
-                                                opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                                                bg-[radial-gradient(ellipse_at_center,var(--glow),transparent_65%)]"></div>
-                                    <!-- Gloss -->
-                                    <div class="absolute inset-0 rounded-2xl pointer-events-none hidden dark:block
-                                                opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                                                bg-gradient-to-br from-white/8 via-transparent to-transparent"></div>
-                                    <!-- Content -->
-                                    <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 p-4">
-                                        <div class="transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1 flex items-center justify-center">
-                                            {!! $tech['logo'] !!}
-                                        </div>
-                                        <span class="text-sm font-semibold text-slate-700 dark:text-slate-200 text-center leading-tight">
-                                            {{ $tech['name'] }}
-                                        </span>
-                                    </div>
+            <!-- Static tech cards grid -->
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-wrap justify-center gap-5" data-aos="fade-up" data-aos-delay="100">
+                    @foreach($technologies as $index => $tech)
+                        <div class="tech-card-item group w-36 h-44 relative cursor-pointer"
+                             style="--glow: {{ $tech['glow'] }}"
+                             data-aos="zoom-in" data-aos-delay="{{ $index * 60 }}">
+                            <!-- Card -->
+                            <div class="absolute inset-0 rounded-2xl
+                                        bg-white dark:bg-gradient-to-b dark:from-[#1c1d54] dark:via-[#101132] dark:to-[#06071f]
+                                        border border-slate-200/80 dark:border-indigo-500/20
+                                        shadow-md dark:shadow-xl dark:shadow-black/50
+                                        transition-all duration-300
+                                        group-hover:shadow-[0_0_24px_var(--glow)] group-hover:border-[color:var(--glow)]">
+                            </div>
+                            <!-- Top inner glow (dark) -->
+                            <div class="absolute inset-0 rounded-2xl pointer-events-none hidden dark:block
+                                        bg-[radial-gradient(ellipse_at_top,rgba(99,102,241,0.18),transparent_60%)]"></div>
+                            <!-- Hover color bloom -->
+                            <div class="absolute inset-0 rounded-2xl pointer-events-none
+                                        opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                                        bg-[radial-gradient(ellipse_at_center,var(--glow),transparent_65%)]"></div>
+                            <!-- Gloss -->
+                            <div class="absolute inset-0 rounded-2xl pointer-events-none hidden dark:block
+                                        opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                                        bg-gradient-to-br from-white/8 via-transparent to-transparent"></div>
+                            <!-- Content -->
+                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 p-4">
+                                <div class="transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1 flex items-center justify-center">
+                                    {!! $tech['logo'] !!}
                                 </div>
-                            @endforeach
-                        @endforeach
-                    </div>
+                                <span class="text-sm font-semibold text-slate-700 dark:text-slate-200 text-center leading-tight">
+                                    {{ $tech['name'] }}
+                                </span>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
-
-            <script>
-            (function () {
-                function initTechScroll() {
-                    var outer = document.getElementById('techScrollOuter');
-                    var track = document.getElementById('techScrollTrack');
-                    if (!outer || !track) return;
-
-                    function updateBgVar() {
-                        var isDark = document.documentElement.classList.contains('dark');
-                        outer.parentElement.style.setProperty('--tech-bg', isDark ? '#111133' : '#f8fafc');
-                    }
-                    updateBgVar();
-
-                    var offset = 0;
-                    var speed = 0.5;
-                    var paused = false;
-                    var halfW = 0;
-
-                    function measure() { halfW = track.scrollWidth / 2; }
-                    measure();
-                    window.addEventListener('resize', measure);
-
-                    outer.addEventListener('mouseenter', function () { paused = true; });
-                    outer.addEventListener('mouseleave', function () { paused = false; });
-
-                    function step() {
-                        if (!paused) {
-                            offset += speed;
-                            if (offset >= halfW) offset = 0;
-                            track.style.transform = 'translateX(-' + offset + 'px)';
-                        }
-                        requestAnimationFrame(step);
-                    }
-                    requestAnimationFrame(step);
-
-                    var observer = new MutationObserver(updateBgVar);
-                    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-                }
-
-                if (document.readyState === 'loading') {
-                    document.addEventListener('DOMContentLoaded', initTechScroll);
-                } else {
-                    initTechScroll();
-                }
-            })();
-            </script>
         </section>
 
         @if(!empty($partners) && count($partners) > 0)
@@ -770,8 +662,11 @@
                 <div class="animate-scroll py-4">
                     <!-- Duplicate partners for seamless scroll -->
                     @foreach([...$partners, ...$partners, ...$partners, ...$partners] as $partner)
-                        <div class="mx-8 flex items-center justify-center grayscale opacity-60 dark:opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 w-52 h-auto shrink-0">
-                            <img src="{{ asset('storage/' . $partner->logo) }}" alt="{{ $partner->name }}" class="max-w-full max-h-full object-contain pointer-events-none" loading="lazy" />
+                        <div class="h-16 w-36 px-4 py-2 rounded-xl bg-white/50 dark:bg-slate-900/40 border border-slate-200/60 dark:border-slate-800/60 flex items-center justify-center group hover:border-cyan-500/30 transition shadow-sm">
+                            <img src="{{ $partner->logo_url ?? asset('storage/' . $partner->logo) }}" alt="{{ $partner->name }}"
+                                 class="w-full h-full object-contain pointer-events-none"
+                                 loading="lazy"
+                                 onerror="this.parentElement.style.display='none'" />
                         </div>
                     @endforeach
                 </div>
@@ -798,16 +693,30 @@
                 <!-- Portfolio project list -->
                 <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     @foreach($portfolios as $index => $project)
-                        <div data-aos="fade-up" data-aos-delay="{{ $index * 150 }}" class="relative rounded-3xl bg-white dark:bg-slate-900/30 border border-slate-200/80 dark:border-slate-800/80 p-6 hover:border-cyan-500/40 dark:hover:border-cyan-500/20 transition duration-300 group flex flex-col justify-between shadow-xl shadow-slate-200/60 dark:shadow-2xl dark:shadow-black/60">
+                        <div data-aos="fade-up" data-aos-delay="{{ $index * 150 }}" data-project-title="{{ $project->name }}" class="relative rounded-3xl bg-white dark:bg-slate-900/30 border border-slate-200/80 dark:border-slate-800/80 p-6 hover:border-cyan-500/40 dark:hover:border-cyan-500/20 transition duration-300 group flex flex-col justify-between shadow-xl shadow-slate-200/60 dark:shadow-2xl dark:shadow-black/60 cursor-pointer">
                             <div>
-                                <!-- Image Placeholder Container -->
-                                <div class="w-full aspect-4/3 rounded-2xl bg-slate-100 dark:bg-slate-950/90 border border-slate-200 dark:border-slate-800 p-4 mb-6 relative overflow-hidden flex items-center justify-center">
-                                    <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->name }}" class="absolute inset-0 w-full h-full object-contain object-center opacity-90 dark:opacity-80 group-hover:opacity-100 transition-opacity" loading="lazy" />
+                                <!-- Image Container -->
+                                <div class="w-full aspect-4/3 rounded-2xl bg-slate-100 dark:bg-slate-950/90 border border-slate-200 dark:border-slate-800 p-2 mb-6 relative overflow-hidden flex items-center justify-center group/img">
+                                    @if($project->image_url)
+                                        <img src="{{ $project->image_url }}"
+                                             alt="{{ $project->name }}"
+                                             class="w-full h-full object-cover rounded-xl opacity-90 dark:opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                                             loading="lazy"
+                                             onerror="this.onerror=null; this.src='{{ asset('images/gosor/portfolio/default.jpg') }}';" />
+                                    @else
+                                        <div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-600 gap-2">
+                                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-500 flex items-center justify-center">
+                                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    @endif
 
                                     @if($project->badge)
                                     <!-- Percentage metrics tag -->
-                                    <span class="absolute top-4 inset-s-4 inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-emerald-500/10 text-[10px] font-bold text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 shadow-inner z-20 backdrop-blur-sm">
-                                        <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                    <span class="absolute top-4 inset-s-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/80 dark:bg-slate-950/80 text-[11px] font-bold text-emerald-400 border border-emerald-500/30 shadow-lg z-20 backdrop-blur-md">
+                                        <svg class="h-3.5 w-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306 8.9-8.91M21 7.5H18M21 7.5V10.5" />
                                         </svg>
                                         {{ $project->badge }}
@@ -827,7 +736,7 @@
                             </div>
 
                             <!-- Showcase Study link -->
-                            <a href="{{ $project->link ?? '#contact' }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition mt-auto">
+                            <a href="{{ $project->link ?? '#contact' }}" data-project-title="{{ $project->name }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition mt-auto">
                                 <span>{{ __('landing.portfolio.items.project1.cta') }}</span>
                                 <svg class="h-4 w-4 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -1026,9 +935,9 @@
 
                             <!-- Project Type Dropdown Select -->
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.project_type') }}</label>
+                                <label for="project_type" class="block text-xs font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.project_type') }}</label>
                                 <div class="relative">
-                                    <input type="text" name="project_type" placeholder="{{ __('landing.contact.form.project_type') }}" class="w-full rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150">
+                                    <input type="text" id="project_type" name="project_type" placeholder="{{ __('landing.contact.form.project_type') }}" class="w-full rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-300">
                                 </div>
                             </div>
 
@@ -1074,7 +983,7 @@
                     <!-- Subscribe Newsletter Field -->
                     <div class="space-y-3 pt-2">
                         <span class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">{{ __('landing.footer.newsletter') }}</span>
-                        <form onsubmit="event.preventDefault(); alert('Subscribed successfully! / تم الاشتراك بنجاح!');" class="flex gap-2 max-w-md">
+                        <form onsubmit="event.preventDefault(); alert('Subscribed successfully! / ØªÙ… Ø§Ù„Ø§Ø´ØªØ±Ø§Ùƒ Ø¨Ù†Ø¬Ø§Ø­!');" class="flex gap-2 max-w-md">
                             <input type="email" required placeholder="{{ __('landing.footer.newsletter_placeholder') }}" class="w-full min-w-0 rounded-xl bg-white dark:bg-slate-950/80 border border-slate-200 dark:border-slate-900 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-2.5 text-sm text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-650 outline-none transition duration-150 font-sans">
                             <button type="submit" class="shrink-0 rounded-xl bg-indigo-600 hover:bg-indigo-500 hover:shadow-indigo-600/20 shadow-lg px-5 py-2.5 text-sm font-semibold text-white transition duration-150 cursor-pointer">
                                 {{ __('landing.footer.subscribe') }}
@@ -1298,7 +1207,49 @@
                     }
                 });
             }
+
+            // Auto-fill Project Type when clicking a portfolio project or product
+            function fillProjectTypeAndScroll(title) {
+                const input = document.getElementById('project_type') || document.querySelector('input[name="project_type"]');
+                const contactSection = document.getElementById('contact');
+
+                if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                if (input) {
+                    input.value = title;
+                    input.dispatchEvent(new Event('input', { bubbles: true }));
+                    input.dispatchEvent(new Event('change', { bubbles: true }));
+
+                    setTimeout(() => {
+                        input.focus();
+                        input.classList.add('ring-4', 'ring-cyan-500/40', '!border-cyan-500');
+                        setTimeout(() => {
+                            input.classList.remove('ring-4', 'ring-cyan-500/40', '!border-cyan-500');
+                        }, 2500);
+                    }, 500);
+                }
+            }
+
+            document.addEventListener('click', function(e) {
+                const trigger = e.target.closest('[data-project-title]');
+                if (!trigger) return;
+
+                const link = trigger.tagName.toLowerCase() === 'a' ? trigger : trigger.querySelector('a');
+                const href = link ? link.getAttribute('href') : '';
+
+                // If it's an external link, let it navigate
+                if (href && href !== '#contact' && (href.startsWith('http://') || href.startsWith('https://'))) {
+                    return;
+                }
+
+                e.preventDefault();
+                const title = trigger.getAttribute('data-project-title');
+                if (title) {
+                    fillProjectTypeAndScroll(title);
+                }
+            });
         });
     </script>
-</body>
-</html>
+@endsection

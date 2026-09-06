@@ -3,8 +3,8 @@
 namespace App\Filament\Resources\Portfolios\Schemas;
 
 use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Schema;
 
@@ -18,7 +18,8 @@ class PortfolioForm
                     ->image()
                     ->disk('public')
                     ->directory('portfolio')
-                    ->required(),
+                    ->nullable()
+                    ->helperText('Optional. If no image is provided, a default placeholder illustration will be used.'),
                 TextInput::make('name.en')
                     ->label('Name (English)')
                     ->required(),

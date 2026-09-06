@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\LandingContentService;
 use App\Models\ContactMessage;
+use App\Services\LandingContentService;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -24,7 +24,7 @@ class LandingController extends Controller
         $partners = $this->landingService->getActivePartners();
         $settings = $this->landingService->getSettings();
 
-        return view('landing', compact('services', 'platforms', 'portfolios', 'reviews', 'partners', 'settings'));
+        return view('web.landing', compact('services', 'platforms', 'portfolios', 'reviews', 'partners', 'settings'));
     }
 
     // TODO: convert into a form request

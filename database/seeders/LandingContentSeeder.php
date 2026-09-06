@@ -2,13 +2,12 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-use App\Models\Service;
 use App\Models\Platform;
 use App\Models\Portfolio;
 use App\Models\Review;
+use App\Models\Service;
 use App\Models\Setting;
+use Illuminate\Database\Seeder;
 
 class LandingContentSeeder extends Seeder
 {
@@ -20,13 +19,11 @@ class LandingContentSeeder extends Seeder
         $en = require base_path('lang/en/landing.php');
         $ar = require base_path('lang/ar/landing.php');
 
-
         Service::truncate();
         Platform::truncate();
         Portfolio::truncate();
         Review::truncate();
         Setting::truncate();
-
 
         // 1. Seed Services
         $servicesKeys = ['web', 'mobile', 'ecommerce', 'education', 'erp_crm', 'ai'];
@@ -56,10 +53,10 @@ class LandingContentSeeder extends Seeder
                 'ar' => $ar['products']['items']['edubridge']['description'],
             ],
             'features' => [
-                'en' => collect($en['products']['items']['edubridge']['features'])->map(function($featureEn) {
+                'en' => collect($en['products']['items']['edubridge']['features'])->map(function ($featureEn) {
                     return ['feature' => $featureEn];
                 })->toArray(),
-                'ar' => collect($ar['products']['items']['edubridge']['features'])->map(function($featureAr) {
+                'ar' => collect($ar['products']['items']['edubridge']['features'])->map(function ($featureAr) {
                     return ['feature' => $featureAr];
                 })->toArray(),
             ],
@@ -68,8 +65,13 @@ class LandingContentSeeder extends Seeder
         ]);
 
         // 3. Seed Portfolios
-        $portfolioKeys = ['project1', 'project2', 'project3'];
-        foreach ($portfolioKeys as $index => $key) {
+        $portfolioImages = [
+            'project1' => 'portfolio/ecommerce.jpg',
+            'project2' => 'portfolio/education.jpg',
+            'project3' => 'portfolio/saas.jpg',
+        ];
+        $index = 0;
+        foreach ($portfolioImages as $key => $img) {
             Portfolio::create([
                 'name' => [
                     'en' => $en['portfolio']['items'][$key]['title'],
@@ -83,9 +85,9 @@ class LandingContentSeeder extends Seeder
                     'en' => $en['portfolio']['items'][$key]['tag'],
                     'ar' => $ar['portfolio']['items'][$key]['tag'],
                 ],
-                'image' => 'portfolio/placeholder.jpg', // You may need to copy a real image to storage/app/public/portfolio
+                'image' => $img,
                 'link' => null,
-                'order' => $index,
+                'order' => $index++,
                 'is_active' => true,
             ]);
         }
