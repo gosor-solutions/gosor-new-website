@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Partner;
 use App\Models\Platform;
 use App\Models\Portfolio;
 use App\Models\Review;
@@ -24,6 +25,7 @@ class LandingContentSeeder extends Seeder
         Portfolio::truncate();
         Review::truncate();
         Setting::truncate();
+        Partner::truncate();
 
         // 1. Seed Services
         $servicesKeys = ['web', 'mobile', 'ecommerce', 'education', 'erp_crm', 'ai'];
@@ -43,6 +45,7 @@ class LandingContentSeeder extends Seeder
         }
 
         // 2. Seed Platforms
+        // Platform 1: Edu-Bridge
         Platform::create([
             'name' => [
                 'en' => $en['products']['items']['edubridge']['title'],
@@ -61,6 +64,34 @@ class LandingContentSeeder extends Seeder
                 })->toArray(),
             ],
             'order' => 0,
+            'is_active' => true,
+        ]);
+
+        // Platform 2: HR Management System
+        Platform::create([
+            'name' => [
+                'en' => 'HR Management System',
+                'ar' => 'نظام إدارة الموارد البشرية',
+            ],
+            'description' => [
+                'en' => 'A comprehensive HR management system covering the full employee lifecycle — from recruitment to offboarding — with full automation for payroll, leave, and performance.',
+                'ar' => 'نظام متكامل لإدارة الموارد البشرية يغطي دورة حياة الموظف بالكامل، من التوظيف حتى المغادرة، مع أتمتة كاملة للرواتب والإجازات والأداء.',
+            ],
+            'features' => [
+                'en' => [
+                    ['feature' => 'Employee Profile & Records Management'],
+                    ['feature' => 'Automated Payroll & Benefits Calculation'],
+                    ['feature' => 'Leave, Attendance & Shift Tracking'],
+                    ['feature' => 'Performance Evaluation & KPIs'],
+                ],
+                'ar' => [
+                    ['feature' => 'إدارة بيانات وملفات الموظفين'],
+                    ['feature' => 'أتمتة مسيرات الرواتب والمستحقات'],
+                    ['feature' => 'إدارة الإجازات والحضور والانصراف'],
+                    ['feature' => 'تقييم الأداء ومؤشرات الإنتاجية'],
+                ],
+            ],
+            'order' => 1,
             'is_active' => true,
         ]);
 
@@ -124,6 +155,28 @@ class LandingContentSeeder extends Seeder
                 'key' => $setting['key'],
                 'value' => $setting['value'],
                 'type' => $setting['type'],
+            ]);
+        }
+
+        // 6. Seed Partners
+        $partners = [
+            ['name' => ['en' => 'Al-Aadel', 'ar' => 'شركة العادل'], 'logo' => 'partners/al-Aadel.webp'],
+            ['name' => ['en' => 'British Foundation', 'ar' => 'المؤسسة البريطانية'], 'logo' => 'partners/british foundation.png'],
+            ['name' => ['en' => 'Dusor', 'ar' => 'جسور'], 'logo' => 'partners/dusor.jpeg'],
+            ['name' => ['en' => 'E-Care', 'ar' => 'إي كير'], 'logo' => 'partners/ecare.webp'],
+            ['name' => ['en' => 'Englivision', 'ar' => 'إنجليفيجن'], 'logo' => 'partners/englivision.webp'],
+            ['name' => ['en' => 'EraaSoft', 'ar' => 'إيراسوفت'], 'logo' => 'partners/EraaSoft.png'],
+            ['name' => ['en' => 'Fulfly', 'ar' => 'فولفلاي'], 'logo' => 'partners/fulfly.jpg'],
+            ['name' => ['en' => 'Kenaz', 'ar' => 'كناز'], 'logo' => 'partners/kenaz.png'],
+            ['name' => ['en' => 'Terrace', 'ar' => 'تيراس'], 'logo' => 'partners/terrace.jpeg'],
+        ];
+
+        foreach ($partners as $index => $partnerData) {
+            Partner::create([
+                'name' => $partnerData['name'],
+                'logo' => $partnerData['logo'],
+                'is_active' => true,
+                'order' => $index,
             ]);
         }
     }
