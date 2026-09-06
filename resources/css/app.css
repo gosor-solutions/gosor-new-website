@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
@@ -76,5 +79,14 @@
 
 #mobile-menu-btn.open .burger-span:nth-child(3) {
     @apply top-2 -rotate-45;
+}
+
+/* Themed Logo for Light Mode */
+.logo-themed {
+    transition: filter 0.3s ease;
+}
+
+:root:not(.dark) .logo-themed {
+    filter: brightness(0) saturate(100%) invert(8%) sepia(28%) saturate(2200%) hue-rotate(185deg) brightness(96%) contrast(97%);
 }
 
