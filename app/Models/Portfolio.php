@@ -35,6 +35,11 @@ class Portfolio extends Model
             if (file_exists(public_path($this->image))) {
                 return asset($this->image);
             }
+
+            $basename = basename($this->image);
+            if (file_exists(public_path('images/gosor/portfolio/'.$basename))) {
+                return asset('images/gosor/portfolio/'.$basename);
+            }
         }
 
         // Return default placeholder if exists

@@ -32,6 +32,15 @@ class Partner extends Model
             if (file_exists(public_path($this->logo))) {
                 return asset($this->logo);
             }
+
+            $basename = basename($this->logo);
+            if (file_exists(public_path('images/gosor/partners/'.$basename))) {
+                return asset('images/gosor/partners/'.$basename);
+            }
+
+            if (file_exists(public_path('images/gosor/'.$this->logo))) {
+                return asset('images/gosor/'.$this->logo);
+            }
         }
 
         return null;

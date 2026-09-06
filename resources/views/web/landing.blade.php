@@ -663,7 +663,7 @@
                     <!-- Duplicate partners for seamless scroll -->
                     @foreach([...$partners, ...$partners, ...$partners, ...$partners] as $partner)
                         <div class="h-16 w-36 px-4 py-2 rounded-xl bg-white/50 dark:bg-slate-900/40 border border-slate-200/60 dark:border-slate-800/60 flex items-center justify-center group hover:border-cyan-500/30 transition shadow-sm">
-                            <img src="{{ $partner->logo_url ?? asset('storage/' . $partner->logo) }}" alt="{{ $partner->name }}"
+                            <img src="{{ $partner->logo_url ?? asset('images/gosor/partners/' . basename($partner->logo)) }}" alt="{{ $partner->name }}"
                                  class="w-full h-full object-contain pointer-events-none"
                                  loading="lazy"
                                  onerror="this.parentElement.style.display='none'" />

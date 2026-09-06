@@ -9,6 +9,7 @@ use App\Models\Review;
 use App\Models\Service;
 use App\Models\Setting;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\File;
 
 class LandingContentSeeder extends Seeder
 {
@@ -19,6 +20,16 @@ class LandingContentSeeder extends Seeder
     {
         $en = require base_path('lang/en/landing.php');
         $ar = require base_path('lang/ar/landing.php');
+
+        // Ensure partner & portfolio assets exist in storage/app/public on any environment
+        if (File::exists(public_path('images/gosor/partners'))) {
+            File::ensureDirectoryExists(storage_path('app/public/partners'));
+            File::copyDirectory(public_path('images/gosor/partners'), storage_path('app/public/partners'));
+        }
+        if (File::exists(public_path('images/gosor/portfolio'))) {
+            File::ensureDirectoryExists(storage_path('app/public/portfolio'));
+            File::copyDirectory(public_path('images/gosor/portfolio'), storage_path('app/public/portfolio'));
+        }
 
         Service::truncate();
         Platform::truncate();
