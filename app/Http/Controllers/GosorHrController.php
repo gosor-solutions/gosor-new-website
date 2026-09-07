@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\NewContactRequestMail;
 use App\Models\ContactMessage;
+use App\Services\AntiSpamService;
 use App\Services\LandingContentService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
@@ -27,7 +28,7 @@ class GosorHrController extends Controller
         return view('web.gosor-hr', compact('settings', 'partners', 'reviews'));
     }
 
-    public function requestDemo(Request $request): JsonResponse|RedirectResponse
+    public function requestDemo(Request $request, AntiSpamService $antiSpamService): JsonResponse|RedirectResponse
     {
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:255'],
@@ -36,7 +37,25 @@ class GosorHrController extends Controller
             'company' => ['required', 'string', 'max:255'],
             'employees_count' => ['nullable', 'string', 'max:50'],
             'message' => ['nullable', 'string', 'max:3000'],
+            '_hp_company_website' => ['nullable', 'string'],
         ]);
+
+        $successMsg = app()->getLocale() === 'ar'
+            ? 'تم استلام طلبك بنجاح! سيتواصل معك أحد مستشارينا لتحديد موعد العرض التوضيحي.'
+            : 'Your demo request has been received! Our specialist will reach out shortly to schedule your live walkthrough.';
+
+        // Anti-spam silent handling
+        if ($antiSpamService->isSpam($request)) {
+            if ($request->expectsJson()) {
+                return response()->json([
+                    'success' => true,
+                    'message' => $successMsg,
+                    'redirect' => route('success'),
+                ]);
+            }
+
+            return redirect()->route('success')->with('success', __('Message sent successfully!'));
+        }
 
         $messageContent = 'Demo Request for Gosor HR System.';
         if (! empty($validated['employees_count'])) {
@@ -55,6 +74,8 @@ class GosorHrController extends Controller
             'message' => $messageContent,
         ]);
 
+        $antiSpamService->recordSubmission($request);
+
         try {
             $adminEmail = config('mail.admin_recipient', env('CONTACT_NOTIFICATION_EMAIL', 'mahfouzm25@gmail.com'));
             Mail::to($adminEmail)->send(new NewContactRequestMail($contact, 'Gosor HR Demo Request'));
@@ -65,9 +86,7 @@ class GosorHrController extends Controller
         if ($request->expectsJson()) {
             return response()->json([
                 'success' => true,
-                'message' => app()->getLocale() === 'ar'
-                    ? 'تم استلام طلبك بنجاح! سيتواصل معك أحد مستشارينا لتحديد موعد العرض التوضيحي.'
-                    : 'Your demo request has been received! Our specialist will reach out shortly to schedule your live walkthrough.',
+                'message' => $successMsg,
                 'redirect' => route('success'),
             ]);
         }

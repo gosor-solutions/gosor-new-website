@@ -833,6 +833,11 @@
 
                         <form id="contact-form" action="{{ route('contact.store') }}" method="POST" class="space-y-5">
                             @csrf
+                            <input type="hidden" name="_form_time" value="{{ encrypt(time()) }}">
+                            <div style="display:none !important; visibility:hidden !important; opacity:0 !important; position:absolute !important; left:-9999px !important;">
+                                <input type="text" name="_hp_company_website" tabindex="-1" autocomplete="off" value="" />
+                            </div>
+
                             <!-- Name & Email Inputs Row -->
                             <div class="grid sm:grid-cols-2 gap-5">
                                 <div>

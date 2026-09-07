@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\NewContactRequestMail;
 use App\Models\ContactMessage;
+use App\Services\AntiSpamService;
 use App\Services\LandingContentService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -31,7 +32,7 @@ class LandingController extends Controller
     }
 
     // TODO: convert into a form request
-    public function storeContact(Request $request)
+    public function storeContact(Request $request, AntiSpamService $antiSpamService)
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
@@ -40,9 +41,32 @@ class LandingController extends Controller
             'company' => 'nullable|string|max:255',
             'project_type' => 'nullable|string|max:255',
             'message' => 'required|string',
+            '_hp_company_website' => 'nullable|string',
         ]);
 
-        $contact = ContactMessage::create($validated);
+        // Anti-spam silent handling
+        if ($antiSpamService->isSpam($request)) {
+            if ($request->expectsJson()) {
+                return response()->json([
+                    'success' => true,
+                    'message' => __('Message sent successfully!'),
+                    'redirect' => route('success'),
+                ]);
+            }
+
+            return redirect()->route('success')->with('success', __('Message sent successfully!'));
+        }
+
+        $contact = ContactMessage::create([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'phone' => $validated['phone'] ?? null,
+            'company' => $validated['company'] ?? null,
+            'project_type' => $validated['project_type'] ?? null,
+            'message' => $validated['message'],
+        ]);
+
+        $antiSpamService->recordSubmission($request);
 
         try {
             $adminEmail = config('mail.admin_recipient', env('CONTACT_NOTIFICATION_EMAIL', 'mahfouzm25@gmail.com'));
@@ -59,7 +83,7 @@ class LandingController extends Controller
             ]);
         }
 
-        return back()->with('success', __('Message sent successfully!'));
+        return redirect()->route('success')->with('success', __('Message sent successfully!'));
     }
 
     public function privacyPolicy()

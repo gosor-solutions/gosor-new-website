@@ -1062,6 +1062,10 @@
                         <div class="lg:col-span-7" data-aos="fade-left">
                             <form id="hr-demo-form" action="{{ route('gosor-hr.demo') }}" method="POST" class="space-y-5 p-6 sm:p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
                                 @csrf
+                                <input type="hidden" name="_form_time" value="{{ encrypt(time()) }}">
+                                <div style="display:none !important; visibility:hidden !important; opacity:0 !important; position:absolute !important; left:-9999px !important;">
+                                    <input type="text" name="_hp_company_website" tabindex="-1" autocomplete="off" value="" />
+                                </div>
 
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>

@@ -7,15 +7,24 @@ use App\Models\ContactMessage;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LandingController::class, 'index'])->name('landing');
-Route::post('/contact', [LandingController::class, 'storeContact'])->name('contact.store');
+Route::post('/contact', [LandingController::class, 'storeContact'])
+    ->middleware('throttle:contact-form')
+    ->name('contact.store');
 Route::view('/success', 'web.success')->name('success');
 
 Route::get('/privacy-policy', [LandingController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::redirect('/policy', '/privacy-policy');
 
 Route::get('/g-hr', [GosorHrController::class, 'index'])->name('gosor-hr');
-Route::post('/g-hr/demo-request', [GosorHrController::class, 'requestDemo'])->name('gosor-hr.demo');
+Route::post('/g-hr/demo-request', [GosorHrController::class, 'requestDemo'])
+    ->middleware('throttle:contact-form')
+    ->name('gosor-hr.demo');
 Route::redirect('/g-hr-calendar', '/g-hr');
+
+Route::get('/gosor-hr', [GosorHrController::class, 'index']);
+Route::post('/gosor-hr/demo-request', [GosorHrController::class, 'requestDemo'])
+    ->middleware('throttle:contact-form');
+Route::redirect('/gosor-calendar', '/g-hr');
 
 Route::get('/test-mail', function () {
     $contact = new ContactMessage([
