@@ -49,13 +49,8 @@
                 <!-- Logo & Brand Badge -->
                 <div class="flex items-center gap-3">
                     <a href="{{ route('landing') }}" class="flex items-center gap-2 group" title="Gosor Solutions">
-                        <img src="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}" alt="Gosor Solutions Logo" class="h-10 w-auto logo-themed"/>
+                        <img src="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}" alt="Gosor Solutions Logo" class="h-30 w-auto logo-themed"/>
                     </a>
-                    <div class="h-6 w-px bg-slate-300 dark:bg-slate-700 hidden sm:block"></div>
-                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                        HR Cloud
-                    </span>
                 </div>
 
                 <!-- Desktop Navigation Links -->

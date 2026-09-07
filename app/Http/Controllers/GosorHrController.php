@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewContactRequestMail;
 use App\Models\ContactMessage;
 use App\Services\LandingContentService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\View\View;
 
 class GosorHrController extends Controller
@@ -37,13 +40,13 @@ class GosorHrController extends Controller
 
         $messageContent = 'Demo Request for Gosor HR System.';
         if (! empty($validated['employees_count'])) {
-            $messageContent .= ' | Number of Employees: '.$validated['employees_count'];
+            $messageContent .= ' | Number of Employees / Plan: '.$validated['employees_count'];
         }
         if (! empty($validated['message'])) {
             $messageContent .= "\n\nClient Note: ".$validated['message'];
         }
 
-        ContactMessage::create([
+        $contact = ContactMessage::create([
             'name' => $validated['name'],
             'email' => $validated['email'],
             'phone' => $validated['phone'],
@@ -51,6 +54,13 @@ class GosorHrController extends Controller
             'project_type' => 'Gosor HR - Smart Attendance & AI System',
             'message' => $messageContent,
         ]);
+
+        try {
+            $adminEmail = config('mail.admin_recipient', env('CONTACT_NOTIFICATION_EMAIL', 'mahfouzm25@gmail.com'));
+            Mail::to($adminEmail)->send(new NewContactRequestMail($contact, 'Gosor HR Demo Request'));
+        } catch (\Throwable $e) {
+            Log::error('Failed to send Gosor HR demo notification email: '.$e->getMessage());
+        }
 
         if ($request->expectsJson()) {
             return response()->json([

@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewContactRequestMail;
 use App\Models\ContactMessage;
 use App\Services\LandingContentService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class LandingController extends Controller
 {
@@ -39,7 +42,14 @@ class LandingController extends Controller
             'message' => 'required|string',
         ]);
 
-        ContactMessage::create($validated);
+        $contact = ContactMessage::create($validated);
+
+        try {
+            $adminEmail = config('mail.admin_recipient', env('CONTACT_NOTIFICATION_EMAIL', 'mahfouzm25@gmail.com'));
+            Mail::to($adminEmail)->send(new NewContactRequestMail($contact, 'Landing Page Form'));
+        } catch (\Throwable $e) {
+            Log::error('Failed to send contact notification email: '.$e->getMessage());
+        }
 
         if ($request->expectsJson()) {
             return response()->json([

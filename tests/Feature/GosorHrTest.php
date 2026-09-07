@@ -1,12 +1,14 @@
 <?php
 
+use App\Mail\NewContactRequestMail;
 use App\Models\ContactMessage;
 use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
+use Illuminate\Support\Facades\Mail;
 
 uses(LazilyRefreshDatabase::class);
 
 test('gosor hr landing page loads successfully in english', function () {
-    $response = $this->get('/gosor-hr?lang=en');
+    $response = $this->get('/g-hr?lang=en');
 
     $response->assertStatus(200);
     $response->assertSee('Gosor HR');
@@ -14,7 +16,7 @@ test('gosor hr landing page loads successfully in english', function () {
 });
 
 test('gosor hr landing page loads successfully in arabic with rtl', function () {
-    $response = $this->get('/gosor-hr?lang=ar');
+    $response = $this->get('/g-hr?lang=ar');
 
     $response->assertStatus(200);
     $response->assertSee('dir="rtl"', false);
@@ -23,12 +25,14 @@ test('gosor hr landing page loads successfully in arabic with rtl', function () 
 });
 
 test('gosor calendar route redirects to gosor hr', function () {
-    $response = $this->get('/gosor-calendar');
+    $response = $this->get('/g-hr-calendar');
 
-    $response->assertRedirect('/gosor-hr');
+    $response->assertRedirect('/g-hr');
 });
 
-test('can submit a demo request for gosor hr', function () {
+test('can submit a demo request for gosor hr and send notification email', function () {
+    Mail::fake();
+
     $payload = [
         'name' => 'John Doe',
         'email' => 'john@acme.com',
@@ -51,6 +55,12 @@ test('can submit a demo request for gosor hr', function () {
         'company' => 'Acme Corp',
         'project_type' => 'Gosor HR - Smart Attendance & AI System',
     ]);
+
+    Mail::assertSent(NewContactRequestMail::class, function ($mail) {
+        return $mail->hasTo('mahfouzm25@gmail.com') &&
+               $mail->contactMessage->email === 'john@acme.com' &&
+               str_contains($mail->contactMessage->project_type, 'Gosor HR');
+    });
 });
 
 test('demo request requires mandatory fields', function () {
