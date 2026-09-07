@@ -22,6 +22,7 @@ class ViewService extends ViewRecord
         foreach ($this->record->getTranslatableAttributes() as $attribute) {
             $data[$attribute] = $this->record->getTranslations($attribute);
         }
+
         return $data;
     }
 }

@@ -12,7 +12,7 @@ class CreateSetting extends CreateRecord
     protected function mutateFormDataBeforeCreate(array $data): array
     {
         $type = $data['type'] ?? 'text';
-        
+
         if (in_array($type, ['text', 'url', 'email', 'tel'])) {
             $data['value'] = $data['text_value'] ?? null;
         } elseif ($type === 'textarea') {
@@ -20,7 +20,7 @@ class CreateSetting extends CreateRecord
         } elseif ($type === 'image') {
             $data['value'] = $data['image_value'] ?? null;
         }
-        
+
         unset($data['text_value'], $data['textarea_value'], $data['image_value']);
 
         return $data;

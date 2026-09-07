@@ -17,21 +17,21 @@ class PlatformsTable
         return $table
             ->columns([
                 TextColumn::make('name.en')
-                    ->state(fn($record) => $record->getTranslation('name', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'en', false))
                     ->label('Name (EN)')
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('name.ar')
-                    ->state(fn($record) => $record->getTranslation('name', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'ar', false))
                     ->label('Name (AR)')
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('description.en')
-                    ->state(fn($record) => $record->getTranslation('description', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('description', 'en', false))
                     ->label('Description (EN)')
                     ->limit(50),
                 TextColumn::make('description.ar')
-                    ->state(fn($record) => $record->getTranslation('description', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('description', 'ar', false))
                     ->label('Description (AR)')
                     ->limit(50)
                     ->tooltip('Full description'),

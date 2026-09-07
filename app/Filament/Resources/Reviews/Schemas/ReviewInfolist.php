@@ -13,27 +13,27 @@ class ReviewInfolist
         return $schema
             ->components([
                 TextEntry::make('name.en')
-                    ->state(fn($record) => $record->getTranslation('name', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'en', false))
                     ->label('Name (EN)')
                     ->columnSpanFull(),
                 TextEntry::make('name.ar')
-                    ->state(fn($record) => $record->getTranslation('name', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'ar', false))
                     ->label('Name (AR)')
                     ->columnSpanFull(),
                 TextEntry::make('job_position.en')
-                    ->state(fn($record) => $record->getTranslation('job_position', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('job_position', 'en', false))
                     ->label('Job Position (EN)')
                     ->columnSpanFull(),
                 TextEntry::make('job_position.ar')
-                    ->state(fn($record) => $record->getTranslation('job_position', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('job_position', 'ar', false))
                     ->label('Job Position (AR)')
                     ->columnSpanFull(),
                 TextEntry::make('content.en')
-                    ->state(fn($record) => $record->getTranslation('content', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('content', 'en', false))
                     ->label('Content (EN)')
                     ->columnSpanFull(),
                 TextEntry::make('content.ar')
-                    ->state(fn($record) => $record->getTranslation('content', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('content', 'ar', false))
                     ->label('Content (AR)')
                     ->columnSpanFull(),
                 IconEntry::make('is_active')

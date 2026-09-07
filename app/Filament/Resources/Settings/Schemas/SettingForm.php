@@ -2,12 +2,12 @@
 
 namespace App\Filament\Resources\Settings\Schemas;
 
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\Select;
 use Filament\Forms\Components\FileUpload;
-use Filament\Schemas\Schema;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Utilities\Get;
+use Filament\Schemas\Schema;
 
 class SettingForm
 {
@@ -29,12 +29,12 @@ class SettingForm
                     ])
                     ->required()
                     ->live(),
-                
+
                 TextInput::make('text_value')
                     ->label('Value')
                     ->visible(fn (Get $get) => in_array($get('type'), ['text', 'url', 'email', 'tel']))
                     ->required(),
-                
+
                 Textarea::make('textarea_value')
                     ->label('Value')
                     ->visible(fn (Get $get) => $get('type') === 'textarea')

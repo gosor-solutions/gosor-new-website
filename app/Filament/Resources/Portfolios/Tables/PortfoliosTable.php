@@ -19,28 +19,28 @@ class PortfoliosTable
             ->columns([
                 ImageColumn::make('image')->disk('public'),
                 TextColumn::make('name.en')
-                    ->state(fn($record) => $record->getTranslation('name', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'en', false))
                     ->label('Name (EN)')
                     ->searchable(),
                 TextColumn::make('name.ar')
-                    ->state(fn($record) => $record->getTranslation('name', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'ar', false))
                     ->label('Name (AR)')
                     ->searchable(),
                 TextColumn::make('description.en')
-                    ->state(fn($record) => $record->getTranslation('description', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('description', 'en', false))
                     ->label('Description (EN)')
                     ->limit(50),
                 TextColumn::make('description.ar')
-                    ->state(fn($record) => $record->getTranslation('description', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('description', 'ar', false))
                     ->label('Description (AR)')
                     ->limit(50)
                     ->tooltip('Full description'),
                 TextColumn::make('badge.en')
-                    ->state(fn($record) => $record->getTranslation('badge', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('badge', 'en', false))
                     ->label('Badge (EN)')
                     ->searchable(),
                 TextColumn::make('badge.ar')
-                    ->state(fn($record) => $record->getTranslation('badge', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('badge', 'ar', false))
                     ->label('Badge (AR)')
                     ->searchable(),
                 TextColumn::make('link')

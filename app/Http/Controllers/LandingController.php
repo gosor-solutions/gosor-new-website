@@ -51,4 +51,11 @@ class LandingController extends Controller
 
         return back()->with('success', __('Message sent successfully!'));
     }
+
+    public function privacyPolicy()
+    {
+        $settings = $this->landingService->getSettings();
+
+        return view('web.policy', compact('settings'));
+    }
 }

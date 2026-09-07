@@ -238,6 +238,7 @@ return [
         'links_title1' => 'Quick Links',
         'links_title2' => 'Quick Links',
         'contact_title' => 'Contact Info',
+        'privacy_policy' => 'Privacy Policy & Terms',
         'rights' => 'Gosor Solutions. All Rights Reserved.',
     ],
     'success' => [
@@ -246,5 +247,5 @@ return [
         'redirect_text' => 'Redirecting to home in',
         'seconds' => 'seconds...',
         'back_home' => 'Go Back Home',
-    ]
+    ],
 ];

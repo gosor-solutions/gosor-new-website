@@ -19,12 +19,12 @@ class PartnersTable
             ->columns([
                 ImageColumn::make('logo')->disk('public'),
                 TextColumn::make('name.en')
-                    ->state(fn($record) => $record->getTranslation('name', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'en', false))
                     ->label('Name (EN)')
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('name.ar')
-                    ->state(fn($record) => $record->getTranslation('name', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'ar', false))
                     ->label('Name (AR)')
                     ->searchable()
                     ->sortable(),

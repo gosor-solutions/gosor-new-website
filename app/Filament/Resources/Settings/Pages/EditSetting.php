@@ -22,7 +22,7 @@ class EditSetting extends EditRecord
     protected function mutateFormDataBeforeFill(array $data): array
     {
         $type = $data['type'] ?? 'text';
-        
+
         if (in_array($type, ['text', 'url', 'email', 'tel'])) {
             $data['text_value'] = $data['value'] ?? null;
         } elseif ($type === 'textarea') {
@@ -37,7 +37,7 @@ class EditSetting extends EditRecord
     protected function mutateFormDataBeforeSave(array $data): array
     {
         $type = $data['type'] ?? 'text';
-        
+
         if (in_array($type, ['text', 'url', 'email', 'tel'])) {
             $data['value'] = $data['text_value'] ?? null;
         } elseif ($type === 'textarea') {
@@ -45,7 +45,7 @@ class EditSetting extends EditRecord
         } elseif ($type === 'image') {
             $data['value'] = $data['image_value'] ?? null;
         }
-        
+
         unset($data['text_value'], $data['textarea_value'], $data['image_value']);
 
         return $data;

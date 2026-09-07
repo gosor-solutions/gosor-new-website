@@ -15,11 +15,11 @@ class PartnerInfolist
             ->components([
                 ImageEntry::make('logo')->disk('public'),
                 TextEntry::make('name.en')
-                    ->state(fn($record) => $record->getTranslation('name', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'en', false))
                     ->label('Name (EN)')
                     ->columnSpanFull(),
                 TextEntry::make('name.ar')
-                    ->state(fn($record) => $record->getTranslation('name', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'ar', false))
                     ->label('Name (AR)')
                     ->columnSpanFull(),
                 IconEntry::make('is_active')

@@ -68,7 +68,6 @@
                     <a href="#about" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.about') }}</a>
                     <a href="#services" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.services') }}</a>
                     <a href="#products" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.products') }}</a>
-                    <a href="#portfolio" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.portfolio') }}</a>
                     <a href="#goals" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.goals') }}</a>
                     <a href="#contact" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.contact') }}</a>
                 </nav>
@@ -149,7 +148,6 @@
                 <a href="#about" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.about') }}</a>
                 <a href="#services" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.services') }}</a>
                 <a href="#products" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.products') }}</a>
-                <a href="#portfolio" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.portfolio') }}</a>
                 <a href="#goals" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.goals') }}</a>
                 <a href="#contact" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.contact') }}</a>
                 
@@ -551,12 +549,21 @@
                             </div>
 
                             <!-- Full width button -->
-                            <a href="#contact" data-project-title="{{ $platform->name }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600/90 hover:bg-indigo-600 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-indigo-600/10">
-                                <span>{{ __('landing.nav.get_started') }}</span>
-                                <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                </svg>
-                            </a>
+                            @if($index === 1)
+                                <a href="{{ route('gosor-hr') }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-emerald-600/20">
+                                    <span>{{ app()->getLocale() === 'ar' ? 'استكشف نظام جسور HR الذكي' : 'Explore Gosor HR System' }}</span>
+                                    <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                            @else
+                                <a href="#contact" data-project-title="{{ $platform->name }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600/90 hover:bg-indigo-600 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-indigo-600/10">
+                                    <span>{{ __('landing.nav.get_started') }}</span>
+                                    <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                            @endif
                         </div>
                     @endforeach
                 </div>
@@ -638,33 +645,25 @@
         </section>
 
         @if(!empty($partners) && count($partners) > 0)
-        <!-- Our Partners Section (Infinite Scroll) -->
-        <section class="py-20 bg-slate-100/60 dark:bg-[#101133] border-t border-slate-200 dark:border-slate-900/60 overflow-hidden transition-colors duration-200">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-12">
+        <!-- Our Partners / Companies Section (Static Grid, Larger Logos) -->
+        <section class="py-24 bg-slate-100/60 dark:bg-[#101133] border-t border-slate-200 dark:border-slate-900/60 overflow-hidden transition-colors duration-200">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-14">
                 <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
-                    {{-- <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 uppercase mb-4">
-                        {{ __('landing.partners.badge') }}
-                    </span> --}}
                     <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-900 dark:text-slate-100 tracking-tight mb-4">
                         {{ __('landing.partners.title') }}
                     </h2>
-                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-base sm:text-lg">
                         {{ __('landing.partners.subtitle') }}
                     </p>
                 </div>
             </div>
 
-            <div class="relative flex items-center group max-h-40">
-                <!-- Left/Right Fading Overlays -->
-                <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-100/90 dark:from-[#101133] to-transparent z-10 pointer-events-none"></div>
-                <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-100/90 dark:from-[#101133] to-transparent z-10 pointer-events-none"></div>
-
-                <div class="animate-scroll py-4">
-                    <!-- Duplicate partners for seamless scroll -->
-                    @foreach([...$partners, ...$partners, ...$partners, ...$partners] as $partner)
-                        <div class="h-16 w-36 px-4 py-2 rounded-xl bg-white/50 dark:bg-slate-900/40 border border-slate-200/60 dark:border-slate-800/60 flex items-center justify-center group hover:border-cyan-500/30 transition shadow-sm">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8" data-aos="fade-up">
+                    @foreach($partners as $partner)
+                        <div class="h-28 sm:h-32 w-48 sm:w-56 px-6 py-5 rounded-3xl bg-white dark:bg-slate-900/50 border border-slate-200/80 dark:border-slate-800/80 hover:border-cyan-500/50 dark:hover:border-cyan-500/40 flex items-center justify-center group transition-all duration-300 dark:shadow-none hover:shadow-xl hover:-translate-y-1">
                             <img src="{{ $partner->logo_url ?? asset('images/gosor/partners/' . basename($partner->logo)) }}" alt="{{ $partner->name }}"
-                                 class="w-full h-full object-contain pointer-events-none"
+                                 class="max-h-20 sm:max-h-24 w-auto max-w-full object-contain pointer-events-none transition-transform duration-300 group-hover:scale-110"
                                  loading="lazy"
                                  onerror="this.parentElement.style.display='none'" />
                         </div>
@@ -673,81 +672,6 @@
             </div>
         </section>
         @endif
-
-        <!-- Our Portfolio Section -->
-        <section id="portfolio" class="py-20 bg-slate-50 dark:bg-[#111133] relative overflow-hidden transition-colors duration-200">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-                
-                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                    {{-- <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 uppercase mb-4">
-                        {{ __('landing.portfolio.badge') }}
-                    </span> --}}
-                    <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-900 dark:text-slate-100 tracking-tight mb-6">
-                        {{ __('landing.portfolio.title') }}
-                    </h2>
-                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed sm:text-lg">
-                        {{ __('landing.portfolio.subtitle') }}
-                    </p>
-                </div>
-
-                <!-- Portfolio project list -->
-                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    @foreach($portfolios as $index => $project)
-                        <div data-aos="fade-up" data-aos-delay="{{ $index * 150 }}" data-project-title="{{ $project->name }}" class="relative rounded-3xl bg-white dark:bg-slate-900/30 border border-slate-200/80 dark:border-slate-800/80 p-6 hover:border-cyan-500/40 dark:hover:border-cyan-500/20 transition duration-300 group flex flex-col justify-between shadow-xl shadow-slate-200/60 dark:shadow-2xl dark:shadow-black/60 cursor-pointer">
-                            <div>
-                                <!-- Image Container -->
-                                <div class="w-full aspect-4/3 rounded-2xl bg-slate-100 dark:bg-slate-950/90 border border-slate-200 dark:border-slate-800 p-2 mb-6 relative overflow-hidden flex items-center justify-center group/img">
-                                    @if($project->image_url)
-                                        <img src="{{ $project->image_url }}"
-                                             alt="{{ $project->name }}"
-                                             class="w-full h-full object-cover rounded-xl opacity-90 dark:opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                                             loading="lazy"
-                                             onerror="this.onerror=null; this.src='{{ asset('images/gosor/portfolio/default.jpg') }}';" />
-                                    @else
-                                        <div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-600 gap-2">
-                                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-500 flex items-center justify-center">
-                                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    @endif
-
-                                    @if($project->badge)
-                                    <!-- Percentage metrics tag -->
-                                    <span class="absolute top-4 inset-s-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/80 dark:bg-slate-950/80 text-[11px] font-bold text-emerald-400 border border-emerald-500/30 shadow-lg z-20 backdrop-blur-md">
-                                        <svg class="h-3.5 w-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306 8.9-8.91M21 7.5H18M21 7.5V10.5" />
-                                        </svg>
-                                        {{ $project->badge }}
-                                    </span>
-                                    @endif
-                                </div>
-
-                                <!-- Title -->
-                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition">
-                                    {{ $project->name }}
-                                </h3>
-
-                                <!-- Description -->
-                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
-                                    {{ $project->description }}
-                                </p>
-                            </div>
-
-                            <!-- Showcase Study link -->
-                            <a href="{{ $project->link ?? '#contact' }}" data-project-title="{{ $project->name }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition mt-auto">
-                                <span>{{ __('landing.portfolio.items.project1.cta') }}</span>
-                                <svg class="h-4 w-4 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                                </svg>
-                            </a>
-                        </div>
-                    @endforeach
-                </div>
-
-            </div>
-        </section>
 
         <!-- Our Strategic Goals Section -->
         <section id="goals" class="py-24 bg-slate-100/60 dark:bg-[#111133] relative overflow-hidden transition-colors duration-200">
@@ -1000,7 +924,7 @@
                         <li><a href="#about" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.about') }}</a></li>
                         <li><a href="#services" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.services') }}</a></li>
                         <li><a href="#products" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.products') }}</a></li>
-                        <li><a href="#portfolio" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.portfolio') }}</a></li>
+                        <li><a href="{{ route('privacy-policy') }}" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.footer.privacy_policy') }}</a></li>
                         <li><a href="#contact" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.contact') }}</a></li>
                     </ul>
                 </div>
@@ -1039,9 +963,15 @@
 
             </div>
 
-            <!-- Bottom Row: Copyright + socials -->
+            <!-- Bottom Row: Copyright + Policy + socials -->
             <div class="flex flex-col sm:flex-row justify-between items-center gap-6 pt-8 text-xs sm:text-sm">
-                <span>&copy; {{ date('Y') }} {{ __('landing.footer.rights') }}</span>
+                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3">
+                    <span>&copy; {{ date('Y') }} {{ __('landing.footer.rights') }}</span>
+                    <span>•</span>
+                    <a href="{{ route('privacy-policy') }}" class="hover:text-cyan-600 dark:hover:text-cyan-400 underline-offset-4 hover:underline transition">
+                        {{ __('landing.footer.privacy_policy') }}
+                    </a>
+                </div>
                 
                 <!-- Social media circular buttons -->
                 <div class="flex items-center gap-3">

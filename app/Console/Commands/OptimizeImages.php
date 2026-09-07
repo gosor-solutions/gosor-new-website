@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Spatie\LaravelImageOptimizer\Facades\ImageOptimizer;
 
 class OptimizeImages extends Command
 {
@@ -28,7 +29,7 @@ class OptimizeImages extends Command
         $path = public_path('images/gosor');
         $this->info("Optimizing images in {$path}...");
 
-        \Spatie\LaravelImageOptimizer\Facades\ImageOptimizer::optimize($path);
+        ImageOptimizer::optimize($path);
 
         $this->info('Image optimization complete.');
     }

@@ -3,8 +3,8 @@
 namespace App\Filament\Resources\Platforms\Schemas;
 
 use Filament\Infolists\Components\IconEntry;
-use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Components\RepeatableEntry;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Schema;
 
 class PlatformInfolist
@@ -14,19 +14,19 @@ class PlatformInfolist
         return $schema
             ->components([
                 TextEntry::make('name.en')
-                    ->state(fn($record) => $record->getTranslation('name', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'en', false))
                     ->label('Name (EN)')
                     ->columnSpanFull(),
                 TextEntry::make('name.ar')
-                    ->state(fn($record) => $record->getTranslation('name', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('name', 'ar', false))
                     ->label('Name (AR)')
                     ->columnSpanFull(),
                 TextEntry::make('description.en')
-                    ->state(fn($record) => $record->getTranslation('description', 'en', false))
+                    ->state(fn ($record) => $record->getTranslation('description', 'en', false))
                     ->label('Description (EN)')
                     ->columnSpanFull(),
                 TextEntry::make('description.ar')
-                    ->state(fn($record) => $record->getTranslation('description', 'ar', false))
+                    ->state(fn ($record) => $record->getTranslation('description', 'ar', false))
                     ->label('Description (AR)')
                     ->columnSpanFull(),
                 RepeatableEntry::make('features.en')
