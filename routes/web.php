@@ -11,9 +11,9 @@ Route::view('/success', 'web.success')->name('success');
 Route::get('/privacy-policy', [LandingController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::redirect('/policy', '/privacy-policy');
 
-Route::get('/gosor-hr', [GosorHrController::class, 'index'])->name('gosor-hr');
-Route::post('/gosor-hr/demo-request', [GosorHrController::class, 'requestDemo'])->name('gosor-hr.demo');
-Route::redirect('/gosor-calendar', '/gosor-hr');
+Route::get('/g-hr', [GosorHrController::class, 'index'])->name('gosor-hr');
+Route::post('/g-hr/demo-request', [GosorHrController::class, 'requestDemo'])->name('gosor-hr.demo');
+Route::redirect('/g-hr-calendar', '/g-hr');
 
 Route::get('/set-locale/{locale}', function ($locale) {
     if (in_array($locale, ['en', 'ar'])) {
