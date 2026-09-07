@@ -49,7 +49,7 @@
                 <!-- Logo & Brand Badge -->
                 <div class="flex items-center gap-3">
                     <a href="{{ route('landing') }}" class="flex items-center gap-2 group" title="Gosor Solutions">
-                        <img src="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}" alt="Gosor Solutions Logo" class="h-30 w-auto logo-themed"/>
+                        <img src="{{ isset($settings['logo']) ? asset('storage/' . $settings['logo']) : asset('images/gosor/logo/logo.png') }}" alt="Gosor Solutions Logo" class="h-20 w-auto logo-themed"/>
                     </a>
                 </div>
 
