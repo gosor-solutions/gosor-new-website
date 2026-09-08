@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EduBridgeController;
 use App\Http\Controllers\GosorHrController;
 use App\Http\Controllers\LandingController;
 use App\Mail\NewContactRequestMail;
@@ -25,6 +26,15 @@ Route::get('/gosor-hr', [GosorHrController::class, 'index']);
 Route::post('/gosor-hr/demo-request', [GosorHrController::class, 'requestDemo'])
     ->middleware('throttle:contact-form');
 Route::redirect('/gosor-calendar', '/g-hr');
+
+// Edu Bridge Routes
+Route::get('/edu-bridge', [EduBridgeController::class, 'index'])->name('edu-bridge');
+Route::post('/edu-bridge/demo-request', [EduBridgeController::class, 'requestDemo'])
+    ->middleware('throttle:contact-form')
+    ->name('edu-bridge.demo');
+Route::redirect('/e-bridge', '/edu-bridge');
+Route::post('/e-bridge/demo-request', [EduBridgeController::class, 'requestDemo'])
+    ->middleware('throttle:contact-form');
 
 Route::get('/test-mail', function () {
     $contact = new ContactMessage([

@@ -549,9 +549,16 @@
                             </div>
 
                             <!-- Full width button -->
-                            @if($index === 1)
+                            @if(str_contains(strtolower($platform->name ?? ''), 'hr') || $index === 1)
                                 <a href="{{ route('gosor-hr') }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-emerald-600/20">
-                                    <span>{{ app()->getLocale() === 'ar' ? 'استكشف نظام جسور HR الذكي' : 'Explore Gosor HR System' }}</span>
+                                    <span>{{ app()->getLocale() === 'ar' ? 'استكشف نظام Gosor HR' : 'Explore Gosor HR System' }}</span>
+                                    <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                            @elseif(str_contains(strtolower($platform->name ?? ''), 'edu') || str_contains(strtolower($platform->name ?? ''), 'bridge') || $index === 0)
+                                <a href="{{ route('edu-bridge') }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-indigo-600/20">
+                                    <span>{{ app()->getLocale() === 'ar' ? 'استكشف منصة Edu Bridge وتطبيق الطلاب' : 'Explore Edu Bridge & Student App' }}</span>
                                     <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                     </svg>
@@ -926,7 +933,8 @@
                     <h3 class="text-sm font-bold text-slate-900 dark:text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.links_title1') }}</h3>
                     <ul class="space-y-4 text-sm">
                         <li><a href="#home" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.home') }}</a></li>
-                        <li><a href="#about" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.about') }}</a></li>
+                        <li><a href="{{ route('edu-bridge') }}" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition font-bold text-indigo-600 dark:text-indigo-400">Edu Bridge (LMS & App)</a></li>
+                        <li><a href="{{ route('gosor-hr') }}" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition font-bold text-emerald-600 dark:text-emerald-400">Gosor HR</a></li>
                         <li><a href="#services" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.services') }}</a></li>
                         <li><a href="#products" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.products') }}</a></li>
                         <li><a href="{{ route('privacy-policy') }}" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.footer.privacy_policy') }}</a></li>
