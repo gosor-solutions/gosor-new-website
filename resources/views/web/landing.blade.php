@@ -50,7 +50,7 @@
 
 @section('content')
     <!-- Navigation Header -->
-    <header class="sticky top-0 z-40 w-full border-b border-slate-200/80 dark:border-slate-900 bg-white/80 dark:bg-[#0f1231] backdrop-blur-md transition-all duration-300">
+    <header class="sticky top-0 z-40 w-full border-b border-slate-200 dark:border-slate-800/80 bg-white/90 dark:bg-[#06080e]/90 backdrop-blur-md transition-all duration-300">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-20 items-center justify-between">
                 
@@ -64,71 +64,69 @@
 
                 <!-- Desktop Navigation Links -->
                 <nav class="hidden md:flex space-x-1 lg:space-x-2 rtl:space-x-reverse items-center">
-                    <a href="#home" class="px-3 py-2 text-sm font-medium text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300 transition duration-150">{{ __('landing.nav.home') }}</a>
-                    <a href="#about" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.about') }}</a>
-                    <a href="#services" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.services') }}</a>
-                    <a href="#products" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.products') }}</a>
-                    <a href="#goals" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.goals') }}</a>
-                    <a href="#contact" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150">{{ __('landing.nav.contact') }}</a>
+                    <a href="#home" class="px-3 py-2 text-sm font-medium text-[#283891] dark:text-[#7d93ff] hover:text-[#1d2b75] dark:hover:text-[#a5b4fc] transition duration-150">{{ __('landing.nav.home') }}</a>
+                    <a href="#about" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] transition duration-150">{{ __('landing.nav.about') }}</a>
+                    <a href="#services" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] transition duration-150">{{ __('landing.nav.services') }}</a>
+                    <a href="#products" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] transition duration-150">{{ __('landing.nav.products') }}</a>
+                    <a href="#goals" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] transition duration-150">{{ __('landing.nav.goals') }}</a>
+                    <a href="#contact" class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] transition duration-150">{{ __('landing.nav.contact') }}</a>
                 </nav>
 
                 <!-- Action buttons (Theme Toggle + Locale + CTA) -->
                 <div class="hidden md:flex items-center gap-3">
                     <!-- Theme Mode Toggle Button -->
-                    <button type="button" id="theme-toggle-btn" aria-label="Toggle theme" class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-950/40 border border-slate-200 dark:border-slate-900 text-slate-600 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition duration-150 shadow-sm dark:shadow-none">
+                    <button type="button" id="theme-toggle-btn" aria-label="Toggle theme" class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:border-slate-300 dark:hover:border-slate-700 transition duration-150 cursor-pointer">
                         <!-- Sun icon (shown in dark mode) -->
                         <svg class="w-5 h-5 hidden dark:block text-amber-300 hover:rotate-45 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                         </svg>
                         <!-- Moon icon (shown in light mode) -->
-                        <svg class="w-5 h-5 block dark:hidden text-indigo-600 hover:-rotate-12 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <svg class="w-5 h-5 block dark:hidden text-[#283891] hover:-rotate-12 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                         </svg>
                     </button>
 
                     <!-- Language Selector Dropdown Toggle -->
                     <div class="relative inline-block text-left" id="lang-dropdown-wrapper">
-                        <button type="button" id="lang-dropdown-btn" class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-150 rounded-lg bg-slate-100 dark:bg-slate-950/40 border border-slate-200 dark:border-slate-900 shadow-sm dark:shadow-none">
+                        <button type="button" id="lang-dropdown-btn" class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:border-slate-300 dark:hover:border-slate-700 transition duration-150 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 cursor-pointer">
                             <x-eva-globe-outline class="w-5 h-5"/>
-                            <span>{{ app()->getLocale() === 'ar' ? 'Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©' : 'En' }}</span>
+                            <span>{{ app()->getLocale() === 'ar' ? 'العربية' : 'En' }}</span>
                             <x-feathericon-chevron-down class="w-4 h-4"/>
                         </button>
                         
                         <!-- Dropdown Menu -->
-                        <div id="lang-dropdown-menu" class="hidden absolute right-0 rtl:left-0 mt-2 w-32 origin-top-right rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl ring-1 ring-black/5 focus:outline-none z-50">
+                        <div id="lang-dropdown-menu" class="hidden absolute right-0 rtl:left-0 rtl:right-auto mt-2 w-32 origin-top-right rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 z-50">
                             <div class="py-1">
-                                <a href="{{ url('/?lang=en') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'en' ? 'text-cyan-600 dark:text-cyan-400 bg-slate-100 dark:bg-slate-850 font-semibold' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white' }}">English</a>
-                                <a href="{{ url('/?lang=ar') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'ar' ? 'text-cyan-600 dark:text-cyan-400 bg-slate-100 dark:bg-slate-850 font-semibold' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white' }}">Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©</a>
+                                <a href="{{ url('/?lang=en') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'en' ? 'text-[#283891] dark:text-[#7d93ff] bg-slate-100 dark:bg-slate-800 font-semibold' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white' }}">English</a>
+                                <a href="{{ url('/?lang=ar') }}" class="flex items-center px-4 py-2.5 text-sm {{ app()->getLocale() === 'ar' ? 'text-[#283891] dark:text-[#7d93ff] bg-slate-100 dark:bg-slate-800 font-semibold' : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white' }}">العربية</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Get Started Primary Action Button -->
-                    <a href="#contact" class="relative group overflow-hidden rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 p-px font-semibold text-white shadow-lg shadow-cyan-500/20 transition duration-300 hover:shadow-cyan-500/35 hover:scale-102">
-                        <span class="block px-5 py-2.5 rounded-[11px] bg-slate-900/90 text-white dark:bg-slate-950/80 group-hover:bg-transparent transition duration-300 text-sm">
-                            {{ __('landing.nav.get_started') }}
-                        </span>
+                    <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-[#283891] hover:bg-[#1d2b75] px-5 py-2.5 font-semibold text-white text-sm transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0">
+                        {{ __('landing.nav.get_started') }}
                     </a>
                 </div>
 
                 <!-- Hamburger Mobile Menu Icon & Mobile Theme Switcher -->
                 <div class="flex md:hidden items-center gap-2">
                     <!-- Mobile Theme Toggle Button -->
-                    <button type="button" id="mobile-theme-toggle-btn" aria-label="Toggle theme" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-900/60 text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400">
+                    <button type="button" id="mobile-theme-toggle-btn" aria-label="Toggle theme" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff]">
                         <svg class="w-5 h-5 hidden dark:block text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                         </svg>
-                        <svg class="w-5 h-5 block dark:hidden text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <svg class="w-5 h-5 block dark:hidden text-[#283891]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                         </svg>
                     </button>
 
                     <!-- Fast Switch Language Button (Mobile inline toggle) -->
-                    <a href="{{ url('/?lang=' . (app()->getLocale() === 'en' ? 'ar' : 'en')) }}" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-900/60 text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    <a href="{{ url('/?lang=' . (app()->getLocale() === 'en' ? 'ar' : 'en')) }}" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] text-xs font-semibold uppercase tracking-wider">
                         {{ app()->getLocale() === 'en' ? 'AR' : 'EN' }}
                     </a>
 
-                    <button type="button" id="mobile-menu-btn" class="relative w-10 h-10 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-900/60 text-slate-700 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-900 transition duration-150">
+                    <button type="button" id="mobile-menu-btn" class="relative w-10 h-10 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200 dark:hover:bg-slate-800 transition duration-150">
                         <span class="sr-only">Open main menu</span>
                         <div class="relative w-6 h-5">
                             <span class="burger-span top-0"></span>
@@ -142,17 +140,17 @@
         </div>
 
         <!-- Mobile Navigation Menu (Drawer style) -->
-        <div class="md:hidden border-t border-slate-200 dark:border-slate-900/80 bg-white/95 dark:bg-[#070b13]/95 backdrop-blur-lg px-4 overflow-hidden" id="mobile-menu-panel" style="max-height: 0; opacity: 0; transition: all 0.3s ease-in-out;">
+        <div class="md:hidden border-t border-slate-200 dark:border-slate-800/80 bg-white/95 dark:bg-[#06080e]/95 backdrop-blur-lg px-4 overflow-hidden" id="mobile-menu-panel" style="max-height: 0; opacity: 0; transition: all 0.3s ease-in-out;">
             <div class="py-4 space-y-2">
-                <a href="#home" class="block rounded-lg px-3 py-2 text-base font-medium text-cyan-600 dark:text-cyan-400 bg-cyan-50 dark:bg-slate-900/40">{{ __('landing.nav.home') }}</a>
-                <a href="#about" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.about') }}</a>
-                <a href="#services" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.services') }}</a>
-                <a href="#products" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.products') }}</a>
-                <a href="#goals" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.goals') }}</a>
-                <a href="#contact" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.contact') }}</a>
+                <a href="#home" class="block rounded-lg px-3 py-2 text-base font-medium text-[#283891] dark:text-[#7d93ff] bg-[#283891]/10 dark:bg-[#283891]/20">{{ __('landing.nav.home') }}</a>
+                <a href="#about" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.about') }}</a>
+                <a href="#services" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.services') }}</a>
+                <a href="#products" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.products') }}</a>
+                <a href="#goals" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.goals') }}</a>
+                <a href="#contact" class="block rounded-lg px-3 py-2 text-base font-medium text-slate-700 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-slate-100 dark:hover:bg-slate-900/30">{{ __('landing.nav.contact') }}</a>
                 
-                <div class="pt-4 border-t border-slate-200 dark:border-slate-900 flex justify-center">
-                    <a href="#contact" class="w-full text-center rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-500/20">
+                <div class="pt-4 border-t border-slate-200 dark:border-slate-800 flex justify-center">
+                    <a href="#contact" class="w-full text-center rounded-xl bg-[#283891] hover:bg-[#1d2b75] px-5 py-3 font-semibold text-white transition-colors duration-200">
                         {{ __('landing.nav.get_started') }}
                     </a>
                 </div>
@@ -167,49 +165,41 @@
         <section id="home" class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
             <!-- Figma specified background image placeholder -->
             <div class="absolute inset-0 z-0">
-                <img src="{{ asset('images/gosor/hero.png') }}" alt="Gosor Solutions - Innovating Digital Horizons" class="w-full h-full opacity-20 dark:opacity-50 mix-blend-multiply dark:mix-blend-normal object-cover pointer-events-none" />
+                <img src="{{ asset('images/gosor/hero.png') }}" alt="Gosor Solutions - Innovating Digital Horizons" class="w-full h-full opacity-20 dark:opacity-40 mix-blend-multiply dark:mix-blend-normal object-cover pointer-events-none" />
             </div>
 
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center max-w-4xl mx-auto">
-                    
-                    <!-- Decorative Badge -->
-                    {{-- <span data-aos="fade-down" class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 uppercase mb-8">
-                        <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 dark:bg-cyan-400 animate-ping"></span>
-                        {{ __('landing.hero.badge') }}
-                    </span> --}}
 
-                    <!-- Large Title with custom gradients -->
-                    <h1 data-aos="zoom-out" data-aos-delay="200" class="text-4xl font-extrabold sm:text-6xl lg:text-7xl leading-tight sm:leading-none tracking-tight mb-8">
-                        <span class="bg-gradient-to-r from-slate-900 via-cyan-900 to-indigo-900 dark:from-slate-100 dark:via-cyan-100 dark:to-indigo-200 bg-clip-text text-transparent">
-                            {{ __('landing.hero.title') }}
-                        </span>
+                    <!-- Large Title with solid color -->
+                    <h1 data-aos="zoom-out" data-aos-delay="200" class="text-4xl font-extrabold sm:text-6xl lg:text-7xl leading-tight sm:leading-none tracking-tight mb-8 text-slate-900 dark:text-white">
+                        {{ __('landing.hero.title') }}
                     </h1>
 
                     <!-- Paragraph Subtitle -->
-                    <p data-aos="fade-up" data-aos-delay="400" class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed mb-10">
+                    <p data-aos="fade-up" data-aos-delay="400" class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10">
                         {{ __('landing.hero.subtitle') }}
                     </p>
 
                     <!-- Call to Action Buttons -->
                     <div data-aos="fade-up" data-aos-delay="600" class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20">
                         <!-- Primary CTA -->
-                        <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-xl shadow-cyan-500/25 transition duration-300 hover:shadow-cyan-500/40 hover:scale-102">
+                        <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-[#283891] hover:bg-[#1d2b75] px-6 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 group">
                             <span>{{ __('landing.hero.cta_start') }}</span>
                             <!-- Dynamic Arrow based on direction -->
-                            <svg class="h-5 w-5 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <svg class="h-5 w-5 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                             </svg>
                         </a>
 
                         <!-- Secondary CTA -->
-                        <a href="#services" class="inline-flex items-center justify-center rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 hover:text-slate-900 shadow-sm dark:bg-slate-900/60 dark:hover:bg-slate-900 dark:backdrop-blur-md dark:border-slate-800 px-6 py-4 font-semibold dark:text-slate-300 dark:hover:text-white transition duration-300">
+                        <a href="#services" class="inline-flex items-center justify-center rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:text-[#283891] dark:bg-[#0c101d] dark:hover:bg-slate-800 dark:border-slate-800 px-6 py-4 font-semibold dark:text-slate-300 dark:hover:text-white transition-all duration-300 hover:-translate-y-0.5">
                             {{ __('landing.hero.cta_explore') }}
                         </a>
                     </div>
 
-                    <!-- Statistics grid matching second screenshot -->
-                    <div data-aos="fade-up" data-aos-delay="800" class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto border-t border-slate-200 dark:border-slate-900 pt-16">
+                    <!-- Statistics grid -->
+                    <div data-aos="fade-up" data-aos-delay="800" class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto border-t border-slate-200 dark:border-slate-800 pt-16">
                         @foreach([
                                 ['value' => '100+', 'label' => __('landing.hero.stats.projects')],
                                 ['value' => '50+', 'label' => __('landing.hero.stats.clients')],
@@ -225,7 +215,7 @@
                                         <span class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white count-up" 
                                               data-target="{{ $number }}" 
                                               data-suffix="{{ $suffix }}">0{{ $suffix }}</span>
-                                        <span class="text-xs sm:text-sm text-slate-500 dark:text-white/70 font-medium mt-2 text-center">{{ $stat['label'] }}</span>
+                                        <span class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium mt-2 text-center">{{ $stat['label'] }}</span>
                                     </div>
                         @endforeach
                     </div>
@@ -235,13 +225,10 @@
         </section>
 
         <!-- About Us / Who We Are Section -->
-        <section id="about" class="py-20 bg-slate-100/60 dark:bg-[#101133] relative overflow-hidden transition-colors duration-200">
+        <section id="about" class="py-20 bg-slate-100/60 dark:bg-[#0c101d] relative overflow-hidden transition-colors duration-200">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                    {{-- <span class="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-600 dark:text-sky-400 border border-sky-500/20 uppercase mb-4">
-                        {{ __('landing.about.badge') }}
-                    </span> --}}
                     <h2 class="text-4xl font-extrabold sm:text-5xl text-slate-900 dark:text-slate-100 tracking-tight mb-6">
                         {{ __('landing.about.title') }}
                     </h2>
@@ -254,30 +241,30 @@
                 <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto mb-24">
                     
                     <!-- Mission Card -->
-                    <div data-aos="fade-right" class="relative rounded-3xl bg-white dark:bg-slate-950/30 border border-slate-200/80 dark:border-slate-800/80 p-8 hover:border-cyan-500/40 dark:hover:border-cyan-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-xl shadow-slate-200/50 dark:shadow-2xl dark:shadow-black/60 text-center">
+                    <div data-aos="fade-right" class="relative rounded-3xl bg-white dark:bg-[#06080e]/80 border border-slate-200 dark:border-slate-800 p-8 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col group overflow-hidden text-center">
                         <div class="mb-8 overflow-hidden rounded-2xl">
-                            <img src="{{ asset('images/gosor/about/mission.png') }}" alt="{{ __('landing.about.mission_title') }}" class="w-full h-auto object-cover pointer-events-none" loading="lazy" />
+                            <img src="{{ asset('images/gosor/about/mission.png') }}" alt="{{ __('landing.about.mission_title') }}" class="w-full h-auto object-cover pointer-events-none group-hover:scale-102 transition-transform duration-300" loading="lazy" />
                         </div>
                         <div class="flex flex-col items-center">
-                            <h3 class="text-3xl font-extrabold text-slate-900 dark:text-slate-100 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition mb-4">
+                            <h3 class="text-3xl font-extrabold text-slate-900 dark:text-slate-100 group-hover:text-[#283891] dark:group-hover:text-[#7d93ff] transition mb-4">
                                 {{ __('landing.about.mission_title') }}
                             </h3>
-                            <p class="text-slate-600 dark:text-slate-350 text-sm sm:text-base leading-relaxed max-w-md">
+                            <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed max-w-md">
                                 {{ __('landing.about.mission_text') }}
                             </p>
                         </div>
                     </div>
 
                     <!-- Vision Card -->
-                    <div data-aos="fade-left" class="relative rounded-3xl bg-white dark:bg-slate-950/30 border border-slate-200/80 dark:border-slate-800/80 p-8 hover:border-indigo-500/40 dark:hover:border-indigo-500/30 transition duration-300 flex flex-col group overflow-hidden shadow-xl shadow-slate-200/50 dark:shadow-2xl dark:shadow-black/60 text-center">
+                    <div data-aos="fade-left" class="relative rounded-3xl bg-white dark:bg-[#06080e]/80 border border-slate-200 dark:border-slate-800 p-8 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col group overflow-hidden text-center">
                         <div class="mb-8 overflow-hidden rounded-2xl">
-                            <img src="{{ asset('images/gosor/about/vision.png') }}" alt="{{ __('landing.about.vision_title') }}" class="w-full h-auto object-cover pointer-events-none" loading="lazy" />
+                            <img src="{{ asset('images/gosor/about/vision.png') }}" alt="{{ __('landing.about.vision_title') }}" class="w-full h-auto object-cover pointer-events-none group-hover:scale-102 transition-transform duration-300" loading="lazy" />
                         </div>
                         <div class="flex flex-col items-center">
-                            <h3 class="text-3xl font-extrabold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition mb-4">
+                            <h3 class="text-3xl font-extrabold text-slate-900 dark:text-slate-100 group-hover:text-[#283891] dark:group-hover:text-[#7d93ff] transition mb-4">
                                 {{ __('landing.about.vision_title') }}
                             </h3>
-                            <p class="text-slate-600 dark:text-slate-350 text-sm sm:text-base leading-relaxed max-w-md">
+                            <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed max-w-md">
                                 {{ __('landing.about.vision_text') }}
                             </p>
                         </div>
@@ -296,14 +283,14 @@
 
                 <div class="flex flex-col md:flex-row justify-center gap-6 max-w-7xl mx-auto">
                     @foreach([
-                            ['text' => __('landing.values.items.quality'), 'icon' => @svg('iconsax-lin-medal', 'w-10 h-10'), "color" => "text-indigo-600 dark:text-indigo-400"],
-                            ['text' => __('landing.values.items.innovation'), 'icon' => @svg('iconoir-light-bulb', 'w-10 h-10'), "color" => "text-sky-600 dark:text-sky-400"],
-                            ['text' => __('landing.values.items.customer_satisfaction'), 'icon' => @svg('bi-people', 'w-10 h-10'), "color" => "text-red-600 dark:text-red-400"],
-                            ['text' => __('landing.values.items.teamwork'), 'icon' => @svg('lucide-handshake', 'w-10 h-10'), "color" => "text-orange-600 dark:text-orange-400"],
-                            ['text' => __('landing.values.items.transparency'), 'icon' => @svg('fluentui-shield-16-o', 'w-10 h-10'), "color" => "text-pink-600 dark:text-pink-400"]
+                            ['text' => __('landing.values.items.quality'), 'icon' => @svg('iconsax-lin-medal', 'w-10 h-10')],
+                            ['text' => __('landing.values.items.innovation'), 'icon' => @svg('iconoir-light-bulb', 'w-10 h-10')],
+                            ['text' => __('landing.values.items.customer_satisfaction'), 'icon' => @svg('bi-people', 'w-10 h-10')],
+                            ['text' => __('landing.values.items.teamwork'), 'icon' => @svg('lucide-handshake', 'w-10 h-10')],
+                            ['text' => __('landing.values.items.transparency'), 'icon' => @svg('fluentui-shield-16-o', 'w-10 h-10')]
                         ] as $index => $value)
-                                <div data-aos="zoom-in" data-aos-delay="{{ $index * 100 }}" class="flex flex-col items-center gap-4 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl min-w-60 hover:border-cyan-500/40 transition duration-300 shadow-md shadow-slate-200/50 dark:shadow-none">
-                                    <div class="w-20 h-20 rounded-xl bg-slate-50 dark:bg-slate-600/30 flex items-center justify-center border border-slate-200 dark:border-slate-800 p-4 {{$value['color']}}">
+                                <div data-aos="zoom-in" data-aos-delay="{{ $index * 100 }}" class="flex flex-col items-center gap-4 bg-white dark:bg-[#06080e]/80 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl min-w-60 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 hover:-translate-y-1 transition-all duration-300 group">
+                                    <div class="w-20 h-20 rounded-xl bg-[#283891]/10 dark:bg-[#283891]/20 flex items-center justify-center border border-[#283891]/20 dark:border-[#283891]/40 p-4 text-[#283891] dark:text-[#7d93ff] transition-transform duration-300 group-hover:scale-110">
                                         {{$value['icon']}}
                                     </div>
                                     <span class="text-base font-bold text-slate-800 dark:text-slate-200 tracking-wide uppercase text-center">{{ $value['text'] }}</span>
@@ -315,18 +302,10 @@
 
 
         <!-- Our Services Section -->
-        <section id="services" class="py-24 bg-slate-50 dark:bg-[#101133] relative overflow-hidden transition-colors duration-200">
-            <!-- Glowing background gradient -->
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/10 dark:from-blue-900/20 via-transparent to-transparent z-0 pointer-events-none"></div>
-            <div class="absolute top-[20%] left-[10%] w-[500px] h-[500px] rounded-full bg-blue-600/5 dark:bg-blue-600/10 blur-[130px] pointer-events-none"></div>
-            <div class="absolute bottom-[20%] right-[10%] w-[600px] h-[600px] rounded-full bg-indigo-600/5 dark:bg-indigo-600/10 blur-[140px] pointer-events-none"></div>
-
+        <section id="services" class="py-24 bg-slate-50 dark:bg-[#06080e] relative overflow-hidden transition-colors duration-200">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-4xl mx-auto mb-20" data-aos="fade-up">
-                    {{-- <span class="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-600 dark:text-sky-400 border border-sky-500/20 uppercase mb-4">
-                        {{ __('landing.services.badge') }}
-                    </span> --}}
                     <h2 class="text-4xl font-extrabold sm:text-5xl lg:text-6xl text-slate-900 dark:text-slate-100 tracking-tight mb-6">
                         {{ __('landing.services.title') }}
                     </h2>
@@ -350,15 +329,15 @@
 
                     @foreach($services as $index => $service)
                         <!-- Service Card -->
-                        <div data-aos="fade-up" data-aos-delay="{{ $index * 100 }}" class="relative rounded-4xl bg-white dark:bg-slate-950/40 border border-slate-200/80 dark:border-slate-800/80 p-10 hover:border-blue-500/40 dark:hover:border-blue-500/30 transition-all duration-300 group flex flex-col justify-between shadow-xl shadow-slate-200/60 dark:shadow-2xl dark:shadow-black/60">
+                        <div data-aos="fade-up" data-aos-delay="{{ $index * 100 }}" class="relative rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-slate-800 p-8 sm:p-10 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
                             <div>
                                 <!-- Icon Container -->
-                                <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-8 shadow-lg shadow-blue-600/20">
+                                <div class="w-14 h-14 rounded-2xl bg-[#283891] text-white flex items-center justify-center mb-8 group-hover:scale-105 transition-transform duration-300">
                                     {!! $serviceIcons[$service->icon] ?? $serviceIcons['web'] !!}
                                 </div>
 
                                 <!-- Title -->
-                                <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition">
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 group-hover:text-[#283891] dark:group-hover:text-[#7d93ff] transition">
                                     {{ $service->name }}
                                 </h3>
 
@@ -368,8 +347,8 @@
                                 </p>
                             </div>
 
-                            <!-- Bottom border/glow accent line -->
-                            <div class="w-14 h-1.5 bg-blue-600/80 rounded-full"></div>
+                            <!-- Bottom border accent line -->
+                            <div class="w-14 h-1 bg-[#283891] rounded-full group-hover:w-20 transition-all duration-300"></div>
                         </div>
                     @endforeach
                 </div>
@@ -378,18 +357,10 @@
         </section>
 
         <!-- Why Choose Us Section -->
-        <section id="why-us" class="py-24 bg-slate-100/60 dark:bg-[#111133] relative overflow-hidden transition-colors duration-200">
-            <!-- Glowing background gradient -->
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-900/10 dark:from-indigo-900/15 via-transparent to-transparent z-0 pointer-events-none"></div>
-            <div class="absolute top-[20%] right-[10%] w-[500px] h-[500px] rounded-full bg-indigo-600/5 dark:bg-indigo-600/10 blur-[130px] pointer-events-none"></div>
-            <div class="absolute bottom-[20%] left-[10%] w-[600px] h-[600px] rounded-full bg-cyan-600/5 dark:bg-cyan-600/10 blur-[140px] pointer-events-none"></div>
-
+        <section id="why-us" class="py-24 bg-slate-100/60 dark:bg-[#0c101d] relative overflow-hidden transition-colors duration-200">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
-                    {{-- <span class="inline-flex items-center gap-1.5 rounded-full bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 uppercase mb-4">
-                        {{ __('landing.why_us.badge') }}
-                    </span> --}}
                     <h2 class="text-4xl font-extrabold sm:text-5xl text-slate-900 dark:text-slate-100 tracking-tight mb-6">
                         {{ __('landing.why_us.title') }}
                     </h2>
@@ -400,60 +371,12 @@
 
                 @php
                     $whyUsCards = [
-                        [
-                            'key' => 'expertise',
-                            'image' => 'specialized_expertise.png',
-                            'color' => 'text-cyan-600 dark:text-cyan-400',
-                            'bg_bar' => 'bg-cyan-500',
-                            'border_hover' => 'hover:border-cyan-500/40',
-                            'bullet_border' => 'border-cyan-500/50',
-                            'bullet_bg' => 'bg-cyan-500 dark:bg-cyan-400',
-                        ],
-                        [
-                            'key' => 'solutions',
-                            'image' => 'integrated_solutions.png',
-                            'color' => 'text-rose-600 dark:text-rose-400',
-                            'bg_bar' => 'bg-rose-500',
-                            'border_hover' => 'hover:border-rose-500/40',
-                            'bullet_border' => 'border-rose-500/50',
-                            'bullet_bg' => 'bg-rose-500 dark:bg-rose-400',
-                        ],
-                        [
-                            'key' => 'tech',
-                            'image' => 'advanced_technologies.png',
-                            'color' => 'text-indigo-600 dark:text-indigo-400',
-                            'bg_bar' => 'bg-indigo-500',
-                            'border_hover' => 'hover:border-indigo-500/40',
-                            'bullet_border' => 'border-indigo-500/50',
-                            'bullet_bg' => 'bg-indigo-500 dark:bg-indigo-400',
-                        ],
-                        [
-                            'key' => 'pricing',
-                            'image' => 'competitve_pricing.png',
-                            'color' => 'text-purple-600 dark:text-purple-400',
-                            'bg_bar' => 'bg-purple-500',
-                            'border_hover' => 'hover:border-purple-500/40',
-                            'bullet_border' => 'border-purple-500/50',
-                            'bullet_bg' => 'bg-purple-500 dark:bg-purple-400',
-                        ],
-                        [
-                            'key' => 'support',
-                            'image' => 'continuous_support.png',
-                            'color' => 'text-amber-600 dark:text-orange-400',
-                            'bg_bar' => 'bg-orange-500',
-                            'border_hover' => 'hover:border-orange-500/40',
-                            'bullet_border' => 'border-orange-500/50',
-                            'bullet_bg' => 'bg-orange-500 dark:bg-orange-400',
-                        ],
-                        [
-                            'key' => 'partnership',
-                            'image' => 'true_partnership.png',
-                            'color' => 'text-fuchsia-600 dark:text-fuchsia-400',
-                            'bg_bar' => 'bg-fuchsia-500',
-                            'border_hover' => 'hover:border-fuchsia-500/40',
-                            'bullet_border' => 'border-fuchsia-500/50',
-                            'bullet_bg' => 'bg-fuchsia-500 dark:bg-fuchsia-400',
-                        ],
+                        ['key' => 'expertise',   'image' => 'specialized_expertise.png'],
+                        ['key' => 'solutions',   'image' => 'integrated_solutions.png'],
+                        ['key' => 'tech',        'image' => 'advanced_technologies.png'],
+                        ['key' => 'pricing',     'image' => 'competitve_pricing.png'],
+                        ['key' => 'support',     'image' => 'continuous_support.png'],
+                        ['key' => 'partnership', 'image' => 'true_partnership.png'],
                     ];
                 @endphp
 
@@ -462,13 +385,13 @@
                         @php
                             $item = __('landing.why_us.items.' . $card['key']);
                         @endphp
-                        <div data-aos="zoom-in-up" data-aos-delay="{{ ($index % 3) * 100 }}" class="relative rounded-4xl bg-white dark:bg-slate-950/40 border border-slate-200/80 dark:border-slate-800/80 p-8 sm:p-10 transition-all duration-300 group flex flex-col justify-between shadow-xl shadow-slate-200/60 dark:shadow-2xl dark:shadow-black/60 {{ $card['border_hover'] }}">
+                        <div data-aos="zoom-in-up" data-aos-delay="{{ ($index % 3) * 100 }}" class="relative rounded-3xl bg-white dark:bg-[#06080e]/80 border border-slate-200 dark:border-slate-800 p-8 sm:p-10 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60">
                             <div>
                                 <!-- Top Accent Bar -->
-                                <div class="w-14 h-1.5 {{ $card['bg_bar'] }} rounded-full mb-6"></div>
+                                <div class="w-14 h-1.5 bg-[#283891] rounded-full mb-6 group-hover:w-20 transition-all duration-300"></div>
 
                                 <!-- Title -->
-                                <h3 class="text-2xl font-bold mb-4 tracking-tight {{ $card['color'] }}">
+                                <h3 class="text-2xl font-bold mb-4 tracking-tight text-slate-900 dark:text-slate-100 group-hover:text-[#283891] dark:group-hover:text-[#7d93ff] transition">
                                     {{ $item['title'] }}
                                 </h3>
 
@@ -487,15 +410,14 @@
                 </div>
             </div>
         </section>
+            </div>
+        </section>
 
         <!-- Our Products / Ready Systems Section -->
-        <section id="products" class="py-20 border-t border-slate-200 dark:border-slate-900/60 bg-gradient-to-b from-indigo-50/70 to-slate-100 dark:bg-radial dark:bg-top dark:from-[#32326e] dark:to-[#101336] relative transition-colors duration-200">
+        <section id="products" class="py-20 border-t border-slate-200 dark:border-slate-800 bg-slate-100/50 dark:bg-[#06080e] relative transition-colors duration-200">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                    {{-- <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 uppercase mb-4">
-                        {{ __('landing.products.badge') }}
-                    </span> --}}
                     <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-900 dark:text-slate-100 tracking-tight mb-6">
                         {{ __('landing.products.title') }}
                     </h2>
@@ -507,7 +429,7 @@
                 <!-- Products Grid -->
                 <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                     @foreach($platforms as $index => $platform)
-                        <div data-aos="{{ $index % 2 === 0 ? 'fade-right' : 'fade-left' }}" data-project-title="{{ $platform->name }}" class="relative rounded-3xl bg-white dark:bg-slate-900/35 border border-slate-200/80 dark:border-slate-800/80 p-8 hover:border-indigo-500/40 dark:hover:border-indigo-500/25 transition duration-300 flex flex-col justify-between group overflow-hidden shadow-xl shadow-slate-200/60 dark:shadow-2xl dark:shadow-black/60 cursor-pointer">
+                        <div data-aos="{{ $index % 2 === 0 ? 'fade-right' : 'fade-left' }}" data-project-title="{{ $platform->name }}" class="relative rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-slate-800 p-8 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group overflow-hidden cursor-pointer">
                             <div>
                                 <!-- Product Icon and Title Row -->
                                 @php
@@ -520,12 +442,12 @@
                                     $iconPath = $platformIcons[$index] ?? $platformIcons[0];
                                 @endphp
                                 <div class="flex items-center gap-4 mb-6">
-                                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition duration-300">
+                                    <div class="w-12 h-12 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center group-hover:bg-[#283891] group-hover:text-white transition duration-300">
                                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             {!! $iconPath !!}
                                         </svg>
                                     </div>
-                                    <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-cyan-400 transition">
+                                    <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 group-hover:text-[#283891] dark:group-hover:text-[#7d93ff] transition">
                                         {{ $platform->name }}
                                     </h3>
                                 </div>
@@ -540,7 +462,7 @@
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-4 mb-8">
                                     @foreach($platform->features as $featureItem)
                                         <div class="flex items-center gap-2">
-                                            <span class="w-2 h-2 rounded-full bg-indigo-500/80 shadow-[0_0_8px_rgba(99,102,241,0.5)]"></span>
+                                            <span class="w-2 h-2 rounded-full bg-[#283891]"></span>
                                             <span class="text-xs text-slate-700 dark:text-slate-300 font-medium">{{ $featureItem['feature'] ?? $featureItem }}</span>
                                         </div>
                                     @endforeach
@@ -550,23 +472,23 @@
 
                             <!-- Full width button -->
                             @if(str_contains(strtolower($platform->name ?? ''), 'hr') || $index === 1)
-                                <a href="{{ route('gosor-hr') }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-emerald-600/20">
+                                <a href="{{ route('gosor-hr') }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-[#283891] hover:bg-[#1d2b75] px-5 py-4 font-semibold text-white transition-all duration-200 hover:-translate-y-0.5">
                                     <span>{{ app()->getLocale() === 'ar' ? 'استكشف نظام Gosor HR' : 'Explore Gosor HR System' }}</span>
-                                    <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                     </svg>
                                 </a>
                             @elseif(str_contains(strtolower($platform->name ?? ''), 'edu') || str_contains(strtolower($platform->name ?? ''), 'bridge') || $index === 0)
-                                <a href="{{ route('edu-bridge') }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-indigo-600/20">
+                                <a href="{{ route('edu-bridge') }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-[#283891] hover:bg-[#1d2b75] px-5 py-4 font-semibold text-white transition-all duration-200 hover:-translate-y-0.5">
                                     <span>{{ app()->getLocale() === 'ar' ? 'استكشف منصة Edu Bridge وتطبيق الطلاب' : 'Explore Edu Bridge & Student App' }}</span>
-                                    <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                     </svg>
                                 </a>
                             @else
-                                <a href="#contact" data-project-title="{{ $platform->name }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-indigo-600/90 hover:bg-indigo-600 px-5 py-4 font-semibold text-white transition duration-200 shadow-lg shadow-indigo-600/10">
+                                <a href="#contact" data-project-title="{{ $platform->name }}" class="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-[#283891] hover:bg-[#1d2b75] px-5 py-4 font-semibold text-white transition-all duration-200 hover:-translate-y-0.5">
                                     <span>{{ __('landing.nav.get_started') }}</span>
-                                    <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <svg class="h-4 w-4 transition duration-200 transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                     </svg>
                                 </a>
@@ -579,10 +501,7 @@
         </section>
 
         <!-- Technologies We Use Section -->
-        <section class="py-24 bg-slate-50 dark:bg-[#111133] relative overflow-hidden transition-colors duration-200">
-            <!-- Glowing background elements inside the section -->
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-900/5 dark:from-indigo-900/10 via-transparent to-transparent z-0 pointer-events-none"></div>
-
+        <section class="py-24 bg-slate-50 dark:bg-[#090d1a] relative overflow-hidden transition-colors duration-200">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                     <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-900 dark:text-slate-100 tracking-tight mb-6">
@@ -596,17 +515,17 @@
 
             @php
                 $technologies = [
-                    ['name' => 'Laravel',      'logo' => '<i class="devicon-laravel-original colored text-5xl"></i>',                                                         'glow' => 'rgba(255,80,50,0.35)'],
-                    ['name' => 'React',         'logo' => '<i class="devicon-react-original colored text-5xl"></i>',                                                          'glow' => 'rgba(97,218,251,0.35)'],
-                    ['name' => 'Next.js',       'logo' => '<i class="devicon-nextjs-plain dark:text-white text-slate-900 text-5xl"></i>',                                    'glow' => 'rgba(200,200,200,0.25)'],
-                    ['name' => 'Flutter',       'logo' => '<img alt="flutter" width="52" height="52" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />', 'glow' => 'rgba(83,215,249,0.35)'],
-                    ['name' => '.NET',          'logo' => '<i class="devicon-dot-net-plain colored text-5xl"></i>',                                                          'glow' => 'rgba(95,0,210,0.35)'],
-                    ['name' => 'TypeScript',    'logo' => '<img alt="typescript" width="52" height="52" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />', 'glow' => 'rgba(49,120,198,0.35)'],
-                    ['name' => 'Go',            'logo' => '<i class="devicon-go-original-wordmark colored text-5xl"></i>',                                                   'glow' => 'rgba(0,173,216,0.35)'],
-                    ['name' => 'MySQL',         'logo' => '<img alt="mysql" width="68" height="52" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />', 'glow' => 'rgba(0,116,168,0.35)'],
-                    ['name' => 'Figma',         'logo' => '<img alt="figma" width="44" height="52" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />', 'glow' => 'rgba(162,89,255,0.35)'],
-                    ['name' => 'Data Analysis', 'logo' => '<svg width="52" height="52" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="12" fill="#06b6d4" fill-opacity="0.15"/><path d="M12 36V28M20 36V20M28 36V24M36 36V16" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/><path d="M12 24L20 16L28 20L36 12" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="36" cy="12" r="3" fill="#06b6d4"/></svg>', 'glow' => 'rgba(6,182,212,0.35)'],
-                    ['name' => 'AI',            'logo' => '<svg width="52" height="52" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="12" fill="#a855f7" fill-opacity="0.15"/><rect x="14" y="14" width="20" height="20" rx="6" stroke="#a855f7" stroke-width="2.5"/><circle cx="24" cy="24" r="4" fill="#818cf8"/><path d="M20 9V14M28 9V14M20 34V39M28 34V39M9 20H14M9 28H14M34 20H39M34 28H39" stroke="#a855f7" stroke-width="2.5" stroke-linecap="round"/></svg>', 'glow' => 'rgba(168,85,247,0.35)'],
+                    ['name' => 'Laravel',      'logo' => '<i class="devicon-laravel-original colored text-5xl"></i>'],
+                    ['name' => 'React',         'logo' => '<i class="devicon-react-original colored text-5xl"></i>'],
+                    ['name' => 'Next.js',       'logo' => '<i class="devicon-nextjs-plain dark:text-white text-slate-900 text-5xl"></i>'],
+                    ['name' => 'Flutter',       'logo' => '<img alt="flutter" width="52" height="52" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />'],
+                    ['name' => '.NET',          'logo' => '<i class="devicon-dot-net-plain colored text-5xl"></i>'],
+                    ['name' => 'TypeScript',    'logo' => '<img alt="typescript" width="52" height="52" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />'],
+                    ['name' => 'Go',            'logo' => '<i class="devicon-go-original-wordmark colored text-5xl"></i>'],
+                    ['name' => 'MySQL',         'logo' => '<img alt="mysql" width="68" height="52" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />'],
+                    ['name' => 'Figma',         'logo' => '<img alt="figma" width="44" height="52" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />'],
+                    ['name' => 'Data Analysis', 'logo' => '<svg width="52" height="52" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="12" fill="#06b6d4" fill-opacity="0.15"/><path d="M12 36V28M20 36V20M28 36V24M36 36V16" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/><path d="M12 24L20 16L28 20L36 12" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="36" cy="12" r="3" fill="#06b6d4"/></svg>'],
+                    ['name' => 'AI',            'logo' => '<svg width="52" height="52" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="12" fill="#a855f7" fill-opacity="0.15"/><rect x="14" y="14" width="20" height="20" rx="6" stroke="#a855f7" stroke-width="2.5"/><circle cx="24" cy="24" r="4" fill="#818cf8"/><path d="M20 9V14M28 9V14M20 34V39M28 34V39M9 20H14M9 28H14M34 20H39M34 28H39" stroke="#a855f7" stroke-width="2.5" stroke-linecap="round"/></svg>'],
                 ];
             @endphp
 
@@ -614,31 +533,11 @@
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="flex flex-wrap justify-center gap-5" data-aos="fade-up" data-aos-delay="100">
                     @foreach($technologies as $index => $tech)
-                        <div class="tech-card-item group w-36 h-44 relative cursor-pointer"
-                             style="--glow: {{ $tech['glow'] }}"
+                        <div class="group w-36 h-44 relative cursor-pointer"
                              data-aos="zoom-in" data-aos-delay="{{ $index * 60 }}">
                             <!-- Card -->
-                            <div class="absolute inset-0 rounded-2xl
-                                        bg-white dark:bg-gradient-to-b dark:from-[#1c1d54] dark:via-[#101132] dark:to-[#06071f]
-                                        border border-slate-200/80 dark:border-indigo-500/20
-                                        shadow-md dark:shadow-xl dark:shadow-black/50
-                                        transition-all duration-300
-                                        group-hover:shadow-[0_0_24px_var(--glow)] group-hover:border-[color:var(--glow)]">
-                            </div>
-                            <!-- Top inner glow (dark) -->
-                            <div class="absolute inset-0 rounded-2xl pointer-events-none hidden dark:block
-                                        bg-[radial-gradient(ellipse_at_top,rgba(99,102,241,0.18),transparent_60%)]"></div>
-                            <!-- Hover color bloom -->
-                            <div class="absolute inset-0 rounded-2xl pointer-events-none
-                                        opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                                        bg-[radial-gradient(ellipse_at_center,var(--glow),transparent_65%)]"></div>
-                            <!-- Gloss -->
-                            <div class="absolute inset-0 rounded-2xl pointer-events-none hidden dark:block
-                                        opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                                        bg-gradient-to-br from-white/8 via-transparent to-transparent"></div>
-                            <!-- Content -->
-                            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 p-4">
-                                <div class="transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1 flex items-center justify-center">
+                            <div class="absolute inset-0 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 transition-all duration-300 group-hover:border-indigo-500/60 group-hover:-translate-y-1.5 flex flex-col items-center justify-center gap-3 p-4">
+                                <div class="transition-transform duration-300 group-hover:scale-110 flex items-center justify-center">
                                     {!! $tech['logo'] !!}
                                 </div>
                                 <span class="text-sm font-semibold text-slate-700 dark:text-slate-200 text-center leading-tight">
@@ -653,7 +552,7 @@
 
         @if(!empty($partners) && count($partners) > 0)
         <!-- Our Partners / Companies Section (Static Grid, Larger Logos) -->
-        <section class="py-24 bg-slate-100/60 dark:bg-[#101133] border-t border-slate-200 dark:border-slate-900/60 overflow-hidden transition-colors duration-200">
+        <section class="py-24 bg-slate-100/60 dark:bg-[#0c101d] border-t border-slate-200 dark:border-slate-800 overflow-hidden transition-colors duration-200">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-14">
                 <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
                     <h2 class="text-3xl font-extrabold sm:text-4xl text-slate-900 dark:text-slate-100 tracking-tight mb-4">
@@ -668,7 +567,7 @@
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8" data-aos="fade-up">
                     @foreach($partners as $partner)
-                        <div class="h-28 sm:h-32 w-48 sm:w-56 px-6 py-5 rounded-3xl bg-white dark:bg-slate-900/50 border border-slate-200/80 dark:border-slate-800/80 hover:border-cyan-500/50 dark:hover:border-cyan-500/40 flex items-center justify-center group transition-all duration-300 dark:shadow-none hover:shadow-xl hover:-translate-y-1">
+                        <div class="h-28 sm:h-32 w-48 sm:w-56 px-6 py-5 rounded-3xl bg-white dark:bg-[#06080e]/80 border border-slate-200 dark:border-slate-800 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 flex items-center justify-center group transition-all duration-300 hover:-translate-y-1">
                             <img src="{{ $partner->logo_url ?? asset('images/gosor/partners/' . basename($partner->logo)) }}" alt="{{ $partner->name }}"
                                  class="max-h-20 sm:max-h-24 w-auto max-w-full object-contain pointer-events-none transition-transform duration-300 group-hover:scale-110"
                                  loading="lazy"
@@ -681,16 +580,10 @@
         @endif
 
         <!-- Our Strategic Goals Section -->
-        <section id="goals" class="py-24 bg-slate-100/60 dark:bg-[#111133] relative overflow-hidden transition-colors duration-200">
-            <!-- Ambient glows for the section -->
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-indigo-600/5 blur-[120px] pointer-events-none"></div>
-
+        <section id="goals" class="py-24 bg-slate-100/60 dark:bg-[#0c101d] relative overflow-hidden transition-colors duration-200">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
-                    {{-- <span class="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 border border-sky-500/30 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-600 dark:text-sky-400 uppercase mb-6 shadow-inner">
-                        {{ __('landing.goals.badge') }}
-                    </span> --}}
                     <h2 class="text-4xl font-extrabold sm:text-5xl text-slate-900 dark:text-slate-100 tracking-tight mb-6">
                         {{ __('landing.goals.title') }}
                     </h2>
@@ -705,38 +598,23 @@
                         $goalMeta = [
                             'sustainability' => [
                                 'image' => 'sustainability.png',
-                                'gradient' => 'from-orange-500/[0.04] to-transparent',
-                                'glow' => 'bg-orange-500/10',
-                                'border' => 'border-orange-500/10 hover:border-orange-500/30 shadow-orange-500/5',
                             ],
                             'satisfaction' => [
                                 'image' => 'customer_satisfaction.png',
-                                'gradient' => 'from-purple-500/[0.04] to-transparent',
-                                'glow' => 'bg-purple-500/10',
-                                'border' => 'border-purple-500/10 hover:border-purple-500/30 shadow-purple-500/5',
                             ],
                             'innovation' => [
                                 'image' => 'innovation.png',
-                                'gradient' => 'from-pink-500/[0.04] to-transparent',
-                                'glow' => 'bg-pink-500/10',
-                                'border' => 'border-pink-500/10 hover:border-pink-500/30 shadow-pink-500/5',
                             ],
                             'quality' => [
                                 'image' => 'quality.png',
-                                'gradient' => 'from-cyan-500/[0.04] to-transparent',
-                                'glow' => 'bg-cyan-500/10',
-                                'border' => 'border-cyan-500/10 hover:border-cyan-500/30 shadow-cyan-500/5',
                             ]
                         ];
                     @endphp
 
                     @foreach(['sustainability', 'satisfaction', 'innovation', 'quality'] as $index => $key)
-                        <div data-aos="flip-left" data-aos-delay="{{ $index * 150 }}" class="relative group rounded-4xl bg-white dark:bg-gradient-to-b {{ $goalMeta[$key]['gradient'] }} dark:bg-[#080c1e]/40 border border-slate-200/90 {{ $goalMeta[$key]['border'] }} px-6 py-10 hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between items-center text-center h-120 shadow-xl shadow-slate-200/60 dark:shadow-2xl dark:shadow-black/60 overflow-hidden">
-                            <!-- Glowing orb on hover behind the image -->
-                            <div class="absolute -bottom-16 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full {{ $goalMeta[$key]['glow'] }} blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-
+                        <div data-aos="flip-left" data-aos-delay="{{ $index * 150 }}" class="relative group rounded-3xl bg-white dark:bg-[#06080e]/80 border border-slate-200 dark:border-slate-800 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 px-6 py-10 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between items-center text-center h-120 overflow-hidden">
                             <div class="flex flex-col items-center">
-                                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 tracking-tight mb-5 group-hover:text-slate-950 dark:group-hover:text-white transition duration-300">
+                                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 tracking-tight mb-5 group-hover:text-[#283891] dark:group-hover:text-[#7d93ff] transition duration-300">
                                     {{ __('landing.goals.items.' . $key . '.title') }}
                                 </h3>
                                 <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-70 mx-auto">
@@ -746,7 +624,7 @@
 
                             <!-- Image Container centered at the bottom -->
                             <div class="w-full flex items-center justify-center h-40 mt-auto relative z-10 pb-2">
-                                <img src="{{ asset('images/gosor/goals/'.$goalMeta[$key]['image']) }}" alt="{{ __('landing.goals.items.' . $key . '.title') }}" class="h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                                <img src="{{ asset('images/gosor/goals/'.$goalMeta[$key]['image']) }}" alt="{{ __('landing.goals.items.' . $key . '.title') }}" class="h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                             </div>
                         </div>
                     @endforeach
@@ -755,14 +633,11 @@
             </div>
         </section>
 
-        <!-- Let's Start a Conversation / Contact Section (Screenshot 2 layout) -->
-        <section id="contact" class="py-20 bg-gradient-to-b from-indigo-50/60 to-slate-100 dark:bg-radial dark:bg-top dark:from-[#32326e] dark:to-[#111133] relative overflow-hidden transition-colors duration-200">
+        <!-- Let's Start a Conversation / Contact Section -->
+        <section id="contact" class="py-20 bg-slate-50 dark:bg-[#06080e] relative overflow-hidden transition-colors duration-200">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                    {{-- <span class="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 uppercase mb-4 font-sans">
-                        {{ __('landing.contact.badge') }}
-                    </span> --}}
                     <h2 class="text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight mb-4">
                         {{ __('landing.contact.title') }}
                     </h2>
@@ -777,8 +652,8 @@
                     <!-- Left Side Details: Location, Phone, Website, Follow Us Cards -->
                     <div class="lg:col-span-2 space-y-6" data-aos="fade-right">
                         <!-- Location Card -->
-                        <div class="relative rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200/80 dark:border-slate-800/80 p-5 flex items-center gap-4 hover:border-cyan-500/40 dark:hover:border-cyan-500/20 transition-all duration-300 shadow-md shadow-slate-200/50 dark:shadow-none">
-                            <div class="w-11 h-11 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center shrink-0">
+                        <div class="relative rounded-2xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-slate-800 p-5 flex items-center gap-4 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 hover:-translate-y-0.5 transition-all duration-300">
+                            <div class="w-11 h-11 rounded-xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center shrink-0">
                                 <x-akar-location class="w-6 h-6"/>
                             </div>
                             <div>
@@ -788,8 +663,8 @@
                         </div>
 
                         <!-- Phone Card -->
-                        <div class="relative rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200/80 dark:border-slate-800/80 p-5 flex items-center gap-4 hover:border-cyan-500/40 dark:hover:border-cyan-500/20 transition-all duration-300 shadow-md shadow-slate-200/50 dark:shadow-none">
-                            <div class="w-11 h-11 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+                        <div class="relative rounded-2xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-slate-800 p-5 flex items-center gap-4 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 hover:-translate-y-0.5 transition-all duration-300">
+                            <div class="w-11 h-11 rounded-xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center shrink-0">
                                 <x-heroicon-o-phone class="w-6 h-6"/>
                             </div>
                             <div>
@@ -799,8 +674,8 @@
                         </div>
 
                         <!-- Email Card -->
-                        <div class="relative rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200/80 dark:border-slate-800/80 p-5 flex items-center gap-4 hover:border-cyan-500/40 dark:hover:border-cyan-500/20 transition-all duration-300 shadow-md shadow-slate-200/50 dark:shadow-none">
-                            <div class="w-11 h-11 rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400 flex items-center justify-center shrink-0">
+                        <div class="relative rounded-2xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-slate-800 p-5 flex items-center gap-4 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 hover:-translate-y-0.5 transition-all duration-300">
+                            <div class="w-11 h-11 rounded-xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center shrink-0">
                                 <x-eva-email-outline class="w-6 h-6"/>
                             </div>
                             <div>
@@ -810,16 +685,16 @@
                         </div>
 
                         <!-- Follow Us Card -->
-                        <div class="relative rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200/80 dark:border-slate-800/80 p-5 flex flex-col gap-3 hover:border-cyan-500/40 dark:hover:border-cyan-500/20 transition-all duration-300 shadow-md shadow-slate-200/50 dark:shadow-none">
+                        <div class="relative rounded-2xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-slate-800 p-5 flex flex-col gap-3 hover:border-[#283891]/60 dark:hover:border-[#7d93ff]/60 hover:-translate-y-0.5 transition-all duration-200">
                             <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">{{ __('landing.contact.details.follow') }}</span>
                             <div class="flex items-center gap-3 mt-1">
                                 @if(isset($settings['facebook']) && $settings['facebook'])
-                                <a aria-label="facebook" href="{{ $settings['facebook'] }}" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 hover:border-cyan-500/40 hover:text-cyan-600 dark:hover:text-cyan-400 text-slate-600 dark:text-slate-300 flex items-center justify-center transition duration-150">
+                                <a aria-label="facebook" href="{{ $settings['facebook'] }}" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-[#283891]/60 hover:text-[#283891] dark:hover:text-[#7d93ff] text-slate-600 dark:text-slate-300 flex items-center justify-center transition duration-150">
                                     <x-fab-facebook class="w-6 h-6"/>
                                 </a>
                                 @endif
                                 @if(isset($settings['linkedin']) && $settings['linkedin'])
-                                <a aria-label="linkedin" href="{{ $settings['linkedin'] }}" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 hover:border-cyan-500/40 hover:text-cyan-600 dark:hover:text-cyan-400 text-slate-600 dark:text-slate-300 flex items-center justify-center transition duration-150">
+                                <a aria-label="linkedin" href="{{ $settings['linkedin'] }}" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-[#283891]/60 hover:text-[#283891] dark:hover:text-[#7d93ff] text-slate-600 dark:text-slate-300 flex items-center justify-center transition duration-150">
                                     <x-fab-linkedin class="w-6 h-6"/>
                                 </a>
                                 @endif
@@ -828,10 +703,7 @@
                     </div>
 
                     <!-- Right Side Input Form -->
-                    <div class="lg:col-span-3 rounded-3xl bg-white dark:bg-slate-900/30 border border-slate-200/80 dark:border-slate-800/80 p-8 backdrop-blur-md shadow-2xl shadow-slate-200/70 dark:shadow-2xl dark:shadow-black/60 relative" data-aos="fade-left">
-                        <!-- Subtle border flare -->
-                        <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
-
+                    <div class="lg:col-span-3 rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-slate-800 p-8 backdrop-blur-md relative" data-aos="fade-left">
                         @if(session('success'))
                             <div class="mb-4 p-4 text-sm text-green-700 dark:text-green-400 bg-green-500/10 border border-green-500/20 rounded-xl">
                                 {{ session('success') }}
@@ -849,11 +721,11 @@
                             <div class="grid sm:grid-cols-2 gap-5">
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.name') }}</label>
-                                    <input type="text" name="name" required placeholder="{{ __('landing.contact.form.name_placeholder') }}" class="w-full rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150">
+                                    <input type="text" name="name" required placeholder="{{ __('landing.contact.form.name_placeholder') }}" class="w-full rounded-xl bg-slate-50 dark:bg-[#06080e] border border-slate-200 dark:border-slate-800 focus:border-[#283891] focus:ring-1 focus:ring-[#283891] px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.email') }}</label>
-                                    <input type="email" name="email" required placeholder="{{ __('landing.contact.form.email_placeholder') }}" class="w-full rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150 font-sans">
+                                    <input type="email" name="email" required placeholder="{{ __('landing.contact.form.email_placeholder') }}" class="w-full rounded-xl bg-slate-50 dark:bg-[#06080e] border border-slate-200 dark:border-slate-800 focus:border-[#283891] focus:ring-1 focus:ring-[#283891] px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150 font-sans">
                                 </div>
                             </div>
 
@@ -861,11 +733,11 @@
                             <div class="grid sm:grid-cols-2 gap-5">
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.phone') }}</label>
-                                    <input type="tel" name="phone" placeholder="{{ __('landing.contact.form.phone_placeholder') }}" class="w-full rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150 font-sans">
+                                    <input type="tel" name="phone" placeholder="{{ __('landing.contact.form.phone_placeholder') }}" class="w-full rounded-xl bg-slate-50 dark:bg-[#06080e] border border-slate-200 dark:border-slate-800 focus:border-[#283891] focus:ring-1 focus:ring-[#283891] px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150 font-sans">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.company') }}</label>
-                                    <input type="text" name="company" placeholder="{{ __('landing.contact.form.company_placeholder') }}" class="w-full rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150">
+                                    <input type="text" name="company" placeholder="{{ __('landing.contact.form.company_placeholder') }}" class="w-full rounded-xl bg-slate-50 dark:bg-[#06080e] border border-slate-200 dark:border-slate-800 focus:border-[#283891] focus:ring-1 focus:ring-[#283891] px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150">
                                 </div>
                             </div>
 
@@ -873,19 +745,19 @@
                             <div>
                                 <label for="project_type" class="block text-xs font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.project_type') }}</label>
                                 <div class="relative">
-                                    <input type="text" id="project_type" name="project_type" placeholder="{{ __('landing.contact.form.project_type') }}" class="w-full rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-300">
+                                    <input type="text" id="project_type" name="project_type" placeholder="{{ __('landing.contact.form.project_type') }}" class="w-full rounded-xl bg-slate-50 dark:bg-[#06080e] border border-slate-200 dark:border-slate-800 focus:border-[#283891] focus:ring-1 focus:ring-[#283891] px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-300">
                                 </div>
                             </div>
 
                             <!-- Message Textarea -->
                             <div>
                                 <label class="block text-xs font-semibold text-slate-700 dark:text-slate-400 uppercase tracking-wider mb-2">{{ __('landing.contact.form.message') }}</label>
-                                <textarea name="message" required rows="4" placeholder="{{ __('landing.contact.form.message_placeholder') }}" class="w-full rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150 resize-none"></textarea>
+                                <textarea name="message" required rows="4" placeholder="{{ __('landing.contact.form.message_placeholder') }}" class="w-full rounded-xl bg-slate-50 dark:bg-[#06080e] border border-slate-200 dark:border-slate-800 focus:border-[#283891] focus:ring-1 focus:ring-[#283891] px-4 py-3 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150 resize-none"></textarea>
                             </div>
 
                             <!-- Form Submit Action -->
                             <div>
-                                <button type="submit" class="w-full rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 px-6 py-4 font-semibold text-white shadow-lg shadow-cyan-500/20 hover:scale-101 hover:shadow-cyan-500/35 transition duration-150 text-center cursor-pointer">
+                                <button type="submit" class="w-full rounded-xl bg-[#283891] hover:bg-[#1d2b75] px-6 py-4 font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 text-center cursor-pointer">
                                     {{ __('landing.contact.form.send') }}
                                 </button>
                             </div>
@@ -899,12 +771,12 @@
 
     </main>
 
-    <!-- Footer Section (Screenshot 1 Layout) -->
-    <footer class="bg-slate-100 dark:bg-[#111133] border-t border-slate-200 dark:border-slate-900 pt-20 pb-8 text-slate-600 dark:text-slate-400 relative overflow-hidden transition-colors duration-200">
+    <!-- Footer Section -->
+    <footer class="bg-slate-100/80 dark:bg-[#0c101d] border-t border-slate-200 dark:border-slate-800 pt-20 pb-8 text-slate-600 dark:text-slate-400 relative overflow-hidden transition-colors duration-200">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10" data-aos="fade-up">
             
             <!-- Grid Layout -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-slate-200 dark:border-slate-900">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-slate-200 dark:border-slate-800">
                 
                 <!-- Column 1: Logo & description & Newsletter -->
                 <div class="lg:col-span-2 space-y-6">
@@ -919,9 +791,9 @@
                     <!-- Subscribe Newsletter Field -->
                     <div class="space-y-3 pt-2">
                         <span class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">{{ __('landing.footer.newsletter') }}</span>
-                        <form onsubmit="event.preventDefault(); alert('Subscribed successfully! / ØªÙ… Ø§Ù„Ø§Ø´ØªØ±Ø§Ùƒ Ø¨Ù†Ø¬Ø§Ø­!');" class="flex gap-2 max-w-md">
-                            <input type="email" required placeholder="{{ __('landing.footer.newsletter_placeholder') }}" class="w-full min-w-0 rounded-xl bg-white dark:bg-slate-950/80 border border-slate-200 dark:border-slate-900 focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/40 px-4 py-2.5 text-sm text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-650 outline-none transition duration-150 font-sans">
-                            <button type="submit" class="shrink-0 rounded-xl bg-indigo-600 hover:bg-indigo-500 hover:shadow-indigo-600/20 shadow-lg px-5 py-2.5 text-sm font-semibold text-white transition duration-150 cursor-pointer">
+                        <form onsubmit="event.preventDefault(); alert('Subscribed successfully! / تم الاشتراك بنجاح!');" class="flex gap-2 max-w-md">
+                            <input type="email" required placeholder="{{ __('landing.footer.newsletter_placeholder') }}" class="w-full min-w-0 rounded-xl bg-white dark:bg-[#06080e] border border-slate-200 dark:border-slate-800 focus:border-[#283891] focus:ring-1 focus:ring-[#283891] px-4 py-2.5 text-sm text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-600 outline-none transition duration-150 font-sans">
+                            <button type="submit" class="shrink-0 rounded-xl bg-[#283891] hover:bg-[#1d2b75] px-5 py-2.5 text-sm font-semibold text-white transition duration-150 cursor-pointer">
                                 {{ __('landing.footer.subscribe') }}
                             </button>
                         </form>
@@ -932,13 +804,13 @@
                 <div>
                     <h3 class="text-sm font-bold text-slate-900 dark:text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.links_title1') }}</h3>
                     <ul class="space-y-4 text-sm">
-                        <li><a href="#home" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.home') }}</a></li>
-                        <li><a href="{{ route('edu-bridge') }}" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition font-bold text-indigo-600 dark:text-indigo-400">Edu Bridge (LMS & App)</a></li>
-                        <li><a href="{{ route('gosor-hr') }}" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition font-bold text-emerald-600 dark:text-emerald-400">Gosor HR</a></li>
-                        <li><a href="#services" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.services') }}</a></li>
-                        <li><a href="#products" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.products') }}</a></li>
-                        <li><a href="{{ route('privacy-policy') }}" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.footer.privacy_policy') }}</a></li>
-                        <li><a href="#contact" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.nav.contact') }}</a></li>
+                        <li><a href="#home" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.nav.home') }}</a></li>
+                        <li><a href="{{ route('edu-bridge') }}" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition font-bold text-[#283891] dark:text-[#7d93ff]">Edu Bridge (LMS & App)</a></li>
+                        <li><a href="{{ route('gosor-hr') }}" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition font-bold text-[#283891] dark:text-[#7d93ff]">Gosor HR</a></li>
+                        <li><a href="#services" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.nav.services') }}</a></li>
+                        <li><a href="#products" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.nav.products') }}</a></li>
+                        <li><a href="{{ route('privacy-policy') }}" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.footer.privacy_policy') }}</a></li>
+                        <li><a href="#contact" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.nav.contact') }}</a></li>
                     </ul>
                 </div>
 
@@ -946,12 +818,12 @@
                 <div>
                     <h3 class="text-sm font-bold text-slate-900 dark:text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.links_title2') }}</h3>
                     <ul class="space-y-4 text-sm">
-                        <li><a href="#services" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.services.items.web.title') }}</a></li>
-                        <li><a href="#services" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.services.items.mobile.title') }}</a></li>
-                        <li><a href="#services" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.services.items.ecommerce.title') }}</a></li>
-                        <li><a href="#services" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.services.items.education.title') }}</a></li>
-                        <li><a href="#services" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.services.items.erp_crm.title') }}</a></li>
-                        <li><a href="#services" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">{{ __('landing.services.items.ai.title') }}</a></li>
+                        <li><a href="#services" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.services.items.web.title') }}</a></li>
+                        <li><a href="#services" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.services.items.mobile.title') }}</a></li>
+                        <li><a href="#services" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.services.items.ecommerce.title') }}</a></li>
+                        <li><a href="#services" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.services.items.education.title') }}</a></li>
+                        <li><a href="#services" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.services.items.erp_crm.title') }}</a></li>
+                        <li><a href="#services" class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('landing.services.items.ai.title') }}</a></li>
                     </ul>
                 </div>
 
@@ -960,15 +832,15 @@
                     <h3 class="text-sm font-bold text-slate-900 dark:text-slate-200 uppercase tracking-wider mb-6">{{ __('landing.footer.contact_title') }}</h3>
                     <ul class="space-y-4 text-sm">
                         <li class="flex items-center gap-3">
-                            <x-heroicon-o-phone class="w-6 h-6 text-indigo-500"/>
+                            <x-heroicon-o-phone class="w-6 h-6 text-[#283891] dark:text-[#7d93ff]"/>
                             <span class="font-sans">01550099355</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <x-eva-email-outline class="w-6 h-6 text-pink-500"/>
+                            <x-eva-email-outline class="w-6 h-6 text-[#283891] dark:text-[#7d93ff]"/>
                             <span class="font-sans">info@gosorsolutions.com</span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <x-akar-location class="w-6 h-6 text-cyan-500"/>
+                            <x-akar-location class="w-6 h-6 text-[#283891] dark:text-[#7d93ff]"/>
                             <span>Cairo, Egypt</span>
                         </li>
                     </ul>
@@ -981,7 +853,7 @@
                 <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3">
                     <span>&copy; {{ date('Y') }} {{ __('landing.footer.rights') }}</span>
                     <span>•</span>
-                    <a href="{{ route('privacy-policy') }}" class="hover:text-cyan-600 dark:hover:text-cyan-400 underline-offset-4 hover:underline transition">
+                    <a href="{{ route('privacy-policy') }}" class="hover:text-[#283891] dark:hover:text-[#7d93ff] underline-offset-4 hover:underline transition">
                         {{ __('landing.footer.privacy_policy') }}
                     </a>
                 </div>
@@ -990,18 +862,18 @@
                 <div class="flex items-center gap-3">
                     <!-- Facebook -->
                     @if(isset($settings['facebook']) && $settings['facebook'])
-                    <a aria-label="facebook" href="{{ $settings['facebook'] }}" class="w-9 h-9 rounded-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-900 hover:border-cyan-500/40 hover:text-cyan-600 dark:hover:text-cyan-400 text-slate-600 dark:text-slate-400 flex items-center justify-center transition duration-150 shadow-sm dark:shadow-none">
+                    <a aria-label="facebook" href="{{ $settings['facebook'] }}" class="w-9 h-9 rounded-xl bg-white dark:bg-[#06080e] border border-slate-200 dark:border-slate-800 hover:border-[#283891]/60 hover:text-[#283891] dark:hover:text-[#7d93ff] text-slate-600 dark:text-slate-400 flex items-center justify-center transition duration-150">
                         <x-fab-facebook class="w-5 h-5"/>
                     </a>
                     @endif
                     <!-- LinkedIn -->
                     @if(isset($settings['linkedin']) && $settings['linkedin'])
-                    <a aria-label="linkedin" href="{{ $settings['linkedin'] }}" class="w-9 h-9 rounded-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-900 hover:border-cyan-500/40 hover:text-cyan-600 dark:hover:text-cyan-400 text-slate-600 dark:text-slate-400 flex items-center justify-center transition duration-150 shadow-sm dark:shadow-none">
+                    <a aria-label="linkedin" href="{{ $settings['linkedin'] }}" class="w-9 h-9 rounded-xl bg-white dark:bg-[#06080e] border border-slate-200 dark:border-slate-800 hover:border-[#283891]/60 hover:text-[#283891] dark:hover:text-[#7d93ff] text-slate-600 dark:text-slate-400 flex items-center justify-center transition duration-150">
                         <x-fab-linkedin class="w-5 h-5"/>
                     </a>
                     @endif
                     @if(isset($settings['email']) && $settings['email'])
-                    <a aria-label="email" href="mailto:{{ $settings['email']  }}" class="w-9 h-9 rounded-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-900 hover:border-cyan-500/40 hover:text-cyan-600 dark:hover:text-cyan-400 text-slate-600 dark:text-slate-400 flex items-center justify-center transition duration-150 shadow-sm dark:shadow-none">
+                    <a aria-label="email" href="mailto:{{ $settings['email']  }}" class="w-9 h-9 rounded-xl bg-white dark:bg-[#06080e] border border-slate-200 dark:border-slate-800 hover:border-[#283891]/60 hover:text-[#283891] dark:hover:text-[#7d93ff] text-slate-600 dark:text-slate-400 flex items-center justify-center transition duration-150">
                          <x-eva-email-outline class="w-5 h-5"/>
                     </a>
                     @endif
@@ -1014,9 +886,8 @@
     <!-- Floating WhatsApp Button -->
     @if(isset($settings['whatsapp']) && $settings['whatsapp'])
     <a aria-label="whatsapp" href="https://wa.me/{{ preg_replace('/\D/', '', $settings['whatsapp']) }}" target="_blank" 
-       class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full text-white shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2"
-       style="background-color: #25D366; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);">
-        <x-fab-whatsapp class="w-10 h-10"/>
+       class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-2xl text-white bg-emerald-600 hover:bg-emerald-500 transition-all duration-300 hover:scale-105 border border-emerald-500/40 focus:outline-none">
+        <x-fab-whatsapp class="w-8 h-8"/>
     </a>
     @endif
 

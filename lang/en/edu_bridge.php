@@ -168,7 +168,6 @@ return [
             'academic' => 'Courses & Scheduling',
             'lms_video' => 'LMS & Video Content',
             'marketing' => 'WhatsApp & Marketing',
-            'financials' => 'Accounts & Installments',
             'support' => 'Helpdesk & Quality',
         ],
         'details' => [
@@ -197,15 +196,6 @@ return [
                     'Automated booking confirmations and class reminders sent via WhatsApp',
                     'Installment due date reminder alerts before and after deadlines',
                     'Instant mobile push notifications popping up on student phones',
-                ],
-            ],
-            'financials' => [
-                'heading' => 'Accurate Accounting & Effortless Installment Tracking',
-                'desc' => 'Track revenue, expenses, and installment schedules with zero calculation errors.',
-                'points' => [
-                    'Multiple payment options: Visa/Mastercard, Fawry, Mobile Wallets, and Bank Transfers',
-                    'Track paid and overdue installments with automated receipts',
-                    'Precise instructor commission calculation without complexity',
                 ],
             ],
             'support' => [

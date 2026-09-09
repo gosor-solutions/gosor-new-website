@@ -12,6 +12,17 @@
     --font-sans: 'Montserrat', 'Cairo', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-poppins: 'Poppins', sans-serif;
     --font-montserrat: 'Montserrat', sans-serif;
+
+    /* Gosor Official Brand Colors */
+    --color-brand: #283891;
+    --color-brand-hover: #1d2b75;
+    --color-brand-light: #eef2ff;
+    --color-brand-subtle: #e5ebfc;
+    --color-brand-dark: #162057;
+    --color-brand-border: #3547a4;
+    --color-gosor-black: #06080e;
+    --color-gosor-surface: #0c101d;
+    --color-gosor-border: #18223c;
 }
 
 /* Dynamic font based on text direction */
@@ -23,20 +34,46 @@
     font-family: 'Montserrat', 'Cairo', sans-serif;
 }
 
-/* Custom glow animations and gradients */
-@keyframes pulse-glow {
+/* Humanized Micro-animations */
+@keyframes float {
     0%, 100% {
-        opacity: 0.15;
-        transform: scale(1);
+        transform: translateY(0px);
     }
     50% {
-        opacity: 0.25;
-        transform: scale(1.05);
+        transform: translateY(-6px);
     }
 }
 
-.animate-pulse-glow {
-    animation: pulse-glow 8s infinite ease-in-out;
+@keyframes float-slow {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+}
+
+@keyframes pulse-subtle {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(0.97);
+    }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+    animation: float-slow 7s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+    animation: pulse-subtle 3s ease-in-out infinite;
 }
 
 /* Infinite Scroll Animation */

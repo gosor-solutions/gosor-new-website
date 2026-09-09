@@ -7,14 +7,14 @@ return [
     ],
     'nav' => [
         'home' => 'الرئيسية',
-        'why_gosor' => 'ليه Gosor HR؟',
+        'why_gosor' => 'لماذا G-HR؟',
         'attendance' => 'الحضور والانصراف',
-        'ai_features' => 'الذكاء الاصطناعي',
-        'reports' => 'التقارير والرواتب',
-        'pricing' => 'باقات الأسعار',
-        'mobile_app' => 'تطبيق الموظف',
-        'faq' => 'الأسئلة الشائعة',
-        'request_demo' => 'اطلب تجربة مجانية',
+        'ai_features' => 'الـ AI',
+        'reports' => 'الرواتب والتقارير',
+        'pricing' => 'الأسعار',
+        'mobile_app' => 'التطبيق',
+        'faq' => 'الأسئلة',
+        'request_demo' => 'اطلب Demo',
         'back_to_gosor' => 'موقع Gosor الرئيسي',
     ],
     'hero' => [
@@ -172,7 +172,7 @@ return [
         'billing' => [
             'monthly' => 'الدفع الشهري',
             'yearly' => 'الدفع السنوي',
-            'save_badge' => 'وفر شهرين مع الاشتراك السنوي 🎁',
+            'save_badge' => 'وفر شهرين مع الاشتراك السنوي',
         ],
         'plans' => [
             'free' => [

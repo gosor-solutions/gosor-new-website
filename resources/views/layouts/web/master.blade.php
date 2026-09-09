@@ -31,7 +31,7 @@
     @stack('meta')
 
     {{-- Theme Color --}}
-    <meta name="theme-color" id="meta-theme-color" content="#070b13">
+    <meta name="theme-color" id="meta-theme-color" content="#283891">
 
     @stack('head')
 
@@ -49,19 +49,13 @@
     {{-- Vite Styles & Scripts --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-slate-50 dark:bg-[#070b13] relative text-slate-800 dark:text-slate-100 antialiased overflow-x-hidden selection:bg-cyan-500 selection:text-slate-900 transition-colors duration-200">
+<body class="bg-white dark:bg-[#06080e] relative text-slate-800 dark:text-slate-100 antialiased overflow-x-hidden selection:bg-[#283891] selection:text-white transition-colors duration-200">
 
-    {{-- Global Background Elements --}}
+    {{-- Global Clean Background Elements (No multi-color gradients, no blur halos) --}}
     <div class="fixed inset-0 -z-50 overflow-hidden pointer-events-none">
-        {{-- Main background radial glow --}}
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-100/50 via-slate-50 to-slate-50 dark:from-indigo-950/30 dark:via-[#070b13] dark:to-[#070b13]"></div>
-
-        {{-- Glowing Orbs --}}
-        <div class="absolute top-[-10%] inset-s-[20%] w-[500px] h-[500px] rounded-full bg-cyan-400/10 dark:bg-cyan-600/10 blur-[120px] animate-pulse-glow"></div>
-        <div class="absolute bottom-[20%] inset-e-[-10%] w-[600px] h-[600px] rounded-full bg-indigo-400/10 dark:bg-indigo-600/10 blur-[130px] animate-pulse-glow" style="animation-delay: -3s;"></div>
-
-        {{-- Background Grid --}}
-        <div class="absolute inset-0 bg-[linear-gradient(to_right,#cbd5e1_1px,transparent_1px),linear-gradient(to_bottom,#cbd5e1_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-25 dark:opacity-15"></div>
+        {{-- Subtle geometric dot pattern --}}
+        <div class="absolute inset-0 bg-white dark:bg-[#06080e]"></div>
+        <div class="absolute inset-0 opacity-[0.035] dark:opacity-[0.05]" style="background-image: radial-gradient(#283891 1px, transparent 1px); background-size: 24px 24px;"></div>
     </div>
 
     @yield('content')

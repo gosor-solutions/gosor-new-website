@@ -172,7 +172,7 @@ return [
         'billing' => [
             'monthly' => 'Monthly Billing',
             'yearly' => 'Annual Billing',
-            'save_badge' => 'Save 2 months with annual billing 🎁',
+            'save_badge' => 'Save 2 months with annual billing',
         ],
         'plans' => [
             'free' => [

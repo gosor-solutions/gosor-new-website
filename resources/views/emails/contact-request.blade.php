@@ -11,7 +11,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #0b0f19;
+            background-color: #06080e;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             color: #e2e8f0;
             direction: rtl;
@@ -20,28 +20,27 @@
         .wrapper {
             width: 100%;
             table-layout: fixed;
-            background-color: #0b0f19;
+            background-color: #06080e;
             padding: 30px 0 40px 0;
         }
         .main-container {
             max-width: 620px;
             margin: 0 auto;
-            background: linear-gradient(180deg, #131b2e 0%, #0d1527 100%);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
+            background-color: #0c101d;
+            border: 1px solid #18223c;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
         .header {
             padding: 35px 30px 25px 30px;
             text-align: center;
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(14, 165, 233, 0.05) 100%);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            background-color: #0c101d;
+            border-bottom: 1px solid #18223c;
         }
         .badge {
             display: inline-block;
             padding: 6px 16px;
-            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            background-color: #283891;
             color: #ffffff;
             font-size: 13px;
             font-weight: 700;
@@ -65,8 +64,8 @@
             padding: 30px;
         }
         .project-highlight {
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.2) 0%, rgba(14, 165, 233, 0.1) 100%);
-            border: 1px solid rgba(59, 130, 246, 0.3);
+            background-color: #06080e;
+            border: 1px solid #18223c;
             border-radius: 14px;
             padding: 20px;
             margin-bottom: 24px;
@@ -74,7 +73,7 @@
         }
         .project-highlight .label {
             font-size: 12px;
-            color: #60a5fa;
+            color: #7d93ff;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -93,7 +92,7 @@
             margin-bottom: 24px;
         }
         .info-row {
-            background-color: rgba(255, 255, 255, 0.03);
+            background-color: #06080e;
             border-radius: 10px;
         }
         .info-label {
@@ -104,7 +103,7 @@
             width: 32%;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid #18223c;
             border-left: none;
         }
         .info-value {
@@ -114,16 +113,16 @@
             font-weight: 600;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid #18223c;
             border-right: none;
         }
         .info-value a {
-            color: #38bdf8;
+            color: #7d93ff;
             text-decoration: none;
         }
         .message-box {
-            background-color: rgba(15, 23, 42, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background-color: #06080e;
+            border: 1px solid #18223c;
             border-radius: 14px;
             padding: 20px;
             margin-bottom: 25px;
@@ -150,7 +149,7 @@
         }
         .btn-admin {
             display: inline-block;
-            background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
+            background-color: #283891;
             color: #ffffff !important;
             text-decoration: none;
             padding: 12px 24px;
@@ -158,11 +157,10 @@
             font-weight: 700;
             font-size: 14px;
             margin: 5px;
-            box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
         }
         .btn-reply {
             display: inline-block;
-            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            background-color: #283891;
             color: #ffffff !important;
             text-decoration: none;
             padding: 12px 24px;
@@ -170,25 +168,12 @@
             font-weight: 700;
             font-size: 14px;
             margin: 5px;
-            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
-        }
-        .btn-whatsapp {
-            display: inline-block;
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            color: #ffffff !important;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 10px;
-            font-weight: 700;
-            font-size: 14px;
-            margin: 5px;
-            box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
         }
         .footer {
             padding: 24px 30px;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.25);
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background-color: #06080e;
+            border-top: 1px solid #18223c;
         }
         .footer-text {
             color: #64748b;
