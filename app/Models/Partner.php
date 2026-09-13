@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
 use Spatie\Translatable\HasTranslations;
 
@@ -18,6 +19,12 @@ class Partner extends Model
     ];
 
     public $translatable = ['name'];
+
+    protected static function booted(): void
+    {
+        static::saved(fn () => Cache::forget('landing.partners'));
+        static::deleted(fn () => Cache::forget('landing.partners'));
+    }
 
     /**
      * Get the resolved URL for the partner logo.

@@ -180,6 +180,8 @@ class LandingContentSeeder extends Seeder
             ['name' => ['en' => 'Fulfly', 'ar' => 'فولفلاي'], 'logo' => 'partners/fulfly.jpg'],
             ['name' => ['en' => 'Kenaz', 'ar' => 'كناز'], 'logo' => 'partners/kenaz.png'],
             ['name' => ['en' => 'Terrace', 'ar' => 'تيراس'], 'logo' => 'partners/terrace.jpeg'],
+            ['name' => ['en' => 'RB Solutions', 'ar' => 'آر بي سوليوشنز'], 'logo' => 'partners/rb-solutions.png'],
+            ['name' => ['en' => 'Elite', 'ar' => 'إيليت'], 'logo' => 'partners/elite.png'],
         ];
 
         foreach ($partners as $index => $partnerData) {
