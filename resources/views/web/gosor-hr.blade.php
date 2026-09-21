@@ -60,18 +60,16 @@
 
                 <!-- Desktop Navigation Links -->
                 <nav class="hidden lg:flex items-center gap-0.5 xl:gap-1.5">
-                    <a href="#why-gosor"
-                        class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-[#283891]/5 dark:hover:bg-[#283891]/10 rounded-lg transition">{{ __('gosor_hr.nav.why_gosor') }}</a>
                     <a href="#attendance"
                         class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-[#283891]/5 dark:hover:bg-[#283891]/10 rounded-lg transition">{{ __('gosor_hr.nav.attendance') }}</a>
-                    <a href="#ai-features"
-                        class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-[#283891]/5 dark:hover:bg-[#283891]/10 rounded-lg transition">{{ __('gosor_hr.nav.ai_features') }}</a>
-                    <a href="#reports"
-                        class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-[#283891]/5 dark:hover:bg-[#283891]/10 rounded-lg transition">{{ __('gosor_hr.nav.reports') }}</a>
-                    <a href="#pricing"
-                        class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-[#283891]/5 dark:hover:bg-[#283891]/10 rounded-lg transition">{{ __('gosor_hr.nav.pricing') }}</a>
                     <a href="#mobile-app"
                         class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-[#283891]/5 dark:hover:bg-[#283891]/10 rounded-lg transition">{{ __('gosor_hr.nav.mobile_app') }}</a>
+                    <a href="#reports"
+                        class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-[#283891]/5 dark:hover:bg-[#283891]/10 rounded-lg transition">{{ __('gosor_hr.nav.reports') }}</a>
+                    <a href="#recruitment"
+                        class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-[#283891]/5 dark:hover:bg-[#283891]/10 rounded-lg transition">{{ __('gosor_hr.nav.recruitment') }}</a>
+                    <a href="#pricing"
+                        class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-[#283891]/5 dark:hover:bg-[#283891]/10 rounded-lg transition">{{ __('gosor_hr.nav.pricing') }}</a>
                     <a href="#faq"
                         class="px-2 xl:px-2.5 py-1.5 text-xs xl:text-sm font-medium whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-[#283891] dark:hover:text-[#7d93ff] hover:bg-[#283891]/5 dark:hover:bg-[#283891]/10 rounded-lg transition">{{ __('gosor_hr.nav.faq') }}</a>
                 </nav>
@@ -154,18 +152,16 @@
             <div id="mobile-menu-panel"
                 class="lg:hidden overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out border-t border-slate-200/80 dark:border-[#18223c]">
                 <div class="py-4 space-y-2">
-                    <a href="#why-gosor"
-                        class="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-[#283891]/10 hover:text-[#283891] rounded-lg">{{ __('gosor_hr.nav.why_gosor') }}</a>
                     <a href="#attendance"
                         class="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-[#283891]/10 hover:text-[#283891] rounded-lg">{{ __('gosor_hr.nav.attendance') }}</a>
-                    <a href="#ai-features"
-                        class="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-[#283891]/10 hover:text-[#283891] rounded-lg">{{ __('gosor_hr.nav.ai_features') }}</a>
-                    <a href="#reports"
-                        class="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-[#283891]/10 hover:text-[#283891] rounded-lg">{{ __('gosor_hr.nav.reports') }}</a>
-                    <a href="#pricing"
-                        class="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-[#283891]/10 hover:text-[#283891] rounded-lg">{{ __('gosor_hr.nav.pricing') }}</a>
                     <a href="#mobile-app"
                         class="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-[#283891]/10 hover:text-[#283891] rounded-lg">{{ __('gosor_hr.nav.mobile_app') }}</a>
+                    <a href="#reports"
+                        class="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-[#283891]/10 hover:text-[#283891] rounded-lg">{{ __('gosor_hr.nav.reports') }}</a>
+                    <a href="#recruitment"
+                        class="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-[#283891]/10 hover:text-[#283891] rounded-lg">{{ __('gosor_hr.nav.recruitment') }}</a>
+                    <a href="#pricing"
+                        class="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-[#283891]/10 hover:text-[#283891] rounded-lg">{{ __('gosor_hr.nav.pricing') }}</a>
                     <a href="#faq"
                         class="block px-4 py-2 text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-[#283891]/10 hover:text-[#283891] rounded-lg">{{ __('gosor_hr.nav.faq') }}</a>
 
@@ -357,91 +353,7 @@
             </div>
         </section>
 
-        <!-- SECTION: WHY DITCH FINGERPRINT DEVICES (THE VERSUS SECTION) -->
-        <section id="why-gosor"
-            class="py-20 relative bg-slate-50/70 dark:bg-[#06080e] border-y border-slate-200/80 dark:border-[#18223c]">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-                <!-- Section Title -->
-                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                    <span
-                        class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20 mb-3">
-                        {{ __('gosor_hr.versus.badge') }}
-                    </span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-                        {{ __('gosor_hr.versus.title') }}
-                    </h2>
-                    <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-400">
-                        {{ __('gosor_hr.versus.subtitle') }}
-                    </p>
-                </div>
-
-                <!-- Side-by-Side Comparison Grid -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-
-                    <!-- Old Fingerprint Device Box (Negative) -->
-                    <div class="rounded-3xl p-8 bg-white dark:bg-[#0c101d] border border-rose-300 dark:border-rose-900/50 relative overflow-hidden hover:-translate-y-1 transition-transform duration-300"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div
-                                class="w-12 h-12 rounded-2xl bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 flex items-center justify-center">
-                                <x-lucide-circle-alert class="w-6 h-6" />
-                            </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">
-                                {{ __('gosor_hr.versus.legacy.title') }}
-                            </h3>
-                        </div>
-
-                        <ul class="space-y-4">
-                            @foreach (__('gosor_hr.versus.legacy.points') as $point)
-                                <li class="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
-                                    <div
-                                        class="w-5 h-5 rounded-full bg-rose-500/10 text-rose-600 flex items-center justify-center shrink-0 mt-0.5">
-                                        <x-lucide-x class="w-3.5 h-3.5" />
-                                    </div>
-                                    <span>{{ $point }}</span>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-
-                    <!-- Modern Gosor HR Box (Positive Clean) -->
-                    <div class="rounded-3xl p-8 bg-white dark:bg-[#0c101d] border-2 border-[#283891] relative overflow-hidden hover:-translate-y-1 transition-transform duration-300"
-                        data-aos="fade-up" data-aos-delay="200">
-
-                        <!-- Top Tag -->
-                        <div class="absolute top-4 end-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-[#283891] text-white">
-                                Recommended
-                            </span>
-                        </div>
-
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-12 h-12 rounded-2xl bg-[#283891] text-white flex items-center justify-center">
-                                <x-lucide-sparkles class="w-6 h-6" />
-                            </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">
-                                {{ __('gosor_hr.versus.modern.title') }}
-                            </h3>
-                        </div>
-
-                        <ul class="space-y-4">
-                            @foreach (__('gosor_hr.versus.modern.points') as $point)
-                                <li class="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-200 font-medium">
-                                    <div
-                                        class="w-5 h-5 rounded-full bg-[#283891] text-white flex items-center justify-center shrink-0 mt-0.5">
-                                        <x-lucide-check class="w-3.5 h-3.5" />
-                                    </div>
-                                    <span>{{ $point }}</span>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
 
         <!-- SECTION: SMART ATTENDANCE FEATURES (ZERO HARDWARE) -->
         <section id="attendance" class="py-24 relative">
@@ -462,179 +374,132 @@
                 </div>
 
                 <!-- 4 Core Feature Cards Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-
-                    <!-- 1. GPS Geofencing -->
-                    <div class="p-8 rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200/80 dark:border-[#18223c] hover:border-[#283891]/50 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
-                        data-aos="fade-up" data-aos-delay="50">
-                        <div>
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                                <x-lucide-map-pin class="w-7 h-7" />
+                <!-- 6 Core Feature Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    @foreach (__('gosor_hr.attendance.features') as $key => $feature)
+                        <div class="p-8 rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200/80 dark:border-[#18223c] hover:border-[#283891]/50 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
+                            data-aos="fade-up" data-aos-delay="{{ $loop->iteration * 50 }}">
+                            <div>
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                    @if ($key === 'gps')
+                                        <x-lucide-map-pin class="w-7 h-7" />
+                                    @elseif ($key === 'remote')
+                                        <x-lucide-laptop class="w-7 h-7" />
+                                    @elseif ($key === 'field')
+                                        <x-lucide-navigation class="w-7 h-7" />
+                                    @elseif ($key === 'shifts')
+                                        <x-lucide-clock class="w-7 h-7" />
+                                    @elseif ($key === 'offline')
+                                        <x-lucide-wifi-off class="w-7 h-7" />
+                                    @else
+                                        <x-lucide-shield-check class="w-7 h-7" />
+                                    @endif
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                                    {{ $feature['title'] }}
+                                </h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    {{ $feature['desc'] }}
+                                </p>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
-                                {{ __('gosor_hr.attendance.features.gps.title') }}
-                            </h3>
-                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                                {{ __('gosor_hr.attendance.features.gps.desc') }}
-                            </p>
                         </div>
-                    </div>
-
-                    <!-- 2. Field & Remote -->
-                    <div class="p-8 rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200/80 dark:border-[#18223c] hover:border-[#283891]/50 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <div>
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                                <x-lucide-briefcase class="w-7 h-7" />
-                            </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
-                                {{ __('gosor_hr.attendance.features.remote.title') }}
-                            </h3>
-                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                                {{ __('gosor_hr.attendance.features.remote.desc') }}
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- 3. Shifts & Rotations -->
-                    <div class="p-8 rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200/80 dark:border-[#18223c] hover:border-[#283891]/50 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
-                        data-aos="fade-up" data-aos-delay="150">
-                        <div>
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                                <x-lucide-clock class="w-7 h-7" />
-                            </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
-                                {{ __('gosor_hr.attendance.features.shifts.title') }}
-                            </h3>
-                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                                {{ __('gosor_hr.attendance.features.shifts.desc') }}
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- 4. Offline Mode -->
-                    <div class="p-8 rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200/80 dark:border-[#18223c] hover:border-[#283891]/50 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <div>
-                            <div
-                                class="w-14 h-14 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                                <x-lucide-wifi-off class="w-7 h-7" />
-                            </div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">
-                                {{ __('gosor_hr.attendance.features.offline.title') }}
-                            </h3>
-                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                                {{ __('gosor_hr.attendance.features.offline.desc') }}
-                            </p>
-                        </div>
-                    </div>
-
+                    @endforeach
                 </div>
 
             </div>
         </section>
 
-        <!-- SECTION: AI-POWERED HR CAPABILITIES -->
-        <section id="ai-features"
-            class="py-24 relative bg-[#06080e] text-white overflow-hidden border-y border-[#18223c]">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- SECTION: EMPLOYEE MOBILE APP (ESS) -->
+        <section id="mobile-app"
+            class="py-24 relative bg-slate-50/70 dark:bg-[#06080e] border-y border-slate-200/80 dark:border-[#18223c]">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-                <!-- Section Header -->
-                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                    <span
-                        class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#283891]/20 text-[#7d93ff] border border-[#283891]/40 mb-3">
-                        <x-lucide-sparkles class="w-3.5 h-3.5" />
-                        {{ __('gosor_hr.ai.badge') }}
-                    </span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
-                        {{ __('gosor_hr.ai.title') }}
-                    </h2>
-                    <p class="mt-4 text-base sm:text-lg text-slate-300">
-                        {{ __('gosor_hr.ai.subtitle') }}
-                    </p>
-                </div>
+                    <!-- Left: Real Mobile Screenshots (Dual Clock In & Clock Out Mockups) -->
+                    <div class="lg:col-span-6 order-2 lg:order-1" data-aos="fade-right">
+                        <div class="flex items-center justify-center gap-4 sm:gap-6">
 
-                <!-- 6 AI Cards Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
-
-                    @foreach (__('gosor_hr.ai.items') as $key => $item)
-                        <div class="p-8 rounded-3xl bg-[#0c101d] border border-[#18223c] hover:border-[#283891]/60 transition-all duration-300 hover:-translate-y-1"
-                            data-aos="fade-up">
+                            <!-- Phone 1: Clock In state -->
                             <div
-                                class="w-12 h-12 rounded-2xl bg-[#283891] text-white flex items-center justify-center mb-6">
-                                @if ($key === 'forecast')
-                                    <x-lucide-trending-up class="w-6 h-6" />
-                                @elseif($key === 'scheduling')
-                                    <x-lucide-calendar-range class="w-6 h-6" />
-                                @elseif($key === 'approvals')
-                                    <x-lucide-check-check class="w-6 h-6" />
-                                @elseif($key === 'anomalies')
-                                    <x-lucide-shield-alert class="w-6 h-6" />
-                                @elseif($key === 'copilot')
-                                    <x-lucide-bot-message-square class="w-6 h-6" />
-                                @else
-                                    <x-lucide-award class="w-6 h-6" />
-                                @endif
+                                class="w-1/2 max-w-[240px] rounded-[36px] border-4 sm:border-[6px] border-[#0c101d] bg-[#0c101d] overflow-hidden ring-1 ring-slate-800 group hover:-translate-y-1 transition-transform duration-300">
+                                <div
+                                    class="py-1 px-3 bg-[#0c101d] text-[10px] text-center font-bold text-[#7d93ff] border-b border-[#18223c]">
+                                    Clock In Screen
+                                </div>
+                                <img src="{{ asset('images/gosor/hr/app_clock_in.jpg') }}"
+                                    alt="Gosor HR Mobile Clock In"
+                                    class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500"
+                                    loading="lazy" />
                             </div>
-                            <h3 class="text-lg font-bold text-white mb-2">
-                                {{ $item['title'] }}
-                            </h3>
-                            <p class="text-sm text-slate-300 leading-relaxed">
-                                {{ $item['desc'] }}
-                            </p>
+
+                            <!-- Phone 2: Clock Out state -->
+                            <div
+                                class="w-1/2 max-w-[240px] rounded-[36px] border-4 sm:border-[6px] border-[#0c101d] bg-[#0c101d] overflow-hidden ring-1 ring-slate-800 group mt-6 sm:mt-10 hover:-translate-y-1 transition-transform duration-300">
+                                <div
+                                    class="py-1 px-3 bg-[#0c101d] text-[10px] text-center font-bold text-rose-400 border-b border-[#18223c]">
+                                    Clock Out Screen
+                                </div>
+                                <img src="{{ asset('images/gosor/hr/app_clock_out.jpg') }}"
+                                    alt="Gosor HR Mobile Clock Out"
+                                    class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500"
+                                    loading="lazy" />
+                            </div>
+
                         </div>
-                    @endforeach
+                    </div>
+
+                    <!-- Right: ESS Feature List -->
+                    <div class="lg:col-span-6 order-1 lg:order-2" data-aos="fade-left">
+                        <span
+                            class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] border border-[#283891]/20 dark:border-[#283891]/40 mb-3">
+                            {{ __('gosor_hr.app.badge') }}
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
+                            {{ __('gosor_hr.app.title') }}
+                        </h2>
+                        <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
+                            {{ __('gosor_hr.app.subtitle') }}
+                        </p>
+
+                        <!-- Features Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                            @foreach (__('gosor_hr.app.features') as $key => $feature)
+                                <div
+                                    class="flex items-start gap-3 p-3 rounded-2xl bg-white dark:bg-[#0c101d] border border-slate-200/80 dark:border-[#18223c]">
+                                    <div
+                                        class="w-6 h-6 rounded-lg bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center shrink-0 mt-0.5">
+                                        <x-lucide-check class="w-4 h-4" />
+                                    </div>
+                                    <span
+                                        class="text-sm font-semibold text-slate-800 dark:text-slate-200">{{ $feature }}</span>
+                                </div>
+                            @endforeach
+                        </div>
+
+                        <!-- App Badges -->
+                        <div class="flex flex-wrap items-center gap-4">
+                            <div
+                                class="px-4 py-2.5 rounded-xl bg-[#0c101d] text-white flex items-center gap-3 border border-[#18223c] hover:-translate-y-0.5 transition-transform">
+                                <x-lucide-apple class="w-6 h-6" />
+                                <div class="text-start">
+                                    <div class="text-[9px] uppercase tracking-wider text-slate-400">Download on</div>
+                                    <div class="text-xs font-bold">App Store (iOS)</div>
+                                </div>
+                            </div>
+                            <div
+                                class="px-4 py-2.5 rounded-xl bg-[#0c101d] text-white flex items-center gap-3 border border-[#18223c] hover:-translate-y-0.5 transition-transform">
+                                <x-lucide-smartphone class="w-6 h-6" />
+                                <div class="text-start">
+                                    <div class="text-[9px] uppercase tracking-wider text-slate-400">Get it on</div>
+                                    <div class="text-xs font-bold">Google Play (Android)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
-
-                <!-- Interactive AI Copilot Live Simulation Box -->
-                <div class="rounded-3xl border border-[#18223c] bg-[#0c101d] p-6 sm:p-8 max-w-4xl mx-auto"
-                    data-aos="fade-up">
-                    <div class="flex items-center gap-3 border-b border-[#18223c] pb-4 mb-5">
-                        <div class="w-9 h-9 rounded-xl bg-[#283891] text-white flex items-center justify-center">
-                            <x-lucide-sparkles class="w-5 h-5" />
-                        </div>
-                        <div>
-                            <h3 class="text-base font-bold text-white">Gosor HR AI Copilot</h3>
-                            <p class="text-xs text-slate-400">Natural Language Workforce Assistant</p>
-                        </div>
-                    </div>
-
-                    <!-- Chat Bubble 1: Manager Prompt -->
-                    <div class="flex items-start gap-3 mb-4">
-                        <div
-                            class="w-8 h-8 rounded-full bg-slate-800 text-slate-300 flex items-center justify-center text-xs font-bold shrink-0">
-                            HR</div>
-                        <div class="p-3.5 rounded-2xl rounded-ss-none bg-slate-800/80 text-sm text-slate-100 max-w-lg">
-                            {{ app()->getLocale() === 'ar' ? 'حلل لي أسباب تأخيرات قسم المبيعات خلال الأسبوعين الماضيين وقدم توصية فورية.' : 'Analyze sales department delay trends over the past 2 weeks and suggest an action plan.' }}
-                        </div>
-                    </div>
-
-                    <!-- Chat Bubble 2: AI Response -->
-                    <div class="flex items-start gap-3 justify-end">
-                        <div
-                            class="p-4 rounded-2xl rounded-se-none bg-[#06080e] border border-[#283891]/50 text-sm text-slate-100 max-w-xl">
-                            <div class="flex items-center gap-1.5 text-xs text-[#7d93ff] font-bold mb-1.5">
-                                <x-lucide-bot class="w-4 h-4" />
-                                <span>AI Copilot Analysis</span>
-                            </div>
-                            <p class="text-xs sm:text-sm leading-relaxed">
-                                {{ app()->getLocale() === 'ar'
-                                    ? 'تم رصد 12 تأخيراً بنسبة 80% في فرع المعادي بسبب أعمال الطرق الصباحية. التوصية: تفعيل نظام الوردية المرنة (30 دقيقة سماح) وتعويضها مساءً للحفاظ على معدل الإنتاجية بنسبة 100%.'
-                                    : 'Detected 12 delays (80% concentrated in Maadi Branch due to morning transit roadworks). Suggested recommendation: Enable dynamic 30-min flexi-window with evening compensation to retain 100% target throughput.' }}
-                            </p>
-                        </div>
-                        <div
-                            class="w-8 h-8 rounded-full bg-[#283891] text-white flex items-center justify-center shrink-0">
-                            <x-lucide-sparkles class="w-4 h-4" />
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
         </section>
 
@@ -837,9 +702,295 @@
             </div>
         </section>
 
+        <!-- SECTION: RECRUITMENT & APPLICANT TRACKING -->
+        <section id="recruitment"
+            class="py-24 relative bg-slate-50/70 dark:bg-[#06080e] border-y border-slate-200/80 dark:border-[#18223c]">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                    <span
+                        class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] border border-[#283891]/20 dark:border-[#283891]/40 mb-3">
+                        <x-lucide-briefcase class="w-3.5 h-3.5" />
+                        {{ __('gosor_hr.recruitment.badge') }}
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                        {{ __('gosor_hr.recruitment.title') }}
+                    </h2>
+                    <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-400">
+                        {{ __('gosor_hr.recruitment.subtitle') }}
+                    </p>
+                </div>
+
+                <!-- 4 Recruitment Feature Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16">
+                    @foreach (__('gosor_hr.recruitment.features') as $key => $feature)
+                        <div class="p-8 rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200/80 dark:border-[#18223c] hover:border-[#283891]/50 hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between"
+                            data-aos="fade-up" data-aos-delay="{{ $loop->iteration * 50 }}">
+                            <div>
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                    @if ($key === 'portal')
+                                        <x-lucide-globe class="w-7 h-7" />
+                                    @elseif ($key === 'kanban')
+                                        <x-lucide-columns-3 class="w-7 h-7" />
+                                    @elseif ($key === 'applications')
+                                        <x-lucide-users class="w-7 h-7" />
+                                    @else
+                                        <x-lucide-file-text class="w-7 h-7" />
+                                    @endif
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">
+                                    {{ $feature['title'] }}
+                                </h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    {{ $feature['desc'] }}
+                                </p>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+
+                <!-- Interactive Tab Navigation for Recruitment Screenshots -->
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-12" id="recruitment-tabs-nav"
+                    data-aos="fade-up">
+                    <button type="button" data-rtab="kanban"
+                        class="recruitment-tab-btn active px-5 py-3 rounded-2xl text-sm font-bold transition-all cursor-pointer">
+                        {{ __('gosor_hr.recruitment.tabs.kanban') }}
+                    </button>
+                    <button type="button" data-rtab="applications"
+                        class="recruitment-tab-btn px-5 py-3 rounded-2xl text-sm font-bold transition-all cursor-pointer">
+                        {{ __('gosor_hr.recruitment.tabs.applications') }}
+                    </button>
+                    <button type="button" data-rtab="portal"
+                        class="recruitment-tab-btn px-5 py-3 rounded-2xl text-sm font-bold transition-all cursor-pointer">
+                        {{ __('gosor_hr.recruitment.tabs.portal') }}
+                    </button>
+                    <button type="button" data-rtab="cv_preview"
+                        class="recruitment-tab-btn px-5 py-3 rounded-2xl text-sm font-bold transition-all cursor-pointer">
+                        {{ __('gosor_hr.recruitment.tabs.cv_preview') }}
+                    </button>
+                </div>
+
+                <!-- Tab Content Containers -->
+                <div class="max-w-5xl mx-auto" data-aos="fade-up">
+
+                    <!-- TAB 1: KANBAN BOARD SCREENSHOT -->
+                    <div id="rtab-content-kanban" class="recruitment-tab-pane">
+                        <div
+                            class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-[#18223c] p-6 sm:p-8 shadow-sm">
+                            <div class="lg:col-span-5 space-y-4">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center">
+                                    <x-lucide-columns-3 class="w-6 h-6" />
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                                    {{ __('gosor_hr.recruitment.kanban_card.title') }}
+                                </h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    {{ __('gosor_hr.recruitment.kanban_card.desc') }}
+                                </p>
+                                <ul class="space-y-3 pt-2">
+                                    @foreach (__('gosor_hr.recruitment.kanban_card.items') as $item)
+                                        <li class="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-200">
+                                            <x-lucide-check-circle-2
+                                                class="w-5 h-5 text-[#283891] dark:text-[#7d93ff] shrink-0" />
+                                            <span>{{ $item }}</span>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+
+                            <!-- Real System Kanban Screenshot in Frame -->
+                            <div
+                                class="lg:col-span-7 rounded-2xl overflow-hidden border border-slate-200 dark:border-[#18223c] group hover:border-[#283891]/40 transition-all duration-300">
+                                <div
+                                    class="px-4 py-2.5 bg-slate-100 dark:bg-[#18223c]/60 border-b border-slate-200 dark:border-[#18223c] flex items-center justify-between text-xs">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-[#283891]"></span>
+                                        <span
+                                            class="font-bold text-slate-700 dark:text-slate-300 ms-2">{{ app()->getLocale() === 'ar' ? 'التوظيف / لوحة كانبان المتقدمين' : 'Recruitment / Applicants Kanban Pipeline' }}</span>
+                                    </div>
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] font-bold text-[10px]">Interactive
+                                        Pipeline</span>
+                                </div>
+                                <div class="overflow-hidden bg-white dark:bg-[#06080e]">
+                                    <img src="{{ asset($hrImgPath . 'recruitment_kanban.png') }}"
+                                        alt="Gosor HR Applicants Kanban Pipeline"
+                                        class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition duration-500"
+                                        loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2: APPLICATIONS TABLE SCREENSHOT -->
+                    <div id="rtab-content-applications" class="recruitment-tab-pane hidden">
+                        <div
+                            class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-[#18223c] p-6 sm:p-8 shadow-sm">
+                            <div class="lg:col-span-5 space-y-4">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center">
+                                    <x-lucide-users class="w-6 h-6" />
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                                    {{ __('gosor_hr.recruitment.applications_card.title') }}
+                                </h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    {{ __('gosor_hr.recruitment.applications_card.desc') }}
+                                </p>
+                                <ul class="space-y-3 pt-2">
+                                    @foreach (__('gosor_hr.recruitment.applications_card.items') as $item)
+                                        <li class="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-200">
+                                            <x-lucide-check-circle-2
+                                                class="w-5 h-5 text-[#283891] dark:text-[#7d93ff] shrink-0" />
+                                            <span>{{ $item }}</span>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+
+                            <!-- Real System Applications Table Screenshot in Frame -->
+                            <div
+                                class="lg:col-span-7 rounded-2xl overflow-hidden border border-slate-200 dark:border-[#18223c] group hover:border-[#283891]/40 transition-all duration-300">
+                                <div
+                                    class="px-4 py-2.5 bg-slate-100 dark:bg-[#18223c]/60 border-b border-slate-200 dark:border-[#18223c] flex items-center justify-between text-xs">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-[#283891]"></span>
+                                        <span
+                                            class="font-bold text-slate-700 dark:text-slate-300 ms-2">{{ app()->getLocale() === 'ar' ? 'التوظيف / طلبات التقديم' : 'Recruitment / Job Applications' }}</span>
+                                    </div>
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] font-bold text-[10px]">Applicants
+                                        Registry</span>
+                                </div>
+                                <div class="overflow-hidden bg-white dark:bg-[#06080e]">
+                                    <img src="{{ asset($hrImgPath . 'recruitment_applications.png') }}"
+                                        alt="Gosor HR Job Applications Table"
+                                        class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition duration-500"
+                                        loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3: CAREERS PORTAL JOB DETAILS SCREENSHOT -->
+                    <div id="rtab-content-portal" class="recruitment-tab-pane hidden">
+                        <div
+                            class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-[#18223c] p-6 sm:p-8 shadow-sm">
+                            <div class="lg:col-span-5 space-y-4">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center">
+                                    <x-lucide-globe class="w-6 h-6" />
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                                    {{ __('gosor_hr.recruitment.portal_card.title') }}
+                                </h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    {{ __('gosor_hr.recruitment.portal_card.desc') }}
+                                </p>
+                                <ul class="space-y-3 pt-2">
+                                    @foreach (__('gosor_hr.recruitment.portal_card.items') as $item)
+                                        <li class="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-200">
+                                            <x-lucide-check-circle-2
+                                                class="w-5 h-5 text-[#283891] dark:text-[#7d93ff] shrink-0" />
+                                            <span>{{ $item }}</span>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+
+                            <!-- Real System Public Portal Screenshot in Frame -->
+                            <div
+                                class="lg:col-span-7 rounded-2xl overflow-hidden border border-slate-200 dark:border-[#18223c] group hover:border-[#283891]/40 transition-all duration-300">
+                                <div
+                                    class="px-4 py-2.5 bg-slate-100 dark:bg-[#18223c]/60 border-b border-slate-200 dark:border-[#18223c] flex items-center justify-between text-xs">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-[#283891]"></span>
+                                        <span
+                                            class="font-bold text-slate-700 dark:text-slate-300 ms-2">{{ app()->getLocale() === 'ar' ? 'بوابة التوظيف العامة / تفاصيل الوظيفة والتقديم' : 'Careers Portal / Job Details & Application' }}</span>
+                                    </div>
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] font-bold text-[10px]">Public
+                                        Portal</span>
+                                </div>
+                                <div class="overflow-hidden bg-white dark:bg-[#06080e]">
+                                    <img src="{{ asset($hrImgPath . 'recruitment_portal.png') }}"
+                                        alt="Gosor HR Careers Portal Job Details"
+                                        class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition duration-500"
+                                        loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4: IN-APP PDF CV VIEWER SCREENSHOT -->
+                    <div id="rtab-content-cv_preview" class="recruitment-tab-pane hidden">
+                        <div
+                            class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center rounded-3xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-[#18223c] p-6 sm:p-8 shadow-sm">
+                            <div class="lg:col-span-5 space-y-4">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center">
+                                    <x-lucide-file-text class="w-6 h-6" />
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                                    {{ __('gosor_hr.recruitment.cv_card.title') }}
+                                </h3>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    {{ __('gosor_hr.recruitment.cv_card.desc') }}
+                                </p>
+                                <ul class="space-y-3 pt-2">
+                                    @foreach (__('gosor_hr.recruitment.cv_card.items') as $item)
+                                        <li class="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-200">
+                                            <x-lucide-check-circle-2
+                                                class="w-5 h-5 text-[#283891] dark:text-[#7d93ff] shrink-0" />
+                                            <span>{{ $item }}</span>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+
+                            <!-- Real System PDF Preview Screenshot in Frame -->
+                            <div
+                                class="lg:col-span-7 rounded-2xl overflow-hidden border border-slate-200 dark:border-[#18223c] group hover:border-[#283891]/40 transition-all duration-300">
+                                <div
+                                    class="px-4 py-2.5 bg-slate-100 dark:bg-[#18223c]/60 border-b border-slate-200 dark:border-[#18223c] flex items-center justify-between text-xs">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-700"></span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-[#283891]"></span>
+                                        <span
+                                            class="font-bold text-slate-700 dark:text-slate-300 ms-2">{{ app()->getLocale() === 'ar' ? 'معاينة السيرة الذاتية PDF' : 'In-App PDF CV Viewer' }}</span>
+                                    </div>
+                                    <span
+                                        class="px-2 py-0.5 rounded-full bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] font-bold text-[10px]">Zero
+                                        Download</span>
+                                </div>
+                                <div class="overflow-hidden bg-white dark:bg-[#06080e]">
+                                    <img src="{{ asset($hrImgPath . 'recruitment_cv_preview.png') }}"
+                                        alt="Gosor HR PDF CV Previewer"
+                                        class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition duration-500"
+                                        loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
         <!-- SECTION: PRICING PLANS -->
         <section id="pricing"
-            class="py-24 relative bg-slate-50/70 dark:bg-[#06080e] border-y border-slate-200/80 dark:border-[#18223c]">
+            class="py-24 relative">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
                 <!-- Section Header -->
@@ -858,13 +1009,13 @@
 
                     <!-- Monthly / Annual Toggle Switch -->
                     <div
-                        class="mt-8 inline-flex items-center gap-3 p-1.5 rounded-2xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-[#18223c]">
+                        class="mt-8 inline-flex items-center gap-3 p-1.5 rounded-2xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-[#18223c] shadow-sm">
                         <button type="button" id="billing-monthly-btn"
-                            class="billing-toggle-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer">
+                            class="billing-toggle-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer">
                             {{ __('gosor_hr.pricing.billing.monthly') }}
                         </button>
                         <button type="button" id="billing-yearly-btn"
-                            class="billing-toggle-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5">
+                            class="billing-toggle-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5">
                             <span>{{ __('gosor_hr.pricing.billing.yearly') }}</span>
                             <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-[#283891] text-white">
                                 {{ __('gosor_hr.pricing.billing.save_badge') }}
@@ -873,107 +1024,187 @@
                     </div>
                 </div>
 
-                <!-- 4 Pricing Cards Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-stretch mb-16"
+                <!-- Single All-in-One Plan Showcase Card -->
+                <div class="relative rounded-3xl border-2 border-[#283891] bg-white dark:bg-[#0c101d] shadow-2xl shadow-[#283891]/10 overflow-hidden mb-14"
                     data-aos="fade-up">
 
-                    @foreach (__('gosor_hr.pricing.plans') as $planKey => $plan)
-                        @php
-                            $isFeatured = $plan['is_featured'] ?? false;
-                        @endphp
-                        <div
-                            class="relative rounded-3xl p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 {{ $isFeatured ? 'bg-white dark:bg-[#0c101d] border-2 border-[#283891] lg:-translate-y-2' : 'bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-[#18223c] hover:border-slate-300 dark:hover:border-slate-700 hover:-translate-y-1' }}">
+                    <!-- Top Accent Banner -->
+                    <div
+                        class="bg-gradient-to-r from-[#283891] via-[#374ab7] to-[#283891] text-white py-3 px-6 text-center text-xs sm:text-sm font-extrabold flex items-center justify-center gap-2 tracking-wide shadow-sm">
+                        <x-lucide-sparkles class="w-4 h-4 shrink-0 text-amber-300" />
+                        <span>{{ __('gosor_hr.pricing.plan.badge') }}</span>
+                    </div>
 
-                            <!-- Featured Badge -->
-                            @if ($isFeatured)
-                                <div class="absolute -top-3.5 start-1/2 -translate-x-1/2 rtl:translate-x-1/2">
-                                    <span
-                                        class="px-3.5 py-1 rounded-full text-xs font-extrabold bg-[#283891] text-white flex items-center gap-1">
-                                        <x-lucide-sparkles class="w-3 h-3" />
-                                        {{ $plan['badge'] }}
-                                    </span>
-                                </div>
-                            @endif
+                    <div class="p-6 sm:p-8 lg:p-12">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
 
-                            <div>
-                                <!-- Header Info -->
-                                <div class="flex items-center justify-between gap-2 mb-3">
-                                    <h3 class="text-lg font-bold text-slate-900 dark:text-white">
-                                        {{ $plan['name'] }}
+                            <!-- Left Side: Pricing, Team Size Calculator & CTA -->
+                            <div
+                                class="lg:col-span-5 flex flex-col justify-between border-b lg:border-b-0 lg:border-e border-slate-200/80 dark:border-[#18223c] pb-8 lg:pb-0 lg:pe-10">
+                                <div>
+                                    <h3
+                                        class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-2">
+                                        {{ __('gosor_hr.pricing.plan.name') }}
                                     </h3>
-                                    @if (!$isFeatured)
-                                        <span
-                                            class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-[#18223c]">
-                                            {{ $plan['badge'] }}
-                                        </span>
-                                    @endif
-                                </div>
+                                    <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                                        {{ __('gosor_hr.pricing.plan.desc') }}
+                                    </p>
 
-                                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-6 min-h-[36px]">
-                                    {{ $plan['desc'] }}
-                                </p>
+                                    <!-- Price Display -->
+                                    <div
+                                        class="p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-[#06080e] border border-slate-200/80 dark:border-[#18223c] mb-6">
+                                        <!-- Monthly Price Display (hidden when yearly is active) -->
+                                        <div class="price-box-monthly hidden flex items-baseline gap-2">
+                                            <span
+                                                class="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight">{{ __('gosor_hr.pricing.plan.monthly_price') }}</span>
+                                            <span
+                                                class="text-sm sm:text-base font-bold text-[#283891] dark:text-[#7d93ff]">{{ __('gosor_hr.pricing.plan.currency') }}</span>
+                                            <span
+                                                class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">{{ __('gosor_hr.pricing.plan.period_month') }}</span>
+                                        </div>
+                                        <div
+                                            class="price-box-monthly hidden mt-1 text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+                                            <x-lucide-clock class="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                                            <span>{{ __('gosor_hr.pricing.plan.billed_monthly_note') }}</span>
+                                        </div>
 
-                                <!-- Price Display -->
-                                <div class="mb-6 pb-6 border-b border-slate-100 dark:border-[#18223c]">
-                                    <!-- Monthly Price -->
-                                    <div class="price-box-monthly flex items-baseline gap-1.5">
-                                        <span
-                                            class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">{{ $plan['monthly_price'] }}</span>
-                                        <span
-                                            class="text-xs font-bold text-slate-500 dark:text-slate-400">{{ $plan['currency'] }}</span>
-                                        <span
-                                            class="text-xs text-slate-500 dark:text-slate-400">{{ $plan['period_month'] }}</span>
+                                        <!-- Yearly Price Display (active by default) -->
+                                        <div class="price-box-yearly flex items-baseline flex-wrap gap-2">
+                                            <span
+                                                class="text-4xl sm:text-5xl font-black text-[#283891] dark:text-[#7d93ff] tracking-tight">{{ __('gosor_hr.pricing.plan.yearly_price') }}</span>
+                                            <span
+                                                class="text-sm sm:text-base font-bold text-[#283891] dark:text-[#7d93ff]">{{ __('gosor_hr.pricing.plan.currency') }}</span>
+                                            <span
+                                                class="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">{{ __('gosor_hr.pricing.plan.period_year') }}</span>
+                                            <span
+                                                class="px-2.5 py-0.5 rounded-full text-xs font-black bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                                                {{ __('gosor_hr.pricing.billing.save_badge') }}
+                                            </span>
+                                        </div>
+                                        <div
+                                            class="price-box-yearly mt-1 text-xs text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1.5">
+                                            <x-lucide-sparkles class="w-3.5 h-3.5 shrink-0" />
+                                            <span>{{ __('gosor_hr.pricing.plan.billed_annually_note') }}</span>
+                                        </div>
                                     </div>
-                                    <!-- Yearly Price (hidden by default) -->
-                                    <div class="price-box-yearly hidden flex items-baseline gap-1.5">
-                                        <span
-                                            class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">{{ $plan['yearly_price'] }}</span>
-                                        <span
-                                            class="text-xs font-bold text-slate-500 dark:text-slate-400">{{ $plan['currency'] }}</span>
-                                        <span
-                                            class="text-xs text-slate-500 dark:text-slate-400">{{ $plan['period_year'] }}</span>
-                                    </div>
-                                    <div class="mt-2 flex items-center gap-2">
-                                        <span
-                                            class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff]">
-                                            <x-lucide-users class="w-3 h-3" />
-                                            {{ $plan['max_employees'] }}
-                                        </span>
-                                        <span
-                                            class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
-                                            <x-lucide-clock class="w-3 h-3" />
-                                            {{ $plan['duration'] }}
-                                        </span>
-                                    </div>
-                                </div>
 
-                                <!-- Features Checklist -->
-                                <ul class="space-y-3 mb-8">
-                                    @foreach ($plan['features'] as $feat)
-                                        <li
-                                            class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-                                            <div
-                                                class="w-4 h-4 rounded-full {{ $isFeatured ? 'bg-[#283891] text-white' : 'bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff]' }} flex items-center justify-center shrink-0 mt-0.5">
-                                                <x-lucide-check class="w-2.5 h-2.5" />
+                                    <!-- Interactive Team Size Estimator / Calculator -->
+                                    <div
+                                        class="p-5 rounded-2xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-[#18223c] space-y-4 mb-6 shadow-sm">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200">
+                                                {{ __('gosor_hr.pricing.plan.calculator.slider_label') }}
+                                            </span>
+                                            <div class="flex items-center gap-1.5">
+                                                <button type="button" id="calc-minus-btn"
+                                                    class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 flex items-center justify-center text-slate-800 dark:text-slate-100 font-bold transition cursor-pointer select-none">
+                                                    -
+                                                </button>
+                                                <div
+                                                    class="px-3 py-1 rounded-lg bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] font-extrabold text-sm min-w-[50px] text-center">
+                                                    <span id="calc-employee-count">20</span>
+                                                    <span
+                                                        class="text-[11px] font-medium ms-0.5">{{ __('gosor_hr.pricing.plan.calculator.unit') }}</span>
+                                                </div>
+                                                <button type="button" id="calc-plus-btn"
+                                                    class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 flex items-center justify-center text-slate-800 dark:text-slate-100 font-bold transition cursor-pointer select-none">
+                                                    +
+                                                </button>
                                             </div>
-                                            <span>{{ $feat }}</span>
-                                        </li>
-                                    @endforeach
-                                </ul>
+                                        </div>
+
+                                        <input type="range" id="calc-range-slider" min="5" max="150"
+                                            value="20" step="1"
+                                            class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#283891]" />
+
+                                        <div
+                                            class="pt-3 border-t border-slate-100 dark:border-[#18223c] flex items-center justify-between gap-2">
+                                            <div>
+                                                <span
+                                                    class="block text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+                                                    {{ __('gosor_hr.pricing.plan.calculator.monthly_total') }}
+                                                </span>
+                                                <span id="calc-total-cost"
+                                                    class="text-base sm:text-lg font-black text-slate-900 dark:text-white">
+                                                    3,000 {{ __('gosor_hr.pricing.plan.currency') }}
+                                                </span>
+                                            </div>
+                                            <div id="calc-savings-badge"
+                                                class="px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-bold text-emerald-600 dark:text-emerald-400 text-end">
+                                                وفّر 12,000 {{ __('gosor_hr.pricing.plan.currency') }} سنوياً
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CTA Section -->
+                                <div class="space-y-3 pt-2">
+                                    <a href="#demo-form" data-plan="all-in-one"
+                                        class="plan-cta-btn w-full py-4 px-6 rounded-2xl text-sm sm:text-base font-bold text-center text-white bg-[#283891] hover:bg-[#1d2b75] shadow-lg shadow-[#283891]/25 hover:shadow-xl hover:shadow-[#283891]/35 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2">
+                                        <span>{{ __('gosor_hr.pricing.plan.cta') }}</span>
+                                        <x-feathericon-arrow-right class="w-4 h-4 rtl:rotate-180" />
+                                    </a>
+                                    <p
+                                        class="text-center text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">
+                                        {{ __('gosor_hr.pricing.plan.trial_badge') }}
+                                    </p>
+                                </div>
                             </div>
 
-                            <!-- CTA Button -->
-                            <div class="pt-2">
-                                <a href="#demo-form" data-plan="{{ $planKey }}"
-                                    class="plan-cta-btn w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold text-center flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5 active:translate-y-0 {{ $isFeatured ? 'bg-[#283891] hover:bg-[#1d2b75] text-white' : 'bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-900 dark:text-white border border-slate-200 dark:border-[#18223c]' }}">
-                                    <span>{{ $plan['cta'] }}</span>
-                                    <x-feathericon-arrow-right class="w-3.5 h-3.5 rtl:rotate-180" />
-                                </a>
+                            <!-- Right Side: Categorized Feature Breakdown (Crystal Clear Checklist) -->
+                            <div class="lg:col-span-7 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2.5 mb-6">
+                                        <div class="w-2.5 h-2.5 rounded-full bg-[#283891]"></div>
+                                        <h4 class="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white">
+                                            {{ __('gosor_hr.pricing.plan.badge') }}
+                                        </h4>
+                                    </div>
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                        @foreach (__('gosor_hr.pricing.plan.feature_groups') as $groupKey => $group)
+                                            <div
+                                                class="p-4 sm:p-5 rounded-2xl bg-slate-50/80 dark:bg-[#06080e]/60 border border-slate-200/80 dark:border-[#18223c] transition hover:border-[#283891]/40">
+                                                <div class="flex items-center gap-2.5 mb-3.5">
+                                                    <div
+                                                        class="w-8 h-8 rounded-xl bg-[#283891]/10 dark:bg-[#283891]/20 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center shrink-0">
+                                                        @if ($groupKey === 'attendance')
+                                                            <x-lucide-map-pin class="w-4 h-4" />
+                                                        @elseif ($groupKey === 'payroll')
+                                                            <x-lucide-calculator class="w-4 h-4" />
+                                                        @elseif ($groupKey === 'mobile_ai')
+                                                            <x-lucide-sparkles class="w-4 h-4" />
+                                                        @elseif ($groupKey === 'recruitment')
+                                                            <x-lucide-briefcase class="w-4 h-4" />
+                                                        @else
+                                                            <x-lucide-shield-check class="w-4 h-4" />
+                                                        @endif
+                                                    </div>
+                                                    <h5 class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
+                                                        {{ $group['title'] }}
+                                                    </h5>
+                                                </div>
+
+                                                <ul class="space-y-2.5">
+                                                    @foreach ($group['items'] as $item)
+                                                        <li
+                                                            class="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                                                            <div
+                                                                class="w-4 h-4 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                                                                <x-lucide-check class="w-2.5 h-2.5" />
+                                                            </div>
+                                                            <span>{{ $item }}</span>
+                                                        </li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
-                    @endforeach
-
+                    </div>
                 </div>
 
                 <!-- Custom Enterprise Callout Banner -->
@@ -1003,149 +1234,7 @@
             </div>
         </section>
 
-        <!-- SECTION: EMPLOYEE MOBILE APP (ESS) -->
-        <section id="mobile-app"
-            class="py-24 relative bg-slate-50/70 dark:bg-[#06080e] border-y border-slate-200/80 dark:border-[#18223c]">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-                    <!-- Left: Real Mobile Screenshots (Dual Clock In & Clock Out Mockups) -->
-                    <div class="lg:col-span-6 order-2 lg:order-1" data-aos="fade-right">
-                        <div class="flex items-center justify-center gap-4 sm:gap-6">
-
-                            <!-- Phone 1: Clock In state -->
-                            <div
-                                class="w-1/2 max-w-[240px] rounded-[36px] border-4 sm:border-[6px] border-[#0c101d] bg-[#0c101d] overflow-hidden ring-1 ring-slate-800 group hover:-translate-y-1 transition-transform duration-300">
-                                <div
-                                    class="py-1 px-3 bg-[#0c101d] text-[10px] text-center font-bold text-[#7d93ff] border-b border-[#18223c]">
-                                    Clock In Screen
-                                </div>
-                                <img src="{{ asset('images/gosor/hr/app_clock_in.jpg') }}"
-                                    alt="Gosor HR Mobile Clock In"
-                                    class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500"
-                                    loading="lazy" />
-                            </div>
-
-                            <!-- Phone 2: Clock Out state -->
-                            <div
-                                class="w-1/2 max-w-[240px] rounded-[36px] border-4 sm:border-[6px] border-[#0c101d] bg-[#0c101d] overflow-hidden ring-1 ring-slate-800 group mt-6 sm:mt-10 hover:-translate-y-1 transition-transform duration-300">
-                                <div
-                                    class="py-1 px-3 bg-[#0c101d] text-[10px] text-center font-bold text-rose-400 border-b border-[#18223c]">
-                                    Clock Out Screen
-                                </div>
-                                <img src="{{ asset('images/gosor/hr/app_clock_out.jpg') }}"
-                                    alt="Gosor HR Mobile Clock Out"
-                                    class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500"
-                                    loading="lazy" />
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Right: ESS Feature List -->
-                    <div class="lg:col-span-6 order-1 lg:order-2" data-aos="fade-left">
-                        <span
-                            class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] border border-[#283891]/20 dark:border-[#283891]/40 mb-3">
-                            {{ __('gosor_hr.app.badge') }}
-                        </span>
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
-                            {{ __('gosor_hr.app.title') }}
-                        </h2>
-                        <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-                            {{ __('gosor_hr.app.subtitle') }}
-                        </p>
-
-                        <!-- Features Grid -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                            @foreach (__('gosor_hr.app.features') as $key => $feature)
-                                <div
-                                    class="flex items-start gap-3 p-3 rounded-2xl bg-white dark:bg-[#0c101d] border border-slate-200/80 dark:border-[#18223c]">
-                                    <div
-                                        class="w-6 h-6 rounded-lg bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] flex items-center justify-center shrink-0 mt-0.5">
-                                        <x-lucide-check class="w-4 h-4" />
-                                    </div>
-                                    <span
-                                        class="text-sm font-semibold text-slate-800 dark:text-slate-200">{{ $feature }}</span>
-                                </div>
-                            @endforeach
-                        </div>
-
-                        <!-- App Badges -->
-                        <div class="flex flex-wrap items-center gap-4">
-                            <div
-                                class="px-4 py-2.5 rounded-xl bg-[#0c101d] text-white flex items-center gap-3 border border-[#18223c] hover:-translate-y-0.5 transition-transform">
-                                <x-lucide-apple class="w-6 h-6" />
-                                <div class="text-start">
-                                    <div class="text-[9px] uppercase tracking-wider text-slate-400">Download on</div>
-                                    <div class="text-xs font-bold">App Store (iOS)</div>
-                                </div>
-                            </div>
-                            <div
-                                class="px-4 py-2.5 rounded-xl bg-[#0c101d] text-white flex items-center gap-3 border border-[#18223c] hover:-translate-y-0.5 transition-transform">
-                                <x-lucide-smartphone class="w-6 h-6" />
-                                <div class="text-start">
-                                    <div class="text-[9px] uppercase tracking-wider text-slate-400">Get it on</div>
-                                    <div class="text-xs font-bold">Google Play (Android)</div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION: DETAILED COMPARISON TABLE -->
-        <section id="comparison" class="py-24 relative">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-                <!-- Section Header -->
-                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                    <span
-                        class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#283891]/10 text-[#283891] dark:text-[#7d93ff] border border-[#283891]/20 dark:border-[#283891]/40 mb-3">
-                        {{ __('gosor_hr.comparison.badge') }}
-                    </span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-                        {{ __('gosor_hr.comparison.title') }}
-                    </h2>
-                    <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-400">
-                        {{ __('gosor_hr.comparison.subtitle') }}
-                    </p>
-                </div>
-
-                <!-- Table Card Container -->
-                <div class="overflow-x-auto rounded-3xl border border-slate-200 dark:border-[#18223c] bg-white dark:bg-[#0c101d]"
-                    data-aos="fade-up">
-                    <table class="w-full text-start text-sm">
-                        <thead>
-                            <tr class="border-b border-slate-200 dark:border-[#18223c] bg-slate-50 dark:bg-[#18223c]/40">
-                                <th class="p-5 text-start font-bold text-slate-900 dark:text-white">
-                                    {{ __('gosor_hr.comparison.headers.feature') }}</th>
-                                <th class="p-5 text-start font-bold text-[#283891] dark:text-[#7d93ff] bg-[#283891]/10">
-                                    {{ __('gosor_hr.comparison.headers.gosor') }}</th>
-                                <th class="p-5 text-start font-bold text-slate-700 dark:text-slate-300">
-                                    {{ __('gosor_hr.comparison.headers.fingerprint') }}</th>
-                                <th class="p-5 text-start font-bold text-slate-700 dark:text-slate-300">
-                                    {{ __('gosor_hr.comparison.headers.spreadsheet') }}</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-200 dark:divide-[#18223c]">
-                            @foreach (__('gosor_hr.comparison.rows') as $row)
-                                <tr class="hover:bg-slate-50/50 dark:hover:bg-[#18223c]/20 transition">
-                                    <td class="p-5 font-semibold text-slate-900 dark:text-white">{{ $row['name'] }}</td>
-                                    <td class="p-5 font-bold text-[#283891] dark:text-[#7d93ff] bg-[#283891]/5">
-                                        {{ $row['gosor'] }}</td>
-                                    <td class="p-5 text-slate-600 dark:text-slate-400">{{ $row['fingerprint'] }}</td>
-                                    <td class="p-5 text-slate-600 dark:text-slate-400">{{ $row['spreadsheet'] }}</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
-        </section>
 
         <!-- SECTION: FAQ ACCORDION -->
         <section id="faq"
@@ -1286,15 +1375,73 @@
                                     </div>
                                 </div>
 
-                                <div>
-                                    <label for="employees_count"
-                                        class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">{{ __('gosor_hr.demo.form.employees_count') }}</label>
-                                    <select id="employees_count" name="employees_count"
-                                        class="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-[#18223c] text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#283891] transition">
-                                        @foreach (__('gosor_hr.demo.form.employees_options') as $optKey => $optVal)
-                                            <option value="{{ $optKey }}">{{ $optVal }}</option>
-                                        @endforeach
-                                    </select>
+                                <!-- Interactive Employee Number & Billing Cycle in Demo Form -->
+                                <div class="space-y-4 pt-1">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <!-- Number of Employees input with +/- -->
+                                        <div>
+                                            <label for="form_employees_count"
+                                                class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5 flex items-center justify-between">
+                                                <span>{{ __('gosor_hr.demo.form.employees_count') }} *</span>
+                                                <span class="text-[10px] font-normal text-slate-400">1 - 10,000</span>
+                                            </label>
+                                            <div class="relative flex items-center">
+                                                <button type="button" id="form-emp-minus-btn"
+                                                    class="absolute start-1.5 w-8 h-8 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 flex items-center justify-center text-slate-800 dark:text-slate-100 font-black text-sm transition select-none cursor-pointer">
+                                                    -
+                                                </button>
+                                                <input type="number" id="form_employees_count" name="employees_count" min="1" max="10000" required
+                                                    value="20" placeholder="{{ __('gosor_hr.demo.form.employees_count_placeholder') }}"
+                                                    class="w-full px-11 py-3 text-center rounded-xl bg-white dark:bg-[#0c101d] border border-slate-200 dark:border-[#18223c] text-sm font-extrabold text-[#283891] dark:text-[#7d93ff] focus:outline-none focus:ring-2 focus:ring-[#283891] transition" />
+                                                <button type="button" id="form-emp-plus-btn"
+                                                    class="absolute end-1.5 w-8 h-8 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 flex items-center justify-center text-slate-800 dark:text-slate-100 font-black text-sm transition select-none cursor-pointer">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Billing Cycle Radio Selector -->
+                                        <div>
+                                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                                                {{ __('gosor_hr.demo.form.billing_cycle') }} *
+                                            </label>
+                                            <div class="grid grid-cols-2 gap-2">
+                                                <label id="form-billing-yearly-label"
+                                                    class="relative flex flex-col items-center justify-center p-2.5 rounded-xl border-2 border-[#283891] bg-[#283891]/5 dark:bg-[#283891]/10 text-slate-900 dark:text-white cursor-pointer transition select-none text-center">
+                                                    <input type="radio" name="billing_cycle" id="form_billing_yearly" value="yearly" checked class="sr-only" />
+                                                    <span class="text-xs font-bold">{{ app()->getLocale() === 'ar' ? 'سنوي (150 ج.م)' : 'Yearly (150 EGP)' }}</span>
+                                                    <span class="text-[10px] font-extrabold text-emerald-600 dark:text-emerald-400">{{ app()->getLocale() === 'ar' ? 'وفّر 25%' : 'Save 25%' }}</span>
+                                                </label>
+                                                <label id="form-billing-monthly-label"
+                                                    class="relative flex flex-col items-center justify-center p-2.5 rounded-xl border border-slate-200 dark:border-[#18223c] bg-white dark:bg-[#0c101d] text-slate-700 dark:text-slate-300 cursor-pointer transition select-none text-center hover:border-slate-300 dark:hover:border-slate-700">
+                                                    <input type="radio" name="billing_cycle" id="form_billing_monthly" value="monthly" class="sr-only" />
+                                                    <span class="text-xs font-bold">{{ app()->getLocale() === 'ar' ? 'شهري (200 ج.م)' : 'Monthly (200 EGP)' }}</span>
+                                                    <span class="text-[10px] text-slate-400">{{ app()->getLocale() === 'ar' ? 'تجديد شهري' : 'Flexible' }}</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Live Estimated Price Summary in Form -->
+                                    <div class="p-3.5 sm:p-4 rounded-xl bg-[#283891]/5 dark:bg-[#283891]/10 border border-[#283891]/20 flex items-center justify-between flex-wrap gap-2">
+                                        <div class="flex items-center gap-2.5">
+                                            <div class="w-8 h-8 rounded-lg bg-[#283891] text-white flex items-center justify-center shrink-0">
+                                                <x-lucide-calculator class="w-4 h-4" />
+                                            </div>
+                                            <div>
+                                                <span class="block text-[11px] font-semibold text-slate-500 dark:text-slate-400">
+                                                    {{ __('gosor_hr.demo.form.estimated_price_label') }}
+                                                </span>
+                                                <span id="form-calculated-price-text" class="text-xs sm:text-sm font-extrabold text-[#283891] dark:text-[#7d93ff]">
+                                                    3,000 {{ __('gosor_hr.pricing.plan.currency') }} / شهرياً
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div id="form-calculated-savings-badge" class="px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-black text-emerald-600 dark:text-emerald-400">
+                                            وفّر 12,000 {{ __('gosor_hr.pricing.plan.currency') }} سنوياً
+                                        </div>
+                                        <input type="hidden" id="form_estimated_price" name="estimated_price" value="" />
+                                    </div>
                                 </div>
 
                                 <div>
@@ -1344,14 +1491,18 @@
                     class="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-slate-600 dark:text-slate-400">
                     <a href="{{ route('landing') }}"
                         class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('gosor_hr.nav.back_to_gosor') }}</a>
-                    <a href="#why-gosor"
-                        class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('gosor_hr.nav.why_gosor') }}</a>
                     <a href="#attendance"
                         class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('gosor_hr.nav.attendance') }}</a>
-                    <a href="#ai-features"
-                        class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('gosor_hr.nav.ai_features') }}</a>
+                    <a href="#mobile-app"
+                        class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('gosor_hr.nav.mobile_app') }}</a>
+                    <a href="#reports"
+                        class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('gosor_hr.nav.reports') }}</a>
+                    <a href="#recruitment"
+                        class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('gosor_hr.nav.recruitment') }}</a>
                     <a href="#pricing"
                         class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('gosor_hr.nav.pricing') }}</a>
+                    <a href="#faq"
+                        class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('gosor_hr.nav.faq') }}</a>
                     <a href="#demo-form"
                         class="hover:text-[#283891] dark:hover:text-[#7d93ff] transition">{{ __('gosor_hr.nav.request_demo') }}</a>
                 </div>
@@ -1380,31 +1531,37 @@
     @endif
 
     <style>
-        .report-tab-btn {
+        .report-tab-btn,
+        .recruitment-tab-btn {
             background-color: transparent;
             color: #64748b;
             border: 1px solid transparent;
         }
 
-        .report-tab-btn:hover {
+        .report-tab-btn:hover,
+        .recruitment-tab-btn:hover {
             color: #283891;
         }
 
-        .report-tab-btn.active {
+        .report-tab-btn.active,
+        .recruitment-tab-btn.active {
             background-color: #283891;
             color: #ffffff;
             border-color: #283891;
         }
 
-        .dark .report-tab-btn {
+        .dark .report-tab-btn,
+        .dark .recruitment-tab-btn {
             color: #94a3b8;
         }
 
-        .dark .report-tab-btn:hover {
+        .dark .report-tab-btn:hover,
+        .dark .recruitment-tab-btn:hover {
             color: #7d93ff;
         }
 
-        .dark .report-tab-btn.active {
+        .dark .report-tab-btn.active,
+        .dark .recruitment-tab-btn.active {
             background-color: #283891;
             color: #ffffff;
             border-color: #283891;
@@ -1491,37 +1648,229 @@
                     });
                 }
 
-                // Billing toggle logic (Monthly vs Yearly)
+                // Pricing Calculator & Demo Form Two-Way Synchronization
                 const btnMonthly = document.getElementById('billing-monthly-btn');
                 const btnYearly = document.getElementById('billing-yearly-btn');
                 const monthlyBoxes = document.querySelectorAll('.price-box-monthly');
                 const yearlyBoxes = document.querySelectorAll('.price-box-yearly');
+                const slider = document.getElementById('calc-range-slider');
+                const countDisplay = document.getElementById('calc-employee-count');
+                const totalCostDisplay = document.getElementById('calc-total-cost');
+                const savingsBadge = document.getElementById('calc-savings-badge');
+                const minusBtn = document.getElementById('calc-minus-btn');
+                const plusBtn = document.getElementById('calc-plus-btn');
 
+                // Form elements
+                const formEmpInput = document.getElementById('form_employees_count');
+                const formEmpMinus = document.getElementById('form-emp-minus-btn');
+                const formEmpPlus = document.getElementById('form-emp-plus-btn');
+                const formRadioYearly = document.getElementById('form_billing_yearly');
+                const formRadioMonthly = document.getElementById('form_billing_monthly');
+                const formLabelYearly = document.getElementById('form-billing-yearly-label');
+                const formLabelMonthly = document.getElementById('form-billing-monthly-label');
+                const formPriceText = document.getElementById('form-calculated-price-text');
+                const formSavingsBadge = document.getElementById('form-calculated-savings-badge');
+                const formHiddenPrice = document.getElementById('form_estimated_price');
+
+                const isRtl = document.documentElement.dir === 'rtl';
+                let isYearlyActive = true;
+
+                function computePrices(count, isYearly) {
+                    const validCount = Math.max(1, parseInt(count, 10) || 1);
+                    const currency = isRtl ? 'ج.م' : 'EGP';
+                    const perMonthText = isRtl ? 'شهرياً' : 'month';
+                    const perYearText = isRtl ? 'سنوياً' : 'year';
+                    const saveText = isRtl ? 'وفّر' : 'Save';
+
+                    if (isYearly) {
+                        const monthlyEquiv = validCount * 150;
+                        const annualTotal = validCount * 150 * 12;
+                        const annualSavings = (200 - 150) * validCount * 12;
+
+                        return {
+                            count: validCount,
+                            monthlyTotalText: `${monthlyEquiv.toLocaleString()} ${currency} / ${perMonthText}`,
+                            annualTotalText: `${annualTotal.toLocaleString()} ${currency} / ${perYearText}`,
+                            savingsText: `${saveText} ${annualSavings.toLocaleString()} ${currency} ${perYearText}`,
+                            hiddenValue: `${monthlyEquiv.toLocaleString()} ${currency}/month (${annualTotal.toLocaleString()} ${currency}/year - ${saveText} ${annualSavings.toLocaleString()} ${currency})`
+                        };
+                    } else {
+                        const monthlyCost = validCount * 200;
+                        const annualCost = validCount * 200 * 12;
+                        const annualSavings = (200 - 150) * validCount * 12;
+
+                        return {
+                            count: validCount,
+                            monthlyTotalText: `${monthlyCost.toLocaleString()} ${currency} / ${perMonthText}`,
+                            annualTotalText: `${annualCost.toLocaleString()} ${currency} / ${perYearText}`,
+                            savingsText: isRtl ? `وفّر ${annualSavings.toLocaleString()} ج.م مع السنوي` : `Save ${annualSavings.toLocaleString()} EGP with annual`,
+                            hiddenValue: `${monthlyCost.toLocaleString()} ${currency}/month (${annualCost.toLocaleString()} ${currency}/year)`
+                        };
+                    }
+                }
+
+                function syncUI(sourceCount, fromSlider = false) {
+                    const count = Math.max(1, parseInt(sourceCount, 10) || 1);
+                    const calc = computePrices(count, isYearlyActive);
+
+                    // Update Top Calculator
+                    if (countDisplay) countDisplay.textContent = count;
+                    if (slider && !fromSlider && count >= 5 && count <= 150) {
+                        slider.value = count;
+                    }
+                    if (totalCostDisplay) totalCostDisplay.textContent = calc.monthlyTotalText;
+                    if (savingsBadge) {
+                        savingsBadge.textContent = calc.savingsText;
+                        savingsBadge.classList.remove('hidden');
+                    }
+
+                    // Update Demo Form
+                    if (formEmpInput && formEmpInput.value != count) {
+                        formEmpInput.value = count;
+                    }
+                    if (formPriceText) {
+                        if (isYearlyActive) {
+                            formPriceText.textContent = `${calc.monthlyTotalText} (${calc.annualTotalText})`;
+                        } else {
+                            formPriceText.textContent = `${calc.monthlyTotalText} (${isRtl ? 'تجديد شهري' : 'monthly'})`;
+                        }
+                    }
+                    if (formSavingsBadge) {
+                        formSavingsBadge.textContent = calc.savingsText;
+                        formSavingsBadge.style.display = isYearlyActive ? 'block' : 'block';
+                    }
+                    if (formHiddenPrice) {
+                        formHiddenPrice.value = calc.hiddenValue;
+                    }
+
+                    // Update Radio visuals in Form
+                    if (formRadioYearly && formRadioMonthly) {
+                        formRadioYearly.checked = isYearlyActive;
+                        formRadioMonthly.checked = !isYearlyActive;
+                    }
+                    if (formLabelYearly && formLabelMonthly) {
+                        if (isYearlyActive) {
+                            formLabelYearly.className = "relative flex flex-col items-center justify-center p-2.5 rounded-xl border-2 border-[#283891] bg-[#283891]/5 dark:bg-[#283891]/10 text-slate-900 dark:text-white cursor-pointer transition select-none text-center";
+                            formLabelMonthly.className = "relative flex flex-col items-center justify-center p-2.5 rounded-xl border border-slate-200 dark:border-[#18223c] bg-white dark:bg-[#0c101d] text-slate-700 dark:text-slate-300 cursor-pointer transition select-none text-center hover:border-slate-300 dark:hover:border-slate-700";
+                        } else {
+                            formLabelMonthly.className = "relative flex flex-col items-center justify-center p-2.5 rounded-xl border-2 border-[#283891] bg-[#283891]/5 dark:bg-[#283891]/10 text-slate-900 dark:text-white cursor-pointer transition select-none text-center";
+                            formLabelYearly.className = "relative flex flex-col items-center justify-center p-2.5 rounded-xl border border-slate-200 dark:border-[#18223c] bg-white dark:bg-[#0c101d] text-slate-700 dark:text-slate-300 cursor-pointer transition select-none text-center hover:border-slate-300 dark:hover:border-slate-700";
+                        }
+                    }
+
+                    // Update Top Switch buttons
+                    if (btnMonthly && btnYearly) {
+                        if (isYearlyActive) {
+                            btnYearly.classList.add('active');
+                            btnMonthly.classList.remove('active');
+                            yearlyBoxes.forEach(el => el.classList.remove('hidden'));
+                            monthlyBoxes.forEach(el => el.classList.add('hidden'));
+                        } else {
+                            btnMonthly.classList.add('active');
+                            btnYearly.classList.remove('active');
+                            monthlyBoxes.forEach(el => el.classList.remove('hidden'));
+                            yearlyBoxes.forEach(el => el.classList.add('hidden'));
+                        }
+                    }
+                }
+
+                // Top Billing Toggle
                 if (btnMonthly && btnYearly) {
                     btnMonthly.addEventListener('click', function() {
-                        btnMonthly.classList.add('active');
-                        btnYearly.classList.remove('active');
-                        monthlyBoxes.forEach(el => el.classList.remove('hidden'));
-                        yearlyBoxes.forEach(el => el.classList.add('hidden'));
+                        isYearlyActive = false;
+                        syncUI(formEmpInput ? formEmpInput.value : (slider ? slider.value : 20));
                     });
 
                     btnYearly.addEventListener('click', function() {
-                        btnYearly.classList.add('active');
-                        btnMonthly.classList.remove('active');
-                        yearlyBoxes.forEach(el => el.classList.remove('hidden'));
-                        monthlyBoxes.forEach(el => el.classList.add('hidden'));
+                        isYearlyActive = true;
+                        syncUI(formEmpInput ? formEmpInput.value : (slider ? slider.value : 20));
                     });
                 }
 
-                // Plan CTA pre-selection for Demo form
-                const planCtaButtons = document.querySelectorAll('.plan-cta-btn');
-                const empSelect = document.getElementById('employees_count');
+                // Top Slider
+                if (slider) {
+                    slider.addEventListener('input', function() {
+                        syncUI(this.value, true);
+                    });
+                }
 
+                // Top +/- buttons
+                if (minusBtn && slider) {
+                    minusBtn.addEventListener('click', function() {
+                        const current = parseInt(slider.value, 10) || 20;
+                        if (current > 5) {
+                            slider.value = current - 1;
+                            syncUI(slider.value, true);
+                        }
+                    });
+                }
+
+                if (plusBtn && slider) {
+                    plusBtn.addEventListener('click', function() {
+                        const current = parseInt(slider.value, 10) || 20;
+                        if (current < 150) {
+                            slider.value = current + 1;
+                            syncUI(slider.value, true);
+                        }
+                    });
+                }
+
+                // Form Employee Input & +/- buttons
+                if (formEmpInput) {
+                    formEmpInput.addEventListener('input', function() {
+                        syncUI(this.value);
+                    });
+                }
+
+                if (formEmpMinus && formEmpInput) {
+                    formEmpMinus.addEventListener('click', function() {
+                        const current = parseInt(formEmpInput.value, 10) || 20;
+                        if (current > 1) {
+                            formEmpInput.value = current - 1;
+                            syncUI(formEmpInput.value);
+                        }
+                    });
+                }
+
+                if (formEmpPlus && formEmpInput) {
+                    formEmpPlus.addEventListener('click', function() {
+                        const current = parseInt(formEmpInput.value, 10) || 20;
+                        if (current < 10000) {
+                            formEmpInput.value = current + 1;
+                            syncUI(formEmpInput.value);
+                        }
+                    });
+                }
+
+                // Form Radio Billing cycle
+                if (formRadioYearly && formRadioMonthly) {
+                    formRadioYearly.addEventListener('change', function() {
+                        if (this.checked) {
+                            isYearlyActive = true;
+                            syncUI(formEmpInput ? formEmpInput.value : 20);
+                        }
+                    });
+
+                    formRadioMonthly.addEventListener('change', function() {
+                        if (this.checked) {
+                            isYearlyActive = false;
+                            syncUI(formEmpInput ? formEmpInput.value : 20);
+                        }
+                    });
+                }
+
+                // Initial sync
+                syncUI(20);
+
+                // Plan CTA smooth scroll and sync
+                const planCtaButtons = document.querySelectorAll('.plan-cta-btn');
                 planCtaButtons.forEach(btn => {
                     btn.addEventListener('click', function() {
                         const plan = this.getAttribute('data-plan');
-                        if (empSelect && plan) {
-                            empSelect.value = plan;
+                        if (plan === 'custom') {
+                            syncUI(100);
+                        } else if (slider) {
+                            syncUI(slider.value);
                         }
                     });
                 });
@@ -1539,6 +1888,27 @@
 
                         tabPanes.forEach(pane => {
                             if (pane.id === 'tab-content-' + targetTab) {
+                                pane.classList.remove('hidden');
+                            } else {
+                                pane.classList.add('hidden');
+                            }
+                        });
+                    });
+                });
+
+                // Recruitment Tabs Logic
+                const rTabButtons = document.querySelectorAll('.recruitment-tab-btn');
+                const rTabPanes = document.querySelectorAll('.recruitment-tab-pane');
+
+                rTabButtons.forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const targetTab = this.getAttribute('data-rtab');
+
+                        rTabButtons.forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+
+                        rTabPanes.forEach(pane => {
+                            if (pane.id === 'rtab-content-' + targetTab) {
                                 pane.classList.remove('hidden');
                             } else {
                                 pane.classList.add('hidden');

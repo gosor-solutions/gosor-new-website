@@ -36,6 +36,8 @@ class GosorHrController extends Controller
             'phone' => ['required', 'string', 'max:50'],
             'company' => ['required', 'string', 'max:255'],
             'employees_count' => ['nullable', 'string', 'max:50'],
+            'billing_cycle' => ['nullable', 'string', 'max:50'],
+            'estimated_price' => ['nullable', 'string', 'max:255'],
             'message' => ['nullable', 'string', 'max:3000'],
             '_hp_company_website' => ['nullable', 'string'],
         ]);
@@ -57,12 +59,21 @@ class GosorHrController extends Controller
             return redirect()->route('success')->with('success', __('Message sent successfully!'));
         }
 
-        $messageContent = 'Demo Request for Gosor HR System.';
+        $billingCycle = ($validated['billing_cycle'] ?? 'yearly') === 'monthly'
+            ? 'اشتراك شهري (200 ج.م / موظف)'
+            : 'اشتراك سنوي (150 ج.م / موظف - خصم 25%)';
+
+        $messageParts = [];
+        $messageParts[] = '📌 تفاصيل طلب نظام Gosor HR:';
         if (! empty($validated['employees_count'])) {
-            $messageContent .= ' | Number of Employees / Plan: '.$validated['employees_count'];
+            $messageParts[] = '• عدد الموظفين: '.$validated['employees_count'].' موظف';
+        }
+        $messageParts[] = '• نظام الدفع المختار: '.$billingCycle;
+        if (! empty($validated['estimated_price'])) {
+            $messageParts[] = '• التكلفة التقديرية المحتسبة: '.$validated['estimated_price'];
         }
         if (! empty($validated['message'])) {
-            $messageContent .= "\n\nClient Note: ".$validated['message'];
+            $messageParts[] = "\n📝 ملاحظات واستفسارات العميل:\n".$validated['message'];
         }
 
         $contact = ContactMessage::create([
@@ -71,7 +82,7 @@ class GosorHrController extends Controller
             'phone' => $validated['phone'],
             'company' => $validated['company'],
             'project_type' => 'Gosor HR - Smart Attendance & AI System',
-            'message' => $messageContent,
+            'message' => implode("\n", $messageParts),
         ]);
 
         $antiSpamService->recordSubmission($request);

@@ -13,6 +13,8 @@ test('gosor hr landing page loads successfully in english', function () {
     $response->assertStatus(200);
     $response->assertSee('Gosor HR');
     $response->assertSee('Smart Attendance');
+    $response->assertSee('150');
+    $response->assertSee('Save up to 25%');
 });
 
 test('gosor hr landing page loads successfully in arabic with rtl', function () {
@@ -22,6 +24,8 @@ test('gosor hr landing page loads successfully in arabic with rtl', function () 
     $response->assertSee('dir="rtl"', false);
     $response->assertSee('Gosor HR');
     $response->assertSee('الحضور والانصراف');
+    $response->assertSee('150');
+    $response->assertSee('وفّر حتى 25%');
 });
 
 test('gosor calendar route redirects to gosor hr', function () {
@@ -38,7 +42,9 @@ test('can submit a demo request for gosor hr and send notification email', funct
         'email' => 'john@acme.com',
         'phone' => '+201000000000',
         'company' => 'Acme Corp',
-        'employees_count' => 'professional',
+        'employees_count' => '35',
+        'billing_cycle' => 'yearly',
+        'estimated_price' => '5,250 EGP / month',
         'message' => 'Interested in replacing 4 fingerprint devices across 2 branches.',
     ];
 
@@ -55,6 +61,11 @@ test('can submit a demo request for gosor hr and send notification email', funct
         'company' => 'Acme Corp',
         'project_type' => 'Gosor HR - Smart Attendance & AI System',
     ]);
+
+    $contact = ContactMessage::where('email', 'john@acme.com')->first();
+    expect($contact->message)->toContain('35')
+        ->toContain('اشتراك سنوي')
+        ->toContain('5,250 EGP / month');
 
     Mail::assertSent(NewContactRequestMail::class, function ($mail) {
         return $mail->hasTo('mahfouzm25@gmail.com') &&
