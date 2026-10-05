@@ -79,11 +79,16 @@ class EduBridgeController extends Controller
 
         $antiSpamService->recordSubmission($request);
 
-        try {
-            $adminEmail = config('mail.admin_recipient', env('CONTACT_NOTIFICATION_EMAIL', 'mahfouzm25@gmail.com'));
-            Mail::to($adminEmail)->send(new NewContactRequestMail($contact, 'Edu Bridge Demo Request'));
-        } catch (\Throwable $e) {
-            Log::error('Failed to send Edu Bridge demo notification email: '.$e->getMessage());
+        // Send notification email only if the email is genuine/real
+        if ($antiSpamService->isRealEmail($validated['email'])) {
+            try {
+                $adminEmail = config('mail.admin_recipient', env('CONTACT_NOTIFICATION_EMAIL', 'mahfouzm25@gmail.com'));
+                Mail::to($adminEmail)->send(new NewContactRequestMail($contact, 'Edu Bridge Demo Request'));
+            } catch (\Throwable $e) {
+                Log::error('Failed to send Edu Bridge demo notification email: '.$e->getMessage());
+            }
+        } else {
+            Log::info("Skipped Edu Bridge demo email notification: Email '{$validated['email']}' is not a verified real email.");
         }
 
         if ($request->expectsJson()) {
